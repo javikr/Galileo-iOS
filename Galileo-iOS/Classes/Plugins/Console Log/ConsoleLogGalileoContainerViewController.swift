@@ -17,7 +17,7 @@ extension ConsoleLogGalileoContainerViewController: GalileoPlugin
     }
     
     var pluginIcon: UIImage? {
-        return UIImage(named: "200-terminal", in: Bundle(for: ConsoleLogGalileoContainerViewController.self), compatibleWith: nil)
+        return UIImage(named: "200-terminal", in: Galileo.bundle, compatibleWith: nil)
     }
     
     func setupPlugin()

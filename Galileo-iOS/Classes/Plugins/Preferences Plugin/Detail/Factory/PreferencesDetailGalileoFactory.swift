@@ -13,7 +13,7 @@ class PreferencesDetailGalileoFactory
     func PreferencesDetailGalileo(preferenceKey: String) -> UIViewController
     {
         let presenter = PreferencesDetailGalileoPresenter()
-        let view = PreferencesDetailGalileoViewController(nibName: "PreferencesDetailGalileoViewController", bundle: Bundle(for: PreferencesDetailGalileoViewController.self))
+        let view = PreferencesDetailGalileoViewController(nibName: "PreferencesDetailGalileoViewController", bundle: Galileo.bundle)
         let interactor = PreferencesDetailGalileoInteractor(preferenceKey: preferenceKey)
         let routing = PreferencesDetailGalileoRouting(presentedView: view)
         view.eventHandler = presenter

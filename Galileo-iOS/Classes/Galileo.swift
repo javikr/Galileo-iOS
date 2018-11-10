@@ -23,6 +23,10 @@ open class Galileo: UIWindow
         super.init(frame: frame)
     }
     
+    static var bundle: Bundle {
+        return Bundle(for: Galileo.self)
+    }
+    
     override open func makeKeyAndVisible()
     {
         super.makeKeyAndVisible()

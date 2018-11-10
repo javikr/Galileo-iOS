@@ -17,6 +17,6 @@ extension PreferencesGalileoContainerViewController: GalileoPlugin
     }
     
     var pluginIcon: UIImage? {
-        return UIImage(named: "101-data", in: Bundle(for: ConsoleLogGalileoContainerViewController.self), compatibleWith: nil)
+        return UIImage(named: "101-data", in: Galileo.bundle, compatibleWith: nil)
     }
 }

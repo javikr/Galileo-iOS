@@ -13,6 +13,8 @@
 		59B5A04E21970DD60001AEE3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A04A21970DD60001AEE3 /* RootViewController.swift */; };
 		59B5A05021970E210001AEE3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 59B5A04F21970E210001AEE3 /* Podfile */; };
 		59B5A1BB219719220001AEE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B5A1BA219719220001AEE3 /* LaunchScreen.xib */; };
+		59B5A1BF219735D80001AEE3 /* SamplePluginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A1BD219735D80001AEE3 /* SamplePluginViewController.swift */; };
+		59B5A1C0219735D80001AEE3 /* SamplePluginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B5A1BE219735D80001AEE3 /* SamplePluginViewController.xib */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		59B5A04A21970DD60001AEE3 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		59B5A04F21970E210001AEE3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		59B5A1BA219719220001AEE3 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		59B5A1BD219735D80001AEE3 /* SamplePluginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePluginViewController.swift; sourceTree = "<group>"; };
+		59B5A1BE219735D80001AEE3 /* SamplePluginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SamplePluginViewController.xib; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Galileo-iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Galileo-iOS_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59B5A1BC219735B70001AEE3 /* Sample Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				59B5A1BD219735D80001AEE3 /* SamplePluginViewController.swift */,
+				59B5A1BE219735D80001AEE3 /* SamplePluginViewController.xib */,
+			);
+			name = "Sample Plugin";
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +83,7 @@
 		607FACD21AFB9204008FA782 /* Example for Galileo-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				59B5A1BC219735B70001AEE3 /* Sample Plugin */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				59B5A04A21970DD60001AEE3 /* RootViewController.swift */,
 				59B5A04821970DD60001AEE3 /* RootViewController.xib */,
@@ -182,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59B5A1BB219719220001AEE3 /* LaunchScreen.xib in Resources */,
+				59B5A1C0219735D80001AEE3 /* SamplePluginViewController.xib in Resources */,
 				59B5A05021970E210001AEE3 /* Podfile in Resources */,
 				59B5A04C21970DD60001AEE3 /* RootViewController.xib in Resources */,
 				59B5A04D21970DD60001AEE3 /* Assets.xcassets in Resources */,
@@ -238,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B5A1BF219735D80001AEE3 /* SamplePluginViewController.swift in Sources */,
 				59B5A04E21970DD60001AEE3 /* RootViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

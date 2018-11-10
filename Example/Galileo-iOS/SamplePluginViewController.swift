@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Galileo_iOS
 
-public class SamplePluginViewController: UIViewController
+class SamplePluginViewController: UIViewController
 {
     override public func viewDidLoad()
     {

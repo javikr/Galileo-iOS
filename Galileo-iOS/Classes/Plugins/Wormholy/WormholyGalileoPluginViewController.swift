@@ -35,7 +35,7 @@ extension WormholyGalileoPluginViewController: GalileoPlugin
     }
     
     var pluginIcon: UIImage? {
-        return UIImage(named: "025-asteroid", in: Bundle(for: WormholyGalileoPluginViewController.self), compatibleWith: nil)
+        return UIImage(named: "025-asteroid", in: Galileo.bundle, compatibleWith: nil)
     }
     
     func setupPlugin()
