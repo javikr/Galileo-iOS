@@ -1,6 +1,7 @@
 # Galileo-iOS
 
-Incredible Easy-to-use debugger tool for iOS. Port from Galileo for Android thanks to [josedelpozo](https://github.com/josedlpozo/Galileo)!
+Incredible Easy-to-use debugger tool for iOS. 
+Port from Galileo library for Android by [josedelpozo](https://github.com/josedlpozo/Galileo)!
 
 ## Example
 
