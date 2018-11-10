@@ -1,9 +1,7 @@
 # Galileo-iOS
 
-[![CI Status](https://img.shields.io/travis/Javier Aznar de los Rios/Galileo-iOS.svg?style=flat)](https://travis-ci.org/Javier Aznar de los Rios/Galileo-iOS)
-[![Version](https://img.shields.io/cocoapods/v/Galileo-iOS.svg?style=flat)](https://cocoapods.org/pods/Galileo-iOS)
-[![License](https://img.shields.io/cocoapods/l/Galileo-iOS.svg?style=flat)](https://cocoapods.org/pods/Galileo-iOS)
-[![Platform](https://img.shields.io/cocoapods/p/Galileo-iOS.svg?style=flat)](https://cocoapods.org/pods/Galileo-iOS)
+Incredible Easy-to-use debugger tool for iOS. 
+Port from Galileo library for Android by [josedelpozo](https://github.com/josedlpozo/Galileo)!
 
 ## Example
 
