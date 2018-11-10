@@ -26,10 +26,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uV-qR-Yla">
-                    <rect key="frame" x="16" y="36" width="343" height="112.5"/>
+                    <rect key="frame" x="16" y="36" width="343" height="122.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1wd-8u-nYa">
-                            <rect key="frame" x="8" y="8" width="327" height="96.5"/>
+                            <rect key="frame" x="8" y="8" width="327" height="106.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pog-Bn-ASy">
                                     <rect key="frame" x="0.0" y="0.0" width="327" height="20.5"/>
@@ -38,13 +38,16 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5YF-nr-kqn">
-                                    <rect key="frame" x="0.0" y="28.5" width="327" height="30"/>
+                                    <rect key="frame" x="0.0" y="28.5" width="327" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="ylJ-sc-uRv"/>
+                                    </constraints>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJn-4F-v6i">
-                                    <rect key="frame" x="0.0" y="66.5" width="327" height="30"/>
+                                    <rect key="frame" x="0.0" y="76.5" width="327" height="30"/>
                                     <state key="normal" title="Button"/>
                                     <connections>
                                         <action selector="didTapSaveButton:" destination="-1" eventType="touchUpInside" id="H60-CC-CXj"/>

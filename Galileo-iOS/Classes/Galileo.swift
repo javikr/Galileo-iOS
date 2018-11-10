@@ -8,11 +8,21 @@
 
 import UIKit
 
+/**
+ UIWindow subclass that works with Galileo. **You must use this Window class in your AppDelegate file**
+ 
+ ### Usage Example: ###
+ ````
+ window = Galileo(frame: UIScreen.main.bounds)
+ 
+ ````
+ 
+ */
 open class Galileo: UIWindow
 {
     private let plugins: [GalileoPlugin]
     
-    public init(frame: CGRect, customPlugins: [GalileoPlugin])
+    public init(frame: CGRect, customPlugins: [GalileoPlugin] = [])
     {
         let preferencesPlugin = PreferencesGalileoFactory().preferencesGalileo()
         let console = ConsoleLogGalileoFactory().consoleLogGalileo()

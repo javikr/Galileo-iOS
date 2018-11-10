@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         let rootView = RootViewController()
         
-        let samplePlugin = SamplePluginViewController()
+        let samplePlugin1 = SamplePluginViewController()
         
-        window = Galileo(frame: UIScreen.main.bounds, customPlugins: [samplePlugin])
+        window = Galileo(frame: UIScreen.main.bounds, customPlugins: [samplePlugin1])
         window?.rootViewController = rootView
         window?.makeKeyAndVisible()
         

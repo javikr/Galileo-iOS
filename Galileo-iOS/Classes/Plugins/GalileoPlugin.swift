@@ -8,6 +8,10 @@
 
 import UIKit
 
+/**
+ Protocol that must be implemented in a Galileo plugin
+ 
+ */
 public protocol GalileoPlugin where Self: UIViewController
 {
     var pluginName: String { get }
