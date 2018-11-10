@@ -1,0 +1,37 @@
+{
+  "name": "Galileo-iOS",
+  "version": "0.1.0",
+  "summary": "A short description of Galileo-iOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Javier Aznar de los Rios/Galileo-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Javier Aznar de los Rios": "javikr@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/javikr/Galileo-iOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Galileo-iOS/Classes/**/*",
+  "resource_bundles": {
+    "Galileo-iOS": [
+      "Galileo-iOS/**/*.{lproj,storyboard,xcdatamodeld,xib,png,jpeg,jpg}"
+    ]
+  },
+  "resources": [
+    "Galileo-iOS/Assets/Assets.xcassets"
+  ],
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Wormholy": [
+
+    ]
+  },
+  "swift_version": "4.2"
+}

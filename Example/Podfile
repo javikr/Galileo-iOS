@@ -1,11 +1,6 @@
 use_frameworks!
 
 target 'Galileo-iOS_Example' do
-  pod 'Galileo-iOS', :path => '../'
-
-  target 'Galileo-iOS_Tests' do
-    inherit! :search_paths
-
-    
-  end
+    pod 'Galileo-iOS', :path => '../'
+    pod 'Alamofire', '~> 4.7'
 end
