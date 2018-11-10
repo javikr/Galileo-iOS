@@ -8,41 +8,22 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Galileo-iOS'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Galileo-iOS.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '0.1.1'
+  s.summary          = 'Easy-to-use debugging tool for your iOS app!'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Easy-to-use debugging tool for your iOS app! Shake your device and go! Inspired in the Galileo Android Tool (https://github.com/josedlpozo/Galileo). 
                        DESC
-
-  s.homepage         = 'https://github.com/Javier Aznar de los Rios/Galileo-iOS'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/javikr/Galileo-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Javier Aznar de los Rios' => 'javikr@gmail.com' }
   s.source           = { :git => 'https://github.com/javikr/Galileo-iOS.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '10.0'
-
   s.source_files = 'Galileo-iOS/Classes/**/*'
-  
   s.resource_bundles = {
-     'Galileo-iOS' => [
-     'Galileo-iOS/**/*.{lproj,storyboard,xcdatamodeld,xib,png,jpeg,jpg}',
-     ]
+     'Galileo-iOS' => [ 'Galileo-iOS/**/*.{lproj,storyboard,xcdatamodeld,xib,png,jpeg,jpg}' ]
   }
-  
   s.resources = [ 'Galileo-iOS/Assets/Assets.xcassets' ]
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   s.dependency 'Wormholy'
-  
   s.swift_version = "4.2"
 end
