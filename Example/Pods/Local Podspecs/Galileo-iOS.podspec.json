@@ -1,9 +1,9 @@
 {
   "name": "Galileo-iOS",
-  "version": "0.1.0",
-  "summary": "A short description of Galileo-iOS.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Javier Aznar de los Rios/Galileo-iOS",
+  "version": "0.1.1",
+  "summary": "Easy-to-use debugging tool for your iOS app!",
+  "description": "Easy-to-use debugging tool for your iOS app! Shake your device and go! Inspired in the Galileo Android Tool (https://github.com/josedlpozo/Galileo).",
+  "homepage": "https://github.com/javikr/Galileo-iOS",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/javikr/Galileo-iOS.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "10.0"

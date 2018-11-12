@@ -20,11 +20,11 @@ class WormholyGalileoPluginViewController: UIViewController
     
     private func addWormholyView()
     {
-//        guard let wormholy = Wormholy.wormholyFlow else { return }
-//
-//        addChild(wormholy)
-//        view.addSubview(wormholy.view)
-//        wormholy.didMove(toParent: self)
+        guard let wormholy = Wormholy.wormholyFlow else { return }
+
+        addChild(wormholy)
+        view.addSubview(wormholy.view)
+        wormholy.didMove(toParent: self)
     }
 }
 
