@@ -7,7 +7,10 @@
 //
 
 import UIKit
+
+#if DEBUG
 import Galileo_iOS
+#endif
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,9 +21,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         let rootView = RootViewController()
         
-        let samplePlugin1 = SamplePluginViewController()
         
-        window = Galileo(frame: UIScreen.main.bounds, customPlugins: [samplePlugin1])
+        
+        #if DEBUG
+        let samplePlugin1 = SamplePluginViewController()
+        let samplePlugin2 = SamplePluginViewController()
+        let samplePlugin3 = SamplePluginViewController()
+        let samplePlugin4 = SamplePluginViewController()
+        let samplePlugin5 = SamplePluginViewController()
+        let samplePlugin6 = SamplePluginViewController()
+        let samplePlugin7 = SamplePluginViewController()
+        
+        window = Galileo(frame: UIScreen.main.bounds, customPlugins: [samplePlugin1, samplePlugin2, samplePlugin3, samplePlugin4, samplePlugin5, samplePlugin6, samplePlugin7])
+        #else
+        window = UIWindow(frame: UIScreen.main.bounds)
+        #endif
         window?.rootViewController = rootView
         window?.makeKeyAndVisible()
         

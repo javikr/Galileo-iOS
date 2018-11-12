@@ -1,9 +1,9 @@
 use_frameworks!
 
 target 'Galileo-iOS_Example' do
-    pod 'Galileo-iOS', :path => '../'
+    pod 'Galileo-iOS', :path => '../', :configurations => ['Debug']
     pod 'Alamofire', '~> 4.7'
     
     # to remove: waiting for PR: https://github.com/pmusolino/Wormholy/pull/46
-    pod 'Wormholy', :git => 'https://github.com/javikr/Wormholy'
+    pod 'Wormholy', :git => 'https://github.com/javikr/Wormholy', :configurations => ['Debug']
 end

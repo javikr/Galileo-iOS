@@ -7,6 +7,8 @@
 //
 
 import UIKit
+
+#if DEBUG
 import Galileo_iOS
 
 class SamplePluginViewController: UIViewController
@@ -29,3 +31,5 @@ extension SamplePluginViewController: GalileoPlugin
         return nil
     }
 }
+
+#endif
