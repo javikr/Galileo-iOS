@@ -1,6 +1,6 @@
 {
   "name": "Galileo-iOS",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "Easy-to-use debugging tool for your iOS app!",
   "description": "Easy-to-use debugging tool for your iOS app! Shake your device and go! Inspired in the Galileo Android Tool (https://github.com/josedlpozo/Galileo).",
   "homepage": "https://github.com/javikr/Galileo-iOS",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/javikr/Galileo-iOS.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "10.0"

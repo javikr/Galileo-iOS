@@ -1,34 +1,27 @@
 PODS:
   - Alamofire (4.7.3)
-  - Galileo-iOS (0.1.1):
+  - Galileo-iOS (0.1.2):
     - Wormholy
-  - Wormholy (1.2.1)
+  - Wormholy (1.2.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - Galileo-iOS (from `../`)
-  - Wormholy (from `https://github.com/javikr/Wormholy`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Wormholy
 
 EXTERNAL SOURCES:
   Galileo-iOS:
     :path: "../"
-  Wormholy:
-    :git: https://github.com/javikr/Wormholy
-
-CHECKOUT OPTIONS:
-  Wormholy:
-    :commit: c9ac53a8c5c973f58d3d7b26f11ca55ba68fd88f
-    :git: https://github.com/javikr/Wormholy
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Galileo-iOS: c6ade70762f1b8fe9b8605cbc0603deff5a12d7f
-  Wormholy: 857e742b37a27cc136559a82e43e5ca2351a1b53
+  Galileo-iOS: 10de67dcc113001ee80d8989a8983c2f9fcf902c
+  Wormholy: a6e5d2dca1c54fdf22b2681b93975a18c525318a
 
-PODFILE CHECKSUM: 8ae703ddb88baf71611387500bcff571a0089535
+PODFILE CHECKSUM: 2d4f96e31af35b8897b49b6fc167591060684ae6
 
 COCOAPODS: 1.5.3
