@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Galileo-iOS'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Easy-to-use debugging tool for your iOS app!'
   s.description      = <<-DESC
 Easy-to-use debugging tool for your iOS app! Shake your device and go! Inspired in the Galileo Android Tool (https://github.com/josedlpozo/Galileo). 
@@ -18,11 +18,8 @@ Easy-to-use debugging tool for your iOS app! Shake your device and go! Inspired 
   s.author           = { 'Javier Aznar de los Rios' => 'javikr@gmail.com' }
   s.source           = { :git => 'https://github.com/javikr/Galileo-iOS.git', :tag => s.version.to_s }
   s.ios.deployment_target = '10.0'
-  s.source_files = 'Galileo-iOS/Classes/**/*'
-  s.resource_bundles = {
-     'Galileo-iOS' => [ 'Galileo-iOS/**/*.{lproj,storyboard,xcdatamodeld,xib,png,jpeg,jpg}' ]
-  }
-  s.resources = [ 'Galileo-iOS/Assets/Assets.xcassets' ]
+  s.source_files = 'Galileo-iOS/Classes/**/*.swift'
+  s.resources = [ 'Galileo-iOS/**/*.{lproj,xcassets,xib}' ]
   s.frameworks = 'UIKit'
   s.dependency 'Wormholy'
   s.swift_version = "4.2"

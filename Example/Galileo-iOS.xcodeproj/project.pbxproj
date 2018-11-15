@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		301A4475EF337F3C7405B460 /* Pods_Galileo_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64697B6FF73E2A6C7E9F79E3 /* Pods_Galileo_iOS_Example.framework */; };
 		59B5A04C21970DD60001AEE3 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B5A04821970DD60001AEE3 /* RootViewController.xib */; };
 		59B5A04D21970DD60001AEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B5A04921970DD60001AEE3 /* Assets.xcassets */; };
 		59B5A04E21970DD60001AEE3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A04A21970DD60001AEE3 /* RootViewController.swift */; };
@@ -16,6 +15,7 @@
 		59B5A1BF219735D80001AEE3 /* SamplePluginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A1BD219735D80001AEE3 /* SamplePluginViewController.swift */; };
 		59B5A1C0219735D80001AEE3 /* SamplePluginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B5A1BE219735D80001AEE3 /* SamplePluginViewController.xib */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		B145F7B2E04F2DBAB150F3B5 /* libPods-Galileo-iOS_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4EC36A33FC8C5140860F61 /* libPods-Galileo-iOS_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +32,12 @@
 		607FACD01AFB9204008FA782 /* Galileo-iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Galileo-iOS_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64697B6FF73E2A6C7E9F79E3 /* Pods_Galileo_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Galileo_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED1D9A371DEC58ACFB7F38E /* Pods_Galileo_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Galileo_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F599B1FBB0772A839F90B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D520FD5E3CCF06B3B33D4A86 /* Pods-Galileo-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Galileo-iOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D83DC390CE534B489EF81986 /* Pods-Galileo-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Galileo-iOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DB218E99FD3B04B9635F3F21 /* Galileo-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Galileo-iOS.podspec"; path = "../Galileo-iOS.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FF4EC36A33FC8C5140860F61 /* libPods-Galileo-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Galileo-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				301A4475EF337F3C7405B460 /* Pods_Galileo_iOS_Example.framework in Frameworks */,
+				B145F7B2E04F2DBAB150F3B5 /* libPods-Galileo-iOS_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +117,8 @@
 		D61876259A54A55177FFF86C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				64697B6FF73E2A6C7E9F79E3 /* Pods_Galileo_iOS_Example.framework */,
 				AED1D9A371DEC58ACFB7F38E /* Pods_Galileo_iOS_Tests.framework */,
+				FF4EC36A33FC8C5140860F61 /* libPods-Galileo-iOS_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,7 +145,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				552055F65CD83C5A554D9EEA /* [CP] Embed Pods Frameworks */,
+				E4FF4D9DB5FE4ADB7EE1102F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,28 +207,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		552055F65CD83C5A554D9EEA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Galileo-iOS/Galileo_iOS.framework",
-				"${BUILT_PRODUCTS_DIR}/Wormholy/Wormholy.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Galileo_iOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wormholy.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7083B73E83B47E637B58C306 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +223,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4FF4D9DB5FE4ADB7EE1102F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example-resources.sh",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Main View/View/GalileoMainViewController.xib",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Console Log/ConsoleLogGalileoViewController.xib",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/Detail/View/PreferencesDetailGalileoViewController.xib",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/List/View/Cell/PreferenceBoolTableViewCell.xib",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/List/View/Cell/PreferenceTextTableViewCell.xib",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/List/View/PreferencesGalileoViewController.xib",
+				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Wormholy/Wormholy.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GalileoMainViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConsoleLogGalileoViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PreferencesDetailGalileoViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PreferenceBoolTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PreferenceTextTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PreferencesGalileoViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Wormholy.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

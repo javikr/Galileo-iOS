@@ -91,6 +91,19 @@ EOM
       ;;
   esac
 }
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Main View/View/GalileoMainViewController.xib"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Console Log/ConsoleLogGalileoViewController.xib"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/Detail/View/PreferencesDetailGalileoViewController.xib"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/List/View/Cell/PreferenceBoolTableViewCell.xib"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/List/View/Cell/PreferenceTextTableViewCell.xib"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/List/View/PreferencesGalileoViewController.xib"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Wormholy/Wormholy.bundle"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Wormholy/Wormholy.bundle"
+fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

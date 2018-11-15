@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PreferencesDetailGalileoViewController" customModule="Galileo_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="delete" destination="6cL-wg-Z4o" id="eb6-50-YWy"/>
+                <outlet property="preferenceKey" destination="pog-Bn-ASy" id="Beh-dT-8QK"/>
+                <outlet property="preferenceValue" destination="5YF-nr-kqn" id="BmO-zN-zJb"/>
+                <outlet property="save" destination="gJn-4F-v6i" id="rhx-V1-wLL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContainer" destination="5uV-qR-Yla" id="1fd-qU-344"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uV-qR-Yla">
+                    <rect key="frame" x="16" y="36" width="343" height="122.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1wd-8u-nYa">
+                            <rect key="frame" x="8" y="8" width="327" height="106.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pog-Bn-ASy">
+                                    <rect key="frame" x="0.0" y="0.0" width="327" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5YF-nr-kqn">
+                                    <rect key="frame" x="0.0" y="28.5" width="327" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="ylJ-sc-uRv"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJn-4F-v6i">
+                                    <rect key="frame" x="0.0" y="76.5" width="327" height="30"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="didTapSaveButton:" destination="-1" eventType="touchUpInside" id="H60-CC-CXj"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="1wd-8u-nYa" firstAttribute="leading" secondItem="5uV-qR-Yla" secondAttribute="leading" constant="8" id="1es-6o-Eh5"/>
+                        <constraint firstAttribute="trailing" secondItem="1wd-8u-nYa" secondAttribute="trailing" constant="8" id="eCb-pX-NJs"/>
+                        <constraint firstItem="1wd-8u-nYa" firstAttribute="top" secondItem="5uV-qR-Yla" secondAttribute="top" constant="8" id="q7O-4U-tOZ"/>
+                        <constraint firstAttribute="bottom" secondItem="1wd-8u-nYa" secondAttribute="bottom" constant="8" id="wjf-Yg-aqi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cL-wg-Z4o">
+                    <rect key="frame" x="16" y="621" width="343" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didTapDeleteButton:" destination="-1" eventType="touchUpInside" id="Mc0-tD-40u"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5uV-qR-Yla" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="KkM-9E-Hb1"/>
+                <constraint firstItem="6cL-wg-Z4o" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="V8Y-mb-XGh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5uV-qR-Yla" secondAttribute="trailing" constant="16" id="eVE-cz-CfG"/>
+                <constraint firstItem="6cL-wg-Z4o" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5uV-qR-Yla" secondAttribute="bottom" constant="16" id="fJi-fS-LrN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6cL-wg-Z4o" secondAttribute="trailing" constant="16" id="fX2-ck-Iuf"/>
+                <constraint firstItem="5uV-qR-Yla" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="l2b-NQ-VJt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6cL-wg-Z4o" secondAttribute="bottom" constant="16" id="nn2-yS-ZF4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
