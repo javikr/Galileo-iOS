@@ -13,6 +13,27 @@ import Galileo_iOS
 
 class SamplePluginViewController: UIViewController
 {
+    @IBOutlet weak var txtEmail: UITextField! {
+        didSet {
+            if #available(iOS 11.0, *) {
+                txtEmail.textContentType = .username
+            } else {
+                // Fallback on earlier versions
+            }
+        }
+    }
+    @IBOutlet weak var txtPassword: UITextField! {
+        didSet {
+            txtPassword.isSecureTextEntry = true
+            
+            if #available(iOS 12.0, *) {
+                txtPassword.textContentType = .newPassword
+            } else {
+                // Fallback on earlier versions
+            }
+        }
+    }
+    
     override public func viewDidLoad()
     {
         super.viewDidLoad()

@@ -21,9 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         let rootView = RootViewController()
         
-        
-        
         #if DEBUG
+        print("DEBUG!")
         let samplePlugin1 = SamplePluginViewController()
         let samplePlugin2 = SamplePluginViewController()
         let samplePlugin3 = SamplePluginViewController()
@@ -34,8 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = Galileo(frame: UIScreen.main.bounds, customPlugins: [samplePlugin1, samplePlugin2, samplePlugin3, samplePlugin4, samplePlugin5, samplePlugin6, samplePlugin7])
         #else
+        print("NO DEBUG!")
         window = UIWindow(frame: UIScreen.main.bounds)
         #endif
+        
         window?.rootViewController = rootView
         window?.makeKeyAndVisible()
         

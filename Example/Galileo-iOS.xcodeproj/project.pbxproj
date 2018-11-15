@@ -37,7 +37,7 @@
 		C0F599B1FBB0772A839F90B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D520FD5E3CCF06B3B33D4A86 /* Pods-Galileo-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Galileo-iOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D83DC390CE534B489EF81986 /* Pods-Galileo-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Galileo-iOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DB218E99FD3B04B9635F3F21 /* Galileo-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Galileo-iOS.podspec"; path = "../Galileo-iOS.podspec"; sourceTree = "<group>"; };
+		DB218E99FD3B04B9635F3F21 /* Galileo-iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Galileo-iOS.podspec"; path = "../Galileo-iOS.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +312,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
