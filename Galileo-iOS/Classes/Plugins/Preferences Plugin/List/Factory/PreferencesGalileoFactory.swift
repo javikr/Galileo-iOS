@@ -14,14 +14,14 @@ class PreferencesGalileoFactory
     {
         let presenter = PreferencesGalileoPresenter()
         let interactor = PreferencesGalileoInteractor()
-        let view = PreferencesGalileoViewController()
+        let view = PreferencesGalileoViewController(nibName: "PreferencesGalileoViewController", bundle: Galileo.bundle)
         let routing = PreferencesGalileoRouting(presentedView: view)
         view.eventHandler = presenter
         presenter.view = view
         presenter.interactor = interactor
         presenter.routing = routing
         interactor.output = presenter
-        presenter.dataSource = PreferencesGalileoTableViewDataSource(preferences: [:], delegate: presenter)
+        presenter.dataSource = PreferencesGalileoTableViewDataSource(preferences: [], delegate: presenter)
         
         return PreferencesGalileoContainerViewController(rootViewController: view)
     }

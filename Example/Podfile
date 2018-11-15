@@ -1,5 +1,5 @@
 target 'Galileo-iOS_Example' do
     pod 'Galileo-iOS', :path => '../', :configurations => ['Debug']
-    # pod 'Galileo-iOS'
+#     pod 'Galileo-iOS'
     pod 'Alamofire', '~> 4.7'
 end

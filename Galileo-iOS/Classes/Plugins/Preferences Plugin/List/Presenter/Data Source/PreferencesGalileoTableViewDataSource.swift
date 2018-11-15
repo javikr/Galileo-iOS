@@ -10,20 +10,16 @@ import UIKit
 
 class PreferencesGalileoTableViewDataSource: NSObject
 {
-    var preferences: [String : Any]
+    var preferences: [PreferenceViewModel]
     weak var delegate: PreferencesGalileoTableViewDataSourceDelegate?
     
-    private var orderedPreferencesKeys: [String] {
-        return Array(preferences.keys).sorted()
-    }
-    
-    init(preferences: [String : Any], delegate: PreferencesGalileoTableViewDataSourceDelegate?)
+    init(preferences: [PreferenceViewModel], delegate: PreferencesGalileoTableViewDataSourceDelegate?)
     {
         self.preferences = preferences
         self.delegate = delegate
     }
     
-    func update(preferences: [String : Any])
+    func update(preferences: [PreferenceViewModel])
     {
         self.preferences = preferences
     }
@@ -33,25 +29,26 @@ extension PreferencesGalileoTableViewDataSource: UITableViewDataSource
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return preferences.keys.count
+        return preferences.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let key = orderedPreferencesKeys[indexPath.row]
-        let value = preferences[key]!
-        
-        let cell: UITableViewCell
-        if let theCell = tableView.dequeueReusableCell(withIdentifier: "cell") {
-            cell = theCell
-        } else {
-            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-        }
-        cell.textLabel?.text = key
-        cell.detailTextLabel?.text = (value as AnyObject).debugDescription
-        cell.accessoryType = .disclosureIndicator
-        
-        return cell
+        return UITableViewCell()
+//        let preference = preferences[indexPath.row]
+//        let value = preference.
+//
+//        let cell: UITableViewCell
+//        if let theCell = tableView.dequeueReusableCell(withIdentifier: "cell") {
+//            cell = theCell
+//        } else {
+//            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+//        }
+//        cell.textLabel?.text = key
+//        cell.detailTextLabel?.text = (value as AnyObject).debugDescription
+//        cell.accessoryType = .disclosureIndicator
+//
+//        return cell
     }
 }
 
@@ -59,7 +56,7 @@ extension PreferencesGalileoTableViewDataSource: UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        let key = orderedPreferencesKeys[indexPath.row]
-        delegate?.didSelectPreference(withKey: key)
+//        let key = orderedPreferencesKeys[indexPath.row]
+//        delegate?.didSelectPreference(withKey: key)
     }
 }

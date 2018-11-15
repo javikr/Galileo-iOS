@@ -20,7 +20,7 @@ import UIKit
  */
 open class Galileo: UIWindow
 {
-    private let plugins: [GalileoPlugin]
+    private var plugins: [GalileoPlugin]
     
     public init(frame: CGRect, customPlugins: [GalileoPlugin] = [])
     {
@@ -33,8 +33,14 @@ open class Galileo: UIWindow
         super.init(frame: frame)
     }
     
+    public func add(plugin: GalileoPlugin)
+    {
+        plugins.append(plugin)
+    }
+    
     static var bundle: Bundle {
-        return Bundle(for: Galileo.self)
+        let url = Bundle(for: Galileo.self).url(forResource: "Galileo", withExtension: "bundle")
+        return Bundle(url: url!)!
     }
     
     override open func makeKeyAndVisible()

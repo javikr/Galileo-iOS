@@ -9,8 +9,6 @@ import UIKit
 
 class PreferenceBoolTableViewCell: UITableViewCell {
 
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var valueSwitch: UISwitch!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,6 +20,4 @@ class PreferenceBoolTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func didTapSwitch(sender: AnyObject) {
-    }
 }

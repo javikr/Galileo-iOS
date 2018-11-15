@@ -33,9 +33,9 @@ extension PreferencesGalileoPresenter: PreferencesGalileoPresenterInterface
 
 extension PreferencesGalileoPresenter: PreferencesGalileoOutput
 {
-    func didLoadedPreferences(preferences: [String : Any])
+    func didLoadedPreferences(preferences: [String: Any])
     {
-        dataSource.update(preferences: preferences)
+//        dataSource.update(preferences: preferences)
         view?.refresh()
     }
 }

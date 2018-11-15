@@ -92,6 +92,24 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/025-asteroid.imageset/025-asteroid~universal@1x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/025-asteroid.imageset/025-asteroid~universal@2x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/025-asteroid.imageset/025-asteroid~universal@3x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/101-data.imageset/101-data~universal@1x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/101-data.imageset/101-data~universal@2x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/101-data.imageset/101-data~universal@3x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/103-doubt.imageset/103-doubt~universal@1x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/103-doubt.imageset/103-doubt~universal@2x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/103-doubt.imageset/103-doubt~universal@3x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/107-first-aid.imageset/107-first-aid~universal@1x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/107-first-aid.imageset/107-first-aid~universal@2x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/107-first-aid.imageset/107-first-aid~universal@3x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/188-rubbish.imageset/188-rubbish~universal@1x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/188-rubbish.imageset/188-rubbish~universal@2x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/188-rubbish.imageset/188-rubbish~universal@3x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/200-terminal.imageset/200-terminal~universal@1x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/200-terminal.imageset/200-terminal~universal@2x.png"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/200-terminal.imageset/200-terminal~universal@3x.png"
   install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Main View/View/GalileoMainViewController.xib"
   install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Console Log/ConsoleLogGalileoViewController.xib"
   install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/Detail/View/PreferencesDetailGalileoViewController.xib"
@@ -99,6 +117,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/List/View/Cell/PreferenceTextTableViewCell.xib"
   install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/List/View/PreferencesGalileoViewController.xib"
   install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Galileo-iOS/Galileo.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Wormholy/Wormholy.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then

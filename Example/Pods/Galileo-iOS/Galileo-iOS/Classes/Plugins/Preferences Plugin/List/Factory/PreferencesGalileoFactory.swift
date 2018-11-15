@@ -14,7 +14,7 @@ class PreferencesGalileoFactory
     {
         let presenter = PreferencesGalileoPresenter()
         let interactor = PreferencesGalileoInteractor()
-        let view = PreferencesGalileoViewController(nibName: "PreferencesGalileoViewController", bundle: Galileo.bundle)
+        let view = PreferencesGalileoViewController()
         let routing = PreferencesGalileoRouting(presentedView: view)
         view.eventHandler = presenter
         presenter.view = view

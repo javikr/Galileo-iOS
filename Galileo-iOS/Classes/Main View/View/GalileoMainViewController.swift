@@ -19,8 +19,7 @@ class GalileoMainViewController: UITabBarController
             return view
         }
 
-        print("asdsadasd")
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: nil, bundle: Galileo.bundle)
         
         self.viewControllers = views
     }
