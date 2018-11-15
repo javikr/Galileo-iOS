@@ -11,17 +11,22 @@ class PreferenceBoolTableViewCell: UITableViewCell {
 
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var valueSwitch: UISwitch!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    var viewModel: PreferenceBoolViewModel? {
+        didSet {
+            titleLabel.text = viewModel?.title
+            valueSwitch.isOn = viewModel?.value ?? false
+        }
     }
     
-    @IBAction func didTapSwitch(sender: AnyObject) {
+    override func awakeFromNib()
+    {
+        super.awakeFromNib()
+        
+        selectionStyle = .none
+    }
+    
+    @IBAction func didTapSwitch(sender: AnyObject)
+    {
     }
 }

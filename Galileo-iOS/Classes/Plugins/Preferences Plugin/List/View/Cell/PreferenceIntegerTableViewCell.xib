@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="PreferenceIntegerTableViewCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQX-tz-8Uq">
+                        <rect key="frame" x="16" y="11" width="288" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rea-N4-PZi">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ey9-IB-upR">
+                                <rect key="frame" x="0.0" y="46" width="94" height="29"/>
+                                <connections>
+                                    <action selector="didTapStepper:" destination="KGk-i7-Jjw" eventType="valueChanged" id="drO-Ue-ag4"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y2-Mt-Lhc">
+                                <rect key="frame" x="102" y="50" width="186" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ey9-IB-upR" firstAttribute="leading" secondItem="rea-N4-PZi" secondAttribute="leading" id="Nbd-Cv-wb3"/>
+                            <constraint firstAttribute="bottom" secondItem="ey9-IB-upR" secondAttribute="bottom" id="QYe-Ad-awx"/>
+                            <constraint firstItem="rea-N4-PZi" firstAttribute="top" secondItem="FQX-tz-8Uq" secondAttribute="top" id="R8S-kn-kzh"/>
+                            <constraint firstItem="ey9-IB-upR" firstAttribute="top" secondItem="rea-N4-PZi" secondAttribute="bottom" constant="18" id="Xhu-2Y-CVE"/>
+                            <constraint firstAttribute="trailing" secondItem="rea-N4-PZi" secondAttribute="trailing" id="cLt-gR-Agh"/>
+                            <constraint firstItem="3y2-Mt-Lhc" firstAttribute="centerY" secondItem="ey9-IB-upR" secondAttribute="centerY" id="dJZ-mj-YcZ"/>
+                            <constraint firstItem="3y2-Mt-Lhc" firstAttribute="leading" secondItem="ey9-IB-upR" secondAttribute="trailing" constant="8" id="gNk-jX-qnv"/>
+                            <constraint firstItem="rea-N4-PZi" firstAttribute="leading" secondItem="FQX-tz-8Uq" secondAttribute="leading" id="geQ-e4-DAQ"/>
+                            <constraint firstItem="3y2-Mt-Lhc" firstAttribute="trailing" secondItem="rea-N4-PZi" secondAttribute="trailing" id="kQ6-2J-0W3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="FQX-tz-8Uq" secondAttribute="bottom" id="3bx-S1-sdP"/>
+                    <constraint firstItem="FQX-tz-8Uq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="8Uq-oW-TE1"/>
+                    <constraint firstItem="FQX-tz-8Uq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="B9y-iv-ZTq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FQX-tz-8Uq" secondAttribute="trailing" id="J7I-A1-AGR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="titleLabel" destination="rea-N4-PZi" id="SlR-KT-ECl"/>
+                <outlet property="valueLabel" destination="3y2-Mt-Lhc" id="aSl-fw-adU"/>
+            </connections>
+            <point key="canvasLocation" x="177.59999999999999" y="76.911544227886068"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -25,6 +25,13 @@ class WormholyGalileoPluginViewController: UIViewController
         addChild(wormholy)
         view.addSubview(wormholy.view)
         wormholy.didMove(toParent: self)
+        
+        NSLayoutConstraint.activate([
+            wormholy.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0.0),
+            wormholy.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0.0),
+            wormholy.view.topAnchor.constraint(equalTo: view.topAnchor, constant: 0.0),
+            wormholy.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0.0)
+            ])
     }
 }
 

@@ -22,7 +22,6 @@ extension PreferencesGalileoPresenter: PreferencesGalileoPresenterInterface
     {
         view?.setupView()
         view?.set(tableViewDataSource: dataSource)
-        view?.set(tableViewDelegate: dataSource)
     }
     
     func viewWillAppear()
@@ -35,7 +34,17 @@ extension PreferencesGalileoPresenter: PreferencesGalileoOutput
 {
     func didLoadedPreferences(preferences: [String: Any])
     {
-//        dataSource.update(preferences: preferences)
+        let viewTypes: [PreferenceViewType] = preferences.keys.compactMap { (key) in
+            let value = preferences[key]
+            switch value {
+            case is Bool: return PreferenceViewType.boolean(key: key, viewModel: PreferenceBoolViewModel(title: key, value: value as! Bool))
+            case is Int: return PreferenceViewType.integer(key: key, viewModel: PreferenceIntegerViewModel(title: key, value: value as! Int))
+            case is String: return PreferenceViewType.text(key: key, viewModel: PreferenceTextViewModel(title: key, value: value as! String))
+            default: return PreferenceViewType.text(key: key, viewModel: PreferenceTextViewModel(title: key, value: value.debugDescription))
+            }
+        }
+        
+        dataSource.update(preferences: viewTypes)
         view?.refresh()
     }
 }

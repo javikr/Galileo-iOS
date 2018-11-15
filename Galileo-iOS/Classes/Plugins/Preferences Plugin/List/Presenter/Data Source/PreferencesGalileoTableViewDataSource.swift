@@ -10,16 +10,16 @@ import UIKit
 
 class PreferencesGalileoTableViewDataSource: NSObject
 {
-    var preferences: [PreferenceViewModel]
+    var preferences: [PreferenceViewType]
     weak var delegate: PreferencesGalileoTableViewDataSourceDelegate?
     
-    init(preferences: [PreferenceViewModel], delegate: PreferencesGalileoTableViewDataSourceDelegate?)
+    init(preferences: [PreferenceViewType], delegate: PreferencesGalileoTableViewDataSourceDelegate?)
     {
         self.preferences = preferences
         self.delegate = delegate
     }
     
-    func update(preferences: [PreferenceViewModel])
+    func update(preferences: [PreferenceViewType])
     {
         self.preferences = preferences
     }
@@ -34,29 +34,55 @@ extension PreferencesGalileoTableViewDataSource: UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        return UITableViewCell()
-//        let preference = preferences[indexPath.row]
-//        let value = preference.
-//
-//        let cell: UITableViewCell
-//        if let theCell = tableView.dequeueReusableCell(withIdentifier: "cell") {
-//            cell = theCell
-//        } else {
-//            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-//        }
-//        cell.textLabel?.text = key
-//        cell.detailTextLabel?.text = (value as AnyObject).debugDescription
-//        cell.accessoryType = .disclosureIndicator
-//
-//        return cell
+        let preference = preferences[indexPath.row]
+        
+        switch preference {
+        case .boolean(_, let viewModel): return booleanCell(tableView: tableView, viewModel: viewModel)
+        case .text(_, let viewModel): return textCell(tableView: tableView, viewModel: viewModel)
+        case .integer(_, let viewModel): return integerCell(tableView: tableView, viewModel: viewModel)
+        case .other(_, let viewModel): return textCell(tableView: tableView, viewModel: viewModel)
+        }
     }
-}
-
-extension PreferencesGalileoTableViewDataSource: UITableViewDelegate
-{
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    
+    private func booleanCell(tableView: UITableView, viewModel: PreferenceBoolViewModel) -> UITableViewCell
     {
-//        let key = orderedPreferencesKeys[indexPath.row]
-//        delegate?.didSelectPreference(withKey: key)
+        let cell: PreferenceBoolTableViewCell
+        if let theCell = tableView.dequeueReusableCell(withIdentifier: String(describing: PreferenceBoolTableViewCell.self)) as? PreferenceBoolTableViewCell {
+            cell = theCell
+        } else {
+            cell = PreferenceBoolTableViewCell()
+        }
+        
+        cell.viewModel = viewModel
+        
+        return cell
+    }
+    
+    private func textCell(tableView: UITableView, viewModel: PreferenceTextViewModel) -> UITableViewCell
+    {
+        let cell: PreferenceTextTableViewCell
+        if let theCell = tableView.dequeueReusableCell(withIdentifier: String(describing: PreferenceTextTableViewCell.self)) as? PreferenceTextTableViewCell {
+            cell = theCell
+        } else {
+            cell = PreferenceTextTableViewCell()
+        }
+        
+        cell.viewModel = viewModel
+        
+        return cell
+    }
+    
+    private func integerCell(tableView: UITableView, viewModel: PreferenceIntegerViewModel) -> UITableViewCell
+    {
+        let cell: PreferenceIntegerTableViewCell
+        if let theCell = tableView.dequeueReusableCell(withIdentifier: String(describing: PreferenceIntegerTableViewCell.self)) as? PreferenceIntegerTableViewCell {
+            cell = theCell
+        } else {
+            cell = PreferenceIntegerTableViewCell()
+        }
+        
+        cell.viewModel = viewModel
+        
+        return cell
     }
 }
