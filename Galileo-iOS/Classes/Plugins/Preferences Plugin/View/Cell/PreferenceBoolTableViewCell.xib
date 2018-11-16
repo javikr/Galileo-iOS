@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="PreferenceBoolTableViewCell" customModule="Galileo_iOS">
+            <rect key="frame" x="0.0" y="0.0" width="494" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="494" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMc-TF-Wob">
+                        <rect key="frame" x="20" y="11" width="454" height="102"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUl-ox-Ana">
+                                <rect key="frame" x="0.0" y="8" width="454" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HHA-oa-WAW">
+                                <rect key="frame" x="0.0" y="63" width="456" height="31"/>
+                                <connections>
+                                    <action selector="didTapSwitchWithSender:" destination="KGk-i7-Jjw" eventType="valueChanged" id="sTR-sg-9e8"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HHA-oa-WAW" secondAttribute="trailing" id="9Au-Hg-kYp"/>
+                            <constraint firstItem="oUl-ox-Ana" firstAttribute="top" secondItem="UMc-TF-Wob" secondAttribute="top" constant="8" id="KLi-QL-1Ux"/>
+                            <constraint firstItem="HHA-oa-WAW" firstAttribute="leading" secondItem="UMc-TF-Wob" secondAttribute="leading" id="MTA-lq-2mG"/>
+                            <constraint firstAttribute="trailing" secondItem="oUl-ox-Ana" secondAttribute="trailing" id="hW6-14-cHR"/>
+                            <constraint firstItem="HHA-oa-WAW" firstAttribute="top" secondItem="oUl-ox-Ana" secondAttribute="bottom" constant="16" id="k6E-Er-ZrX"/>
+                            <constraint firstAttribute="bottom" secondItem="HHA-oa-WAW" secondAttribute="bottom" constant="8" id="tPI-d4-axO"/>
+                            <constraint firstItem="oUl-ox-Ana" firstAttribute="leading" secondItem="UMc-TF-Wob" secondAttribute="leading" id="u9Z-Wm-sw3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UMc-TF-Wob" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="B1T-m6-Rb2"/>
+                    <constraint firstItem="UMc-TF-Wob" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="FDh-mE-j7L"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="UMc-TF-Wob" secondAttribute="bottom" id="pHF-UP-t7e"/>
+                    <constraint firstItem="UMc-TF-Wob" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="xDF-6G-IUB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="titleLabel" destination="oUl-ox-Ana" id="Qai-nI-ETw"/>
+                <outlet property="valueSwitch" destination="HHA-oa-WAW" id="vTC-3T-NIZ"/>
+            </connections>
+            <point key="canvasLocation" x="19" y="1"/>
+        </tableViewCell>
+    </objects>
+</document>

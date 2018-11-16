@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="304" id="KGk-i7-Jjw" customClass="PreferenceDateTableViewCell" customModule="Galileo_iOS">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="304"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="303.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arw-RN-x2l">
+                        <rect key="frame" x="16" y="11" width="344" height="282"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrg-57-RBA">
+                                <rect key="frame" x="0.0" y="8" width="344" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-cC-70V">
+                                <rect key="frame" x="0.0" y="37" width="344" height="237"/>
+                                <date key="date" timeIntervalSinceReferenceDate="564066874.19783902">
+                                    <!--2018-11-16 13:14:34 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="didChangeDate:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Flj-TY-MyZ"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lrg-57-RBA" firstAttribute="leading" secondItem="arw-RN-x2l" secondAttribute="leading" id="JKg-KU-BUU"/>
+                            <constraint firstItem="CjM-cC-70V" firstAttribute="trailing" secondItem="lrg-57-RBA" secondAttribute="trailing" id="OAL-92-MVJ"/>
+                            <constraint firstItem="CjM-cC-70V" firstAttribute="top" secondItem="lrg-57-RBA" secondAttribute="bottom" constant="8" id="Zzp-T1-AdK"/>
+                            <constraint firstItem="lrg-57-RBA" firstAttribute="top" secondItem="arw-RN-x2l" secondAttribute="top" constant="8" id="bNL-ze-xkz"/>
+                            <constraint firstAttribute="bottom" secondItem="CjM-cC-70V" secondAttribute="bottom" constant="8" id="gUo-vc-6mc"/>
+                            <constraint firstItem="CjM-cC-70V" firstAttribute="leading" secondItem="lrg-57-RBA" secondAttribute="leading" id="pe8-fk-HJM"/>
+                            <constraint firstAttribute="trailing" secondItem="lrg-57-RBA" secondAttribute="trailing" id="z9r-39-kr8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="arw-RN-x2l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7ea-UV-MHF"/>
+                    <constraint firstItem="arw-RN-x2l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="FoG-tg-ctC"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="arw-RN-x2l" secondAttribute="trailing" id="GAy-jJ-yrH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="arw-RN-x2l" secondAttribute="bottom" id="khm-oA-RX3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="datePicker" destination="CjM-cC-70V" id="jbj-LI-6dY"/>
+                <outlet property="titleLabel" destination="lrg-57-RBA" id="wob-fg-FE1"/>
+            </connections>
+            <point key="canvasLocation" x="-115.2" y="223.08845577211397"/>
+        </tableViewCell>
+    </objects>
+</document>

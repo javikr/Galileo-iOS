@@ -31,6 +31,16 @@ extension ConsoleLogGalileoContainerViewController: GalileoPlugin
         return (documentsDirectory as NSString).appending("/console.log")
     }
     
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        if #available(iOS 11.0, *) {
+            navigationBar.prefersLargeTitles = true
+            navigationItem.largeTitleDisplayMode = .automatic
+        }
+    }
+    
     private func redirectConsoleLogToDocumentFolder()
     {
         freopen(consoleLogFilePath.cString(using: String.Encoding.ascii)!, "a+", stderr)

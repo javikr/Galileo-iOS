@@ -24,6 +24,7 @@ class ConsoleLogGalileoViewController: UIViewController
         didSet {
             consoleTextView.backgroundColor = .black
             consoleTextView.textColor = .white
+            consoleTextView.isEditable = false
         }
     }
     
