@@ -59,4 +59,9 @@ extension PreferencesGalileoViewController: PreferencesGalileoViewInterface
             tableView.register(nib, forCellReuseIdentifier: cellName)
         }
     }
+    
+    func refreshCell(atIndex index: Int)
+    {
+        tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
+    }
 }

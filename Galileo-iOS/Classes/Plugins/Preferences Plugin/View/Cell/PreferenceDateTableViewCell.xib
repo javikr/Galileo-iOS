@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,31 +22,40 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arw-RN-x2l">
                         <rect key="frame" x="16" y="11" width="344" height="282"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrg-57-RBA">
-                                <rect key="frame" x="0.0" y="8" width="344" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-cC-70V">
-                                <rect key="frame" x="0.0" y="37" width="344" height="237"/>
-                                <date key="date" timeIntervalSinceReferenceDate="564066874.19783902">
-                                    <!--2018-11-16 13:14:34 +0000-->
-                                </date>
-                                <connections>
-                                    <action selector="didChangeDate:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Flj-TY-MyZ"/>
-                                </connections>
-                            </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-ss-bzb">
+                                <rect key="frame" x="0.0" y="8" width="344" height="266"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrg-57-RBA">
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0A-Z9-0sm">
+                                        <rect key="frame" x="0.0" y="28.5" width="344" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="didTapShowHideButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ytb-ef-iZc"/>
+                                        </connections>
+                                    </button>
+                                    <datePicker contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-cC-70V">
+                                        <rect key="frame" x="0.0" y="66.5" width="344" height="199.5"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="564066874.19783902">
+                                            <!--2018-11-16 13:14:34 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="didChangeDate:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Flj-TY-MyZ"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="lrg-57-RBA" firstAttribute="leading" secondItem="arw-RN-x2l" secondAttribute="leading" id="JKg-KU-BUU"/>
-                            <constraint firstItem="CjM-cC-70V" firstAttribute="trailing" secondItem="lrg-57-RBA" secondAttribute="trailing" id="OAL-92-MVJ"/>
-                            <constraint firstItem="CjM-cC-70V" firstAttribute="top" secondItem="lrg-57-RBA" secondAttribute="bottom" constant="8" id="Zzp-T1-AdK"/>
-                            <constraint firstItem="lrg-57-RBA" firstAttribute="top" secondItem="arw-RN-x2l" secondAttribute="top" constant="8" id="bNL-ze-xkz"/>
-                            <constraint firstAttribute="bottom" secondItem="CjM-cC-70V" secondAttribute="bottom" constant="8" id="gUo-vc-6mc"/>
-                            <constraint firstItem="CjM-cC-70V" firstAttribute="leading" secondItem="lrg-57-RBA" secondAttribute="leading" id="pe8-fk-HJM"/>
-                            <constraint firstAttribute="trailing" secondItem="lrg-57-RBA" secondAttribute="trailing" id="z9r-39-kr8"/>
+                            <constraint firstAttribute="trailing" secondItem="MrE-ss-bzb" secondAttribute="trailing" id="7bR-S3-Aib"/>
+                            <constraint firstAttribute="bottom" secondItem="MrE-ss-bzb" secondAttribute="bottom" constant="8" id="Uhd-f6-rlJ"/>
+                            <constraint firstItem="MrE-ss-bzb" firstAttribute="top" secondItem="arw-RN-x2l" secondAttribute="top" constant="8" id="V1h-T0-VIj"/>
+                            <constraint firstItem="MrE-ss-bzb" firstAttribute="leading" secondItem="arw-RN-x2l" secondAttribute="leading" id="luq-7G-UxS"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -59,6 +69,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="datePicker" destination="CjM-cC-70V" id="jbj-LI-6dY"/>
+                <outlet property="showHideButton" destination="T0A-Z9-0sm" id="dY2-QM-YUY"/>
                 <outlet property="titleLabel" destination="lrg-57-RBA" id="wob-fg-FE1"/>
             </connections>
             <point key="canvasLocation" x="-115.2" y="223.08845577211397"/>

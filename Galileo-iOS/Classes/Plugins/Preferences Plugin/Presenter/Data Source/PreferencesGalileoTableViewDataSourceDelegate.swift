@@ -12,4 +12,5 @@ protocol PreferencesGalileoTableViewDataSourceDelegate: class
 {
     func didUpdatePreference(withKey key: String, newValue: Any)
     func didDeletePreference(withKey: String)
+    func didToggleView(atIndex index: Int)
 }

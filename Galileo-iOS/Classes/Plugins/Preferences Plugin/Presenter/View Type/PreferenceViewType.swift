@@ -24,4 +24,10 @@ enum PreferenceViewType
         case .other(let key, _): return key
         }
     }
+    
+    var isViewCollapsed: Bool {
+        guard case let PreferenceViewType.date(_, viewModel) = self else { return true }
+        
+        return viewModel.isViewCollapsed
+    }
 }

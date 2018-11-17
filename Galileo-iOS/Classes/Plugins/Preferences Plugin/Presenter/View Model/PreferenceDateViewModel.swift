@@ -11,4 +11,5 @@ struct PreferenceDateViewModel
 {
     let title: String
     let value: Date
+    let isViewCollapsed: Bool
 }

@@ -73,4 +73,9 @@ extension PreferencesGalileoPresenter: PreferencesGalileoTableViewDataSourceDele
     {
         interactor.deletePreference(withKey: key)
     }
+    
+    func didToggleView(atIndex index: Int)
+    {
+        view?.refreshCell(atIndex: index)
+    }
 }

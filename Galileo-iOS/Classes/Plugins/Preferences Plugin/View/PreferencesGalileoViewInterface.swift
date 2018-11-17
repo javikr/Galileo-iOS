@@ -15,4 +15,5 @@ protocol PreferencesGalileoViewInterface: class
     func set(tableViewDelegate: UITableViewDelegate)
     func refresh()
     func registerCells(cellsName: [String])
+    func refreshCell(atIndex index: Int)
 }

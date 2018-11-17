@@ -141,7 +141,22 @@ extension PreferencesGalileoTableViewDataSource: UITableViewDelegate
 extension PreferencesGalileoTableViewDataSource: PreferenceTableViewCellDelegate
 {
     func didUpdate(value: Any, forKey key: String)
-    {
+    {        
         delegate?.didUpdatePreference(withKey: key, newValue: value)
+    }
+}
+
+extension PreferencesGalileoTableViewDataSource: PreferenceDateTableViewCellDelegate
+{
+    func didToggleDisplayDate(hide: Bool, key: String)
+    {
+        guard let index = preferences.firstIndex(where: { key == $0.key }) else { return }
+        
+        guard case let PreferenceViewType.date(_, viewModel) = preferences[index] else { return }
+        
+        let newViewType = PreferenceViewTypeMapper().transform(fromKey: key, value: viewModel.value, isViewCollapsed: hide)
+        update(preference: newViewType)
+        
+        delegate?.didToggleView(atIndex: index)
     }
 }

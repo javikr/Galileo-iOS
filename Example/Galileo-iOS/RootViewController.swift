@@ -19,6 +19,7 @@ class RootViewController: UIViewController
         
         UserDefaults.standard.set(false, forKey: "key test1")
         UserDefaults.standard.set("prueba", forKey: "key test2")
+        UserDefaults.standard.set(Date(), forKey: "date test")
         
         print("test log") // no funca!
         NSLog("test log 2")

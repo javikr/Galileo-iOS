@@ -18,6 +18,6 @@ protocol PreferencesGalileoInput
 protocol PreferencesGalileoOutput: class
 {
     func didLoadedPreferences(preferences: [String: Any])
-    func updatedPreference(withKey: String, updatedValue: Any)
+    func updatedPreference(withKey key: String, updatedValue: Any)
     func deletedPreference(withKey: String)
 }

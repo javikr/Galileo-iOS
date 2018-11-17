@@ -12,7 +12,7 @@ class ConsoleLogGalileoFactory
 {
     func consoleLogGalileo() -> GalileoPlugin
     {
-        let view = ConsoleLogGalileoViewController(nibName: "ConsoleLogGalileoViewController", bundle: Galileo.bundle)
+        let view = ConsoleLogGalileoViewController(nibName: String(describing: ConsoleLogGalileoViewController.self), bundle: Galileo.bundle)
         
         return ConsoleLogGalileoContainerViewController(rootViewController: view)
     }
