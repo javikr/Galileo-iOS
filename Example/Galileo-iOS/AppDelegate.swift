@@ -31,7 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         let samplePlugin6 = SamplePluginViewController()
         let samplePlugin7 = SamplePluginViewController()
         
-        window = Galileo(frame: UIScreen.main.bounds, customPlugins: [samplePlugin1, samplePlugin2, samplePlugin3, samplePlugin4, samplePlugin5, samplePlugin6, samplePlugin7])
+        let configuration = GalileoConfigurationProvider.customConfiguration(plugins: [samplePlugin1, samplePlugin2, samplePlugin3, samplePlugin4, samplePlugin5, samplePlugin6, samplePlugin7], userDefaultsSources: [UserDefaults.standard])
+        
+        window = Galileo(frame: UIScreen.main.bounds, configuration: configuration)
         #else
         print("NO DEBUG!")
         window = UIWindow(frame: UIScreen.main.bounds)

@@ -14,6 +14,13 @@ public struct GalileoConfigurationProvider
         return GalileoConfiguration(plugins: defaultPlugins(), userDefaultsSources: [UserDefaults.standard])
     }
     
+    public static func customConfiguration(plugins: [GalileoPlugin], userDefaultsSources: [UserDefaults]) -> GalileoConfiguration
+    {
+        let completePlugins = defaultPlugins() + plugins 
+        
+        return GalileoConfiguration(plugins: completePlugins, userDefaultsSources: userDefaultsSources)
+    }
+    
     private static func defaultPlugins() -> [GalileoPlugin]
     {
         let preferencesPlugin = PreferencesGalileoFactory().preferencesGalileo()
