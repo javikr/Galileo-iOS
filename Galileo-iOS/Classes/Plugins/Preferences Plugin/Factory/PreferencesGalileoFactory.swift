@@ -8,12 +8,14 @@
 
 import UIKit
 
-class PreferencesGalileoFactory
+public final class PreferencesGalileoFactory
 {
-    func preferencesGalileo() -> GalileoPlugin
+    public init() {}
+    
+    public func preferencesGalileo(userDefaultsSource: UserDefaults = UserDefaults.standard) -> GalileoPlugin
     {
         let presenter = PreferencesGalileoPresenter()
-        let interactor = PreferencesGalileoInteractor()
+        let interactor = PreferencesGalileoInteractor(userDefaultsSource: userDefaultsSource)
         let view = PreferencesGalileoViewController(nibName: String(describing: PreferencesGalileoViewController.self), bundle: Galileo.bundle)
         view.eventHandler = presenter
         presenter.view = view

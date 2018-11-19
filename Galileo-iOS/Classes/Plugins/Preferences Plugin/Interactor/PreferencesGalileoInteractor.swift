@@ -11,26 +11,32 @@ import Foundation
 class PreferencesGalileoInteractor
 {
     weak var output: PreferencesGalileoOutput?
-    let userDefaults = UserDefaults.standard
+    
+    private let userDefaultsSource: UserDefaults
+    
+    init(userDefaultsSource: UserDefaults)
+    {
+        self.userDefaultsSource = userDefaultsSource
+    }
 }
 
 extension PreferencesGalileoInteractor: PreferencesGalileoInput
 {
     func loadPreferences()
     {
-        let prefs = userDefaults.dictionaryRepresentation()
+        let prefs = userDefaultsSource.dictionaryRepresentation()
         output?.didLoadedPreferences(preferences: prefs)
     }
     
     func updatePreference(withKey key: String, newValue: Any)
     {
-        userDefaults.set(newValue, forKey: key)
+        userDefaultsSource.set(newValue, forKey: key)
         output?.updatedPreference(withKey: key, updatedValue: newValue)
     }
     
     func deletePreference(withKey key: String)
     {
-        userDefaults.removeObject(forKey: key)
+        userDefaultsSource.removeObject(forKey: key)
         output?.deletedPreference(withKey: key)
     }
 }

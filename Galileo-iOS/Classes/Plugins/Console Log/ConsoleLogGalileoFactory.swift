@@ -8,9 +8,11 @@
 
 import Foundation
 
-class ConsoleLogGalileoFactory
+public final class ConsoleLogGalileoFactory
 {
-    func consoleLogGalileo() -> GalileoPlugin
+    public init() {}
+    
+    public func consoleLogGalileo() -> GalileoPlugin
     {
         let view = ConsoleLogGalileoViewController(nibName: String(describing: ConsoleLogGalileoViewController.self), bundle: Galileo.bundle)
         

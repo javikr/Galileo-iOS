@@ -9,9 +9,9 @@
 import UIKit
 import Wormholy
 
-class WormholyGalileoPluginViewController: UIViewController
+public final class WormholyGalileoPluginViewController: UIViewController
 {
-    override func viewDidLoad()
+    override public func viewDidLoad()
     {
         super.viewDidLoad()
 
@@ -37,15 +37,15 @@ class WormholyGalileoPluginViewController: UIViewController
 
 extension WormholyGalileoPluginViewController: GalileoPlugin
 {
-    var pluginName: String {
+    public var pluginName: String {
         return "Wormholy"
     }
     
-    var pluginIcon: UIImage? {
+    public var pluginIcon: UIImage? {
         return UIImage(named: "025-asteroid", in: Galileo.bundle, compatibleWith: nil)
     }
     
-    func setupPlugin()
+    public func setupPlugin()
     {
         Wormholy.shakeEnabled = false
     }

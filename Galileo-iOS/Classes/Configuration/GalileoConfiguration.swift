@@ -10,5 +10,4 @@ import Foundation
 public struct GalileoConfiguration
 {
     public let plugins: [GalileoPlugin]
-    public let userDefaultsSources: [UserDefaults]
 }
