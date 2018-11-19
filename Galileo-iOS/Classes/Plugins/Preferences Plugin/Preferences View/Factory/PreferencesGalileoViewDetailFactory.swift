@@ -8,11 +8,9 @@
 
 import UIKit
 
-public final class PreferencesGalileoFactory
+class PreferencesGalileoViewDetailFactory
 {
-    public init() {}
-    
-    public func preferencesGalileo(userDefaultsSource: UserDefaults = UserDefaults.standard) -> GalileoPlugin
+    func preferencesGalileoView(userDefaultsSource: UserDefaults) -> UIViewController
     {
         let presenter = PreferencesGalileoPresenter()
         let interactor = PreferencesGalileoInteractor(userDefaultsSource: userDefaultsSource)
@@ -23,6 +21,6 @@ public final class PreferencesGalileoFactory
         interactor.output = presenter
         presenter.dataSource = PreferencesGalileoTableViewDataSource(preferences: [], delegate: presenter)
         
-        return PreferencesGalileoContainerViewController(rootViewController: view)
+        return view
     }
 }

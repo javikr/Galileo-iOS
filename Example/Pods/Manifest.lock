@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
-  - Galileo-iOS (0.1.3):
+  - Galileo-iOS (0.1.4):
     - Wormholy
   - Wormholy (1.2.2)
 
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Galileo-iOS: de5fee122d1257717a2e8e9a7f433a62f38133ab
+  Galileo-iOS: 490e369ec91f6833e8cd527a76eaf7735e1ecbf0
   Wormholy: a6e5d2dca1c54fdf22b2681b93975a18c525318a
 
 PODFILE CHECKSUM: c33da0dd722112703ec0d4f9ad8b42c5498850d1

@@ -35,6 +35,18 @@ extension PreferencesGalileoViewController: PreferencesGalileoViewInterface
         
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableView.automaticDimension
+        
+//        if #available(iOS 11.0, *) {
+//            let searchController = UISearchController(searchResultsController: nil)
+//
+//            // Setup the Search Controller
+//            searchController.searchResultsUpdater = self
+//            searchController.obscuresBackgroundDuringPresentation = false
+//            searchController.searchBar.placeholder = "Search preferences"
+//            navigationItem.searchController = searchController
+//
+//            definesPresentationContext = true
+//        }
     }
     
     func set(tableViewDataSource: UITableViewDataSource)
@@ -65,3 +77,11 @@ extension PreferencesGalileoViewController: PreferencesGalileoViewInterface
         tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
 }
+
+//extension PreferencesGalileoViewController: UISearchResultsUpdating
+//{
+//    func updateSearchResults(for searchController: UISearchController)
+//    {
+//        // TODO
+//    }
+//}
