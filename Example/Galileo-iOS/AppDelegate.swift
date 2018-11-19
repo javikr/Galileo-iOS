@@ -37,8 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         window?.rootViewController = rootView
         window?.makeKeyAndVisible()
         
-        swizzling(forClass: UIViewController.self, originalSelector: #selector(UIViewController.viewDidLoad), toClass: AppDelegate.self, swizzledSelector: #selector(AppDelegate.myViewDidLoad))
-        
         return true
     }
 
@@ -63,24 +61,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-    @objc func myViewDidLoad() {
-        // This is not recursive since we swapped the Selectors in initialize().
-        // We cannot call super in an extension.
-//        super.viewDidLoad()
-        print(description) // logs myViewDidLoad()
-    }
-    
-    func swizzling(forClass: AnyClass, originalSelector: Selector, toClass: AnyClass, swizzledSelector: Selector)
-    {
-        let originalMethod = class_getInstanceMethod(forClass, originalSelector)
-        let swizzledMethod = class_getInstanceMethod(toClass, swizzledSelector)
-        
-
-        
-        if let originalMethod = originalMethod, let swizzledMethod = swizzledMethod {
-            method_exchangeImplementations(originalMethod, swizzledMethod)
-        }
-    }
 }
-

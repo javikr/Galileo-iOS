@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		592C513B21A358B5009E1AC0 /* SampleModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592C513921A358B5009E1AC0 /* SampleModalViewController.swift */; };
+		592C513C21A358B5009E1AC0 /* SampleModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 592C513A21A358B5009E1AC0 /* SampleModalViewController.xib */; };
 		59B5A04C21970DD60001AEE3 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59B5A04821970DD60001AEE3 /* RootViewController.xib */; };
 		59B5A04D21970DD60001AEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B5A04921970DD60001AEE3 /* Assets.xcassets */; };
 		59B5A04E21970DD60001AEE3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A04A21970DD60001AEE3 /* RootViewController.swift */; };
@@ -22,6 +24,8 @@
 		1DBE614850D562DD28E18275 /* Pods-Galileo-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Galileo-iOS_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Galileo-iOS_Tests/Pods-Galileo-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		425EAED830583FDF9288DC28 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		52570F0CC03C3408547DD826 /* Pods-Galileo-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Galileo-iOS_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Galileo-iOS_Tests/Pods-Galileo-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		592C513921A358B5009E1AC0 /* SampleModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModalViewController.swift; sourceTree = "<group>"; };
+		592C513A21A358B5009E1AC0 /* SampleModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleModalViewController.xib; sourceTree = "<group>"; };
 		59B5A04821970DD60001AEE3 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		59B5A04921970DD60001AEE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59B5A04A21970DD60001AEE3 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				59B5A04A21970DD60001AEE3 /* RootViewController.swift */,
 				59B5A04821970DD60001AEE3 /* RootViewController.xib */,
 				59B5A1BA219719220001AEE3 /* LaunchScreen.xib */,
+				592C513921A358B5009E1AC0 /* SampleModalViewController.swift */,
+				592C513A21A358B5009E1AC0 /* SampleModalViewController.xib */,
 				59B5A04921970DD60001AEE3 /* Assets.xcassets */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -200,6 +206,7 @@
 				59B5A1C0219735D80001AEE3 /* SamplePluginViewController.xib in Resources */,
 				59B5A05021970E210001AEE3 /* Podfile in Resources */,
 				59B5A04C21970DD60001AEE3 /* RootViewController.xib in Resources */,
+				592C513C21A358B5009E1AC0 /* SampleModalViewController.xib in Resources */,
 				59B5A04D21970DD60001AEE3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,8 +237,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example-resources.sh",
 				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/025-asteroid.imageset/025-asteroid~universal@1x.png",
@@ -252,6 +257,9 @@
 				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/200-terminal.imageset/200-terminal~universal@1x.png",
 				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/200-terminal.imageset/200-terminal~universal@2x.png",
 				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/200-terminal.imageset/200-terminal~universal@3x.png",
+				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/smartphone.imageset/smartphone~universal@1x.png",
+				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/smartphone.imageset/smartphone~universal@2x.png",
+				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/smartphone.imageset/smartphone~universal@3x.png",
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Main View/View/GalileoMainViewController.xib",
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Console Log/ConsoleLogGalileoViewController.xib",
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/Preferences View/View/Cell/PreferenceBoolTableViewCell.xib",
@@ -260,13 +268,12 @@
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/Preferences View/View/Cell/PreferenceTextTableViewCell.xib",
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/Preferences View/View/PreferencesGalileoViewController.xib",
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Preferences Plugin/Sources View/View/PreferencesGalileoSourcesTableViewController.xib",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/View Flow Plugin/ViewFlowDetailViewController.xib",
 				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Galileo-iOS/Galileo.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Wormholy/Wormholy.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/025-asteroid~universal@1x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/025-asteroid~universal@2x.png",
@@ -286,6 +293,9 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/200-terminal~universal@1x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/200-terminal~universal@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/200-terminal~universal@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/smartphone~universal@1x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/smartphone~universal@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/smartphone~universal@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GalileoMainViewController.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConsoleLogGalileoViewController.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PreferenceBoolTableViewCell.nib",
@@ -294,6 +304,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PreferenceTextTableViewCell.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PreferencesGalileoViewController.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PreferencesGalileoSourcesTableViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ViewFlowDetailViewController.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Galileo.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Wormholy.bundle",
@@ -310,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				592C513B21A358B5009E1AC0 /* SampleModalViewController.swift in Sources */,
 				59B5A1BF219735D80001AEE3 /* SamplePluginViewController.swift in Sources */,
 				59B5A04E21970DD60001AEE3 /* RootViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,

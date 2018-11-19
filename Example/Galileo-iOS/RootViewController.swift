@@ -27,6 +27,12 @@ class RootViewController: UIViewController
         demoAlamofireCall()
     }
     
+    @IBAction func didTapShowModal(_ sender: Any)
+    {
+        let sampleVC = SampleModalViewController()
+        present(sampleVC, animated: true, completion: nil)
+    }
+    
     private func demoAlamofireCall()
     {
         Alamofire.request("https://www.todorock.com/wp-json/wp/v2/posts")

@@ -31,7 +31,8 @@ public struct GalileoConfigurationProvider
         let preferencesPlugin = PreferencesGalileoFactory().preferencesGalileo()
         let console = ConsoleLogGalileoFactory().consoleLogGalileo()
         let wormholy = WormholyGalileoPluginViewController()
-        
-        return [console, preferencesPlugin, wormholy]
+        let viewFlowPlugin = ViewFlowGalileoFactory().viewFlow()
+
+        return [console, preferencesPlugin, wormholy, viewFlowPlugin]
     }
 }

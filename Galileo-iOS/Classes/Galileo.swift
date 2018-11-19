@@ -21,7 +21,8 @@ import UIKit
 open class Galileo: UIWindow
 {
     private var plugins: [GalileoPlugin]
-    
+    private let notificationCenter = NotificationCenter.default
+
     public init(frame: CGRect, configuration: GalileoConfiguration = GalileoConfigurationProvider.defaultConfiguration())
     {
         self.plugins = configuration.plugins
@@ -63,12 +64,16 @@ open class Galileo: UIWindow
     
     private func launchGalileo()
     {
+        notificationCenter.post(name: Notification.Name(rawValue: "GalileoStartedNotification"), object: nil)
+
         let mainView = MainViewControllerFactory().mainViewController(plugins: plugins)
-        self.rootViewController?.present(mainView, animated: true)
+        rootViewController?.present(mainView, animated: true)
     }
     
     private func dismissGalileo()
     {
+        notificationCenter.post(name: Notification.Name(rawValue: "GalileoStoppedNotification"), object: nil)
+        
         rootViewController?.presentedViewController?.dismiss(animated: true)
     }
     
