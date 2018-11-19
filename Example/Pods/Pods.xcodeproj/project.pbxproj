@@ -145,6 +145,8 @@
 		585D3AA0658CEE081A0EAE2534C7A704 /* vbscript.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 6E653B701C5D20D29062DE283C86E2B2 /* vbscript.min.js */; };
 		5869826C15F4E9FA229F8F5DB071C3BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC261238937745E347F1DBB4710B6E2 /* Assets.xcassets */; };
 		588665971EF73A246A3097F54B7B6E4F /* WHLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9D6ED5EA43AEE54119A05302E9F66A /* WHLabel.swift */; };
+		592C512E21A298D4009E1AC0 /* GalileoConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592C512D21A298D4009E1AC0 /* GalileoConfiguration.swift */; };
+		592C513021A298E7009E1AC0 /* GalileoConfigurationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592C512F21A298E7009E1AC0 /* GalileoConfigurationProvider.swift */; };
 		59C349265D3F2A5FAA8F2126F30C2AF8 /* agate.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 00131EF3499DB0661D96AEE99EB55204 /* agate.min.css */; };
 		5BC12F7913A48467255C06FCB3B41DB2 /* haxe.min.js in Resources */ = {isa = PBXBuildFile; fileRef = DF7FD754A2F71261747D884FFA7439F1 /* haxe.min.js */; };
 		5C7069B8DC4F46BB025A597BB61B7E4C /* PreferencesGalileoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15847931EC96214EE1DFD60D2CD11744 /* PreferencesGalileoInteractor.swift */; };
@@ -419,398 +421,400 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00131EF3499DB0661D96AEE99EB55204 /* agate.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = agate.min.css; path = Sources/Utils/Highlightr/Assets/styles/agate.min.css; sourceTree = "<group>"; };
-		0025DC6778649A8EA9F8A3E4A4EBA8B9 /* r.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = r.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/r.min.js; sourceTree = "<group>"; };
+		00131EF3499DB0661D96AEE99EB55204 /* agate.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = agate.min.css; path = Sources/Utils/Highlightr/Assets/styles/agate.min.css; sourceTree = "<group>"; };
+		0025DC6778649A8EA9F8A3E4A4EBA8B9 /* r.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = r.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/r.min.js; sourceTree = "<group>"; };
 		011FD1AA5C69AFFB397BE313DB83EE66 /* PreferencesGalileoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoViewController.swift; sourceTree = "<group>"; };
 		012CD4EB3023F0688B1C1FFE445E721C /* Wormholy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Wormholy-prefix.pch"; sourceTree = "<group>"; };
-		02D1115F38F7FD96082EDD7CF42FFFB7 /* tap.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = tap.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/tap.min.js; sourceTree = "<group>"; };
-		0314129786A1890167861A9CF5277AEC /* pf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = pf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/pf.min.js; sourceTree = "<group>"; };
-		0383571937B77A4BF7CE3F008B37CEEE /* dns.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = dns.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dns.min.js; sourceTree = "<group>"; };
-		04CDEF4811E9724710AACA9784221CE9 /* moonscript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = moonscript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/moonscript.min.js; sourceTree = "<group>"; };
-		061FA04FD371785D4EF50001443AC1C2 /* thrift.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = thrift.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/thrift.min.js; sourceTree = "<group>"; };
+		02D1115F38F7FD96082EDD7CF42FFFB7 /* tap.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = tap.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/tap.min.js; sourceTree = "<group>"; };
+		0314129786A1890167861A9CF5277AEC /* pf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = pf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/pf.min.js; sourceTree = "<group>"; };
+		0383571937B77A4BF7CE3F008B37CEEE /* dns.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = dns.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dns.min.js; sourceTree = "<group>"; };
+		04CDEF4811E9724710AACA9784221CE9 /* moonscript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = moonscript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/moonscript.min.js; sourceTree = "<group>"; };
+		061FA04FD371785D4EF50001443AC1C2 /* thrift.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = thrift.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/thrift.min.js; sourceTree = "<group>"; };
 		071D57A2E80101F8EEB63AB4A1520FF5 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		076A1EA8E2DF4CFD345CBAC8D17CFFEE /* twig.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = twig.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/twig.min.js; sourceTree = "<group>"; };
-		08B7DAEFF60B87C6AFABFA544A9FA1B8 /* dts.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = dts.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dts.min.js; sourceTree = "<group>"; };
+		076A1EA8E2DF4CFD345CBAC8D17CFFEE /* twig.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = twig.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/twig.min.js; sourceTree = "<group>"; };
+		08B7DAEFF60B87C6AFABFA544A9FA1B8 /* dts.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = dts.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dts.min.js; sourceTree = "<group>"; };
 		08DDDF8E6C48C27659C25B11F60211AB /* RequestCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCell.swift; path = Sources/UI/Cells/RequestCell.swift; sourceTree = "<group>"; };
-		0A5C2ED9161881DA2ACF4CCA3AD8A7D4 /* monokai-sublime.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "monokai-sublime.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/monokai-sublime.min.css"; sourceTree = "<group>"; };
+		0A5C2ED9161881DA2ACF4CCA3AD8A7D4 /* monokai-sublime.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "monokai-sublime.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/monokai-sublime.min.css"; sourceTree = "<group>"; };
 		0A7C87B5CBD440C70EB9279E1C9B24BF /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		0BD84CFB62746C3382E00F8D795A2DED /* magula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = magula.min.css; path = Sources/Utils/Highlightr/Assets/styles/magula.min.css; sourceTree = "<group>"; };
-		0C3FDEE29CA7E1383517D664254BA939 /* vhdl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = vhdl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/vhdl.min.js; sourceTree = "<group>"; };
+		0BD84CFB62746C3382E00F8D795A2DED /* magula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = magula.min.css; path = Sources/Utils/Highlightr/Assets/styles/magula.min.css; sourceTree = "<group>"; };
+		0C3FDEE29CA7E1383517D664254BA939 /* vhdl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = vhdl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/vhdl.min.js; sourceTree = "<group>"; };
 		0D368FB221D9315E8A33AF5C82E0A311 /* GalileoMainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GalileoMainViewController.swift; sourceTree = "<group>"; };
-		0EE0D9B64560306C0C255F1BF1E0626A /* basic.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = basic.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/basic.min.js; sourceTree = "<group>"; };
-		0F0B84B9049EF6F4032CD2F6971EF352 /* hy.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = hy.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/hy.min.js; sourceTree = "<group>"; };
+		0EE0D9B64560306C0C255F1BF1E0626A /* basic.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = basic.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/basic.min.js; sourceTree = "<group>"; };
+		0F0B84B9049EF6F4032CD2F6971EF352 /* hy.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = hy.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/hy.min.js; sourceTree = "<group>"; };
 		0F9DA21A1261FF4ED1E3169419270477 /* ActionableTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ActionableTableViewCell.xib; path = Sources/UI/Cells/ActionableTableViewCell.xib; sourceTree = "<group>"; };
-		1048BDD15B5310AC41873486E7F10BBC /* avrasm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = avrasm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/avrasm.min.js; sourceTree = "<group>"; };
-		10EE78D3152AEBDF5DAE056E8A5F88A5 /* atelier-dune-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-dune-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-dune-dark.min.css"; sourceTree = "<group>"; };
-		14127359D8D8F2CBB851681C43427240 /* objectivec.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = objectivec.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/objectivec.min.js; sourceTree = "<group>"; };
+		1048BDD15B5310AC41873486E7F10BBC /* avrasm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = avrasm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/avrasm.min.js; sourceTree = "<group>"; };
+		10EE78D3152AEBDF5DAE056E8A5F88A5 /* atelier-dune-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-dune-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-dune-dark.min.css"; sourceTree = "<group>"; };
+		14127359D8D8F2CBB851681C43427240 /* objectivec.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = objectivec.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/objectivec.min.js; sourceTree = "<group>"; };
 		1440229F638ABC1CE9C2A54C12C883F9 /* Wormholy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Wormholy.h; path = Sources/Wormholy.h; sourceTree = "<group>"; };
 		15847931EC96214EE1DFD60D2CD11744 /* PreferencesGalileoInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoInteractor.swift; sourceTree = "<group>"; };
-		158AF6DFD76F0444EBE38C56CFBA1743 /* less.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = less.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/less.min.js; sourceTree = "<group>"; };
-		15B231DC8E89922A4294067154DE92DD /* leaf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = leaf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/leaf.min.js; sourceTree = "<group>"; };
-		1664062E339B17898EE237D21394F52C /* coffeescript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = coffeescript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/coffeescript.min.js; sourceTree = "<group>"; };
-		167065E4E90863EDDD2185B2A1741EE3 /* crystal.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = crystal.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/crystal.min.js; sourceTree = "<group>"; };
-		1788FD4DDDC756AD8D4EEC63564CDE53 /* glsl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = glsl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/glsl.min.js; sourceTree = "<group>"; };
+		158AF6DFD76F0444EBE38C56CFBA1743 /* less.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = less.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/less.min.js; sourceTree = "<group>"; };
+		15B231DC8E89922A4294067154DE92DD /* leaf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = leaf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/leaf.min.js; sourceTree = "<group>"; };
+		1664062E339B17898EE237D21394F52C /* coffeescript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = coffeescript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/coffeescript.min.js; sourceTree = "<group>"; };
+		167065E4E90863EDDD2185B2A1741EE3 /* crystal.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = crystal.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/crystal.min.js; sourceTree = "<group>"; };
+		1788FD4DDDC756AD8D4EEC63564CDE53 /* glsl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = glsl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/glsl.min.js; sourceTree = "<group>"; };
 		17BC7348C83FCC475F8E911BC1B57430 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		18E410EC048063828D9911B72801C0A3 /* Pods-Galileo-iOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Galileo-iOS_Example-umbrella.h"; sourceTree = "<group>"; };
 		197D7FE4DD98839F362FAFA4065897DE /* RequestDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestDetailViewController.swift; path = Sources/UI/RequestDetailViewController.swift; sourceTree = "<group>"; };
-		19C7040741705B54D268942A87788930 /* vala.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = vala.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/vala.min.js; sourceTree = "<group>"; };
-		1A1B56D85AFA7A069079944B99FEF5E3 /* Wormholy.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Wormholy.bundle; path = "Wormholy-Wormholy.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AC1622A030111FE4C576F7D1611C495 /* erlang-repl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "erlang-repl.min.js"; path = "Sources/Utils/Highlightr/Assets/Highlighter/languages/erlang-repl.min.js"; sourceTree = "<group>"; };
-		1BCF33907AE33776AD1DB7BCA746CA55 /* awk.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = awk.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/awk.min.js; sourceTree = "<group>"; };
-		1BEE4CB054B0DFC46C63EF31B8D2ECD4 /* Galileo-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "Galileo-iOS.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1CACE250C71BE7FA4DCE9ECF03D2B768 /* rib.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = rib.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/rib.min.js; sourceTree = "<group>"; };
-		1CB72DD5E3E409396CDAC7D7331A29FD /* coq.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = coq.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/coq.min.js; sourceTree = "<group>"; };
+		19C7040741705B54D268942A87788930 /* vala.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = vala.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/vala.min.js; sourceTree = "<group>"; };
+		1A1B56D85AFA7A069079944B99FEF5E3 /* Wormholy.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wormholy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC1622A030111FE4C576F7D1611C495 /* erlang-repl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = "erlang-repl.min.js"; path = "Sources/Utils/Highlightr/Assets/Highlighter/languages/erlang-repl.min.js"; sourceTree = "<group>"; };
+		1BCF33907AE33776AD1DB7BCA746CA55 /* awk.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = awk.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/awk.min.js; sourceTree = "<group>"; };
+		1BEE4CB054B0DFC46C63EF31B8D2ECD4 /* Galileo-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = "Galileo-iOS.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1CACE250C71BE7FA4DCE9ECF03D2B768 /* rib.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = rib.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/rib.min.js; sourceTree = "<group>"; };
+		1CB72DD5E3E409396CDAC7D7331A29FD /* coq.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = coq.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/coq.min.js; sourceTree = "<group>"; };
 		1D9D6ED5EA43AEE54119A05302E9F66A /* WHLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHLabel.swift; path = Sources/Subclasses/WHLabel.swift; sourceTree = "<group>"; };
-		1DE67F61B1586A5951517121433173AC /* atelier-heath-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-heath-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-heath-light.min.css"; sourceTree = "<group>"; };
-		1F380C946D0B967EF882F1A2A4C2A8E5 /* highlight.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/highlight.min.js; sourceTree = "<group>"; };
-		2102358606C19627E531CCB5062FFD6E /* parser3.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = parser3.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/parser3.min.js; sourceTree = "<group>"; };
-		218C5D9C020553DED57B3932A43B4E92 /* clean.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = clean.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/clean.min.js; sourceTree = "<group>"; };
+		1DE67F61B1586A5951517121433173AC /* atelier-heath-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-heath-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-heath-light.min.css"; sourceTree = "<group>"; };
+		1F380C946D0B967EF882F1A2A4C2A8E5 /* highlight.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = highlight.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/highlight.min.js; sourceTree = "<group>"; };
+		2102358606C19627E531CCB5062FFD6E /* parser3.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = parser3.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/parser3.min.js; sourceTree = "<group>"; };
+		218C5D9C020553DED57B3932A43B4E92 /* clean.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = clean.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/clean.min.js; sourceTree = "<group>"; };
 		22A0A4B86D481F25382CBB974B9FE601 /* Pods-Galileo-iOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Galileo-iOS_Example-resources.sh"; sourceTree = "<group>"; };
-		232BA74BC7D0C61DBA5145D1CD7ECECC /* 1c.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = 1c.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/1c.min.js; sourceTree = "<group>"; };
-		234E2147B2602AEDD71DD191A57FEC54 /* tomorrow-night-bright.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night-bright.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/tomorrow-night-bright.min.css"; sourceTree = "<group>"; };
+		232BA74BC7D0C61DBA5145D1CD7ECECC /* 1c.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = 1c.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/1c.min.js; sourceTree = "<group>"; };
+		234E2147B2602AEDD71DD191A57FEC54 /* tomorrow-night-bright.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "tomorrow-night-bright.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/tomorrow-night-bright.min.css"; sourceTree = "<group>"; };
 		242005B7DAB1FA215B4E43F900639C78 /* RequestTitleSectionView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = RequestTitleSectionView.xib; path = Sources/UI/Sections/RequestTitleSectionView.xib; sourceTree = "<group>"; };
 		24865C583A1A3FC840B921294B27652B /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		24AFB22E07FE77C2909EE50465E6BCCE /* scala.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = scala.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/scala.min.js; sourceTree = "<group>"; };
-		24F573C31AE418FFD2C7723106755364 /* autoit.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = autoit.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/autoit.min.js; sourceTree = "<group>"; };
+		24AFB22E07FE77C2909EE50465E6BCCE /* scala.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = scala.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/scala.min.js; sourceTree = "<group>"; };
+		24F573C31AE418FFD2C7723106755364 /* autoit.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = autoit.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/autoit.min.js; sourceTree = "<group>"; };
 		271BB760CEB51B031714ADA538C3C85D /* CodeAttributedString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeAttributedString.swift; path = Sources/Utils/Highlightr/CodeAttributedString.swift; sourceTree = "<group>"; };
-		276BA7E08E960A42F5B2992A3E1E9D22 /* zenburn.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = zenburn.min.css; path = Sources/Utils/Highlightr/Assets/styles/zenburn.min.css; sourceTree = "<group>"; };
+		276BA7E08E960A42F5B2992A3E1E9D22 /* zenburn.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = zenburn.min.css; path = Sources/Utils/Highlightr/Assets/styles/zenburn.min.css; sourceTree = "<group>"; };
 		27ACE85A50928B191A422A11BA1B904F /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		293E23345B31C5E77334F703281BFB5C /* cal.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = cal.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/cal.min.js; sourceTree = "<group>"; };
-		2B52F18C2FC9FA4B491FCDE2821AE02E /* golo.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = golo.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/golo.min.js; sourceTree = "<group>"; };
+		293E23345B31C5E77334F703281BFB5C /* cal.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = cal.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/cal.min.js; sourceTree = "<group>"; };
+		2B52F18C2FC9FA4B491FCDE2821AE02E /* golo.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = golo.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/golo.min.js; sourceTree = "<group>"; };
 		2B71064150E39AA6EDCDB9E5B639B2F1 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		2BBD3782E57EFA33733368C541331341 /* RequestsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestsViewController.swift; path = Sources/UI/RequestsViewController.swift; sourceTree = "<group>"; };
-		2DF1FDC46FF5EF0092608D2C90621A20 /* autohotkey.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = autohotkey.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/autohotkey.min.js; sourceTree = "<group>"; };
-		2F0862C5B5110A09EE5C3D17301B8700 /* apache.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = apache.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/apache.min.js; sourceTree = "<group>"; };
+		2DF1FDC46FF5EF0092608D2C90621A20 /* autohotkey.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = autohotkey.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/autohotkey.min.js; sourceTree = "<group>"; };
+		2F0862C5B5110A09EE5C3D17301B8700 /* apache.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = apache.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/apache.min.js; sourceTree = "<group>"; };
 		2F30568D1172E896CD09BE7504221A12 /* BodyDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BodyDetailViewController.swift; path = Sources/UI/BodyDetailViewController.swift; sourceTree = "<group>"; };
 		2F7AC0364194CDDD211FC1C5A8C19AE5 /* WHNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHNavigationController.swift; path = Sources/Subclasses/WHNavigationController.swift; sourceTree = "<group>"; };
-		30D9D3D74876F85FEA6D154F2741995B /* jboss-cli.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "jboss-cli.min.js"; path = "Sources/Utils/Highlightr/Assets/Highlighter/languages/jboss-cli.min.js"; sourceTree = "<group>"; };
-		30E744E4D5C7306761C7325705CE0DA6 /* stata.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = stata.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/stata.min.js; sourceTree = "<group>"; };
-		31C9B2B02288AF7697AD8CCC89C004FE /* scss.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = scss.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/scss.min.js; sourceTree = "<group>"; };
-		33228906863D9B41C6D63CC5158FF12B /* irpf90.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = irpf90.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/irpf90.min.js; sourceTree = "<group>"; };
-		347435FA3E62109F9AC972CBC1029AF9 /* atelier-lakeside-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-lakeside-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-lakeside-dark.min.css"; sourceTree = "<group>"; };
-		349E1F0F50598780F8F8AAA3EE4CCD14 /* crmsh.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = crmsh.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/crmsh.min.js; sourceTree = "<group>"; };
+		30D9D3D74876F85FEA6D154F2741995B /* jboss-cli.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = "jboss-cli.min.js"; path = "Sources/Utils/Highlightr/Assets/Highlighter/languages/jboss-cli.min.js"; sourceTree = "<group>"; };
+		30E744E4D5C7306761C7325705CE0DA6 /* stata.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = stata.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/stata.min.js; sourceTree = "<group>"; };
+		31C9B2B02288AF7697AD8CCC89C004FE /* scss.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = scss.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/scss.min.js; sourceTree = "<group>"; };
+		33228906863D9B41C6D63CC5158FF12B /* irpf90.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = irpf90.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/irpf90.min.js; sourceTree = "<group>"; };
+		347435FA3E62109F9AC972CBC1029AF9 /* atelier-lakeside-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-lakeside-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-lakeside-dark.min.css"; sourceTree = "<group>"; };
+		349E1F0F50598780F8F8AAA3EE4CCD14 /* crmsh.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = crmsh.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/crmsh.min.js; sourceTree = "<group>"; };
 		3544AE1DD5DB53515187CDC074CAEF55 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		35592CBBA7A53728F63ECA1A03C118CA /* atelier-seaside-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-seaside-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-seaside-light.min.css"; sourceTree = "<group>"; };
+		35592CBBA7A53728F63ECA1A03C118CA /* atelier-seaside-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-seaside-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-seaside-light.min.css"; sourceTree = "<group>"; };
 		37C1D21A269E7CC1C948E639F6392DAC /* RequestModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModel.swift; path = Sources/Models/RequestModel.swift; sourceTree = "<group>"; };
-		38385E837BBADCA3EEAC13CF4BC0DC70 /* q.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = q.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/q.min.js; sourceTree = "<group>"; };
+		38385E837BBADCA3EEAC13CF4BC0DC70 /* q.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = q.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/q.min.js; sourceTree = "<group>"; };
 		38FCFC7F22286AD7F3D32AFE63A53848 /* Pods-Galileo-iOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Galileo-iOS_Example.modulemap"; sourceTree = "<group>"; };
-		39324BBBF7F46D1805345432A49685A0 /* makefile.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = makefile.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/makefile.min.js; sourceTree = "<group>"; };
-		394C0B1119793E15012C9C594ADB0C9E /* pojoaque.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = pojoaque.min.css; path = Sources/Utils/Highlightr/Assets/styles/pojoaque.min.css; sourceTree = "<group>"; };
-		396215C1CE9A8EFB8167ECBD84B16717 /* tomorrow-night.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/tomorrow-night.min.css"; sourceTree = "<group>"; };
-		3AE3307F307F7C50BDFACDC449CD2BD3 /* tomorrow.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = tomorrow.min.css; path = Sources/Utils/Highlightr/Assets/styles/tomorrow.min.css; sourceTree = "<group>"; };
-		3AF46D2B7F5B4EA56B6AB19E06975238 /* ascetic.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = ascetic.min.css; path = Sources/Utils/Highlightr/Assets/styles/ascetic.min.css; sourceTree = "<group>"; };
-		3AF5C30BEF80D5DE33AF5AB8457B5FB8 /* scilab.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = scilab.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/scilab.min.js; sourceTree = "<group>"; };
-		3C2A974B4C462A84AE08993FD10A8B37 /* xml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = xml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/xml.min.js; sourceTree = "<group>"; };
+		39324BBBF7F46D1805345432A49685A0 /* makefile.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = makefile.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/makefile.min.js; sourceTree = "<group>"; };
+		394C0B1119793E15012C9C594ADB0C9E /* pojoaque.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = pojoaque.min.css; path = Sources/Utils/Highlightr/Assets/styles/pojoaque.min.css; sourceTree = "<group>"; };
+		396215C1CE9A8EFB8167ECBD84B16717 /* tomorrow-night.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "tomorrow-night.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/tomorrow-night.min.css"; sourceTree = "<group>"; };
+		3AE3307F307F7C50BDFACDC449CD2BD3 /* tomorrow.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = tomorrow.min.css; path = Sources/Utils/Highlightr/Assets/styles/tomorrow.min.css; sourceTree = "<group>"; };
+		3AF46D2B7F5B4EA56B6AB19E06975238 /* ascetic.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = ascetic.min.css; path = Sources/Utils/Highlightr/Assets/styles/ascetic.min.css; sourceTree = "<group>"; };
+		3AF5C30BEF80D5DE33AF5AB8457B5FB8 /* scilab.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = scilab.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/scilab.min.js; sourceTree = "<group>"; };
+		3C2A974B4C462A84AE08993FD10A8B37 /* xml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = xml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/xml.min.js; sourceTree = "<group>"; };
 		3CC679BB9A32CBE2253A05F5E92B5FFE /* PreferenceDateViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceDateViewModel.swift; sourceTree = "<group>"; };
 		3DB8F888BF6840646F74AA623D5ECBC6 /* PreferenceIntegerTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceIntegerTableViewCell.xib; sourceTree = "<group>"; };
-		3E361E28B78D7A818A1AA7B3CCE2A0D9 /* dockerfile.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = dockerfile.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dockerfile.min.js; sourceTree = "<group>"; };
-		3E4458E4362D24592F7A4731933F1F1D /* gruvbox-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "gruvbox-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/gruvbox-dark.min.css"; sourceTree = "<group>"; };
-		3EAFFC1C390D672A822C983D0AAFC5FA /* lua.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lua.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/lua.min.js; sourceTree = "<group>"; };
-		3F34C6BEFD110FA818F566DAB7C82AF2 /* htmlbars.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = htmlbars.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/htmlbars.min.js; sourceTree = "<group>"; };
-		419C0EBF2A700126DAAF715BB88F37F9 /* maxima.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = maxima.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/maxima.min.js; sourceTree = "<group>"; };
-		427960F86861200BB2CF020E6076D9FF /* hybrid.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = hybrid.min.css; path = Sources/Utils/Highlightr/Assets/styles/hybrid.min.css; sourceTree = "<group>"; };
+		3E361E28B78D7A818A1AA7B3CCE2A0D9 /* dockerfile.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = dockerfile.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dockerfile.min.js; sourceTree = "<group>"; };
+		3E4458E4362D24592F7A4731933F1F1D /* gruvbox-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "gruvbox-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/gruvbox-dark.min.css"; sourceTree = "<group>"; };
+		3EAFFC1C390D672A822C983D0AAFC5FA /* lua.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = lua.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/lua.min.js; sourceTree = "<group>"; };
+		3F34C6BEFD110FA818F566DAB7C82AF2 /* htmlbars.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = htmlbars.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/htmlbars.min.js; sourceTree = "<group>"; };
+		419C0EBF2A700126DAAF715BB88F37F9 /* maxima.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = maxima.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/maxima.min.js; sourceTree = "<group>"; };
+		427960F86861200BB2CF020E6076D9FF /* hybrid.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = hybrid.min.css; path = Sources/Utils/Highlightr/Assets/styles/hybrid.min.css; sourceTree = "<group>"; };
 		42D33B07EC207F014BFAB127A059786D /* CustomActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomActivity.swift; path = Sources/Subclasses/CustomActivity.swift; sourceTree = "<group>"; };
 		431D32FD70B429C958D1890C51B4DA83 /* PreferenceIntegerTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceIntegerTableViewCell.swift; sourceTree = "<group>"; };
-		441E6B0B792591490E0842E80A3BC52D /* atelier-savanna-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-savanna-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-savanna-light.min.css"; sourceTree = "<group>"; };
-		45D0E53F8C02322989E18C10B9D0F8C0 /* cmake.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = cmake.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/cmake.min.js; sourceTree = "<group>"; };
+		441E6B0B792591490E0842E80A3BC52D /* atelier-savanna-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-savanna-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-savanna-light.min.css"; sourceTree = "<group>"; };
+		45D0E53F8C02322989E18C10B9D0F8C0 /* cmake.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = cmake.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/cmake.min.js; sourceTree = "<group>"; };
 		467C22D732877EB83F8204303A24C17F /* Wormholy+Foo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Wormholy+Foo.h"; path = "Sources/Objc/Wormholy+Foo.h"; sourceTree = "<group>"; };
 		48E925230C41BBBFB5EB644FC7B46ED3 /* PreferencesGalileoFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoFactory.swift; sourceTree = "<group>"; };
 		48FAD9B273A305757FF0427924E1BD6D /* PreferenceDateTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceDateTableViewCell.xib; sourceTree = "<group>"; };
-		4903DCAF1DED1992BEE30A11BF4B66E8 /* groovy.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = groovy.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/groovy.min.js; sourceTree = "<group>"; };
-		493370982AF03B70941296BD8AAAD684 /* ruleslanguage.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ruleslanguage.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ruleslanguage.min.js; sourceTree = "<group>"; };
-		49DC8B0ED27A861300E49CF878C2066E /* sql.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = sql.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/sql.min.js; sourceTree = "<group>"; };
-		4AFCECA9FB462BE904C0508E531B1B84 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlamofire.a; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B37F22FD9D83A7D5EF3899520A2F405 /* sml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = sml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/sml.min.js; sourceTree = "<group>"; };
-		4B7A73468803A24740F932E132F66D9B /* vbscript-html.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "vbscript-html.min.js"; path = "Sources/Utils/Highlightr/Assets/Highlighter/languages/vbscript-html.min.js"; sourceTree = "<group>"; };
+		4903DCAF1DED1992BEE30A11BF4B66E8 /* groovy.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = groovy.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/groovy.min.js; sourceTree = "<group>"; };
+		493370982AF03B70941296BD8AAAD684 /* ruleslanguage.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = ruleslanguage.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ruleslanguage.min.js; sourceTree = "<group>"; };
+		49DC8B0ED27A861300E49CF878C2066E /* sql.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = sql.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/sql.min.js; sourceTree = "<group>"; };
+		4AFCECA9FB462BE904C0508E531B1B84 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B37F22FD9D83A7D5EF3899520A2F405 /* sml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = sml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/sml.min.js; sourceTree = "<group>"; };
+		4B7A73468803A24740F932E132F66D9B /* vbscript-html.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = "vbscript-html.min.js"; path = "Sources/Utils/Highlightr/Assets/Highlighter/languages/vbscript-html.min.js"; sourceTree = "<group>"; };
 		4BC27F3752FA01DB96CC1A58C1A3865B /* WHCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHCollectionView.swift; path = Sources/Subclasses/WHCollectionView.swift; sourceTree = "<group>"; };
 		4C3D0D58AB286BAC1DACA4A139B10C90 /* Flow.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Flow.storyboard; path = Sources/UI/Flow.storyboard; sourceTree = "<group>"; };
-		4CDA1BBBAE69E04B207859475CD41399 /* accesslog.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = accesslog.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/accesslog.min.js; sourceTree = "<group>"; };
-		4D18C9A363B86286AE2D2EB165BEDF0A /* atelier-estuary-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-estuary-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-estuary-dark.min.css"; sourceTree = "<group>"; };
+		4CDA1BBBAE69E04B207859475CD41399 /* accesslog.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = accesslog.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/accesslog.min.js; sourceTree = "<group>"; };
+		4D18C9A363B86286AE2D2EB165BEDF0A /* atelier-estuary-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-estuary-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-estuary-dark.min.css"; sourceTree = "<group>"; };
 		4D857ABBDAA188FA85FE1D03359C87DB /* WormholyMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WormholyMethodSwizzling.h; path = Sources/Objc/WormholyMethodSwizzling.h; sourceTree = "<group>"; };
-		4D865B4CD4E48AD11A66153F72F20FF0 /* mel.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = mel.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mel.min.js; sourceTree = "<group>"; };
-		4DE4CE10A44898648E7F2886617F9BCA /* obsidian.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = obsidian.min.css; path = Sources/Utils/Highlightr/Assets/styles/obsidian.min.css; sourceTree = "<group>"; };
+		4D865B4CD4E48AD11A66153F72F20FF0 /* mel.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = mel.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mel.min.js; sourceTree = "<group>"; };
+		4DE4CE10A44898648E7F2886617F9BCA /* obsidian.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = obsidian.min.css; path = Sources/Utils/Highlightr/Assets/styles/obsidian.min.css; sourceTree = "<group>"; };
 		4E53715FEFCC6F4CA929866CB60579D6 /* ActionableTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionableTableViewCell.swift; path = Sources/UI/Cells/ActionableTableViewCell.swift; sourceTree = "<group>"; };
 		4F9019F54A5B3DC29EE0155C738DCD9D /* Highlightr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Highlightr.swift; path = Sources/Utils/Highlightr/Highlightr.swift; sourceTree = "<group>"; };
-		50050BF74AE0E39C61ABCF9768AC82E6 /* ini.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ini.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ini.min.js; sourceTree = "<group>"; };
-		5076AABF345DE5B995ED35747362DEB0 /* atelier-sulphurpool-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-sulphurpool-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-sulphurpool-dark.min.css"; sourceTree = "<group>"; };
-		50C3E4DA5D9AB9A2081C29E55D022A66 /* dsconfig.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = dsconfig.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dsconfig.min.js; sourceTree = "<group>"; };
-		51579D474ABE52CA45D8056D35C47893 /* qtcreator_light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = qtcreator_light.min.css; path = Sources/Utils/Highlightr/Assets/styles/qtcreator_light.min.css; sourceTree = "<group>"; };
+		50050BF74AE0E39C61ABCF9768AC82E6 /* ini.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = ini.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ini.min.js; sourceTree = "<group>"; };
+		5076AABF345DE5B995ED35747362DEB0 /* atelier-sulphurpool-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-sulphurpool-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-sulphurpool-dark.min.css"; sourceTree = "<group>"; };
+		50C3E4DA5D9AB9A2081C29E55D022A66 /* dsconfig.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = dsconfig.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dsconfig.min.js; sourceTree = "<group>"; };
+		51579D474ABE52CA45D8056D35C47893 /* qtcreator_light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = qtcreator_light.min.css; path = Sources/Utils/Highlightr/Assets/styles/qtcreator_light.min.css; sourceTree = "<group>"; };
 		515A1DFB0548CB8E4C04B872D67C0AA4 /* WHView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHView.swift; path = Sources/Subclasses/WHView.swift; sourceTree = "<group>"; };
 		52C4D2ADB9A51FEDE96F4CE8C1432EAB /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		53163300D00C92B41DA90EB3FE410F1C /* CustomHTTPProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomHTTPProtocol.swift; path = Sources/CustomHTTPProtocol.swift; sourceTree = "<group>"; };
-		535B547F0754AF33113CAD67B0010677 /* hsp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = hsp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/hsp.min.js; sourceTree = "<group>"; };
+		535B547F0754AF33113CAD67B0010677 /* hsp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = hsp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/hsp.min.js; sourceTree = "<group>"; };
 		54851900BACDDFCD925846987E59D00A /* PreferencesGalileoViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferencesGalileoViewController.xib; sourceTree = "<group>"; };
-		54AD2F968D71E5109138B5A561FC970D /* inform7.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = inform7.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/inform7.min.js; sourceTree = "<group>"; };
+		54AD2F968D71E5109138B5A561FC970D /* inform7.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = inform7.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/inform7.min.js; sourceTree = "<group>"; };
 		551322B9BE442B35BA89B0CEE653D211 /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Sources/Models/Section.swift; sourceTree = "<group>"; };
-		559BB5B1A7BB3401C93F86DC565F0F63 /* solarized-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "solarized-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/solarized-light.min.css"; sourceTree = "<group>"; };
-		568179D29E432010BF1066FF908FDD74 /* atelier-plateau-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-plateau-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-plateau-dark.min.css"; sourceTree = "<group>"; };
-		568F53819F59ABD1F64D703C0043DDD0 /* stan.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = stan.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/stan.min.js; sourceTree = "<group>"; };
+		559BB5B1A7BB3401C93F86DC565F0F63 /* solarized-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "solarized-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/solarized-light.min.css"; sourceTree = "<group>"; };
+		568179D29E432010BF1066FF908FDD74 /* atelier-plateau-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-plateau-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-plateau-dark.min.css"; sourceTree = "<group>"; };
+		568F53819F59ABD1F64D703C0043DDD0 /* stan.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = stan.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/stan.min.js; sourceTree = "<group>"; };
 		56C41F05F8599BF2B085C542359DF242 /* PreferenceTextViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceTextViewModel.swift; sourceTree = "<group>"; };
-		56E017E6BAFE6C7D708FFA8DBF0EA0DF /* kimbie.dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = kimbie.dark.min.css; path = Sources/Utils/Highlightr/Assets/styles/kimbie.dark.min.css; sourceTree = "<group>"; };
-		56E059887F7CD2D4121BABB2EDC6646D /* zephir.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = zephir.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/zephir.min.js; sourceTree = "<group>"; };
-		57063FD1997B559B3B3A79D3914AA506 /* lsl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lsl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/lsl.min.js; sourceTree = "<group>"; };
+		56E017E6BAFE6C7D708FFA8DBF0EA0DF /* kimbie.dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = kimbie.dark.min.css; path = Sources/Utils/Highlightr/Assets/styles/kimbie.dark.min.css; sourceTree = "<group>"; };
+		56E059887F7CD2D4121BABB2EDC6646D /* zephir.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = zephir.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/zephir.min.js; sourceTree = "<group>"; };
+		57063FD1997B559B3B3A79D3914AA506 /* lsl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = lsl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/lsl.min.js; sourceTree = "<group>"; };
 		574A74CE8001FCD27F542CAE1149EB50 /* HTMLUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTMLUtils.swift; path = Sources/Utils/Highlightr/HTMLUtils.swift; sourceTree = "<group>"; };
-		582559889EBBA256D941C23B18C2F186 /* nix.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = nix.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/nix.min.js; sourceTree = "<group>"; };
-		5827A91B3630B3C7CF08E185CCF4497C /* dracula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = dracula.min.css; path = Sources/Utils/Highlightr/Assets/styles/dracula.min.css; sourceTree = "<group>"; };
-		585C6E6A1D33E7D9EC97C2C06275B6DE /* aspectj.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = aspectj.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/aspectj.min.js; sourceTree = "<group>"; };
-		5995D37929186065B22E86A7A9DC06BF /* armasm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = armasm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/armasm.min.js; sourceTree = "<group>"; };
-		59D4F7976043F12EA4C0909F93CB023C /* codepen-embed.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "codepen-embed.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/codepen-embed.min.css"; sourceTree = "<group>"; };
-		5A8D63752A0B0565C63EA894E7EB6E88 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		5B821E2C9548D86C3ECB653E30F8EF4E /* ebnf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ebnf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ebnf.min.js; sourceTree = "<group>"; };
+		582559889EBBA256D941C23B18C2F186 /* nix.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = nix.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/nix.min.js; sourceTree = "<group>"; };
+		5827A91B3630B3C7CF08E185CCF4497C /* dracula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = dracula.min.css; path = Sources/Utils/Highlightr/Assets/styles/dracula.min.css; sourceTree = "<group>"; };
+		585C6E6A1D33E7D9EC97C2C06275B6DE /* aspectj.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = aspectj.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/aspectj.min.js; sourceTree = "<group>"; };
+		592C512D21A298D4009E1AC0 /* GalileoConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalileoConfiguration.swift; sourceTree = "<group>"; };
+		592C512F21A298E7009E1AC0 /* GalileoConfigurationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalileoConfigurationProvider.swift; sourceTree = "<group>"; };
+		5995D37929186065B22E86A7A9DC06BF /* armasm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = armasm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/armasm.min.js; sourceTree = "<group>"; };
+		59D4F7976043F12EA4C0909F93CB023C /* codepen-embed.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "codepen-embed.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/codepen-embed.min.css"; sourceTree = "<group>"; };
+		5A8D63752A0B0565C63EA894E7EB6E88 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5B821E2C9548D86C3ECB653E30F8EF4E /* ebnf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = ebnf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ebnf.min.js; sourceTree = "<group>"; };
 		5C01CB0EBE96D4DCF3A6DC82A899B61F /* PreferenceViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceViewType.swift; sourceTree = "<group>"; };
-		5CA86FB6ED5781B6A6EB484BFF5FA28F /* mojolicious.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = mojolicious.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mojolicious.min.js; sourceTree = "<group>"; };
+		5CA86FB6ED5781B6A6EB484BFF5FA28F /* mojolicious.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = mojolicious.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mojolicious.min.js; sourceTree = "<group>"; };
 		5CCCBF59B72DA2267FC1DCC9F50BE559 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		5DC995B7939260CCF777B92689851523 /* PreferencesGalileoPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoPresenter.swift; sourceTree = "<group>"; };
-		5F09AF2B93CB4D8347C9E84D0FE81B52 /* sqf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = sqf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/sqf.min.js; sourceTree = "<group>"; };
-		5FF0C0DB861D6A7531DD7ED068F6946A /* nimrod.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = nimrod.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/nimrod.min.js; sourceTree = "<group>"; };
-		6032D28FC4DED3C80BF3D5809F928555 /* hopscotch.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = hopscotch.min.css; path = Sources/Utils/Highlightr/Assets/styles/hopscotch.min.css; sourceTree = "<group>"; };
-		60D01F9EF928631A0DD867A94FA5806B /* cpp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = cpp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/cpp.min.js; sourceTree = "<group>"; };
+		5F09AF2B93CB4D8347C9E84D0FE81B52 /* sqf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = sqf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/sqf.min.js; sourceTree = "<group>"; };
+		5FF0C0DB861D6A7531DD7ED068F6946A /* nimrod.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = nimrod.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/nimrod.min.js; sourceTree = "<group>"; };
+		6032D28FC4DED3C80BF3D5809F928555 /* hopscotch.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = hopscotch.min.css; path = Sources/Utils/Highlightr/Assets/styles/hopscotch.min.css; sourceTree = "<group>"; };
+		60D01F9EF928631A0DD867A94FA5806B /* cpp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = cpp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/cpp.min.js; sourceTree = "<group>"; };
 		61EDC294FE03827A7A68E8506983882B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		62186F60CE12EDFF4F2C8D32B0942182 /* ConsoleLogGalileoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConsoleLogGalileoViewController.swift; sourceTree = "<group>"; };
-		62DAA1788601C0525890DB8E1A3A3EAB /* subunit.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = subunit.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/subunit.min.js; sourceTree = "<group>"; };
-		632BE565986A3E33C84FE53AEB4C2DC5 /* stylus.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = stylus.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/stylus.min.js; sourceTree = "<group>"; };
+		62DAA1788601C0525890DB8E1A3A3EAB /* subunit.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = subunit.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/subunit.min.js; sourceTree = "<group>"; };
+		632BE565986A3E33C84FE53AEB4C2DC5 /* stylus.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = stylus.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/stylus.min.js; sourceTree = "<group>"; };
 		635F508EFE86E76E6688721E8CC3C1B7 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = "Sources/Support Files/Config.swift"; sourceTree = "<group>"; };
 		6384816F3FF5B53778BD97214DB8B003 /* PreferencesGalileoTableViewDataSourceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoTableViewDataSourceDelegate.swift; sourceTree = "<group>"; };
-		6566D04E950DD07574DACCAFE000CF34 /* protobuf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = protobuf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/protobuf.min.js; sourceTree = "<group>"; };
-		65785D6878B9B01EAC27A81B2F9C8F63 /* atelier-plateau-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-plateau-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-plateau-light.min.css"; sourceTree = "<group>"; };
-		65CBE8771633FB23B3D95B857A17F858 /* qml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = qml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/qml.min.js; sourceTree = "<group>"; };
+		6566D04E950DD07574DACCAFE000CF34 /* protobuf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = protobuf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/protobuf.min.js; sourceTree = "<group>"; };
+		65785D6878B9B01EAC27A81B2F9C8F63 /* atelier-plateau-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-plateau-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-plateau-light.min.css"; sourceTree = "<group>"; };
+		65CBE8771633FB23B3D95B857A17F858 /* qml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = qml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/qml.min.js; sourceTree = "<group>"; };
 		66F1B9E43E468FB7E83662BE8C24F392 /* WHString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHString.swift; path = Sources/Subclasses/WHString.swift; sourceTree = "<group>"; };
 		67AB180528C66D5BEF5ABE471169D8CD /* GalileoPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GalileoPlugin.swift; sourceTree = "<group>"; };
-		683E71C9BBD57950F7C40D8315C02FA9 /* julia-repl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "julia-repl.min.js"; path = "Sources/Utils/Highlightr/Assets/Highlighter/languages/julia-repl.min.js"; sourceTree = "<group>"; };
-		6918AEA26DD47AA24B0F0AF6F136BD7C /* atom-one-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atom-one-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atom-one-light.min.css"; sourceTree = "<group>"; };
-		696D39CEA709A17BE574236B4883BC72 /* rust.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = rust.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/rust.min.js; sourceTree = "<group>"; };
+		683E71C9BBD57950F7C40D8315C02FA9 /* julia-repl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = "julia-repl.min.js"; path = "Sources/Utils/Highlightr/Assets/Highlighter/languages/julia-repl.min.js"; sourceTree = "<group>"; };
+		6918AEA26DD47AA24B0F0AF6F136BD7C /* atom-one-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atom-one-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atom-one-light.min.css"; sourceTree = "<group>"; };
+		696D39CEA709A17BE574236B4883BC72 /* rust.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = rust.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/rust.min.js; sourceTree = "<group>"; };
 		69F25EFA7BA9C16BE967B6BD71622421 /* MainViewControllerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewControllerFactory.swift; sourceTree = "<group>"; };
-		6A8493B7816FC8854DD0D278BEC87C73 /* handlebars.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = handlebars.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/handlebars.min.js; sourceTree = "<group>"; };
-		6AB9059F617E6F2B79D9494CDD731C7E /* javascript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = javascript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/javascript.min.js; sourceTree = "<group>"; };
-		6B52F5D85668F9595AEBC4E36673A5E2 /* matlab.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = matlab.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/matlab.min.js; sourceTree = "<group>"; };
-		6C392A9BE306CE776BEDF6FBEB7E81FF /* openscad.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = openscad.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/openscad.min.js; sourceTree = "<group>"; };
-		6C3D026C281E1381A36796DE79D908EF /* tcl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = tcl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/tcl.min.js; sourceTree = "<group>"; };
-		6CED02EEAC776E2F28AA8A0854DE6778 /* processing.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = processing.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/processing.min.js; sourceTree = "<group>"; };
-		6D1988986730E9292F028D4AA0764104 /* clojure.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = clojure.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/clojure.min.js; sourceTree = "<group>"; };
-		6D1EE848FC797413CD6EEA7978F9335A /* lasso.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lasso.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/lasso.min.js; sourceTree = "<group>"; };
+		6A8493B7816FC8854DD0D278BEC87C73 /* handlebars.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = handlebars.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/handlebars.min.js; sourceTree = "<group>"; };
+		6AB9059F617E6F2B79D9494CDD731C7E /* javascript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = javascript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/javascript.min.js; sourceTree = "<group>"; };
+		6B52F5D85668F9595AEBC4E36673A5E2 /* matlab.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = matlab.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/matlab.min.js; sourceTree = "<group>"; };
+		6C392A9BE306CE776BEDF6FBEB7E81FF /* openscad.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = openscad.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/openscad.min.js; sourceTree = "<group>"; };
+		6C3D026C281E1381A36796DE79D908EF /* tcl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = tcl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/tcl.min.js; sourceTree = "<group>"; };
+		6CED02EEAC776E2F28AA8A0854DE6778 /* processing.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = processing.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/processing.min.js; sourceTree = "<group>"; };
+		6D1988986730E9292F028D4AA0764104 /* clojure.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = clojure.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/clojure.min.js; sourceTree = "<group>"; };
+		6D1EE848FC797413CD6EEA7978F9335A /* lasso.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = lasso.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/lasso.min.js; sourceTree = "<group>"; };
 		6D9454FB5373F023C1DA7974CCC226BB /* PreferenceTextTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceTextTableViewCell.xib; sourceTree = "<group>"; };
-		6E653B701C5D20D29062DE283C86E2B2 /* vbscript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = vbscript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/vbscript.min.js; sourceTree = "<group>"; };
-		6EBA2AAF9E934E4EEBB1AF88EBC489AC /* atelier-lakeside-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-lakeside-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-lakeside-light.min.css"; sourceTree = "<group>"; };
-		6F5CBC93B09F58382494F2B4F8861895 /* elm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = elm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/elm.min.js; sourceTree = "<group>"; };
+		6E653B701C5D20D29062DE283C86E2B2 /* vbscript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = vbscript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/vbscript.min.js; sourceTree = "<group>"; };
+		6EBA2AAF9E934E4EEBB1AF88EBC489AC /* atelier-lakeside-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-lakeside-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-lakeside-light.min.css"; sourceTree = "<group>"; };
+		6F5CBC93B09F58382494F2B4F8861895 /* elm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = elm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/elm.min.js; sourceTree = "<group>"; };
 		6F9A48FE887DC92EE3650312240EB6A5 /* PreferencesGalileoViewInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoViewInterface.swift; sourceTree = "<group>"; };
-		6FB7DD688FC9ACB317F370D7AE23A5FE /* arta.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = arta.min.css; path = Sources/Utils/Highlightr/Assets/styles/arta.min.css; sourceTree = "<group>"; };
+		6FB7DD688FC9ACB317F370D7AE23A5FE /* arta.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = arta.min.css; path = Sources/Utils/Highlightr/Assets/styles/arta.min.css; sourceTree = "<group>"; };
 		713B115E566B2CFD86E85BCD80C1D882 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		7150F11E594B1747D720DBDBB24DF8F5 /* rainbow.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = rainbow.min.css; path = Sources/Utils/Highlightr/Assets/styles/rainbow.min.css; sourceTree = "<group>"; };
+		7150F11E594B1747D720DBDBB24DF8F5 /* rainbow.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = rainbow.min.css; path = Sources/Utils/Highlightr/Assets/styles/rainbow.min.css; sourceTree = "<group>"; };
 		7203C6FCA61165A861EB1B0D9D538467 /* ConsoleLogGalileoFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConsoleLogGalileoFactory.swift; sourceTree = "<group>"; };
-		7212F9A7DD2601670DD58BE4680A0973 /* smali.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = smali.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/smali.min.js; sourceTree = "<group>"; };
+		7212F9A7DD2601670DD58BE4680A0973 /* smali.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = smali.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/smali.min.js; sourceTree = "<group>"; };
 		731C22926500858A09E9282894026B78 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		7342172AFD86E8B7CDB68FA0AABD4607 /* vim.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = vim.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/vim.min.js; sourceTree = "<group>"; };
-		734D05B3791DBF8C30AFACF8F4466577 /* cs.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = cs.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/cs.min.js; sourceTree = "<group>"; };
+		7342172AFD86E8B7CDB68FA0AABD4607 /* vim.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = vim.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/vim.min.js; sourceTree = "<group>"; };
+		734D05B3791DBF8C30AFACF8F4466577 /* cs.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = cs.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/cs.min.js; sourceTree = "<group>"; };
 		736110AC2433C2D812FB7FD3A1BBC2AE /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		7391A206DFC8F9DE8F26FFC362F558F7 /* tex.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = tex.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/tex.min.js; sourceTree = "<group>"; };
+		7391A206DFC8F9DE8F26FFC362F558F7 /* tex.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = tex.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/tex.min.js; sourceTree = "<group>"; };
 		7480DCAB7FF106A179CD4BCCB36DDB4F /* Galileo-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Galileo-iOS-umbrella.h"; path = "../../Headers/Public/Galileo_iOS/Galileo-iOS-umbrella.h"; sourceTree = "<group>"; };
-		7521552EFBEB01D8926FF88DC86903ED /* erlang.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = erlang.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/erlang.min.js; sourceTree = "<group>"; };
-		759F32A648C0ECB7ECFD6D7A4254EEC3 /* color-brewer.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "color-brewer.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/color-brewer.min.css"; sourceTree = "<group>"; };
-		75EE486C311EBEA5AE578A3B4608F360 /* paraiso-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "paraiso-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/paraiso-light.min.css"; sourceTree = "<group>"; };
+		7521552EFBEB01D8926FF88DC86903ED /* erlang.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = erlang.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/erlang.min.js; sourceTree = "<group>"; };
+		759F32A648C0ECB7ECFD6D7A4254EEC3 /* color-brewer.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "color-brewer.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/color-brewer.min.css"; sourceTree = "<group>"; };
+		75EE486C311EBEA5AE578A3B4608F360 /* paraiso-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "paraiso-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/paraiso-light.min.css"; sourceTree = "<group>"; };
 		761A3732182C41740351FC9F21E60CE0 /* Wormholy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wormholy.swift; path = Sources/Wormholy.swift; sourceTree = "<group>"; };
 		7908E779DE81F0FC629831E43CBB5AD0 /* FileHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileHandler.swift; path = Sources/Utils/FileHandler.swift; sourceTree = "<group>"; };
-		7A53B84CF650F8FB019982D5EF924F93 /* livecodeserver.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = livecodeserver.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/livecodeserver.min.js; sourceTree = "<group>"; };
+		7A53B84CF650F8FB019982D5EF924F93 /* livecodeserver.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = livecodeserver.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/livecodeserver.min.js; sourceTree = "<group>"; };
 		7A84E312591E84D1359BE2866ACDAA81 /* PreferenceTextTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceTextTableViewCell.swift; sourceTree = "<group>"; };
 		7ABFAD54FE3CB2CB5B9782BAF56E37F8 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		7B280BDCDD1E7ABF2D171627D2A76FF7 /* arduino-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "arduino-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/arduino-light.min.css"; sourceTree = "<group>"; };
-		7BE0DE883CA1FD7EDA368924C3D2E4F6 /* typescript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typescript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/typescript.min.js; sourceTree = "<group>"; };
+		7B280BDCDD1E7ABF2D171627D2A76FF7 /* arduino-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "arduino-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/arduino-light.min.css"; sourceTree = "<group>"; };
+		7BE0DE883CA1FD7EDA368924C3D2E4F6 /* typescript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = typescript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/typescript.min.js; sourceTree = "<group>"; };
 		7CC261238937745E347F1DBB4710B6E2 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7CD7311AAB7BB91C38AA9DC1A603F598 /* django.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = django.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/django.min.js; sourceTree = "<group>"; };
-		7CEFA382096D94AD7F069B8D8627D018 /* css.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = css.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/css.min.js; sourceTree = "<group>"; };
-		7D854B0636F066963E3554D63A3F8B0A /* shell.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = shell.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/shell.min.js; sourceTree = "<group>"; };
-		7E1FC137286B8F4D4668FAFEF0F92B1D /* gherkin.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = gherkin.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/gherkin.min.js; sourceTree = "<group>"; };
-		7E70AD9F289883DB037C6C651E421B82 /* atelier-estuary-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-estuary-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-estuary-light.min.css"; sourceTree = "<group>"; };
-		7EA6EB69080338990545179695C25074 /* qtcreator_dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = qtcreator_dark.min.css; path = Sources/Utils/Highlightr/Assets/styles/qtcreator_dark.min.css; sourceTree = "<group>"; };
-		7F2905AF2DB2D02726B1228A758EC51B /* idea.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = idea.min.css; path = Sources/Utils/Highlightr/Assets/styles/idea.min.css; sourceTree = "<group>"; };
+		7CD7311AAB7BB91C38AA9DC1A603F598 /* django.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = django.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/django.min.js; sourceTree = "<group>"; };
+		7CEFA382096D94AD7F069B8D8627D018 /* css.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = css.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/css.min.js; sourceTree = "<group>"; };
+		7D854B0636F066963E3554D63A3F8B0A /* shell.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = shell.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/shell.min.js; sourceTree = "<group>"; };
+		7E1FC137286B8F4D4668FAFEF0F92B1D /* gherkin.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = gherkin.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/gherkin.min.js; sourceTree = "<group>"; };
+		7E70AD9F289883DB037C6C651E421B82 /* atelier-estuary-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-estuary-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-estuary-light.min.css"; sourceTree = "<group>"; };
+		7EA6EB69080338990545179695C25074 /* qtcreator_dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = qtcreator_dark.min.css; path = Sources/Utils/Highlightr/Assets/styles/qtcreator_dark.min.css; sourceTree = "<group>"; };
+		7F2905AF2DB2D02726B1228A758EC51B /* idea.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = idea.min.css; path = Sources/Utils/Highlightr/Assets/styles/idea.min.css; sourceTree = "<group>"; };
 		80F82330C6BD8DB277AC7B6EC2D74A33 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		813C51568339F4077502AC7C72ECB0D1 /* d.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = d.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/d.min.js; sourceTree = "<group>"; };
+		813C51568339F4077502AC7C72ECB0D1 /* d.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = d.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/d.min.js; sourceTree = "<group>"; };
 		834D9F542BC9B2576921FF6FCF3B5B93 /* WHBaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHBaseViewController.swift; path = Sources/Subclasses/WHBaseViewController.swift; sourceTree = "<group>"; };
-		84D10656084FD80FC22DDD2A796AF3B8 /* diff.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = diff.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/diff.min.js; sourceTree = "<group>"; };
-		858E146048679BC0F1D8802106EE8BA7 /* routeros.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = routeros.min.css; path = Sources/Utils/Highlightr/Assets/styles/routeros.min.css; sourceTree = "<group>"; };
-		865957485598F83FEE0CF24D5E75D9ED /* atom-one-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atom-one-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atom-one-dark.min.css"; sourceTree = "<group>"; };
+		84D10656084FD80FC22DDD2A796AF3B8 /* diff.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = diff.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/diff.min.js; sourceTree = "<group>"; };
+		858E146048679BC0F1D8802106EE8BA7 /* routeros.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = routeros.min.css; path = Sources/Utils/Highlightr/Assets/styles/routeros.min.css; sourceTree = "<group>"; };
+		865957485598F83FEE0CF24D5E75D9ED /* atom-one-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atom-one-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atom-one-dark.min.css"; sourceTree = "<group>"; };
 		89AE04D5741B79B851543CFA66694FAC /* RequestCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = RequestCell.xib; path = Sources/UI/Cells/RequestCell.xib; sourceTree = "<group>"; };
-		8A6A9E218186AB288A320B6DBB6944F5 /* atelier-forest-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-forest-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-forest-dark.min.css"; sourceTree = "<group>"; };
-		8B5217D7197B3143614CC09BA928C537 /* tp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = tp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/tp.min.js; sourceTree = "<group>"; };
+		8A6A9E218186AB288A320B6DBB6944F5 /* atelier-forest-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-forest-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-forest-dark.min.css"; sourceTree = "<group>"; };
+		8B5217D7197B3143614CC09BA928C537 /* tp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = tp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/tp.min.js; sourceTree = "<group>"; };
 		8B7344677A8333B635563DB1C3F792EB /* Pods-Galileo-iOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Galileo-iOS_Example-frameworks.sh"; sourceTree = "<group>"; };
-		8B904F72A7E8F791EE655FAA6C0B4224 /* actionscript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = actionscript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/actionscript.min.js; sourceTree = "<group>"; };
-		8C94644BE44D245E36F45E797832E81B /* bash.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = bash.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/bash.min.js; sourceTree = "<group>"; };
-		8CB56CE02102A0229E8C7E33906BFF9B /* delphi.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = delphi.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/delphi.min.js; sourceTree = "<group>"; };
+		8B904F72A7E8F791EE655FAA6C0B4224 /* actionscript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = actionscript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/actionscript.min.js; sourceTree = "<group>"; };
+		8C94644BE44D245E36F45E797832E81B /* bash.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = bash.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/bash.min.js; sourceTree = "<group>"; };
+		8CB56CE02102A0229E8C7E33906BFF9B /* delphi.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = delphi.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/delphi.min.js; sourceTree = "<group>"; };
 		8CD2C7C5D1DEE41ECC79FBC2EDDDDB1E /* PreferencesGalileoPresenterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoPresenterInterface.swift; sourceTree = "<group>"; };
 		8CEE68F2B899A63D947230669376009F /* NSURLSessionConfiguration+Wormholy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSessionConfiguration+Wormholy.m"; path = "Sources/Objc/NSURLSessionConfiguration+Wormholy.m"; sourceTree = "<group>"; };
 		8DBCD6A4BA47559D30A8DCE83F956624 /* Galileo-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Galileo-iOS-dummy.m"; sourceTree = "<group>"; };
-		8EEF82A61F73EAB86456C068578ABFD8 /* atelier-cave-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-cave-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-cave-dark.min.css"; sourceTree = "<group>"; };
+		8EEF82A61F73EAB86456C068578ABFD8 /* atelier-cave-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-cave-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-cave-dark.min.css"; sourceTree = "<group>"; };
 		8F3C25E191548E171C18D4CA20820580 /* PreferenceTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		90C5AA666B3A3AA6A462ACE506835E75 /* excel.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = excel.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/excel.min.js; sourceTree = "<group>"; };
+		90C5AA666B3A3AA6A462ACE506835E75 /* excel.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = excel.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/excel.min.js; sourceTree = "<group>"; };
 		90C903546BC3372C2229F41827905059 /* Pods-Galileo-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Galileo-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		93776F0A108AA11CF785B934C7E67968 /* WHDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHDate.swift; path = Sources/Subclasses/WHDate.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94B99388EB65727337A243A18694F40E /* routeros.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = routeros.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/routeros.min.js; sourceTree = "<group>"; };
-		957D53B210569D7B39E205113B6799D5 /* clojure-repl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = "clojure-repl.min.js"; path = "Sources/Utils/Highlightr/Assets/Highlighter/languages/clojure-repl.min.js"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94B99388EB65727337A243A18694F40E /* routeros.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = routeros.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/routeros.min.js; sourceTree = "<group>"; };
+		957D53B210569D7B39E205113B6799D5 /* clojure-repl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = "clojure-repl.min.js"; path = "Sources/Utils/Highlightr/Assets/Highlighter/languages/clojure-repl.min.js"; sourceTree = "<group>"; };
 		960366023AB26AAA84F37DF614F43FC9 /* NSURLSessionConfiguration+Wormholy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSessionConfiguration+Wormholy.h"; path = "Sources/Objc/NSURLSessionConfiguration+Wormholy.h"; sourceTree = "<group>"; };
-		96732028B2CD5CA234D71815A3919147 /* csp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = csp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/csp.min.js; sourceTree = "<group>"; };
-		96C0CA43A63C705633F3C81E1188E06E /* tomorrow-night-blue.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night-blue.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/tomorrow-night-blue.min.css"; sourceTree = "<group>"; };
-		9808340D31D7A6E2ECD9978B05A70B7C /* php.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = php.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/php.min.js; sourceTree = "<group>"; };
-		9A02714657FA2BEC7CC65A5C562640E1 /* darcula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = darcula.min.css; path = Sources/Utils/Highlightr/Assets/styles/darcula.min.css; sourceTree = "<group>"; };
-		9B84816672292EF0D05FC5AD300B28D5 /* prolog.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = prolog.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/prolog.min.js; sourceTree = "<group>"; };
-		9C70972A3F0770C1DDBD84777FA4DF17 /* livescript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = livescript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/livescript.min.js; sourceTree = "<group>"; };
-		9D503A1E77BB34114D92C0283EBA0C90 /* foundation.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = foundation.min.css; path = Sources/Utils/Highlightr/Assets/styles/foundation.min.css; sourceTree = "<group>"; };
-		9DC527D1C52639902C11F6C019AAE453 /* applescript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = applescript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/applescript.min.js; sourceTree = "<group>"; };
-		9E3947B0EA1456C7EB74621D2F7E0820 /* llvm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = llvm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/llvm.min.js; sourceTree = "<group>"; };
-		9E916CA580F067EC182144D1E3E58820 /* haml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = haml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/haml.min.js; sourceTree = "<group>"; };
-		9ED70D046B74C1A8211B2F4565BB2FC9 /* http.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = http.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/http.min.js; sourceTree = "<group>"; };
+		96732028B2CD5CA234D71815A3919147 /* csp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = csp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/csp.min.js; sourceTree = "<group>"; };
+		96C0CA43A63C705633F3C81E1188E06E /* tomorrow-night-blue.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "tomorrow-night-blue.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/tomorrow-night-blue.min.css"; sourceTree = "<group>"; };
+		9808340D31D7A6E2ECD9978B05A70B7C /* php.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = php.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/php.min.js; sourceTree = "<group>"; };
+		9A02714657FA2BEC7CC65A5C562640E1 /* darcula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = darcula.min.css; path = Sources/Utils/Highlightr/Assets/styles/darcula.min.css; sourceTree = "<group>"; };
+		9B84816672292EF0D05FC5AD300B28D5 /* prolog.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = prolog.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/prolog.min.js; sourceTree = "<group>"; };
+		9C70972A3F0770C1DDBD84777FA4DF17 /* livescript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = livescript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/livescript.min.js; sourceTree = "<group>"; };
+		9D503A1E77BB34114D92C0283EBA0C90 /* foundation.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = foundation.min.css; path = Sources/Utils/Highlightr/Assets/styles/foundation.min.css; sourceTree = "<group>"; };
+		9DC527D1C52639902C11F6C019AAE453 /* applescript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = applescript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/applescript.min.js; sourceTree = "<group>"; };
+		9E3947B0EA1456C7EB74621D2F7E0820 /* llvm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = llvm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/llvm.min.js; sourceTree = "<group>"; };
+		9E916CA580F067EC182144D1E3E58820 /* haml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = haml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/haml.min.js; sourceTree = "<group>"; };
+		9ED70D046B74C1A8211B2F4565BB2FC9 /* http.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = http.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/http.min.js; sourceTree = "<group>"; };
 		9F683875BAA6DC3F3B0183FF7C6123B6 /* Galileo-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Galileo-iOS-prefix.pch"; sourceTree = "<group>"; };
 		A001EC9FE459ED8C35182664EE143BC9 /* ConsoleLogGalileoContainerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConsoleLogGalileoContainerViewController.swift; sourceTree = "<group>"; };
 		A04BB220EFADB935A3F8B0348C0390AB /* WHTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHTextView.swift; path = Sources/Subclasses/WHTextView.swift; sourceTree = "<group>"; };
-		A1143F422E4A747BA5F091B69595678C /* asciidoc.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = asciidoc.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/asciidoc.min.js; sourceTree = "<group>"; };
+		A1143F422E4A747BA5F091B69595678C /* asciidoc.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = asciidoc.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/asciidoc.min.js; sourceTree = "<group>"; };
 		A1622F6C7DE04B76C2072DD8CB65AAF2 /* PreferenceBoolTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceBoolTableViewCell.xib; sourceTree = "<group>"; };
 		A241CB319FC5C7AD3BBBAE25D2FBE30F /* PreferenceIntegerViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceIntegerViewModel.swift; sourceTree = "<group>"; };
 		A5E18C02154C5D17B7667AF6DC69CA49 /* PreferenceViewTypeMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceViewTypeMapper.swift; sourceTree = "<group>"; };
-		A61C692A04A5A83B31C7BAB48F08CCAE /* xquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = xquery.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/xquery.min.js; sourceTree = "<group>"; };
-		A6937063269DE0D0E8F432C96099F731 /* dust.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = dust.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dust.min.js; sourceTree = "<group>"; };
+		A61C692A04A5A83B31C7BAB48F08CCAE /* xquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = xquery.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/xquery.min.js; sourceTree = "<group>"; };
+		A6937063269DE0D0E8F432C96099F731 /* dust.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = dust.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dust.min.js; sourceTree = "<group>"; };
 		A77045282F684131341D9444656DD4A5 /* Galileo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Galileo.swift; path = "Galileo-iOS/Classes/Galileo.swift"; sourceTree = "<group>"; };
 		AAD9D2A78BE5B6FD81B4417C84C36E9B /* PreferencesGalileoTableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoTableViewDataSource.swift; sourceTree = "<group>"; };
 		AC00BB35613630E17D22EC4EED98B4A1 /* PreferenceBoolTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceBoolTableViewCell.swift; sourceTree = "<group>"; };
-		AC61954783A92F1A179FC553459CCBBB /* monkey.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = monkey.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/monkey.min.js; sourceTree = "<group>"; };
-		ACB0168876E0F708A463B768AEF4171D /* profile.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = profile.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/profile.min.js; sourceTree = "<group>"; };
-		AD329E27A4E9A8A88F664FF92A729BCC /* gauss.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = gauss.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/gauss.min.js; sourceTree = "<group>"; };
-		AFC481C9F1B2EA31BE0964F682B3876E /* brainfuck.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = brainfuck.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/brainfuck.min.js; sourceTree = "<group>"; };
-		B015768AE40D510C2806B469ACD42143 /* Galileo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Galileo.bundle; path = "Galileo-iOS-Galileo.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC61954783A92F1A179FC553459CCBBB /* monkey.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = monkey.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/monkey.min.js; sourceTree = "<group>"; };
+		ACB0168876E0F708A463B768AEF4171D /* profile.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = profile.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/profile.min.js; sourceTree = "<group>"; };
+		AD329E27A4E9A8A88F664FF92A729BCC /* gauss.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = gauss.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/gauss.min.js; sourceTree = "<group>"; };
+		AFC481C9F1B2EA31BE0964F682B3876E /* brainfuck.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = brainfuck.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/brainfuck.min.js; sourceTree = "<group>"; };
+		B015768AE40D510C2806B469ACD42143 /* Galileo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Galileo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B19983E1577685E4A3D5BFD65EAD7B /* WormholyMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WormholyMethodSwizzling.m; path = Sources/Objc/WormholyMethodSwizzling.m; sourceTree = "<group>"; };
-		B1E720EDA7F341E0B1D365653C873172 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		B20117601D237B9C0CCB4678BEEC5CD6 /* school-book.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "school-book.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/school-book.min.css"; sourceTree = "<group>"; };
-		B21D75081672766904738791582B3E01 /* nginx.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = nginx.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/nginx.min.js; sourceTree = "<group>"; };
-		B364D6478212C1A2FE6F1D78FC7C394D /* oxygene.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = oxygene.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/oxygene.min.js; sourceTree = "<group>"; };
+		B1E720EDA7F341E0B1D365653C873172 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B20117601D237B9C0CCB4678BEEC5CD6 /* school-book.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "school-book.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/school-book.min.css"; sourceTree = "<group>"; };
+		B21D75081672766904738791582B3E01 /* nginx.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = nginx.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/nginx.min.js; sourceTree = "<group>"; };
+		B364D6478212C1A2FE6F1D78FC7C394D /* oxygene.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = oxygene.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/oxygene.min.js; sourceTree = "<group>"; };
 		B3B11D2F8E470DDD78AC34F355AD27A7 /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = Sources/Utils/Highlightr/Theme.swift; sourceTree = "<group>"; };
-		B5337767DA54ADFDA6ED8EC80417662B /* fix.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = fix.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/fix.min.js; sourceTree = "<group>"; };
-		B7FC34B00AEB1BAC1C01D9B126A1F189 /* vs.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = vs.min.css; path = Sources/Utils/Highlightr/Assets/styles/vs.min.css; sourceTree = "<group>"; };
+		B5337767DA54ADFDA6ED8EC80417662B /* fix.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = fix.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/fix.min.js; sourceTree = "<group>"; };
+		B7FC34B00AEB1BAC1C01D9B126A1F189 /* vs.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = vs.min.css; path = Sources/Utils/Highlightr/Assets/styles/vs.min.css; sourceTree = "<group>"; };
 		B96BD747CB35406D9DF69DE5593E8565 /* WHBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHBundle.swift; path = Sources/Subclasses/WHBundle.swift; sourceTree = "<group>"; };
-		B987B158D787F2FC63DDE40BD3565966 /* atelier-savanna-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-savanna-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-savanna-dark.min.css"; sourceTree = "<group>"; };
-		B9ECA4E2540E867328333F245961A9F9 /* darkula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = darkula.min.css; path = Sources/Utils/Highlightr/Assets/styles/darkula.min.css; sourceTree = "<group>"; };
+		B987B158D787F2FC63DDE40BD3565966 /* atelier-savanna-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-savanna-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-savanna-dark.min.css"; sourceTree = "<group>"; };
+		B9ECA4E2540E867328333F245961A9F9 /* darkula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = darkula.min.css; path = Sources/Utils/Highlightr/Assets/styles/darkula.min.css; sourceTree = "<group>"; };
 		BBC5E9FD858793274F42C72825EECAD5 /* Colors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = "Sources/Support Files/Colors.swift"; sourceTree = "<group>"; };
-		BBE2A130C6935D24CB76104273DE41EE /* ir-black.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "ir-black.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/ir-black.min.css"; sourceTree = "<group>"; };
-		BBE3857AAE3C164E74D819B3AAFC3401 /* gradle.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = gradle.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/gradle.min.js; sourceTree = "<group>"; };
-		BBE5FEA55230D52BDD9BABAD5445573E /* ocaml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ocaml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ocaml.min.js; sourceTree = "<group>"; };
+		BBE2A130C6935D24CB76104273DE41EE /* ir-black.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "ir-black.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/ir-black.min.css"; sourceTree = "<group>"; };
+		BBE3857AAE3C164E74D819B3AAFC3401 /* gradle.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = gradle.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/gradle.min.js; sourceTree = "<group>"; };
+		BBE5FEA55230D52BDD9BABAD5445573E /* ocaml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = ocaml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ocaml.min.js; sourceTree = "<group>"; };
 		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BC9BB1595F1FB85958A6ADD7EC4650F2 /* gruvbox-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "gruvbox-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/gruvbox-light.min.css"; sourceTree = "<group>"; };
+		BC9BB1595F1FB85958A6ADD7EC4650F2 /* gruvbox-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "gruvbox-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/gruvbox-light.min.css"; sourceTree = "<group>"; };
 		BD1619D09B4D05674B95D3D2FF2704DC /* PreferenceBoolViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceBoolViewModel.swift; sourceTree = "<group>"; };
-		BED43ADE661CBEC7CA4B8F2E3C781C30 /* verilog.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = verilog.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/verilog.min.js; sourceTree = "<group>"; };
-		BF57E3B64DDBB9B65B77FCA14E32DBB9 /* x86asm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = x86asm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/x86asm.min.js; sourceTree = "<group>"; };
-		C0D2F63E2216B72E30CD8737D926CDC7 /* json.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = json.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/json.min.js; sourceTree = "<group>"; };
-		C17FD4159C2DD06D6836A1AA3A24DFB8 /* xcode.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = xcode.min.css; path = Sources/Utils/Highlightr/Assets/styles/xcode.min.css; sourceTree = "<group>"; };
-		C20DB89CD226A4C0815A3946FA49D928 /* scheme.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = scheme.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/scheme.min.js; sourceTree = "<group>"; };
-		C24BBC4C47838CC7D35E0385FA8B3E7D /* capnproto.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = capnproto.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/capnproto.min.js; sourceTree = "<group>"; };
-		C2982D71831A2DF9EE33D9C59B3C444F /* arduino.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = arduino.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/arduino.min.js; sourceTree = "<group>"; };
-		C2CCF7A1816ED6B5DC8CB95D936FC3A2 /* taggerscript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = taggerscript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/taggerscript.min.js; sourceTree = "<group>"; };
-		C3EED306099769CF6ACA30126FDFB6C8 /* mipsasm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = mipsasm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mipsasm.min.js; sourceTree = "<group>"; };
+		BED43ADE661CBEC7CA4B8F2E3C781C30 /* verilog.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = verilog.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/verilog.min.js; sourceTree = "<group>"; };
+		BF57E3B64DDBB9B65B77FCA14E32DBB9 /* x86asm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = x86asm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/x86asm.min.js; sourceTree = "<group>"; };
+		C0D2F63E2216B72E30CD8737D926CDC7 /* json.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = json.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/json.min.js; sourceTree = "<group>"; };
+		C17FD4159C2DD06D6836A1AA3A24DFB8 /* xcode.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = xcode.min.css; path = Sources/Utils/Highlightr/Assets/styles/xcode.min.css; sourceTree = "<group>"; };
+		C20DB89CD226A4C0815A3946FA49D928 /* scheme.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = scheme.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/scheme.min.js; sourceTree = "<group>"; };
+		C24BBC4C47838CC7D35E0385FA8B3E7D /* capnproto.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = capnproto.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/capnproto.min.js; sourceTree = "<group>"; };
+		C2982D71831A2DF9EE33D9C59B3C444F /* arduino.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = arduino.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/arduino.min.js; sourceTree = "<group>"; };
+		C2CCF7A1816ED6B5DC8CB95D936FC3A2 /* taggerscript.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = taggerscript.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/taggerscript.min.js; sourceTree = "<group>"; };
+		C3EED306099769CF6ACA30126FDFB6C8 /* mipsasm.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = mipsasm.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mipsasm.min.js; sourceTree = "<group>"; };
 		C47C459EFDF80F21D34CDCB6FFA5087B /* Galileo-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Galileo-iOS.xcconfig"; sourceTree = "<group>"; };
-		C480D57DFDF6C5B3061F275EBE7D662E /* mercury.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = mercury.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mercury.min.js; sourceTree = "<group>"; };
-		C4A0AF137D02DB9A9A8E65EE5D7F2B4A /* tomorrow-night-eighties.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night-eighties.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/tomorrow-night-eighties.min.css"; sourceTree = "<group>"; };
-		C552D97D23F3439674A3608EA444CF6D /* vs2015.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = vs2015.min.css; path = Sources/Utils/Highlightr/Assets/styles/vs2015.min.css; sourceTree = "<group>"; };
-		C56D55EE032C16E166D2142A8A69A72D /* xl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = xl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/xl.min.js; sourceTree = "<group>"; };
+		C480D57DFDF6C5B3061F275EBE7D662E /* mercury.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = mercury.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mercury.min.js; sourceTree = "<group>"; };
+		C4A0AF137D02DB9A9A8E65EE5D7F2B4A /* tomorrow-night-eighties.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "tomorrow-night-eighties.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/tomorrow-night-eighties.min.css"; sourceTree = "<group>"; };
+		C552D97D23F3439674A3608EA444CF6D /* vs2015.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = vs2015.min.css; path = Sources/Utils/Highlightr/Assets/styles/vs2015.min.css; sourceTree = "<group>"; };
+		C56D55EE032C16E166D2142A8A69A72D /* xl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = xl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/xl.min.js; sourceTree = "<group>"; };
 		C59F4F0A7EB7D3A0592020BBA7751F66 /* Wormholy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Wormholy-dummy.m"; sourceTree = "<group>"; };
 		C5FBD8882C970024D67205537FFFA3C6 /* Wormholy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Wormholy-umbrella.h"; path = "../../Headers/Public/Wormholy/Wormholy-umbrella.h"; sourceTree = "<group>"; };
-		C63B89F59C60A4C9A546470C8E3840F8 /* nsis.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = nsis.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/nsis.min.js; sourceTree = "<group>"; };
-		C6530F46774BD607DC8F71AA80CAA7A1 /* go.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = go.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/go.min.js; sourceTree = "<group>"; };
+		C63B89F59C60A4C9A546470C8E3840F8 /* nsis.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = nsis.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/nsis.min.js; sourceTree = "<group>"; };
+		C6530F46774BD607DC8F71AA80CAA7A1 /* go.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = go.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/go.min.js; sourceTree = "<group>"; };
 		C69181DAB65655E51DCAC5DF189A0FCC /* PreferenceDateTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceDateTableViewCell.swift; sourceTree = "<group>"; };
-		C70494FE1E689AD7A8C82C74D5FD5A0B /* powershell.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = powershell.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/powershell.min.js; sourceTree = "<group>"; };
-		C8957C493B7C383162031A4B7E3CB2EB /* java.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = java.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/java.min.js; sourceTree = "<group>"; };
-		C8C330B9DB0A7734A40E47F1F047D928 /* purebasic.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = purebasic.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/purebasic.min.js; sourceTree = "<group>"; };
+		C70494FE1E689AD7A8C82C74D5FD5A0B /* powershell.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = powershell.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/powershell.min.js; sourceTree = "<group>"; };
+		C8957C493B7C383162031A4B7E3CB2EB /* java.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = java.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/java.min.js; sourceTree = "<group>"; };
+		C8C330B9DB0A7734A40E47F1F047D928 /* purebasic.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = purebasic.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/purebasic.min.js; sourceTree = "<group>"; };
 		C8F8F7CA9B659C200C6CF29838CB2AFE /* Wormholy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Wormholy.xcconfig; sourceTree = "<group>"; };
-		CB482D7EDE6ADCBC5B5377063AF8601F /* sunburst.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = sunburst.min.css; path = Sources/Utils/Highlightr/Assets/styles/sunburst.min.css; sourceTree = "<group>"; };
-		CBF448D60232346F749DD09F5996EAAB /* default.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = default.min.css; path = Sources/Utils/Highlightr/Assets/styles/default.min.css; sourceTree = "<group>"; };
-		CC295EA07B42CCF1F10C8BC0B720F197 /* markdown.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = markdown.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/markdown.min.js; sourceTree = "<group>"; };
-		CC57C31A8005E0271967ACB83600CE5C /* haskell.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = haskell.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/haskell.min.js; sourceTree = "<group>"; };
-		CCAE389AFF54A8779BC7F35020421B1F /* ocean.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = ocean.min.css; path = Sources/Utils/Highlightr/Assets/styles/ocean.min.css; sourceTree = "<group>"; };
-		CD7A1662F9E2832665C01158A964594D /* python.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = python.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/python.min.js; sourceTree = "<group>"; };
+		CB482D7EDE6ADCBC5B5377063AF8601F /* sunburst.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = sunburst.min.css; path = Sources/Utils/Highlightr/Assets/styles/sunburst.min.css; sourceTree = "<group>"; };
+		CBF448D60232346F749DD09F5996EAAB /* default.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = default.min.css; path = Sources/Utils/Highlightr/Assets/styles/default.min.css; sourceTree = "<group>"; };
+		CC295EA07B42CCF1F10C8BC0B720F197 /* markdown.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = markdown.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/markdown.min.js; sourceTree = "<group>"; };
+		CC57C31A8005E0271967ACB83600CE5C /* haskell.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = haskell.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/haskell.min.js; sourceTree = "<group>"; };
+		CCAE389AFF54A8779BC7F35020421B1F /* ocean.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = ocean.min.css; path = Sources/Utils/Highlightr/Assets/styles/ocean.min.css; sourceTree = "<group>"; };
+		CD7A1662F9E2832665C01158A964594D /* python.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = python.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/python.min.js; sourceTree = "<group>"; };
 		CE638F2A2A6A8760E3DA7B5D67FB9285 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		CEAD03FE50D20EA11E8EC684188E9EC3 /* brown-paper.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "brown-paper.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/brown-paper.min.css"; sourceTree = "<group>"; };
-		CEC2DA5C02E130DFC230526B9CBFD18E /* atelier-seaside-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-seaside-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-seaside-dark.min.css"; sourceTree = "<group>"; };
-		CFA2BFEB60FBC42F01C683CE5CE21DBF /* swift.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = swift.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/swift.min.js; sourceTree = "<group>"; };
+		CEAD03FE50D20EA11E8EC684188E9EC3 /* brown-paper.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "brown-paper.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/brown-paper.min.css"; sourceTree = "<group>"; };
+		CEC2DA5C02E130DFC230526B9CBFD18E /* atelier-seaside-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-seaside-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-seaside-dark.min.css"; sourceTree = "<group>"; };
+		CFA2BFEB60FBC42F01C683CE5CE21DBF /* swift.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = swift.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/swift.min.js; sourceTree = "<group>"; };
 		D098BE6433EED12E2AEA4A50368CF64F /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = Alamofire.modulemap; path = ../../Headers/Public/Alamofire/Alamofire.modulemap; sourceTree = "<group>"; };
-		D09B366A69A791E9396E924AC407D4CC /* ada.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ada.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ada.min.js; sourceTree = "<group>"; };
-		D09FEC7B4B8ABF837992C3FF2BFB77FF /* atelier-dune-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-dune-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-dune-light.min.css"; sourceTree = "<group>"; };
+		D09B366A69A791E9396E924AC407D4CC /* ada.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = ada.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ada.min.js; sourceTree = "<group>"; };
+		D09FEC7B4B8ABF837992C3FF2BFB77FF /* atelier-dune-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-dune-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-dune-light.min.css"; sourceTree = "<group>"; };
 		D0AFC127769F4E4287BA370CBEDA752C /* TextTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextTableViewCell.swift; path = Sources/UI/Cells/TextTableViewCell.swift; sourceTree = "<group>"; };
 		D0BFE167AF028576E67BA957C5B7388A /* Wormholy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = Wormholy.modulemap; path = ../../Headers/Public/Wormholy/Wormholy.modulemap; sourceTree = "<group>"; };
-		D1AD9ADD9B8A8172FF287D82B104C915 /* axapta.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = axapta.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/axapta.min.js; sourceTree = "<group>"; };
+		D1AD9ADD9B8A8172FF287D82B104C915 /* axapta.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = axapta.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/axapta.min.js; sourceTree = "<group>"; };
 		D1B2DFBB1B1547750F2033E5B2CDB8FA /* ResourceBundle-Wormholy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Wormholy-Info.plist"; sourceTree = "<group>"; };
-		D217913C4CA5B2091E413793AD7232D7 /* kotlin.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = kotlin.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/kotlin.min.js; sourceTree = "<group>"; };
-		D3456C5E928E448DF4C7B5DED5980896 /* github.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = github.min.css; path = Sources/Utils/Highlightr/Assets/styles/github.min.css; sourceTree = "<group>"; };
-		D357AAEE65644E5B74D535D3F91984C3 /* rsl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = rsl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/rsl.min.js; sourceTree = "<group>"; };
-		D3C9DDF7DAE302150CFBC1025BC31AB7 /* purebasic.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = purebasic.min.css; path = Sources/Utils/Highlightr/Assets/styles/purebasic.min.css; sourceTree = "<group>"; };
+		D217913C4CA5B2091E413793AD7232D7 /* kotlin.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = kotlin.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/kotlin.min.js; sourceTree = "<group>"; };
+		D3456C5E928E448DF4C7B5DED5980896 /* github.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = github.min.css; path = Sources/Utils/Highlightr/Assets/styles/github.min.css; sourceTree = "<group>"; };
+		D357AAEE65644E5B74D535D3F91984C3 /* rsl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = rsl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/rsl.min.js; sourceTree = "<group>"; };
+		D3C9DDF7DAE302150CFBC1025BC31AB7 /* purebasic.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = purebasic.min.css; path = Sources/Utils/Highlightr/Assets/styles/purebasic.min.css; sourceTree = "<group>"; };
 		D3D81FC7F8CBD9143EAB1C5200A68B4B /* WormholyGalileoPluginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WormholyGalileoPluginViewController.swift; sourceTree = "<group>"; };
-		D45033500E15E5A64FBC92201683D0AB /* androidstudio.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = androidstudio.min.css; path = Sources/Utils/Highlightr/Assets/styles/androidstudio.min.css; sourceTree = "<group>"; };
-		D5AE3FC5BB670615821133A70706F8BC /* dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = dark.min.css; path = Sources/Utils/Highlightr/Assets/styles/dark.min.css; sourceTree = "<group>"; };
-		D6029087835B59C384D698F3AB2DE50A /* grayscale.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = grayscale.min.css; path = Sources/Utils/Highlightr/Assets/styles/grayscale.min.css; sourceTree = "<group>"; };
-		D60F3CBD8F9EA90ACBC881638868CE0E /* docco.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = docco.min.css; path = Sources/Utils/Highlightr/Assets/styles/docco.min.css; sourceTree = "<group>"; };
-		D8010B518F0DB261FC2E0E040A92FA8B /* puppet.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = puppet.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/puppet.min.js; sourceTree = "<group>"; };
-		D908BE469009096D6CE81B52767405EC /* gcode.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = gcode.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/gcode.min.js; sourceTree = "<group>"; };
+		D45033500E15E5A64FBC92201683D0AB /* androidstudio.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = androidstudio.min.css; path = Sources/Utils/Highlightr/Assets/styles/androidstudio.min.css; sourceTree = "<group>"; };
+		D5AE3FC5BB670615821133A70706F8BC /* dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = dark.min.css; path = Sources/Utils/Highlightr/Assets/styles/dark.min.css; sourceTree = "<group>"; };
+		D6029087835B59C384D698F3AB2DE50A /* grayscale.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = grayscale.min.css; path = Sources/Utils/Highlightr/Assets/styles/grayscale.min.css; sourceTree = "<group>"; };
+		D60F3CBD8F9EA90ACBC881638868CE0E /* docco.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = docco.min.css; path = Sources/Utils/Highlightr/Assets/styles/docco.min.css; sourceTree = "<group>"; };
+		D8010B518F0DB261FC2E0E040A92FA8B /* puppet.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = puppet.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/puppet.min.js; sourceTree = "<group>"; };
+		D908BE469009096D6CE81B52767405EC /* gcode.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = gcode.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/gcode.min.js; sourceTree = "<group>"; };
 		D9A9A4AA9F8518C2898280A27B06C7FD /* Wormholy+Foo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Wormholy+Foo.m"; path = "Sources/Objc/Wormholy+Foo.m"; sourceTree = "<group>"; };
-		D9C1945802B55EC88903560794A2CAB9 /* elixir.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = elixir.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/elixir.min.js; sourceTree = "<group>"; };
-		DA905D721FC186C1DA94817B85C7F96D /* flix.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = flix.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/flix.min.js; sourceTree = "<group>"; };
+		D9C1945802B55EC88903560794A2CAB9 /* elixir.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = elixir.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/elixir.min.js; sourceTree = "<group>"; };
+		DA905D721FC186C1DA94817B85C7F96D /* flix.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = flix.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/flix.min.js; sourceTree = "<group>"; };
 		DAC7CC9701783F8777ABACE2C193D6D5 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		DAEB096CEE45D4B893FBFA0681E22680 /* github-gist.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "github-gist.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/github-gist.min.css"; sourceTree = "<group>"; };
-		DB5523AE7CA04A9605DE0EE7B215BF33 /* atelier-forest-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-forest-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-forest-light.min.css"; sourceTree = "<group>"; };
-		DC4498DB77E0FA81954ADA6A22896C07 /* atelier-sulphurpool-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-sulphurpool-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-sulphurpool-light.min.css"; sourceTree = "<group>"; };
-		DD2FAAF0A0BDB3AFE218786AA058AAD7 /* cos.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = cos.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/cos.min.js; sourceTree = "<group>"; };
-		DDCE65A615BBFA8A012D05811C37C535 /* libPods-Galileo-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Galileo-iOS_Example.a"; path = "libPods-Galileo-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAEB096CEE45D4B893FBFA0681E22680 /* github-gist.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "github-gist.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/github-gist.min.css"; sourceTree = "<group>"; };
+		DB5523AE7CA04A9605DE0EE7B215BF33 /* atelier-forest-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-forest-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-forest-light.min.css"; sourceTree = "<group>"; };
+		DC4498DB77E0FA81954ADA6A22896C07 /* atelier-sulphurpool-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-sulphurpool-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-sulphurpool-light.min.css"; sourceTree = "<group>"; };
+		DD2FAAF0A0BDB3AFE218786AA058AAD7 /* cos.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = cos.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/cos.min.js; sourceTree = "<group>"; };
+		DDCE65A615BBFA8A012D05811C37C535 /* libPods-Galileo-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Galileo-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2428A971A015B35AC0031EEF6277C0 /* PreferencesGalileoIO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoIO.swift; sourceTree = "<group>"; };
-		DF7FD754A2F71261747D884FFA7439F1 /* haxe.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = haxe.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/haxe.min.js; sourceTree = "<group>"; };
+		DF7FD754A2F71261747D884FFA7439F1 /* haxe.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = haxe.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/haxe.min.js; sourceTree = "<group>"; };
 		DFA24DEFC825862336B6CD3195224767 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		DFA7FD208A77E9A1F4D267EDE23379D5 /* vbnet.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = vbnet.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/vbnet.min.js; sourceTree = "<group>"; };
-		DFD7A6327C0D3E536D6452EE293A8EA6 /* dart.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = dart.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dart.min.js; sourceTree = "<group>"; };
-		DFE4168B1CA934697EEA27E038B49EE5 /* erb.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = erb.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/erb.min.js; sourceTree = "<group>"; };
-		E091B59B5C26C1E708F6E51F9D9D5E3C /* dos.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = dos.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dos.min.js; sourceTree = "<group>"; };
-		E0DBB6E5BFD06A2CA3ACF4D68A77DC19 /* pony.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = pony.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/pony.min.js; sourceTree = "<group>"; };
-		E104565263FDD9A75301B74B9FFBE17A /* bnf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = bnf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/bnf.min.js; sourceTree = "<group>"; };
+		DFA7FD208A77E9A1F4D267EDE23379D5 /* vbnet.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = vbnet.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/vbnet.min.js; sourceTree = "<group>"; };
+		DFD7A6327C0D3E536D6452EE293A8EA6 /* dart.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = dart.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dart.min.js; sourceTree = "<group>"; };
+		DFE4168B1CA934697EEA27E038B49EE5 /* erb.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = erb.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/erb.min.js; sourceTree = "<group>"; };
+		E091B59B5C26C1E708F6E51F9D9D5E3C /* dos.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = dos.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/dos.min.js; sourceTree = "<group>"; };
+		E0DBB6E5BFD06A2CA3ACF4D68A77DC19 /* pony.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = pony.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/pony.min.js; sourceTree = "<group>"; };
+		E104565263FDD9A75301B74B9FFBE17A /* bnf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = bnf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/bnf.min.js; sourceTree = "<group>"; };
 		E122AD8C84BF1D394F9DEF547DB0DE4D /* Galileo-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Galileo-iOS.modulemap"; path = "../../Headers/Public/Galileo_iOS/Galileo-iOS.modulemap"; sourceTree = "<group>"; };
-		E13FC7840B01B94B5FC426E26BB66193 /* lisp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lisp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/lisp.min.js; sourceTree = "<group>"; };
-		E18478330A9043AE3F7534C51565C903 /* atelier-cave-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-cave-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-cave-light.min.css"; sourceTree = "<group>"; };
+		E13FC7840B01B94B5FC426E26BB66193 /* lisp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = lisp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/lisp.min.js; sourceTree = "<group>"; };
+		E18478330A9043AE3F7534C51565C903 /* atelier-cave-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-cave-light.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-cave-light.min.css"; sourceTree = "<group>"; };
 		E19DB02DC7190B38BFF60665668DCE5C /* Pods-Galileo-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Galileo-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E2110AF3FCCFF3EAC5E6E5F2C30D2CD0 /* libWormholy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWormholy.a; path = libWormholy.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2B7AA43095C1D0CE9BA63AC1A31C7CE /* step21.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = step21.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/step21.min.js; sourceTree = "<group>"; };
-		E4781B85CF8ED6D1E43378BEE026FFAC /* kimbie.light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = kimbie.light.min.css; path = Sources/Utils/Highlightr/Assets/styles/kimbie.light.min.css; sourceTree = "<group>"; };
+		E2110AF3FCCFF3EAC5E6E5F2C30D2CD0 /* libWormholy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWormholy.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2B7AA43095C1D0CE9BA63AC1A31C7CE /* step21.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = step21.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/step21.min.js; sourceTree = "<group>"; };
+		E4781B85CF8ED6D1E43378BEE026FFAC /* kimbie.light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = kimbie.light.min.css; path = Sources/Utils/Highlightr/Assets/styles/kimbie.light.min.css; sourceTree = "<group>"; };
 		E51BD361577D56F116B6D183C59157C2 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Sources/Storage.swift; sourceTree = "<group>"; };
 		E540ADD5B6CF3CB4520353AECF047F29 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		E66EF8E20CEAACDF1FB5F3F328C63BD6 /* gams.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = gams.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/gams.min.js; sourceTree = "<group>"; };
+		E66EF8E20CEAACDF1FB5F3F328C63BD6 /* gams.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = gams.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/gams.min.js; sourceTree = "<group>"; };
 		E674CC15EDEC19BA772E1C9DF361DE22 /* RequestTitleSectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTitleSectionView.swift; path = Sources/UI/Sections/RequestTitleSectionView.swift; sourceTree = "<group>"; };
-		E81BBD2445A2369844B47212AF1E8BC4 /* ldif.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ldif.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ldif.min.js; sourceTree = "<group>"; };
-		E85CA6D12796FE66225232D05A7C1E73 /* googlecode.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = googlecode.min.css; path = Sources/Utils/Highlightr/Assets/styles/googlecode.min.css; sourceTree = "<group>"; };
-		E8EF19884F8E10F52F2CF484C807E6EB /* xt256.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = xt256.min.css; path = Sources/Utils/Highlightr/Assets/styles/xt256.min.css; sourceTree = "<group>"; };
-		E9C221D7C4786709B482FA6900858B26 /* paraiso-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "paraiso-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/paraiso-dark.min.css"; sourceTree = "<group>"; };
+		E81BBD2445A2369844B47212AF1E8BC4 /* ldif.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = ldif.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ldif.min.js; sourceTree = "<group>"; };
+		E85CA6D12796FE66225232D05A7C1E73 /* googlecode.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = googlecode.min.css; path = Sources/Utils/Highlightr/Assets/styles/googlecode.min.css; sourceTree = "<group>"; };
+		E8EF19884F8E10F52F2CF484C807E6EB /* xt256.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = xt256.min.css; path = Sources/Utils/Highlightr/Assets/styles/xt256.min.css; sourceTree = "<group>"; };
+		E9C221D7C4786709B482FA6900858B26 /* paraiso-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "paraiso-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/paraiso-dark.min.css"; sourceTree = "<group>"; };
 		EA394D3C5C99F7F294B15E94DC2C2A27 /* PreferenceDateTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceDateTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		EA3C6C68FA734986B78AC601D1887E1A /* ConsoleLogGalileoViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ConsoleLogGalileoViewController.xib; sourceTree = "<group>"; };
 		EAC56D7E5EC488985DB4FC539441A3D3 /* ResourceBundle-Galileo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Galileo-Info.plist"; sourceTree = "<group>"; };
-		EB934C55EF9CD7EC55549148D4358402 /* atelier-heath-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-heath-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-heath-dark.min.css"; sourceTree = "<group>"; };
-		EC39844D47D90831ADC23339F8D18138 /* fortran.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = fortran.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/fortran.min.js; sourceTree = "<group>"; };
+		EB934C55EF9CD7EC55549148D4358402 /* atelier-heath-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "atelier-heath-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/atelier-heath-dark.min.css"; sourceTree = "<group>"; };
+		EC39844D47D90831ADC23339F8D18138 /* fortran.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = fortran.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/fortran.min.js; sourceTree = "<group>"; };
 		EDC1A4BC115AD2DBA97FD4694A534177 /* Pods-Galileo-iOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Galileo-iOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EDD96E73FB350E1A4A69545AD9538B21 /* mono-blue.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "mono-blue.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/mono-blue.min.css"; sourceTree = "<group>"; };
-		EEEAB07A25853AB7C40DD6FDA49E1BE0 /* far.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = far.min.css; path = Sources/Utils/Highlightr/Assets/styles/far.min.css; sourceTree = "<group>"; };
+		EDD96E73FB350E1A4A69545AD9538B21 /* mono-blue.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "mono-blue.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/mono-blue.min.css"; sourceTree = "<group>"; };
+		EEEAB07A25853AB7C40DD6FDA49E1BE0 /* far.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = far.min.css; path = Sources/Utils/Highlightr/Assets/styles/far.min.css; sourceTree = "<group>"; };
 		EF3630FE42E2C0F32DED56C220EDAEEE /* WHTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WHTableView.swift; path = Sources/Subclasses/WHTableView.swift; sourceTree = "<group>"; };
-		EF4143731EC64B02D95FFDE8B6B3AF7F /* ceylon.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ceylon.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ceylon.min.js; sourceTree = "<group>"; };
+		EF4143731EC64B02D95FFDE8B6B3AF7F /* ceylon.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = ceylon.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ceylon.min.js; sourceTree = "<group>"; };
 		EF947E2BC0F013CB833B68F77B2747C8 /* RequestModelBeautifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModelBeautifier.swift; path = Sources/Utils/RequestModelBeautifier.swift; sourceTree = "<group>"; };
-		F02DB0E28A64EB66E7BAEBB7626068A2 /* perl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = perl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/perl.min.js; sourceTree = "<group>"; };
-		F097188DCC6F3C310F777E63F82C5E51 /* n1ql.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = n1ql.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/n1ql.min.js; sourceTree = "<group>"; };
-		F1B273C6490410707DB0DD8875D0C371 /* solarized-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "solarized-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/solarized-dark.min.css"; sourceTree = "<group>"; };
+		F02DB0E28A64EB66E7BAEBB7626068A2 /* perl.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = perl.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/perl.min.js; sourceTree = "<group>"; };
+		F097188DCC6F3C310F777E63F82C5E51 /* n1ql.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = n1ql.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/n1ql.min.js; sourceTree = "<group>"; };
+		F1B273C6490410707DB0DD8875D0C371 /* solarized-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = "solarized-dark.min.css"; path = "Sources/Utils/Highlightr/Assets/styles/solarized-dark.min.css"; sourceTree = "<group>"; };
 		F26EAEBFC18E91856A826D69C3FD8BFE /* Pods-Galileo-iOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Galileo-iOS_Example-dummy.m"; sourceTree = "<group>"; };
-		F44EA5F64EE8C1AFF4C625A403108AC7 /* roboconf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = roboconf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/roboconf.min.js; sourceTree = "<group>"; };
+		F44EA5F64EE8C1AFF4C625A403108AC7 /* roboconf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = roboconf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/roboconf.min.js; sourceTree = "<group>"; };
 		F53A6AA19A02E1E7009805B6CC9CAEC2 /* PreferencesGalileoContainerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoContainerViewController.swift; sourceTree = "<group>"; };
-		F5CF89209B52639261D2CD7C4E40DD7B /* julia.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = julia.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/julia.min.js; sourceTree = "<group>"; };
-		F61752569EEDB4E6FDEC7C2B9CAF276B /* monokai.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = monokai.min.css; path = Sources/Utils/Highlightr/Assets/styles/monokai.min.css; sourceTree = "<group>"; };
-		F6CA146B66D18051BF924BB2CDDA979C /* libGalileo-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libGalileo-iOS.a"; path = "libGalileo-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F926D84A19EDB515F82FD38690D76E74 /* mathematica.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = mathematica.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mathematica.min.js; sourceTree = "<group>"; };
+		F5CF89209B52639261D2CD7C4E40DD7B /* julia.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = julia.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/julia.min.js; sourceTree = "<group>"; };
+		F61752569EEDB4E6FDEC7C2B9CAF276B /* monokai.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = monokai.min.css; path = Sources/Utils/Highlightr/Assets/styles/monokai.min.css; sourceTree = "<group>"; };
+		F6CA146B66D18051BF924BB2CDDA979C /* libGalileo-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGalileo-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F926D84A19EDB515F82FD38690D76E74 /* mathematica.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = mathematica.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mathematica.min.js; sourceTree = "<group>"; };
 		F96D153237613563A8584D34BD89B20C /* GalileoMainViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = GalileoMainViewController.xib; sourceTree = "<group>"; };
-		FA4B5324C9095AB8EBDE34407BAB6B63 /* smalltalk.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = smalltalk.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/smalltalk.min.js; sourceTree = "<group>"; };
-		FA70D733485310D1C4B955B683213DAB /* fsharp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = fsharp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/fsharp.min.js; sourceTree = "<group>"; };
-		FB4A13A80606C10FC162C8ACF21A1872 /* mizar.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = mizar.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mizar.min.js; sourceTree = "<group>"; };
+		FA4B5324C9095AB8EBDE34407BAB6B63 /* smalltalk.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = smalltalk.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/smalltalk.min.js; sourceTree = "<group>"; };
+		FA70D733485310D1C4B955B683213DAB /* fsharp.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = fsharp.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/fsharp.min.js; sourceTree = "<group>"; };
+		FB4A13A80606C10FC162C8ACF21A1872 /* mizar.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = mizar.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/mizar.min.js; sourceTree = "<group>"; };
 		FB62B8CFA99139BE6E46678B8D6E0379 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-umbrella.h"; path = "../../Headers/Public/Alamofire/Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		FC032D3D69A24CABE90BC851A6609B84 /* abnf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = abnf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/abnf.min.js; sourceTree = "<group>"; };
+		FC032D3D69A24CABE90BC851A6609B84 /* abnf.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = abnf.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/abnf.min.js; sourceTree = "<group>"; };
 		FC117B00AEC00B13BB3C8E165FB5A871 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		FC588E59382D639FDF75986A56C0422E /* TextTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TextTableViewCell.xib; path = Sources/UI/Cells/TextTableViewCell.xib; sourceTree = "<group>"; };
 		FD11A3C322DE18D59297F14995E0DF6F /* Pods-Galileo-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Galileo-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FD1E2633E4A2D6112787616A2D1FAB6F /* yaml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = yaml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/yaml.min.js; sourceTree = "<group>"; };
-		FDCFC2417E899EBC30CCE6448D97287B /* railscasts.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = railscasts.min.css; path = Sources/Utils/Highlightr/Assets/styles/railscasts.min.css; sourceTree = "<group>"; };
-		FFF91FA283A55E185A4C81AA635B0AC5 /* ruby.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ruby.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ruby.min.js; sourceTree = "<group>"; };
+		FD1E2633E4A2D6112787616A2D1FAB6F /* yaml.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = yaml.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/yaml.min.js; sourceTree = "<group>"; };
+		FDCFC2417E899EBC30CCE6448D97287B /* railscasts.min.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = railscasts.min.css; path = Sources/Utils/Highlightr/Assets/styles/railscasts.min.css; sourceTree = "<group>"; };
+		FFF91FA283A55E185A4C81AA635B0AC5 /* ruby.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = ruby.min.js; path = Sources/Utils/Highlightr/Assets/Highlighter/languages/ruby.min.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -886,7 +890,6 @@
 				F182D95BD294E2CD0757D6A980037F9D /* Presenter */,
 				61463C4156DCB753BD37F108F9C6D0A5 /* View */,
 			);
-			name = "Preferences Plugin";
 			path = "Preferences Plugin";
 			sourceTree = "<group>";
 		};
@@ -896,7 +899,6 @@
 				54851900BACDDFCD925846987E59D00A /* PreferencesGalileoViewController.xib */,
 				6F705E7A9F6CA69913CA30A66007507E /* Cell */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -905,7 +907,6 @@
 			children = (
 				B2A5F1D5DA2D129705E8ABFC6AC7C7CD /* View */,
 			);
-			name = "Main View";
 			path = "Main View";
 			sourceTree = "<group>";
 		};
@@ -915,7 +916,6 @@
 				15847931EC96214EE1DFD60D2CD11744 /* PreferencesGalileoInteractor.swift */,
 				DF2428A971A015B35AC0031EEF6277C0 /* PreferencesGalileoIO.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -971,7 +971,6 @@
 				A8B4C2CD05AE4AAC26A0DBF6F4733F4B /* Resources */,
 				6338971B6036BA13F6E507FB2DBE4034 /* Support Files */,
 			);
-			name = Wormholy;
 			path = Wormholy;
 			sourceTree = "<group>";
 		};
@@ -980,7 +979,6 @@
 			children = (
 				D3D81FC7F8CBD9143EAB1C5200A68B4B /* WormholyGalileoPluginViewController.swift */,
 			);
-			name = Wormholy;
 			path = Wormholy;
 			sourceTree = "<group>";
 		};
@@ -997,7 +995,6 @@
 			children = (
 				2D594FE28FD3A5A46EEC85643208781F /* View */,
 			);
-			name = "Preferences Plugin";
 			path = "Preferences Plugin";
 			sourceTree = "<group>";
 		};
@@ -1034,6 +1031,15 @@
 			path = "Galileo-iOS/Classes/Main View";
 			sourceTree = "<group>";
 		};
+		59B64C7D21A29870009338E7 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				592C512D21A298D4009E1AC0 /* GalileoConfiguration.swift */,
+				592C512F21A298E7009E1AC0 /* GalileoConfigurationProvider.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		61463C4156DCB753BD37F108F9C6D0A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1042,7 +1048,6 @@
 				6F9A48FE887DC92EE3650312240EB6A5 /* PreferencesGalileoViewInterface.swift */,
 				B5E85188034C6E04CCE853804B1FF4A9 /* Cell */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1050,6 +1055,7 @@
 			isa = PBXGroup;
 			children = (
 				A77045282F684131341D9444656DD4A5 /* Galileo.swift */,
+				59B64C7D21A29870009338E7 /* Configuration */,
 				589ABEF353E0AEB1C3C29D9C7231A63A /* Main View */,
 				A4777658DB588D4A9E54BC0C70DD4059 /* Plugins */,
 				ED8A65D5B378113C1019F18315844DDF /* Pod */,
@@ -1092,7 +1098,6 @@
 			children = (
 				EA3C6C68FA734986B78AC601D1887E1A /* ConsoleLogGalileoViewController.xib */,
 			);
-			name = "Console Log";
 			path = "Console Log";
 			sourceTree = "<group>";
 		};
@@ -1104,7 +1109,6 @@
 				3DB8F888BF6840646F74AA623D5ECBC6 /* PreferenceIntegerTableViewCell.xib */,
 				6D9454FB5373F023C1DA7974CCC226BB /* PreferenceTextTableViewCell.xib */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -1114,7 +1118,6 @@
 				65CC62EF0D8C00F16B1A3453AC0CFD14 /* Console Log */,
 				457615D1B8E9A690CA989A2B60A44D2C /* Preferences Plugin */,
 			);
-			name = Plugins;
 			path = Plugins;
 			sourceTree = "<group>";
 		};
@@ -1134,7 +1137,6 @@
 				5C01CB0EBE96D4DCF3A6DC82A899B61F /* PreferenceViewType.swift */,
 				A5E18C02154C5D17B7667AF6DC69CA49 /* PreferenceViewTypeMapper.swift */,
 			);
-			name = "View Type";
 			path = "View Type";
 			sourceTree = "<group>";
 		};
@@ -1168,7 +1170,6 @@
 			children = (
 				69F25EFA7BA9C16BE967B6BD71622421 /* MainViewControllerFactory.swift */,
 			);
-			name = Factory;
 			path = Factory;
 			sourceTree = "<group>";
 		};
@@ -1203,7 +1204,6 @@
 				24865C583A1A3FC840B921294B27652B /* Validation.swift */,
 				72078C2AF6BB5677E5589790F556B0D7 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1215,7 +1215,6 @@
 				A241CB319FC5C7AD3BBBAE25D2FBE30F /* PreferenceIntegerViewModel.swift */,
 				56C41F05F8599BF2B085C542359DF242 /* PreferenceTextViewModel.swift */,
 			);
-			name = "View Model";
 			path = "View Model";
 			sourceTree = "<group>";
 		};
@@ -1253,7 +1252,6 @@
 			children = (
 				48E925230C41BBBFB5EB644FC7B46ED3 /* PreferencesGalileoFactory.swift */,
 			);
-			name = Factory;
 			path = Factory;
 			sourceTree = "<group>";
 		};
@@ -1530,7 +1528,6 @@
 			children = (
 				F96D153237613563A8584D34BD89B20C /* GalileoMainViewController.xib */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1544,7 +1541,6 @@
 				8F3C25E191548E171C18D4CA20820580 /* PreferenceTableViewCellDelegate.swift */,
 				7A84E312591E84D1359BE2866ACDAA81 /* PreferenceTextTableViewCell.swift */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -1553,7 +1549,6 @@
 			children = (
 				0D368FB221D9315E8A33AF5C82E0A311 /* GalileoMainViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -1573,7 +1568,6 @@
 				7203C6FCA61165A861EB1B0D9D538467 /* ConsoleLogGalileoFactory.swift */,
 				62186F60CE12EDFF4F2C8D32B0942182 /* ConsoleLogGalileoViewController.swift */,
 			);
-			name = "Console Log";
 			path = "Console Log";
 			sourceTree = "<group>";
 		};
@@ -1596,7 +1590,6 @@
 				99C9522D361D3D52453FD77298334737 /* View Model */,
 				71FB63B1279296D6F0364C4125DF42A9 /* View Type */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -1606,7 +1599,6 @@
 				AAD9D2A78BE5B6FD81B4417C84C36E9B /* PreferencesGalileoTableViewDataSource.swift */,
 				6384816F3FF5B53778BD97214DB8B003 /* PreferencesGalileoTableViewDataSourceDelegate.swift */,
 			);
-			name = "Data Source";
 			path = "Data Source";
 			sourceTree = "<group>";
 		};
@@ -2100,7 +2092,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-			showEnvVarsInLog = 1;
 		};
 		79F60111188944C805855EC6FA0B718B /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2121,7 +2112,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Galileo_iOS/Galileo-iOS.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Galileo_iOS/Galileo-iOS-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-			showEnvVarsInLog = 1;
 		};
 		88F2315AD217D92AF57573E06E1C2347 /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2142,7 +2132,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Wormholy/Wormholy.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Wormholy/Wormholy-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2225,6 +2214,7 @@
 				D54560DC7B3389DEF659F98AB9C5F9BA /* MainViewControllerFactory.swift in Sources */,
 				017509E32D8627A887BB0346028BD507 /* PreferenceBoolTableViewCell.swift in Sources */,
 				C7A90074E2DC1551651B7AB36D4DAEF1 /* PreferenceBoolViewModel.swift in Sources */,
+				592C512E21A298D4009E1AC0 /* GalileoConfiguration.swift in Sources */,
 				147A0985555E360CD8882F63797A2AC6 /* PreferenceDateTableViewCell.swift in Sources */,
 				94ABB5A0D4474D4AF0309D4D9B84051A /* PreferenceDateTableViewCellDelegate.swift in Sources */,
 				F7FAFC2E7C23E113D00FE180B49FBC20 /* PreferenceDateViewModel.swift in Sources */,
@@ -2246,6 +2236,7 @@
 				A3B3A138CE31153137D23AD5348057C2 /* PreferenceViewType.swift in Sources */,
 				BD714B0ECFE756187039667E4D50AD26 /* PreferenceViewTypeMapper.swift in Sources */,
 				446073458124921FC65E535F90CD95A2 /* WormholyGalileoPluginViewController.swift in Sources */,
+				592C513021A298E7009E1AC0 /* GalileoConfigurationProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

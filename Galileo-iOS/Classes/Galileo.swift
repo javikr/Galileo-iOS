@@ -22,13 +22,9 @@ open class Galileo: UIWindow
 {
     private var plugins: [GalileoPlugin]
     
-    public init(frame: CGRect, customPlugins: [GalileoPlugin] = [])
+    public init(frame: CGRect, configuration: GalileoConfiguration = GalileoConfigurationProvider.defaultConfiguration())
     {
-        let preferencesPlugin = PreferencesGalileoFactory().preferencesGalileo()
-        let console = ConsoleLogGalileoFactory().consoleLogGalileo()
-        let wormholy = WormholyGalileoPluginViewController()
-        
-        self.plugins = [preferencesPlugin, console, wormholy] + customPlugins
+        self.plugins = configuration.plugins
         
         super.init(frame: frame)
     }
