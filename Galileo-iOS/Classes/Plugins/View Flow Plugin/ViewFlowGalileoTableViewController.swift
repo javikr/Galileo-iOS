@@ -83,11 +83,12 @@ extension ViewFlowGalileoTableViewController
         if let theCell = tableView.dequeueReusableCell(withIdentifier: "cell") {
             cell = theCell
         } else {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
         }
         
         cell.accessoryType = .disclosureIndicator
         cell.textLabel?.text = view.name
+        cell.detailTextLabel?.text = view.properties.debugDescription
         cell.imageView?.image = view.screenshot
         
         return cell

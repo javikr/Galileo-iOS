@@ -10,6 +10,8 @@ import UIKit
 
 class SampleModalViewController: UIViewController
 {
+    let propertyTest: String = "test"
+        
     override func viewDidLoad()
     {
         super.viewDidLoad()

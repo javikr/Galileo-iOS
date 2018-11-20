@@ -19,13 +19,26 @@ class ViewFlowGalileoContainer: UINavigationController
         }
     }
     
+    // Swizzled method
     @objc func customViewDidAppear()
     {
         guard !self.isKind(of: UINavigationController.self), !self.isKind(of: UITabBarController.self) else { return }
         
         guard let image = takeScreenshot() else { return }
         
-        let screenView = ScreenView(name: String(describing: type(of: self)), screenshot: image)
+        let mirror = Mirror(reflecting: self)
+        let propertyNames = mirror.children.compactMap{ $0.label }
+        let propertyValues = mirror.children.compactMap{ $0.value }
+        
+        var properties: [String: Any] = [:]
+        
+        if propertyNames.count == propertyValues.count {
+            for (index, propertyName) in propertyNames.enumerated() {
+                properties[propertyName] = propertyValues[index]
+            }
+        }
+        
+        let screenView = ScreenView(name: String(describing: type(of: self)), screenshot: image, properties: properties)
         notifyNewScreen(screenView: screenView)
     }
     

@@ -11,4 +11,5 @@ struct ScreenView
 {
     let name: String
     let screenshot: UIImage
+    let properties: [String: Any]
 }
