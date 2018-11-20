@@ -9,7 +9,11 @@
 import UIKit
 
 class GalileoMainViewController: UITabBarController
-{    
+{
+    deinit {
+        print("deinit GalileoMainViewController")
+    }
+    
     init(plugins: [GalileoPlugin])
     {
         let defaultIcon = UIImage(named: "103-doubt", in: Galileo.bundle, compatibleWith: nil)
@@ -24,9 +28,7 @@ class GalileoMainViewController: UITabBarController
         self.viewControllers = views
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    required init?(coder aDecoder: NSCoder) { return nil }
     
     override func viewDidLoad()
     {

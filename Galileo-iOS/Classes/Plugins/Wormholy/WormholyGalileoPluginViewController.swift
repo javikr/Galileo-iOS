@@ -9,29 +9,23 @@
 import UIKit
 import Wormholy
 
-public final class WormholyGalileoPluginViewController: UIViewController
+final class WormholyGalileoPluginViewController: UINavigationController
 {
-    override public func viewDidLoad()
+    override func viewDidLoad()
     {
         super.viewDidLoad()
 
-        addWormholyView()
+        if #available(iOS 11.0, *) {
+            navigationBar.prefersLargeTitles = true
+            navigationItem.largeTitleDisplayMode = .automatic
+        }
     }
     
-    private func addWormholyView()
+    override func viewDidAppear(_ animated: Bool)
     {
-        guard let wormholy = Wormholy.wormholyFlow else { return }
-
-        addChild(wormholy)
-        view.addSubview(wormholy.view)
-        wormholy.didMove(toParent: self)
+        super.viewDidAppear(animated)
         
-        NSLayoutConstraint.activate([
-            wormholy.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0.0),
-            wormholy.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0.0),
-            wormholy.view.topAnchor.constraint(equalTo: view.topAnchor, constant: 0.0),
-            wormholy.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0.0)
-            ])
+        children.first?.navigationItem.rightBarButtonItems = nil
     }
 }
 

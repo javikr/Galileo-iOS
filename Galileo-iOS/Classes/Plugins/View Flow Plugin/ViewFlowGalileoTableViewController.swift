@@ -47,6 +47,8 @@ class ViewFlowGalileoTableViewController: UITableViewController
     {
         super.viewWillAppear(animated)
         
+        purgeOldViews()
+        
         tableView.reloadData()
     }
     
@@ -65,6 +67,14 @@ class ViewFlowGalileoTableViewController: UITableViewController
     @objc func galileoStoppedNotification(notification: Notification)
     {
         galileoIsShowing = false
+    }
+    
+    private func purgeOldViews()
+    {
+        guard views.count - 100 > 0 else { return }
+        
+        let numberToDelete = views.count - 100
+        views = Array(views.dropFirst(numberToDelete))
     }
 }
 

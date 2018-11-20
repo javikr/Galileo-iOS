@@ -8,7 +8,18 @@
 
 import UIKit
 
-class ConsoleLogGalileoContainerViewController: UINavigationController {}
+class ConsoleLogGalileoContainerViewController: UINavigationController
+{
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        if #available(iOS 11.0, *) {
+            navigationBar.prefersLargeTitles = true
+            navigationItem.largeTitleDisplayMode = .automatic
+        }
+    }
+}
 
 extension ConsoleLogGalileoContainerViewController: GalileoPlugin
 {
@@ -29,16 +40,6 @@ extension ConsoleLogGalileoContainerViewController: GalileoPlugin
         let allPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let documentsDirectory = allPaths.first!
         return (documentsDirectory as NSString).appending("/console.log")
-    }
-    
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        
-        if #available(iOS 11.0, *) {
-            navigationBar.prefersLargeTitles = true
-            navigationItem.largeTitleDisplayMode = .automatic
-        }
     }
     
     private func redirectConsoleLogToDocumentFolder()

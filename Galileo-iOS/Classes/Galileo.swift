@@ -47,9 +47,7 @@ open class Galileo: UIWindow
         setupPlugins()
     }
     
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    required public init?(coder aDecoder: NSCoder) { return nil }
     
     override open func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
     {
