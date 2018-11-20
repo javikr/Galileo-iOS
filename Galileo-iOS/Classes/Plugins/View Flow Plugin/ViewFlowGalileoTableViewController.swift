@@ -28,7 +28,7 @@ class ViewFlowGalileoTableViewController: UITableViewController
         
         notificationCenter.addObserver(self, selector: #selector(ViewFlowGalileoTableViewController.addNewViewNotification(notification:)), name: Notification.Name(rawValue: "addNewViewNotification"), object: nil)
         notificationCenter.addObserver(self, selector: #selector(ViewFlowGalileoTableViewController.galileoStartedNotification(notification:)), name: Notification.Name(rawValue: "GalileoStartedNotification"), object: nil)
-        notificationCenter.addObserver(self, selector: #selector(ViewFlowGalileoTableViewController.galileoStoppedNotification(notification:)), name: Notification.Name(rawValue: "GalileoStopeedNotification"), object: nil)
+        notificationCenter.addObserver(self, selector: #selector(ViewFlowGalileoTableViewController.galileoStoppedNotification(notification:)), name: Notification.Name(rawValue: "GalileoStoppedNotification"), object: nil)
     }
     
     required init?(coder aDecoder: NSCoder) { return nil }
