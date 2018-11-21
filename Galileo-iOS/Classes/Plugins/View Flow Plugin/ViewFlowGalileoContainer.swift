@@ -20,7 +20,7 @@ class ViewFlowGalileoContainer: UINavigationController
     }
     
     // Swizzled method
-    @objc func customViewDidAppear()
+    @objc func customViewWillDissapear()
     {
         guard !self.isKind(of: UINavigationController.self), !self.isKind(of: UITabBarController.self) else { return }
         
@@ -74,7 +74,7 @@ extension ViewFlowGalileoContainer: GalileoPlugin
     
     func setupPlugin()
     {
-        swizzling(forClass: UIViewController.self, originalSelector: #selector(UIViewController.viewDidAppear(_:)), toClass: ViewFlowGalileoContainer.self, swizzledSelector: #selector(ViewFlowGalileoContainer.customViewDidAppear))
+        swizzling(forClass: UIViewController.self, originalSelector: #selector(UIViewController.viewWillDisappear(_:)), toClass: ViewFlowGalileoContainer.self, swizzledSelector: #selector(ViewFlowGalileoContainer.customViewWillDissapear))
     }
     
     private func swizzling(forClass: AnyClass, originalSelector: Selector, toClass: AnyClass, swizzledSelector: Selector)
