@@ -29,7 +29,7 @@ class PreferenceDateTableViewCell: UITableViewCell
             datePicker.date = date
             datePicker.isHidden = viewModel?.isViewCollapsed ?? false
             showHideButton.setTitle(dateFormatter.string(from: date), for: .normal)
-            showHideButton.titleLabel?.font = UIFont.systemFont(ofSize: 18.0)
+            showHideButton.titleLabel?.font = UIFont.systemFont(ofSize: 16.0)
         }
     }
     

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class ViewFlowGalileoTableViewController: UITableViewController
 {
@@ -29,6 +30,7 @@ class ViewFlowGalileoTableViewController: UITableViewController
         notificationCenter.addObserver(self, selector: #selector(ViewFlowGalileoTableViewController.addNewViewNotification(notification:)), name: Notification.Name(rawValue: "addNewViewNotification"), object: nil)
         notificationCenter.addObserver(self, selector: #selector(ViewFlowGalileoTableViewController.galileoStartedNotification(notification:)), name: Notification.Name(rawValue: "GalileoStartedNotification"), object: nil)
         notificationCenter.addObserver(self, selector: #selector(ViewFlowGalileoTableViewController.galileoStoppedNotification(notification:)), name: Notification.Name(rawValue: "GalileoStoppedNotification"), object: nil)
+        notificationCenter.addObserver(self, selector: #selector(ConsoleLogGalileoViewController.applicationDidBecomeActive(notification:)), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
     required init?(coder aDecoder: NSCoder) { return nil }
@@ -43,6 +45,8 @@ class ViewFlowGalileoTableViewController: UITableViewController
         tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
         tableView.backgroundColor = UIColor.groupTableViewBackground
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(ViewFlowGalileoTableViewController.shareFlowHistory))
         
         let cellName = String(describing: ViewFlowTableViewCell.self)
         tableView.register(UINib(nibName: cellName, bundle: Galileo.bundle), forCellReuseIdentifier: cellName)
@@ -74,12 +78,46 @@ class ViewFlowGalileoTableViewController: UITableViewController
         galileoIsShowing = false
     }
     
+    @objc func applicationDidBecomeActive(notification: Notification)
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .medium
+        
+        let dateValue = dateFormatter.string(from: Date())
+        
+        try? write("", toFilename: Galileo.viewFlowLogFilename)
+        try? write("------------------------------", toFilename: Galileo.viewFlowLogFilename)
+        try? write("---> " + dateValue + " <---", toFilename: Galileo.viewFlowLogFilename)
+        try? write("------------------------------", toFilename: Galileo.viewFlowLogFilename)
+        try? write("", toFilename: Galileo.viewFlowLogFilename)
+    }
+    
+    @objc private func shareFlowHistory()
+    {
+        guard let text = try? read(filename: Galileo.viewFlowLogFilename) else { return }
+        
+        let mailComposer = MFMailComposeViewController()
+        mailComposer.setMessageBody(text, isHTML: false)
+        mailComposer.mailComposeDelegate = self
+        
+        present(mailComposer, animated: true, completion: nil)
+    }
+    
     private func purgeOldViews()
     {
         guard views.count - 100 > 0 else { return }
         
         let numberToDelete = views.count - 100
         views = Array(views.dropFirst(numberToDelete))
+    }
+}
+
+extension ViewFlowGalileoTableViewController: MFMailComposeViewControllerDelegate
+{
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?)
+    {
+        controller.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -109,9 +147,8 @@ extension ViewFlowGalileoTableViewController
     {
         let view = lastViews[indexPath.row]
         
-        let detailView = ViewFlowDetailViewController(nibName: String(describing: ViewFlowDetailViewController.self), bundle: Galileo.bundle)
-        detailView.screenView = view
+        let detailView = ViewFlowDetailViewControllerFactory().flowViewDetail(screenView: view)
         
-        navigationController?.pushViewController(detailView, animated: true)
+        present(detailView, animated: true, completion: nil)
     }
 }

@@ -39,7 +39,7 @@ extension ConsoleLogGalileoContainerViewController: GalileoPlugin
     var consoleLogFilePath: String {
         let allPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let documentsDirectory = allPaths.first!
-        return (documentsDirectory as NSString).appending("/console.log")
+        return (documentsDirectory as NSString).appending("/" + Galileo.consoleLogFilename)
     }
     
     private func redirectConsoleLogToDocumentFolder()

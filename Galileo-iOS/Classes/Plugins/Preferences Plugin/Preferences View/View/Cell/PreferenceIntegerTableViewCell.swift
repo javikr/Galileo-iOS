@@ -19,7 +19,7 @@ class PreferenceIntegerTableViewCell: UITableViewCell
     }
     @IBOutlet weak var valueLabel: UILabel! {
         didSet {
-            valueLabel.font = UIFont.systemFont(ofSize: 18.0)
+            valueLabel.font = UIFont.systemFont(ofSize: 16.0)
             valueLabel.textColor = UIColor.darkGray
         }
     }

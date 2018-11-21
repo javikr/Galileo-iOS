@@ -10,10 +10,6 @@ import UIKit
 
 class GalileoMainViewController: UITabBarController
 {
-    deinit {
-        print("deinit GalileoMainViewController")
-    }
-    
     init(plugins: [GalileoPlugin])
     {
         let defaultIcon = UIImage(named: "103-doubt", in: Galileo.bundle, compatibleWith: nil)

@@ -20,7 +20,7 @@ class PreferenceTextTableViewCell: UITableViewCell
     @IBOutlet var valueTextField: UITextField! {
         didSet {
             valueTextField.delegate = self
-            valueTextField.font = UIFont.systemFont(ofSize: 18.0)
+            valueTextField.font = UIFont.systemFont(ofSize: 16.0)
             valueTextField.textColor = UIColor.darkGray
         }
     }

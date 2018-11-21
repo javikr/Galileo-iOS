@@ -24,7 +24,7 @@ class ViewFlowTableViewCell: UITableViewCell
     }
     @IBOutlet weak var parametersList: UILabel! {
         didSet {
-            parametersList.font = UIFont.systemFont(ofSize: 18.0)
+            parametersList.font = UIFont.systemFont(ofSize: 16.0)
             parametersList.textColor = UIColor.darkGray
         }
     }
@@ -36,6 +36,15 @@ class ViewFlowTableViewCell: UITableViewCell
             screenshotImage.image = viewModel.image
             viewControllerName.text = viewModel.viewName
             parametersList.text = viewModel.viewParams
+        }
+    }
+    
+    override func setHighlighted(_ highlighted: Bool, animated: Bool)
+    {
+        if highlighted {
+            viewBack.backgroundColor = UIColor.lightGray
+        } else {
+            viewBack.backgroundColor = UIColor.white
         }
     }
     

@@ -38,7 +38,11 @@ class ViewFlowGalileoContainer: UINavigationController
             }
         }
         
-        let screenView = ScreenView(name: String(describing: type(of: self)), screenshot: image, properties: properties)
+        let viewControllerName = String(describing: type(of: self))
+        
+        try? write(viewControllerName, toFilename: Galileo.viewFlowLogFilename)
+        
+        let screenView = ScreenView(name: viewControllerName, screenshot: image, properties: properties)
         notifyNewScreen(screenView: screenView)
     }
     

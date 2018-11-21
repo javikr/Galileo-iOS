@@ -32,6 +32,36 @@ class ConsoleLogGalileoViewController: UIViewController
         return (navigationController as? ConsoleLogGalileoContainerViewController)?.consoleLogFilePath
     }
     
+    let notificationCenter = NotificationCenter.default
+    
+    deinit {
+        notificationCenter.removeObserver(self)
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
+    {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+
+        notificationCenter.addObserver(self, selector: #selector(ConsoleLogGalileoViewController.applicationDidBecomeActive(notification:)), name: UIApplication.didBecomeActiveNotification, object: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) { return nil }
+    
+    @objc func applicationDidBecomeActive(notification: Notification)
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .medium
+        
+        let dateValue = dateFormatter.string(from: Date())
+        
+        try? write("", toFilename: Galileo.consoleLogFilename)
+        try? write("------------------------------", toFilename: Galileo.consoleLogFilename)
+        try? write("---> " + dateValue + " <---", toFilename: Galileo.consoleLogFilename)
+        try? write("------------------------------", toFilename: Galileo.consoleLogFilename)
+        try? write("", toFilename: Galileo.consoleLogFilename)
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

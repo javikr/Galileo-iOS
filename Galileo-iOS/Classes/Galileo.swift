@@ -40,6 +40,9 @@ open class Galileo: UIWindow
         return Bundle(url: url!)!
     }
     
+    static let consoleLogFilename: String = "console.log"
+    static let viewFlowLogFilename: String = "view_flow.log"
+    
     override open func makeKeyAndVisible()
     {
         super.makeKeyAndVisible()
@@ -59,6 +62,7 @@ open class Galileo: UIWindow
             launchGalileo()
         }
     }
+    
     
     private func launchGalileo()
     {
