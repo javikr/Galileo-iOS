@@ -20,7 +20,7 @@ Easy-to-use debugging tool for your iOS app! Shake your device and go! Inspired 
   s.ios.deployment_target = '10.0'
   s.source_files = 'Galileo-iOS/Classes/**/*.swift'
   s.frameworks = 'UIKit'
-  s.dependency 'Wormholy'
+  s.dependency 'Wormholy', '~> 1.2'
   s.swift_version = '4.2'
   s.resources = [ 'Galileo-iOS/**/*.{lproj,xcassets,xib,png}' ]
   s.resource_bundles = {
