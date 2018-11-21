@@ -41,6 +41,11 @@ class ViewFlowGalileoTableViewController: UITableViewController
         
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = UIColor.groupTableViewBackground
+        
+        let cellName = String(describing: ViewFlowTableViewCell.self)
+        tableView.register(UINib(nibName: cellName, bundle: Galileo.bundle), forCellReuseIdentifier: cellName)
     }
     
     override func viewWillAppear(_ animated: Bool)
@@ -89,19 +94,15 @@ extension ViewFlowGalileoTableViewController
     {
         let view = lastViews[indexPath.row]
         
-        let cell: UITableViewCell
-        if let theCell = tableView.dequeueReusableCell(withIdentifier: "cell") {
-            cell = theCell
-        } else {
-            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+        var cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ViewFlowTableViewCell.self)) as? ViewFlowTableViewCell
+        
+        if cell == nil {
+            cell = Galileo.bundle.loadNibNamed(String(describing: ViewFlowTableViewCell.self), owner: nil, options: nil)?.first as? ViewFlowTableViewCell
         }
+
+        cell?.viewModel = ViewFlowTableViewCellViewModel(image: view.screenshot, viewName: view.name, viewParams: view.properties.description)
         
-        cell.accessoryType = .disclosureIndicator
-        cell.textLabel?.text = view.name
-        cell.detailTextLabel?.text = view.properties.debugDescription
-        cell.imageView?.image = view.screenshot
-        
-        return cell
+        return cell!
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
