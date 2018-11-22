@@ -28,6 +28,13 @@ extension PreferencesGalileoInteractor: PreferencesGalileoInput
         output?.didLoadedPreferences(preferences: prefs)
     }
     
+    func loadOnlyUserPreferences()
+    {
+        let prefs = userDefaultsSource.dictionaryRepresentation()
+        let filtered = prefs.filter( { !$0.key.lowercased().contains("apple") })
+        output?.didLoadedPreferences(preferences: filtered)
+    }
+    
     func updatePreference(withKey key: String, newValue: Any)
     {
         userDefaultsSource.set(newValue, forKey: key)

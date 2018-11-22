@@ -11,5 +11,6 @@ import Foundation
 protocol PreferencesGalileoPresenterInterface
 {
     func viewLoaded()
-    func viewWillAppear()
+    func filterPreferences()
+    func notFilterPreferences()
 }

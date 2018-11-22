@@ -46,7 +46,7 @@ class ViewFlowGalileoTableViewController: UITableViewController
         tableView.separatorStyle = .none
         tableView.backgroundColor = UIColor.groupTableViewBackground
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(ViewFlowGalileoTableViewController.shareFlowHistory))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(ViewFlowGalileoTableViewController.shareLog))
         
         let cellName = String(describing: ViewFlowTableViewCell.self)
         tableView.register(UINib(nibName: cellName, bundle: Galileo.bundle), forCellReuseIdentifier: cellName)
@@ -93,12 +93,14 @@ class ViewFlowGalileoTableViewController: UITableViewController
         try? write("", toFilename: Galileo.viewFlowLogFilename)
     }
     
-    @objc private func shareFlowHistory()
+    @objc private func shareLog()
     {
+        guard MFMailComposeViewController.canSendMail() else { return }
         guard let text = try? read(filename: Galileo.viewFlowLogFilename) else { return }
         
         let mailComposer = MFMailComposeViewController()
         mailComposer.setMessageBody(text, isHTML: false)
+        mailComposer.setSubject("View Flow log")
         mailComposer.mailComposeDelegate = self
         
         present(mailComposer, animated: true, completion: nil)
@@ -110,14 +112,6 @@ class ViewFlowGalileoTableViewController: UITableViewController
         
         let numberToDelete = views.count - 100
         views = Array(views.dropFirst(numberToDelete))
-    }
-}
-
-extension ViewFlowGalileoTableViewController: MFMailComposeViewControllerDelegate
-{
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?)
-    {
-        controller.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -150,5 +144,13 @@ extension ViewFlowGalileoTableViewController
         let detailView = ViewFlowDetailViewControllerFactory().flowViewDetail(screenView: view)
         
         present(detailView, animated: true, completion: nil)
+    }
+}
+
+extension ViewFlowGalileoTableViewController: MFMailComposeViewControllerDelegate
+{
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?)
+    {
+        controller.dismiss(animated: true, completion: nil)
     }
 }

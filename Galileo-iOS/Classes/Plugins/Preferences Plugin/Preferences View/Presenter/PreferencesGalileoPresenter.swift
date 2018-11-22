@@ -30,7 +30,12 @@ extension PreferencesGalileoPresenter: PreferencesGalileoPresenterInterface
         view?.set(tableViewDelegate: dataSource)
     }
     
-    func viewWillAppear()
+    func filterPreferences()
+    {
+        interactor.loadOnlyUserPreferences()
+    }
+    
+    func notFilterPreferences()
     {
         interactor.loadPreferences()
     }

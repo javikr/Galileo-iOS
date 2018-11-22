@@ -24,7 +24,6 @@ class ViewFlowDetailViewController: UIViewController
         didSet {
             tableViewProperties.estimatedRowHeight = 100.0
             tableViewProperties.rowHeight = UITableView.automaticDimension
-            
             tableViewProperties.dataSource = self
         }
     }

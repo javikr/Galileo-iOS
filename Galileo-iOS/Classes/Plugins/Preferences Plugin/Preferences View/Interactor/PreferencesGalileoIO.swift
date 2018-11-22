@@ -11,6 +11,7 @@ import Foundation
 protocol PreferencesGalileoInput
 {
     func loadPreferences()
+    func loadOnlyUserPreferences()
     func updatePreference(withKey: String, newValue: Any)
     func deletePreference(withKey: String)
 }

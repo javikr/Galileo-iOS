@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class ViewFlowGalileoContainer: UINavigationController
 {
@@ -22,7 +23,7 @@ class ViewFlowGalileoContainer: UINavigationController
     // Swizzled method
     @objc func customViewWillDissapear()
     {
-        guard !self.isKind(of: UINavigationController.self), !self.isKind(of: UITabBarController.self) else { return }
+        guard !self.isKind(of: UINavigationController.self), !self.isKind(of: UITabBarController.self),  !self.isKind(of: MFMailComposeViewController.self) else { return }
         
         guard let image = takeScreenshot() else { return }
         

@@ -11,10 +11,18 @@ import UIKit
 class PreferencesGalileoViewController: UITableViewController
 {
     var eventHandler: PreferencesGalileoPresenterInterface!
+    private var switchFilter: UISwitch! {
+        didSet {
+            switchFilter.isOn = true
+            switchFilter.addTarget(self, action: #selector(PreferencesGalileoViewController.didTapFilterSwitch(sender:)), for: UIControl.Event.valueChanged)
+        }
+    }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        switchFilter = UISwitch()
 
         eventHandler.viewLoaded()
     }
@@ -23,7 +31,21 @@ class PreferencesGalileoViewController: UITableViewController
     {
         super.viewWillAppear(animated)
         
-        eventHandler.viewWillAppear()
+        loadPreferences()
+    }
+    
+    @objc func didTapFilterSwitch(sender: UISwitch)
+    {
+        loadPreferences()
+    }
+    
+    private func loadPreferences()
+    {
+        if switchFilter.isOn {
+            eventHandler.filterPreferences()
+        } else {
+            eventHandler.notFilterPreferences()
+        }
     }
 }
 
@@ -35,6 +57,8 @@ extension PreferencesGalileoViewController: PreferencesGalileoViewInterface
         
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableView.automaticDimension
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: switchFilter)
     }
     
     func set(tableViewDataSource: UITableViewDataSource)

@@ -11,6 +11,7 @@ import UIKit
 class PreferencesGalileoTableViewDataSource: NSObject
 {
     var preferences: [PreferenceViewType]
+    
     weak var delegate: PreferencesGalileoTableViewDataSourceDelegate?
     
     init(preferences: [PreferenceViewType], delegate: PreferencesGalileoTableViewDataSourceDelegate?)

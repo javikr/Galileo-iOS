@@ -31,9 +31,10 @@ class ViewFlowDetailTableViewCell: UITableViewCell
         }
     }
     
-    override func awakeFromNib() {
+    override func awakeFromNib()
+    {
         super.awakeFromNib()
-        // Initialization code
+        
+        selectionStyle = .none
     }
-    
 }

@@ -37,8 +37,11 @@ class SamplePluginViewController: UIViewController
     override public func viewDidLoad()
     {
         super.viewDidLoad()
-
-        view.backgroundColor = .lightGray
+    }
+    
+    @IBAction func didTapButton(_ sender: Any)
+    {
+        view.endEditing(true)
     }
 }
 
