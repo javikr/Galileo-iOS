@@ -31,7 +31,14 @@ extension PreferencesGalileoInteractor: PreferencesGalileoInput
     func loadOnlyUserPreferences()
     {
         let prefs = userDefaultsSource.dictionaryRepresentation()
-        let filtered = prefs.filter( { !$0.key.lowercased().contains("apple") })
+        let filterPrefs = ["apple", "webkit"]
+        
+        let filtered = prefs.filter { (pref) in
+            !filterPrefs.contains(where: { (filterPref) in
+                pref.key.lowercased().contains(filterPref)
+            })
+        }
+
         output?.didLoadedPreferences(preferences: filtered)
     }
     
