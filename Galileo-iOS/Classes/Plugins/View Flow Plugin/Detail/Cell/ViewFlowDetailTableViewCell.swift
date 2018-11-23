@@ -11,12 +11,12 @@ class ViewFlowDetailTableViewCell: UITableViewCell
 {
     @IBOutlet weak var title: UILabel! {
         didSet {
-            title.font = UIFont.boldSystemFont(ofSize: 18.0)
+            title.font = UIFont.boldSystemFont(ofSize: 16.0)
         }
     }
     @IBOutlet weak var subtitle: UILabel! {
         didSet {
-            subtitle.font = UIFont.systemFont(ofSize: 16.0)
+            subtitle.font = UIFont.systemFont(ofSize: 14.0)
         }
     }
     

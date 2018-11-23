@@ -76,7 +76,11 @@ extension ViewFlowDetailViewController: UITableViewDataSource
         }
         
         cell?.propertyTitle = propertyKey
-        cell?.propertyValue = screenView.properties[propertyKey].debugDescription
+        
+        let propertyValue = screenView.properties[propertyKey]!
+        let value = (propertyValue as? CustomStringConvertible)?.description ?? (propertyValue as? CustomDebugStringConvertible)?.debugDescription ?? ""
+        
+        cell?.propertyValue = value
         
         return cell!
     }

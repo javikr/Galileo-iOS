@@ -23,33 +23,39 @@ class ViewFlowGalileoContainer: UINavigationController
     // Swizzled method
     @objc func customViewWillDissapear()
     {
-        guard !self.isKind(of: UINavigationController.self), !self.isKind(of: UITabBarController.self),  !self.isKind(of: MFMailComposeViewController.self) else { return }
+        guard !self.isKind(of: UINavigationController.self), !self.isKind(of: UITabBarController.self), !self.isKind(of: UIPageViewController.self), !self.isKind(of: MFMailComposeViewController.self) else { return }
         
-        guard let image = takeScreenshot() else { return }
+        // 1) take screenshot
+        guard let image = self.takeScreenshot() else { return }
         
+        // 2) obtain view controller name
+        let viewControllerName = String(describing: type(of: self))
+        try? write(viewControllerName, toFilename: Galileo.viewFlowLogFilename)
+        
+        // 3) obtain view controller properties
         let mirror = Mirror(reflecting: self)
         let propertyNames = mirror.children.compactMap{ $0.label }
         let propertyValues = mirror.children.compactMap{ $0.value }
         
-        var properties: [String: Any] = [:]
-        
-        if propertyNames.count == propertyValues.count {
-            for (index, propertyName) in propertyNames.enumerated() {
-                properties[propertyName] = propertyValues[index]
+        DispatchQueue.global(qos: .background).async {
+            var properties: [String: Any] = [:]
+            
+            if propertyNames.count == propertyValues.count {
+                for (index, propertyName) in propertyNames.enumerated() {
+                    let value = propertyValues[index]
+                    
+                    // PLEASE NOTE: fix to avoid crash for big property values!
+                    guard value is Bool || value is Int || value is String || value is Double || value is Float || value is CGFloat else { continue }
+                    properties[propertyName] = value
+                }
+            }
+            
+            let screenView = ScreenView(name: viewControllerName, screenshot: image, properties: properties)
+            
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "addNewViewNotification"), object: nil, userInfo: ["screenView": screenView])
             }
         }
-        
-        let viewControllerName = String(describing: type(of: self))
-        
-        try? write(viewControllerName, toFilename: Galileo.viewFlowLogFilename)
-        
-        let screenView = ScreenView(name: viewControllerName, screenshot: image, properties: properties)
-        notifyNewScreen(screenView: screenView)
-    }
-    
-    private func notifyNewScreen(screenView: ScreenView)
-    {
-        NotificationCenter.default.post(name: Notification.Name(rawValue: "addNewViewNotification"), object: nil, userInfo: ["screenView": screenView])
     }
     
     private func takeScreenshot() -> UIImage?

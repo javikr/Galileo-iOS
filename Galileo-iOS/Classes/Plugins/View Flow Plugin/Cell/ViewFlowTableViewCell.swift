@@ -18,13 +18,13 @@ class ViewFlowTableViewCell: UITableViewCell
     @IBOutlet weak var screenshotImage: UIImageView!
     @IBOutlet weak var viewControllerName: UILabel! {
         didSet {
-            viewControllerName.font = UIFont.boldSystemFont(ofSize: 18.0)
+            viewControllerName.font = UIFont.boldSystemFont(ofSize: 16.0)
             viewControllerName.textColor = UIColor.black
         }
     }
     @IBOutlet weak var parametersList: UILabel! {
         didSet {
-            parametersList.font = UIFont.systemFont(ofSize: 16.0)
+            parametersList.font = UIFont.systemFont(ofSize: 14.0)
             parametersList.textColor = UIColor.darkGray
         }
     }
