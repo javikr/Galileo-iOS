@@ -10,6 +10,8 @@ import Wormholy
 
 public final class WormholyGalileoPluginViewControllerFactory
 {
+    public init() {}
+    
     public func wormholyGalileoPlugin() -> GalileoPlugin
     {
         let wormholy = Wormholy.wormholyFlow!.children.first!
