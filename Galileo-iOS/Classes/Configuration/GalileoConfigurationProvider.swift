@@ -28,8 +28,8 @@ public struct GalileoConfigurationProvider
     
     private static func defaultPlugins() -> [GalileoPlugin]
     {
-        let preferencesPlugin = PreferencesGalileoFactory().preferencesGalileo()
         let console = ConsoleLogGalileoFactory().consoleLogGalileo()
+        let preferencesPlugin = PreferencesGalileoFactory().preferencesGalileo()
         let wormholy = WormholyGalileoPluginViewControllerFactory().wormholyGalileoPlugin()
         let viewFlowPlugin = ViewFlowGalileoFactory().viewFlow()
 

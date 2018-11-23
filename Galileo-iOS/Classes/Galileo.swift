@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Wormholy
 
 /**
  UIWindow subclass that works with Galileo. **You must use this Window class in your AppDelegate file**
@@ -26,6 +27,8 @@ open class Galileo: UIWindow
     public init(frame: CGRect, configuration: GalileoConfiguration = GalileoConfigurationProvider.defaultConfiguration())
     {
         self.plugins = configuration.plugins
+        
+        Wormholy.shakeEnabled = false
         
         super.init(frame: frame)
     }
