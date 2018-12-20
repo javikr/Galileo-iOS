@@ -64,11 +64,4 @@ extension UIViewController{
             return viewController
         }
     }
-    
-    open override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
-        //Shake shake
-        if motion == .motionShake && Wormholy.shakeEnabled {
-            NotificationCenter.default.post(name: fireWormholy, object: nil)
-        }
-    }
 }

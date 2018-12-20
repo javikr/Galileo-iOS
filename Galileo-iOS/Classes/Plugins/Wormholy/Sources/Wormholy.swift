@@ -11,12 +11,6 @@ import UIKit
 
 public class Wormholy: NSObject
 {
-    @objc public static func swiftyLoad() {
-        NotificationCenter.default.addObserver(forName: fireWormholy, object: nil, queue: nil) { (notification) in
-            Wormholy.presentWormholyFlow()
-        }
-    }
-    
     @objc public static func swiftyInitialize() {
         if self == Wormholy.self{
             Wormholy.enable(true)
@@ -78,24 +72,4 @@ public class Wormholy: NSObject
         let storyboard = UIStoryboard(name: "Flow", bundle: Galileo.bundle)
         return storyboard.instantiateInitialViewController()
     }
-    
-    @objc public static var shakeEnabled: Bool = {
-        let key = "WORMHOLY_SHAKE_ENABLED"
-        
-        if let environmentVariable = ProcessInfo.processInfo.environment[key] {
-            return environmentVariable != "NO"
-        }
-        
-        let arguments = UserDefaults.standard.volatileDomain(forName: UserDefaults.argumentDomain)
-        if let arg = arguments[key] {
-            switch arg {
-            case let boolean as Bool: return boolean
-            case let string as NSString: return string.boolValue
-            case let number as NSNumber: return number.boolValue
-            default: break
-            }
-        }
-        
-        return true
-    }()
 }

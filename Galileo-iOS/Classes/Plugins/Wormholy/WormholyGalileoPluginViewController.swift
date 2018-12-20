@@ -40,6 +40,7 @@ extension WormholyGalileoPluginViewController: GalileoPlugin
     
     public func setupPlugin()
     {
-        Wormholy.shakeEnabled = false
+        Wormholy.enable(true, sessionConfiguration: URLSessionConfiguration.default)
+        Wormholy.enable(true, sessionConfiguration: URLSessionConfiguration.ephemeral)
     }
 }

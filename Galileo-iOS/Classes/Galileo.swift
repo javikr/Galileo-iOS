@@ -26,9 +26,7 @@ open class Galileo: UIWindow
     public init(frame: CGRect, configuration: GalileoConfiguration = GalileoConfigurationProvider.defaultConfiguration())
     {
         self.plugins = configuration.plugins
-        
-        Wormholy.shakeEnabled = false
-        
+                
         super.init(frame: frame)
     }
     

@@ -1,12 +1,12 @@
+////
+////  Wormholy+Foo.m
+////  Wormholy-SDK-iOS
+////
+////  Created by Paolo Musolino on 17/01/18.
+////  Copyright © 2018 Wormholy. All rights reserved.
+////
 //
-//  Wormholy+Foo.m
-//  Wormholy-SDK-iOS
-//
-//  Created by Paolo Musolino on 17/01/18.
-//  Copyright © 2018 Wormholy. All rights reserved.
-//
-
-//#import "Galileo_iOS-Swift.h"
+//#import <Galileo_iOS-Swift.h>
 //
 //@implementation Wormholy (private)
 //+ (void)load { [self swiftyLoad];}
