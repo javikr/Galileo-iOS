@@ -12,7 +12,7 @@ class GalileoMainViewController: UITabBarController
 {
     init(plugins: [GalileoPlugin])
     {
-        let defaultIcon = UIImage(named: "Bundle/103-doubt", in: Galileo.bundle, compatibleWith: nil)
+        let defaultIcon = UIImage(named: "103-doubt", in: Galileo.bundle, compatibleWith: nil)
         let views: [UIViewController] = plugins.map { (plugin) in
             let view = plugin as! UIViewController
             view.tabBarItem = UITabBarItem(title: plugin.pluginName, image: plugin.pluginIcon ?? defaultIcon, selectedImage: nil)

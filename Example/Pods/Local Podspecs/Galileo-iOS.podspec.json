@@ -23,7 +23,7 @@
   "frameworks": "UIKit",
   "swift_version": "4.2",
   "resources": [
-    "Galileo-iOS/**/*.{lproj,xcassets,xib,png}"
+    "Galileo-iOS/**/*.{lproj,xib,png}"
   ],
   "resource_bundles": {
     "Galileo": [

@@ -22,7 +22,7 @@ Easy-to-use debugging tool for your iOS app! Shake your device and go! Inspired 
   s.public_header_files = 'Galileo-iOS/Classes/**/*.h}'
   s.frameworks = 'UIKit'
   s.swift_version = '4.2'
-  s.resources = [ 'Galileo-iOS/**/*.{lproj,xcassets,xib,png}' ]
+  s.resources = [ 'Galileo-iOS/**/*.{lproj,xib,png}' ]
   s.resource_bundles = {
       'Galileo' => [ 'Galileo-iOS/**/*.{xib,png,xcassets,css,js,storyboard}' ]
   }

@@ -281,8 +281,6 @@
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/UI/Cells/RequestCell.xib",
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/UI/Cells/TextTableViewCell.xib",
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/UI/Sections/RequestTitleSectionView.xib",
-				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets",
-				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/Support Files/Assets.xcassets",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Galileo-iOS/Galileo.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -329,7 +327,6 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RequestCell.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TextTableViewCell.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RequestTitleSectionView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Galileo.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
