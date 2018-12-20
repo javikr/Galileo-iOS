@@ -23,6 +23,11 @@ class RootViewController: UIViewController
         
         print("test log") // no funca!
         NSLog("test log 2")
+    }
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
+        super.viewDidAppear(animated)
         
         demoAlamofireCall()
     }

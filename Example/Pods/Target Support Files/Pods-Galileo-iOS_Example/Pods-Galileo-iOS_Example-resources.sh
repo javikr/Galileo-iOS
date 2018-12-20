@@ -130,12 +130,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/View Flow Plugin/Cell/ViewFlowTableViewCell.xib"
   install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/View Flow Plugin/Detail/Cell/ViewFlowDetailTableViewCell.xib"
   install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/View Flow Plugin/Detail/ViewFlowDetailViewController.xib"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/UI/Cells/ActionableTableViewCell.xib"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/UI/Cells/RequestCell.xib"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/UI/Cells/TextTableViewCell.xib"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/UI/Sections/RequestTitleSectionView.xib"
   install_resource "${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets"
+  install_resource "${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/Support Files/Assets.xcassets"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Galileo-iOS/Galileo.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Wormholy/Wormholy.bundle"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Wormholy/Wormholy.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

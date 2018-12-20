@@ -1,0 +1,1 @@
+../../../../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/Objc/WormholyMethodSwizzling.h

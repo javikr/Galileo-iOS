@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Wormholy
 
 public final class WormholyGalileoPluginViewControllerFactory
 {

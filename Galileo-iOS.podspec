@@ -18,12 +18,12 @@ Easy-to-use debugging tool for your iOS app! Shake your device and go! Inspired 
   s.author           = { 'Javier Aznar de los Rios' => 'javikr@gmail.com' }
   s.source           = { :git => 'https://github.com/javikr/Galileo-iOS.git', :tag => s.version.to_s }
   s.ios.deployment_target = '10.0'
-  s.source_files = 'Galileo-iOS/Classes/**/*.swift'
+  s.source_files = 'Galileo-iOS/Classes/**/*.{swift,h,m}'
+  s.public_header_files = 'Galileo-iOS/Classes/**/*.h}'
   s.frameworks = 'UIKit'
-  s.dependency 'Wormholy', '~> 1.2'
   s.swift_version = '4.2'
   s.resources = [ 'Galileo-iOS/**/*.{lproj,xcassets,xib,png}' ]
   s.resource_bundles = {
-      'Galileo' => [ 'Galileo-iOS/**/*.{xib,png,xcassets}' ]
+      'Galileo' => [ 'Galileo-iOS/**/*.{xib,png,xcassets,css,js,storyboard}' ]
   }
 end

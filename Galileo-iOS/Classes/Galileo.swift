@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Wormholy
 
 /**
  UIWindow subclass that works with Galileo. **You must use this Window class in your AppDelegate file**

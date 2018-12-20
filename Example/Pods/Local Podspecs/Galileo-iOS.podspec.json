@@ -18,20 +18,16 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "Galileo-iOS/Classes/**/*.swift",
+  "source_files": "Galileo-iOS/Classes/**/*.{swift,h,m}",
+  "public_header_files": "Galileo-iOS/Classes/**/*.h}",
   "frameworks": "UIKit",
-  "dependencies": {
-    "Wormholy": [
-      "~> 1.2"
-    ]
-  },
   "swift_version": "4.2",
   "resources": [
     "Galileo-iOS/**/*.{lproj,xcassets,xib,png}"
   ],
   "resource_bundles": {
     "Galileo": [
-      "Galileo-iOS/**/*.{xib,png,xcassets}"
+      "Galileo-iOS/**/*.{xib,png,xcassets,css,js,storyboard}"
     ]
   }
 }

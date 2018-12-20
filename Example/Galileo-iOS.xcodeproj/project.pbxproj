@@ -277,9 +277,13 @@
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/View Flow Plugin/Cell/ViewFlowTableViewCell.xib",
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/View Flow Plugin/Detail/Cell/ViewFlowDetailTableViewCell.xib",
 				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/View Flow Plugin/Detail/ViewFlowDetailViewController.xib",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/UI/Cells/ActionableTableViewCell.xib",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/UI/Cells/RequestCell.xib",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/UI/Cells/TextTableViewCell.xib",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/UI/Sections/RequestTitleSectionView.xib",
 				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets",
+				"${PODS_ROOT}/../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/Support Files/Assets.xcassets",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Galileo-iOS/Galileo.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Wormholy/Wormholy.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -321,9 +325,12 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ViewFlowTableViewCell.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ViewFlowDetailTableViewCell.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ViewFlowDetailViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ActionableTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RequestCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TextTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RequestTitleSectionView.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Galileo.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Wormholy.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
