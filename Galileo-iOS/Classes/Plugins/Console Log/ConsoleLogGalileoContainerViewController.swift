@@ -44,6 +44,7 @@ extension ConsoleLogGalileoContainerViewController: GalileoPlugin
     
     private func redirectConsoleLogToDocumentFolder()
     {
+        freopen(consoleLogFilePath.cString(using: String.Encoding.ascii)!, "a+", stdout)
         freopen(consoleLogFilePath.cString(using: String.Encoding.ascii)!, "a+", stderr)
         
         // test
