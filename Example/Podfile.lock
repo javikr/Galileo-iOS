@@ -1,6 +1,6 @@
 PODS:
-  - Alamofire (4.8.0)
-  - Galileo-iOS (0.1.4)
+  - Alamofire (4.8.1)
+  - Galileo-iOS (0.1.5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
@@ -15,8 +15,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
-  Galileo-iOS: 536d287395c35d48f5c2fc5c9ccd27346a7aeffc
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Galileo-iOS: 69d8349c70a122f683c9721ddd99351ade4bd26e
 
 PODFILE CHECKSUM: c78b0cf1c3b533a2bfabb2e68d3e74a488fa9478
 
