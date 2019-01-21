@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Galileo-iOS'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'Easy-to-use debugging tool for your iOS app!'
   s.description      = <<-DESC
 Easy-to-use debugging tool for your iOS app! Shake your device and go! Inspired in the Galileo Android Tool (https://github.com/josedlpozo/Galileo). 

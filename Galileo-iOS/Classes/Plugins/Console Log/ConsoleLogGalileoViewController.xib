@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rtm-3T-Xzm">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rtm-3T-Xzm">
                     <rect key="frame" x="16" y="20" width="343" height="647"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -32,11 +32,11 @@
             <constraints>
                 <constraint firstItem="Rtm-3T-Xzm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="C9h-gH-nde"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rtm-3T-Xzm" secondAttribute="trailing" constant="16" id="XqV-ja-wYU"/>
-                <constraint firstItem="Rtm-3T-Xzm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="d02-pl-2Kv"/>
+                <constraint firstItem="Rtm-3T-Xzm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ij1-P5-sfl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Rtm-3T-Xzm" secondAttribute="bottom" id="mDK-Cj-zHc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="138.40000000000001" y="154.27286356821591"/>
+            <point key="canvasLocation" x="-142" y="148"/>
         </view>
     </objects>
 </document>
