@@ -1,6 +1,0 @@
-framework module Galileo_iOS {
-    umbrella header "Galileo-iOS.h"
-    
-    export *
-    module * { export * }
-}
