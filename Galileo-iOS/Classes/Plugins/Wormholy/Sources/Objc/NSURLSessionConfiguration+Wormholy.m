@@ -6,7 +6,11 @@
 //  Copyright © 2018 Wormholy. All rights reserved.
 //
 
-#import <Galileo_iOS-Swift.h>
+#if __has_include(<Galileo-iOS/Galileo_iOS-Swift.h>)
+#import <Galileo-iOS/Galileo_iOS-Swift.h>
+#else
+#import "Galileo_iOS-Swift.h"
+#endif
 
 #import "WormholyMethodSwizzling.h"
 
