@@ -238,7 +238,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example-resources.sh",
 				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/025-asteroid.imageset/025-asteroid~universal@1x.png",
 				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/025-asteroid.imageset/025-asteroid~universal@2x.png",
 				"${PODS_ROOT}/../../Galileo-iOS/Assets/Assets.xcassets/025-asteroid.imageset/025-asteroid~universal@3x.png",
@@ -331,7 +331,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Galileo-iOS_Example/Pods-Galileo-iOS_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
