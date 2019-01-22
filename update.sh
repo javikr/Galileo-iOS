@@ -5,4 +5,4 @@ git commit -m "Update project"
 git push
 git tag 0.1.5
 git push --tags
-pod spec lint --verbose"
+pod spec lint --verbose
