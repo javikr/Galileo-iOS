@@ -1,0 +1,6 @@
+framework module Wormholy {
+    umbrella header "Galileo-iOS.h"
+    
+    export *
+    module * { export * }
+}
