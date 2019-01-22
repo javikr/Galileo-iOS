@@ -1,1 +1,0 @@
-../../../../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/Objc/Wormholy+Foo.h

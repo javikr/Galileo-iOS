@@ -8,7 +8,6 @@
 
 #import <Galileo_iOS-Swift.h>
 
-#import "NSURLSessionConfiguration+Wormholy.h"
 #import "WormholyMethodSwizzling.h"
 
 typedef NSURLSessionConfiguration*(*SessionConfigConstructor)(id,SEL);

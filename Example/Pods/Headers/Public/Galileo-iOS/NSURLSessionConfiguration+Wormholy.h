@@ -1,1 +1,0 @@
-../../../../../Galileo-iOS/Classes/Plugins/Wormholy/Sources/Objc/NSURLSessionConfiguration+Wormholy.h

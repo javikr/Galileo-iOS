@@ -10,10 +10,7 @@
 #endif
 #endif
 
-#import "NSURLSessionConfiguration+Wormholy.h"
-#import "Wormholy+Foo.h"
 #import "WormholyMethodSwizzling.h"
-#import "Wormholy.h"
 
 FOUNDATION_EXPORT double Galileo_iOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char Galileo_iOSVersionString[];
