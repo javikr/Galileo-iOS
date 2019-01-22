@@ -12,7 +12,7 @@
 //#import "Galileo_iOS-Swift.h"
 //#endif
 
-#import <Galileo_iOS-Swift.h>
+#import "Galileo_iOS-Swift.h"
 
 #import "WormholyMethodSwizzling.h"
 

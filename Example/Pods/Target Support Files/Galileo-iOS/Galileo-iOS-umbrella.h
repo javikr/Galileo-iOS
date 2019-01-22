@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "Galileo-iOS.h"
 #import "NSURLSessionConfiguration+Wormholy.h"
 #import "WormholyMethodSwizzling.h"
 

@@ -7,125 +7,131 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01D5FBE4573D8071E408CF69B3D9D5E9 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DFB68D9759999A88D5732B86C69D87 /* Storage.swift */; };
+		0107C63A78C4EA905DC4726589DCC82F /* Galileo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2659406AE4B64E61ACB1087D6DF23A49 /* Galileo.swift */; };
 		032BCEB41AEBEA0F759440DF02E10453 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC15285CA22C4813BE752C62E1E5C1 /* MultipartFormData.swift */; };
-		07944F96270BE6C504158CA25C57E934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FDB25217591A35189F8D0534259169 /* Assets.xcassets */; };
-		081CD003A33F899B539AF08A86A045CD /* PreferenceDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E79AEBE38CD4630FBDFD8FE8016C29A /* PreferenceDateTableViewCell.xib */; };
+		07859CB182C0F1CBB38E695E0EB7B205 /* ViewFlowGalileoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F157C9452A4C80CFF9322E51A51D9 /* ViewFlowGalileoFactory.swift */; };
 		0C966E828109E9D987A3C0828541F7C6 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5003326CBF5036901116BC62FA244292 /* Alamofire-dummy.m */; };
-		0D64059BB7A18824373D0F4606172FE6 /* ViewFlowGalileoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E468ECA0E778E7D7308939B800269E /* ViewFlowGalileoTableViewController.swift */; };
-		1519E085986880B0B560E3C97DAF0F8B /* ViewFlowDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E719AC9F62593AAAC0C3059F96519F65 /* ViewFlowDetailTableViewCell.xib */; };
+		130F16398227F0841CAF311C2FC2BEE6 /* PreferenceIntegerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FE87E94579AC7E3D521ADA092A317A /* PreferenceIntegerTableViewCell.xib */; };
+		13C4F0EA70DF4DF284F74FF218BB0AF9 /* WormholyGalileoPluginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5183414C0C06ACBDB965971ACC77272D /* WormholyGalileoPluginViewController.swift */; };
+		16617641B96958C3771F83A51DBB9FE9 /* ViewFlowDetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94EDEFC83096629173F17662CAE2980 /* ViewFlowDetailViewControllerFactory.swift */; };
+		175BA0FDE67ECB5DF9FC986FE120ED46 /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37654994C6DA65CF7512D3B51F8996CB /* TextTableViewCell.xib */; };
 		1767B5130E83DC3F66E566A32037AD43 /* Pods-Galileo-iOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FFC70EE5B01D5FC59873C07895CC78 /* Pods-Galileo-iOS_Example-dummy.m */; };
-		1A70767F2D79C6807342CDF3F924E44D /* PreferenceTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4625D436DC24C5A506AFE6B22F2D39F /* PreferenceTextTableViewCell.xib */; };
+		18A594A9C36F290A115659C5778CDE45 /* CustomHTTPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EEA286E67F377AB65665499A06A51 /* CustomHTTPProtocol.swift */; };
+		1BD6572525D5319EC68E03FDEF253B9D /* PreferencesGalileoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91ABA4B6DC32C97E5C2D43B94F0F0D71 /* PreferencesGalileoViewController.xib */; };
+		1C85AB59C34F16EFBC6BBE41309BC88D /* PreferencesGalileoIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7792FC64F9219F8CA690D38E6A2427D4 /* PreferencesGalileoIO.swift */; };
+		1E3E1FEF0BDD6C1D1A4AD121870AF71F /* PreferenceDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F107A71BCB91A29EFD07FA92A3BD02 /* PreferenceDateViewModel.swift */; };
+		22CA318E2988CC2C97DF8355FC908359 /* RequestTitleSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF89ED2FCA6B213A8A04D5F319FC93D /* RequestTitleSectionView.xib */; };
 		258E71ECF3D900477A267306555F9A8E /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E8010FC4D5BD5D32EE5999794ABF89 /* TaskDelegate.swift */; };
-		269E2A7079AF3075FADF8DB5260BD7FC /* Galileo-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D33D438D54650559DE17CD2062C3FC /* Galileo-iOS-dummy.m */; };
-		281058F7F856F396815594309B0C2EAD /* WHDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED576B8F574F393D8C87A25BADFCDFB4 /* WHDate.swift */; };
-		2D503C7AF358B9BD219A614159FD8604 /* WHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE4D975C6555CD5E9F828B23E3C7D0 /* WHView.swift */; };
-		3158BAB345D5DF3CB89543A8D4C9A681 /* WHBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30A7615896F3F7271A875FA4061F2EE /* WHBaseViewController.swift */; };
-		3454090B10F4BE29DF593BE634E2E0B9 /* PreferencesGalileoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681911D2D71405EBB24276849531A383 /* PreferencesGalileoPresenter.swift */; };
-		34B10399F60051AF2B2C08F24DB6D22E /* GalileoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D8E71ECACC62A67941E1BCC7B3898 /* GalileoPlugin.swift */; };
-		3511AB61F3841086FF088A87E7793D33 /* WHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8B4133392C82A5C280C474C82CE4DD /* WHTextView.swift */; };
-		355C8507EA974E1A79DC48A86E5350D3 /* PreferenceViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B649532E3F120CCC58B7C486EF117EF /* PreferenceViewType.swift */; };
-		367F17AC127920EE1A78D7009526BFD3 /* Galileo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C438122D9FEEFC1ED13F13DDB028EB5C /* Galileo.swift */; };
-		3A2FA889AD2CD5CC8D1C2423FF3294BB /* BodyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2287899D44B8C2A179195666771F /* BodyDetailViewController.swift */; };
-		3A36602BFC4FB558D66834AAA988B331 /* WHString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23585CAA2AB701F597687E5352F60F79 /* WHString.swift */; };
+		25A419EB3DE58ECFD55CA6896D820818 /* PreferenceDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361D8B814582EB6C5E7D1D0144B15D1C /* PreferenceDateTableViewCell.xib */; };
+		25F2E199A9C816395336AB415CAE7EFD /* GalileoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BFD1F70881DDB4B5E4E5DC31378CB1 /* GalileoPlugin.swift */; };
+		29D9383D000721348A66C6679C9763FB /* Wormholy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9203AD4C8B0D54F95F93858A5A744F /* Wormholy.swift */; };
+		29F20E5120AED09A701B02DDC78D14CB /* MainViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F6EA058A0D1F00C1373BD43839BB6 /* MainViewControllerFactory.swift */; };
+		2C548AF9EDADF622446533EF4B6ABF83 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C1E0F42FEF0E760FA79AF3642143A /* Section.swift */; };
+		346AD9AA5FBE5622EB3C7D6D0F13BF10 /* ViewFlowDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD1B8B3419783A5D34FC0FCB6EB2AE1C /* ViewFlowDetailViewController.xib */; };
+		359210F97FAC846F9F62F70309D5C7E5 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E4045EAEF7D149B3BE61A948864751 /* RequestModel.swift */; };
+		38351B2093B05F08F627902C72940F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81D835EB9C85F76634A47EE7CA3B7A8 /* Assets.xcassets */; };
+		3A0A29BA12565FF29459E9347453B99B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2549AA66655EE8558D6E1B32256070C8 /* Colors.swift */; };
+		3C9CA2912E3CF771F46E2D9048A7C828 /* GalileoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F7F49B9B50C232F0AE0AB0C53F3F6 /* GalileoMainViewController.swift */; };
 		3CE316FB1EA8B67619B8F1F69C2D7DEF /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4773EE5CF7AEA3410B4415BD0E4FF03B /* DispatchQueue+Alamofire.swift */; };
-		3DB65BF5930C83D0F7A7F5D5C8282236 /* PreferenceTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6914A6F54F1EEF23848B361D1CAD7D8 /* PreferenceTableViewCellDelegate.swift */; };
-		3EC86EA7CEE2EEDDFF2D2B0E2F33BB28 /* RequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22996D9C90B3CCCF36AB3E5C1FB0F9C5 /* RequestCell.swift */; };
-		4343185F86BDECF42D875E4B441571CA /* ViewFlowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7165DE5DE4C039E41DADBB77E0835F0A /* ViewFlowTableViewCell.swift */; };
-		4CAD0D3309E9ED3A901C4826C045FA57 /* RequestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFBF49A28B7BAEB520E88725D27A798 /* RequestDetailViewController.swift */; };
-		4CCEDF1116C2A2F8312D4F45C6E4F48C /* WHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA26988EA609B653030A7AC28FA0FC0 /* WHNavigationController.swift */; };
-		4EACC0115D43995044629399D9E570CD /* WormholyGalileoPluginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E9DA1D345A1E30564940ECE02E0C0 /* WormholyGalileoPluginViewController.swift */; };
-		4ED1720984AE58DC87BDE6E18F6A7E92 /* ViewFlowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F4A3E3461A5C1034491504090E0BCA /* ViewFlowDetailViewController.swift */; };
-		5038E8EA7D13400B8FC5A3D1F23A125E /* WHLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE3CF4E7DD22B3B9505A2EEB4E3C52 /* WHLabel.swift */; };
-		506484D492DC5B2475DF039A44583EDA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548996162D7B4F20079E9A67F822093D /* Config.swift */; };
-		518A46483FD794E718286BDFBFFA5926 /* Galileo-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 961DF3EF5CD069B1957DA5A344B14558 /* Galileo-iOS-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		56CC3C701DB1E2993D26EABE2E76E243 /* PreferenceDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E79D3F92ECC0DE0B58BC57F7D7C1BE /* PreferenceDateTableViewCell.swift */; };
-		575D5E3ADD6201886388D04118DD1CF0 /* ActionableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B423565F2ECD2C841A18B8248216FD7 /* ActionableTableViewCell.swift */; };
-		576CD5D2018E5F6F12370D271DB5B329 /* ConsoleLogGalileoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF2FF53EB2C899C2875AD0C664D0E6C /* ConsoleLogGalileoFactory.swift */; };
+		4215AF8D13AECAB4C0BD9D40303347EC /* ConsoleLogGalileoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9D7BA92AD6EC95D02AECE47727AE69B /* ConsoleLogGalileoViewController.xib */; };
+		43C3FC3F311641A2802E08BB9AF397D3 /* ViewFlowDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 460F7FFA15D75A4240686639357E3D66 /* ViewFlowDetailTableViewCell.xib */; };
+		4AA3A965339598719E9CEFA08A18F7D8 /* PreferencesGalileoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5DE813B16FE28D3F38A1F26599692F /* PreferencesGalileoFactory.swift */; };
+		4B77F795490AC9AA42217BA964D926F5 /* CustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F276FD30CBEC70B0B11B5028466DA /* CustomActivity.swift */; };
+		4DE3DD741708689F9A6891EFB0EC9F40 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4486E4696157A469260A772D0E2CE0C /* Globals.swift */; };
+		58A7CCE283F405E3DA754A5F4E06BF39 /* ViewFlowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33EC3E0D6C60EF3B3C2D02709905DF2 /* ViewFlowTableViewCell.swift */; };
+		59287181900159FD76A6B2B04B23ADF5 /* WHDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFC6273E4D265ECEE5D86CA94F5DEE0 /* WHDate.swift */; };
+		596C23AADF92B1E9B6254507FB1294CA /* PreferenceViewTypeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A0D9AEB2B42C75690D1AEFFC270106 /* PreferenceViewTypeMapper.swift */; };
 		59A379D2EB8028CB07331F2E18B6FC40 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75F25171B81BA216D6F6A45C9D40E8 /* Request.swift */; };
-		59FB5578373BBFDBA5DA0EEC8881C834 /* CustomHTTPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C32925F4DACE01D702EDC152F58E4 /* CustomHTTPProtocol.swift */; };
+		5B8F57FF1F08B29B450CC9C75A836018 /* Galileo-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECBD730C838435F42E8FFE2BF398CF82 /* Galileo-iOS-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5BC1C61CB83F16DFD89AC9A78CDFADC3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99AD779088C17EA9C690E53F6F08FD3 /* Validation.swift */; };
-		5C6B2E420F551FD14D9BF9D14CA9BAF9 /* ViewFlowDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E999136257F47BABCDAA2B362260FDC /* ViewFlowDetailTableViewCell.swift */; };
-		5CA75FD54AE171FCB5B6309C0D2A3AE3 /* Wormholy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AAED5FF524A1E19EE077CAB029B03E /* Wormholy.swift */; };
-		63ECEB1D613D5B8E70000BADBF92965A /* PreferenceTextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC3EA268ED7CB9DA0A66F06CD6A06C /* PreferenceTextViewModel.swift */; };
+		5C17AD1C8DF431E639CB4FE809B7696A /* WormholyMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = BD09DBC7677324FDE10E34DB2FFDC5E1 /* WormholyMethodSwizzling.m */; };
+		60A0598FC394F194CFDA392663D95114 /* Flow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41412F03FE25EC2843E65089392724B /* Flow.storyboard */; };
+		621694EAA99ACDCF6A70189764D33356 /* ViewFlowTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F062DA4505E932478793052492F96DEE /* ViewFlowTableViewCellViewModel.swift */; };
+		62E4D67A22ECAD0AB12EF50789C5E170 /* GalileoConfigurationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEB8358587D4B094AC5001A6875B858 /* GalileoConfigurationProvider.swift */; };
+		6361AD4A93C7913BD3157AA7BF9858AA /* PreferencesGalileoViewDetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A1F2C31484D37ACC92BD1B3E1FF0D /* PreferencesGalileoViewDetailFactory.swift */; };
+		665257A729D7385FD2778AA28A042F84 /* GalileoMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE7FA230B24CAD727CA544997D75DF1 /* GalileoMainViewController.xib */; };
 		668DA2358C17E58C237B811862AE4A47 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1BE4DE8B2E0614B026994B89210AF /* SessionManager.swift */; };
-		66AE0195FF85F585F83E762347E7DAC0 /* Flow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7FFA8626CB9C4A0E53CB4CB7A3F62 /* Flow.storyboard */; };
 		66DAA427DFCF69455F88D50EBDCEC978 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19350F886705040ED2FD566DFAAC1DD3 /* AFError.swift */; };
-		680C6C4F6BD8E7E3B7C5A838CEAA0D0C /* PreferenceTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458632E3E030D54882293BBFA2E3C4AF /* PreferenceTextTableViewCell.swift */; };
-		69C1AD80787A5173091AD9AA3D5736C7 /* RequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9945D64DD54F83773E5754F6D4786BC /* RequestCell.xib */; };
-		6ACAC1E65797A908B8EE1CBEAE0FD806 /* GalileoConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FCF40C66E8BD51FD25DE74461F19B4 /* GalileoConfiguration.swift */; };
-		6C0B9F760B1A566FD638572B08FCE2E9 /* ViewFlowDetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8835B5B89ADCF8349A1CF203D5519297 /* ViewFlowDetailViewControllerFactory.swift */; };
-		6E47DF14F330B1526B11D5BA55AEBB94 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9D84B8CB7CCD174DAA94AEB81DACB /* TextTableViewCell.swift */; };
+		6A329DE99AB39D9D194769A08888A0E7 /* PreferenceTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA622A92BA4FF96EBC0156F76C0B03B /* PreferenceTableViewCellDelegate.swift */; };
+		6A57CF5F93139994AA7305575F8C299C /* WHTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FBF81372EE5C7DAEDBA91E84EA8CAB /* WHTableView.swift */; };
+		6C494A86D08996C421095C6498F7FBC8 /* WHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B110992003F808B632F72146986AB52 /* WHNavigationController.swift */; };
 		6EB4987366B9F2ACFE6FAFDE37353A39 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38CA61B9FC3DAABDE4EBAA1D270A98E /* ParameterEncoding.swift */; };
-		6F0D3EC2444AA1AB48831CE012063E6D /* PreferenceDateTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C10587914D1D8806D6507C6DBCA56E4 /* PreferenceDateTableViewCellDelegate.swift */; };
-		6F3AEBC876B9F28F64D2C61F7A95BC8B /* RequestTitleSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D76A75158E2780D33CBDCFF5E0F37612 /* RequestTitleSectionView.xib */; };
-		6F64F1A005E81C6609C5385ADEB590FB /* PreferenceIntegerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95BC8DBE326C3968C7B880F847A53A /* PreferenceIntegerTableViewCell.swift */; };
-		6F96B03238ACB16FD04AE783195B42E7 /* RequestTitleSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E03A0E4142F2CE477470E7C2FCE8935 /* RequestTitleSectionView.swift */; };
-		70B32472A3EF09CB37533483119C3FFF /* PreferencesGalileoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCBF3D3CCC44F33E5CE8CBD989FFDCC /* PreferencesGalileoFactory.swift */; };
-		71FAE5BECF3AD9FB7AB40C49D844FF96 /* ViewFlowGalileoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625DDC427F7C0A18F769FBEA7759E37B /* ViewFlowGalileoContainer.swift */; };
-		7289090271F3B475625F805A4DC64C9A /* GalileoConfigurationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B29CEB0E8DAE50D0A61F21F702F136 /* GalileoConfigurationProvider.swift */; };
-		734767C318ED4659DCD8098024C2CCE1 /* PreferenceIntegerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3932D401529BF847C6A85CD1F22F1E /* PreferenceIntegerViewModel.swift */; };
-		73E0B4DB818CFF31BA5507624F301B06 /* GalileoMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A0A086A4D56DB426DECB52A03464D3 /* GalileoMainViewController.xib */; };
-		7CE1ACDC2F33DBF1BE3C6F60708E366D /* ConsoleLogGalileoContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F8BFC86B5ABDBAEE431A57F3099C8 /* ConsoleLogGalileoContainerViewController.swift */; };
-		7E147266841FF2D46FC796859BBD7CFC /* PreferenceViewTypeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94F27D0B7137FB2FC0F71624F649BC8 /* PreferenceViewTypeMapper.swift */; };
-		835D5114CD04A79234290A3271AFD522 /* PreferencesGalileoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EFA71BE5ECA0FC3A65EE631D6C0715 /* PreferencesGalileoInteractor.swift */; };
-		8914AC8A4C4AD18BE745702E40E289CF /* ActionableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A10F38FDB217A000EA34B7D7D7F555DC /* ActionableTableViewCell.xib */; };
-		8972378A42BEC40710C9C3D6842EB7A7 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F016A4982898775BABAEA5CE5AB94 /* Section.swift */; };
-		89AAD2913AB66CFB673D33AB44C80324 /* PreferencesGalileoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F80CA7A99A7DCB3F977871333753E /* PreferencesGalileoViewController.swift */; };
+		6F97DCD1880FCEF4462F8AF4CDE48989 /* RequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED356BF167096781BC87B37375FA393 /* RequestCell.swift */; };
+		70A93A0992E83055E62771E1737E85FA /* PreferencesGalileoSourcesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AC45E2FBA158F3E0D2DB7E7546B38A /* PreferencesGalileoSourcesTableViewController.xib */; };
+		766FDE707F5403FCFF20FE53339BD9BC /* WHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EEFFD91F0D9AE4AEF5E51372F56FF6 /* WHView.swift */; };
+		7E2DC9E90A637AF023B8FA8E21327D9D /* WHBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5880C68C651AE40D70DFE32E04AC65C /* WHBaseViewController.swift */; };
+		7F0530EF7C8D3B7D4210969393D2A445 /* WormholyMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B6E8B4B105A7F64E4C06DD17C87CBD4 /* WormholyMethodSwizzling.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		83D117CBCE5FE3DAEE25279D65D653E6 /* PreferenceBoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7A08B3D15A242FB462A0B8CF9D46E /* PreferenceBoolTableViewCell.swift */; };
+		85C0B306DF767599E63A28075C9CD2A6 /* WHString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB53FD2003B3662847B1BFBA32147E /* WHString.swift */; };
+		85DF59E3AD1C4A1336D20FBCE88C9E98 /* PreferenceTextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94432D971F53DD6E7B168A9AED71418D /* PreferenceTextViewModel.swift */; };
+		88B7BB9B8D701137C558F57E84904330 /* PreferencesGalileoTableViewDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD2DBE13E12A38EC7FAA0B2F22D3D63 /* PreferencesGalileoTableViewDataSourceDelegate.swift */; };
 		8BB170EF376EB2F719D596A71E651FDF /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13C7046C218FB029979F98227D2B29 /* NetworkReachabilityManager.swift */; };
-		95566F326F9A1D3AC4C181B4A8B71315 /* PreferencesGalileoIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B0270266C95300706D1619E12EF18 /* PreferencesGalileoIO.swift */; };
-		9905DF4D8C7714AE1116CAF3D7BFC8E4 /* PreferencesGalileoTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB237E87E9DEC3B7B79D3DEC61E5B86 /* PreferencesGalileoTableViewDataSource.swift */; };
-		9D886987CFC936EE01397818D3BD0769 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CA7A5482EA3F6E50D144F90320784 /* Globals.swift */; };
-		9EC10BDD61CAE1A3E41017D2D1803E4A /* PreferenceDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37E466AEB4B64F329B163F4D4F7EFFE /* PreferenceDateViewModel.swift */; };
-		A002A483D7849E5DB73BEE1986DA98C4 /* TextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E88DCC4B2136507E7B2EC30332DC6F /* TextTableViewCell.xib */; };
-		A2359DAA6BA3A644A2651C35AEE73A65 /* GalileoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530956F623D17745D2E21A7F07B04CA3 /* GalileoMainViewController.swift */; };
-		A4A1D32E0FB4CBE1C29C5F98E5FBC08F /* ScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DFF373E83B7B3349E30F72593B1DEA /* ScreenView.swift */; };
-		A73805C44F52241AAE7345C0F3B26041 /* WormholyMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC16BA504C9F7110B421ADED6111302 /* WormholyMethodSwizzling.m */; };
-		AC01593930601156E66D61E65ECEA88F /* ViewFlowGalileoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C9E566647522E828389383638D6AE /* ViewFlowGalileoFactory.swift */; };
-		AD1C3A1A2013DE97819EE160578F30A8 /* NSURLSessionConfiguration+Wormholy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2BE6E394F07305165B740B509F99B7 /* NSURLSessionConfiguration+Wormholy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AE3D71F96D64D0B2B4946A5B881ABDF8 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E8DA5049A0F5B830B1D6C0A08F7A0B /* RequestModel.swift */; };
+		8DAD700F93DA1E8DBEF93FED14426267 /* PreferencesGalileoSourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D915004D5924D81726BF0414F401B07 /* PreferencesGalileoSourcesTableViewController.swift */; };
+		8E4AB6C8F762E561171FCC8FAB84C0AA /* ActionableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EE123E629E5CF909288298F02CADC9 /* ActionableTableViewCell.xib */; };
+		95EAE81B1DC82242974B804C3987F5EA /* PreferenceBoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD342DC8A13DE73C1D9B8A687AE6BC51 /* PreferenceBoolViewModel.swift */; };
+		9B1A1EDF09EA9000D422B84E5E6A2E2F /* PreferencesGalileoContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C1BDB0CD8B7CA62FE959DECDA67456 /* PreferencesGalileoContainerViewController.swift */; };
+		9C3570E9E3152B12DBA2DCCC29447C51 /* PreferencesGalileoViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89A6E60DE487FD3194D8B9AA7F817BD /* PreferencesGalileoViewInterface.swift */; };
+		A15D947F48617D7B97AD244C68F35F48 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549A30DFEE669B0BC3B83D6973311120 /* TextTableViewCell.swift */; };
+		A1C195F1B5E21F754672B646FFCDC2CA /* PreferenceTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228F5B570DAA67ED603DEBB3206B7661 /* PreferenceTextTableViewCell.xib */; };
+		A6B4BB41992D9FDC70E8B9C3010FADF9 /* ConsoleLogGalileoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D384DFBC719908148803233B43D6DA4B /* ConsoleLogGalileoFactory.swift */; };
+		A70C70170344B1027CCA8A4EC16BCC9C /* NSURLSessionConfiguration+Wormholy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DC0F4674CBAB5C13AF9124FC05C026 /* NSURLSessionConfiguration+Wormholy.m */; };
+		A72D55326DAA2AE7B8B7817A0D87F2D3 /* NSURLSessionConfiguration+Wormholy.h in Headers */ = {isa = PBXBuildFile; fileRef = C8853B977AD27F6E5CD4288B4E75B978 /* NSURLSessionConfiguration+Wormholy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A82251950C6A05E9C4AA17BEFFCB1DF1 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2A60C366F86B5C2C026E9D745E4CF /* FileHandler.swift */; };
+		A987510418476A7CD700B0F070334188 /* Galileo-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7472D55A6F54B22BCC71643639DEDEC2 /* Galileo-iOS-dummy.m */; };
+		AA666D368F3149969C6115DEC7794C0D /* RequestModelBeautifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D35329B1772FE3DAB659DAC7FC323D /* RequestModelBeautifier.swift */; };
+		AE4CB0C0B5FCCC8D9C50D5BE4A5660E0 /* PreferenceIntegerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C173D76A8FD2B35488D77480249073 /* PreferenceIntegerTableViewCell.swift */; };
+		AED10CF4A9F1F72E0D2769A6A77124A4 /* RequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A19C981F2B3549CAC90D6F565E8D0C /* RequestCell.xib */; };
+		AF095AB506D5EF76F888C2A035A84448 /* ViewFlowDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9669390A7EAC72C6DBB9C78CC29F2592 /* ViewFlowDetailTableViewCell.swift */; };
+		B133927B3E2BFFF79224D40B433D07F3 /* PreferencesGalileoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125882B2C55AC079E016F40813583DF /* PreferencesGalileoViewController.swift */; };
 		B15AE25F2284AC71F87FAC7AAE5EA393 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B498A7B0C0B66E1B7DD1D535E00D4B /* Response.swift */; };
+		B185D812B2D8903AE13F704C90521207 /* PreferenceBoolTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A81930B583232AA7864DA501716FADC /* PreferenceBoolTableViewCell.xib */; };
+		B18EB18F72D1E009F8572269BAC5371F /* WHCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F77819481673FF2F9D31AB29DFCF01 /* WHCollectionView.swift */; };
+		B202FAF973193B6B72979331DB460FF7 /* RequestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99584CE30ACA92A156C9A3BB15C357E /* RequestDetailViewController.swift */; };
+		B298BB44DA326529FEA3D8A6236025F5 /* ViewFlowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F5474E311D9A61A225D114A4567617 /* ViewFlowDetailViewController.swift */; };
 		B4520B794FD084605D6686E1CFD41FDA /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F674140502DC4A630BD0CA44A6C095 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B4CE24FA766CE4FD77690B80328EA159 /* PreferenceBoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56221D33F703A9418DEC2006EC6DD664 /* PreferenceBoolViewModel.swift */; };
-		B57C9E30DD5D9DC81F6811C631D33FC0 /* ConsoleLogGalileoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0C874A695FF8F28247A58B57FCC7F7E /* ConsoleLogGalileoViewController.xib */; };
+		B5D79AB281D18A5218A6B29D532358ED /* PreferenceViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77DCF9B9D478C93B7EE56CDF0F2145F /* PreferenceViewType.swift */; };
+		B5DB1ACB605182C405A94683B9ABCD43 /* WormholyGalileoPluginViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5203264754094CC69055194AF54379 /* WormholyGalileoPluginViewControllerFactory.swift */; };
 		B6E153E514E37B85F25975A0E2B34FEC /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC3217D358D3A86B44CAD0606C83A6 /* ResponseSerialization.swift */; };
-		B9D5A41B475F1A67371D015B4955959E /* ViewFlowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78DC5538C1DE924EC287B59D58B7B93D /* ViewFlowTableViewCell.xib */; };
-		BA5471ADA3BEBAB04069A38797902F89 /* PreferenceBoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B7C267DA116A741E054DACB360375 /* PreferenceBoolTableViewCell.swift */; };
-		BEB72D2D4965B70EF71C4C6218EA8A44 /* PreferencesGalileoSourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C020AE302A901F011BF73272D61A0CD /* PreferencesGalileoSourcesTableViewController.swift */; };
 		BEFECBD83E818B612CCCF26BF42C9A07 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EBB06CE0EECFAA16C4757E4B7E39E /* Alamofire.swift */; };
-		C002F22DACB1B751C02B097B199FA404 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F00BD8F198B6BCA7A0526AC1CCF71 /* RequestsViewController.swift */; };
-		C0FF28042BC0B568A3FEFE8EDB34EEE2 /* Galileo-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BDCB9ED183D9D904F7CA2E77808B8905 /* Galileo-iOS.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0BBB37FDD3A89BDE4F50DDD5E0E0E59 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DA48D438A7C6A713944F60C9E64F6 /* Storage.swift */; };
+		C4CD0718A4C8508EFA2976DDA7A4F0F1 /* WHLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA16FF80A4E8BBA4B1CE6360D6614E4B /* WHLabel.swift */; };
+		C5F7C333D9D79C70F3F810B2B0A7212F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE5611B7252AB6B760EE09C64311A23 /* Config.swift */; };
+		C672F25474FD75675267D99ACEB9AD90 /* ViewFlowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2D7039356CFA771EF260CAC1A1B072 /* ViewFlowTableViewCell.xib */; };
+		C95B8D441C8CEEC96AB7FAF1C0B96C80 /* ScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308498AFA8AA1B109BE3F3B09CB21632 /* ScreenView.swift */; };
+		CA37F978DCF79D549D117CAC55F72DDE /* ActionableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C18322EE6B2D27DDF481E059AC3263 /* ActionableTableViewCell.swift */; };
 		CA6BD52AB35379D1EC283FEC9152674D /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A89C4A80A7D4FFEFB0246B32D04A /* Timeline.swift */; };
-		CCCCAD6528F99C599DFB5C78F17217EB /* WormholyMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CA9FAFCD3EF47567EE7EF2780293C3 /* WormholyMethodSwizzling.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CD6C8A1838DD8AB2EA3B8D081EF31636 /* PreferencesGalileoPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147E560DCF7976E6A59A0E2BD909F82 /* PreferencesGalileoPresenterInterface.swift */; };
-		D688CAEFAEDE42AC143906868759118F /* WHCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65297EF42D5CAAA2DFB501CB2F38CE7D /* WHCollectionView.swift */; };
-		D85F2DF6C612829EA9900BE2DACBEB9F /* MainViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B37125F6E8B9D60FC52BD0304B2A0D /* MainViewControllerFactory.swift */; };
-		DA190AF91EE8D6139CDDD9E10894AC6E /* ConsoleLogGalileoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A96AA8FA9DE384B028BE2BB02FCBDB /* ConsoleLogGalileoViewController.swift */; };
-		DDCDC254D4F5E7F8D16608D8F45E39D6 /* PreferencesGalileoViewDetailFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF66B6F4DF2C1C8CD0F55B88B89A1AA /* PreferencesGalileoViewDetailFactory.swift */; };
+		CAD039EAD0AF871C90237D0DF89A4D08 /* PreferencesGalileoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB79DB883C8DDFF9F2255A0D554494 /* PreferencesGalileoInteractor.swift */; };
+		D035639EA39DFD8F2A8CA9321DCC580D /* PreferenceDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA93E36DAFF56CE28C578B8EBEAAAA8 /* PreferenceDateTableViewCell.swift */; };
+		D0F3CFE642A7933DFCD48FC2BD1A9177 /* ViewFlowGalileoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77031DF895099A14E88F0820C554326 /* ViewFlowGalileoTableViewController.swift */; };
+		D57AFAE9E641CFBD3BD66FE446F8B9AC /* PreferencesGalileoPresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8620771A11D2FA6929AF52B9CDF4A6 /* PreferencesGalileoPresenterInterface.swift */; };
+		D8AF238EB9D1F700621E2052941C843C /* PreferenceTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355CABDF57CCB37AF5190BA4855831E /* PreferenceTextTableViewCell.swift */; };
+		DA71E6FC4A0F2B39F11D47DCA31B7620 /* PreferencesGalileoTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9B3451BA5228ABA05A59C20EE38298 /* PreferencesGalileoTableViewDataSource.swift */; };
+		DAD91325B28BB193880D187D57E2AC9F /* WHTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA680654592D7E899F79A098ED354604 /* WHTextView.swift */; };
+		DBE992ED0C74C3930364D670B151B2EB /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67DD3B47B14DC237629BEDC488AF104 /* RequestsViewController.swift */; };
+		DF19D78A66AE2DB316F1E8F0B71A5167 /* PreferencesGalileoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F729ECFA04BCA4C3981F804DA4D5B2 /* PreferencesGalileoPresenter.swift */; };
 		E09041A10CE1271F31325AA84E3C6A33 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F35C601C9C74538B9A5E1477E06C865 /* ServerTrustPolicy.swift */; };
-		E16BE18E1C5505072BD555C215A438F8 /* PreferencesGalileoTableViewDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5C66FF491C7AD3C840C207443A9D2A /* PreferencesGalileoTableViewDataSourceDelegate.swift */; };
-		E2E72D81B7E31235C576BA3321322729 /* PreferencesGalileoViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96BF77DE48BB6B2504F0A7FA13C094 /* PreferencesGalileoViewInterface.swift */; };
 		E358EB7574B94EF931AF6B8561785CEB /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7385D1B5962A2069DBF02032E3465B7F /* SessionDelegate.swift */; };
-		E4E642BC405D596FADB8B29563A0E888 /* WHTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8FFC67179F458DA2D771089FDECB9 /* WHTableView.swift */; };
-		E500C6D1AB8E754109D15CD265861B0A /* CustomActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6FA6509D2204D6FF7572F7A2AB7C77 /* CustomActivity.swift */; };
-		E5370363FC7DE4B15244873043C4C0B8 /* ViewFlowDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43518D7648A6D8663340D79ECA5D93B /* ViewFlowDetailViewController.xib */; };
+		E8FAC4A448FAC419DEB8A94A577F1D2F /* PreferenceIntegerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C61CDED45B0D7C06F57C13DACE26D /* PreferenceIntegerViewModel.swift */; };
 		E9CFA3B1AD0E1D6C406D21140785BEE4 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5787A6A73B24AD1FDB7AEF24C671DD /* Notifications.swift */; };
-		EAFC5E0978A31ED9075DB078167403D2 /* PreferencesGalileoContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2C80A88E275C92C214DEA2F61AD99 /* PreferencesGalileoContainerViewController.swift */; };
-		EBC7D014967AA0A8DFDCA27845343EE3 /* RequestModelBeautifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E15D025269AD757666985A886E1FF2 /* RequestModelBeautifier.swift */; };
-		EC7D893193145613A066ED75672659B0 /* PreferencesGalileoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9785724B07F80CD9D42B8F764B3A7D6 /* PreferencesGalileoViewController.xib */; };
+		EB6D8BDA3D8551E05910EF81C20CC222 /* PreferenceDateTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5DE2C21EE14948F56DC61FB6C9D0FD /* PreferenceDateTableViewCellDelegate.swift */; };
 		EE7A9102DB787F4E64A07A51B99B36DB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF925060B567CB483B99324E39D404A /* Result.swift */; };
-		EE9EB9F8F2889249A5AD2A5E077C122A /* PreferencesGalileoSourcesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597386D9B20BFF42A0F4277827D58C25 /* PreferencesGalileoSourcesTableViewController.xib */; };
-		F1BC0EDCB835B126E978D660D23679FE /* ViewFlowTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DC5E99AE424DC658C541D41956A54D /* ViewFlowTableViewCellViewModel.swift */; };
-		F30119A6892BB4001FAB68179544AA3C /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE7043ADB78C117AA5476D2FDE0FE78 /* FileHandler.swift */; };
-		F64A14391938F19AE1D6DDA0F9E19407 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE2A726D94DE0C7CC7AC13D1BD024B9 /* Colors.swift */; };
-		F7B0A33408E8CC3AF1942B3C4216ADF5 /* NSURLSessionConfiguration+Wormholy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B756024C5396415F099EC0A6AA006 /* NSURLSessionConfiguration+Wormholy.m */; };
+		F2EF0D6C7B56E3AC15C679DB516B2659 /* ConsoleLogGalileoContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D42D962C249CC8499E29413D1200DD /* ConsoleLogGalileoContainerViewController.swift */; };
+		F56AE99E2039C158ADB7C70BB74DD233 /* GalileoConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C79D3BD8474C8AAAA9580FC8BE14AC5 /* GalileoConfiguration.swift */; };
 		F87B1CC68A2396A2EAD4153E28D929B5 /* Pods-Galileo-iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25B5494CF96D33C2F90A442E4D3BF525 /* Pods-Galileo-iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FD6C6BC93D490F83C2A73AA3BA189BA4 /* WormholyGalileoPluginViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C1958B92D14B06B4CA0471B9BD8B3E /* WormholyGalileoPluginViewControllerFactory.swift */; };
-		FDB8DCBAC2FA1FEF529AB25E26E13DEB /* PreferenceIntegerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FCE51ADBB5B55B0E3C52FAFC8D521FA /* PreferenceIntegerTableViewCell.xib */; };
-		FED4913831F8865124DA449722C9D8A3 /* PreferenceBoolTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA87CD54ED12A2A0D0A5B27B7920B662 /* PreferenceBoolTableViewCell.xib */; };
+		FC2B08D5F557AF884704895707068DAF /* BodyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009CFA7FEF32F325DCFA650CC61A314 /* BodyDetailViewController.swift */; };
+		FD95BB7FCA3E015065F96E16CA961F75 /* RequestTitleSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CC70FB93725F3573D238C34EA0F08 /* RequestTitleSectionView.swift */; };
+		FE10EE185C3F12FD972B5FCD4680229E /* ViewFlowGalileoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E9FCA5CA315B638E8012355A7C6B00 /* ViewFlowGalileoContainer.swift */; };
+		FFF4AC20D2839088F6058C73A5D31360 /* ConsoleLogGalileoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011EFC2329E221634C2E4ADF273B94C /* ConsoleLogGalileoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		16BD6E053180C9AC7BB14BC5B07A0C42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7668AB1DFA1EA23F8D6D05D0F97C8810;
+			remoteInfo = "Galileo-iOS-Galileo";
+		};
 		638958929E6C7B01932D16BC17EACF44 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -137,160 +143,152 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7BFA536262FA44F4DFFDE9C7869DC5F9;
+			remoteGlobalIDString = 0F4308456F22D289B55131706A524892;
 			remoteInfo = "Galileo-iOS";
-		};
-		A29FD9F074EDBC8BA6D08807081E4D96 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 63C8F7EF04191C39BB874D65755FD82E;
-			remoteInfo = "Galileo-iOS-Galileo";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03D5A89C4A80A7D4FFEFB0246B32D04A /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		05FDB25217591A35189F8D0534259169 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		07203E420D70FF34B45901DD49206DE5 /* ResourceBundle-Galileo-Galileo-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Galileo-Galileo-iOS-Info.plist"; sourceTree = "<group>"; };
-		0B8B4133392C82A5C280C474C82CE4DD /* WHTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHTextView.swift; sourceTree = "<group>"; };
-		10CA9FAFCD3EF47567EE7EF2780293C3 /* WormholyMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WormholyMethodSwizzling.h; sourceTree = "<group>"; };
-		119AB2EF2D2023DF9F1A32CB6040753A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		04D2A60C366F86B5C2C026E9D745E4CF /* FileHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
+		05E9FCA5CA315B638E8012355A7C6B00 /* ViewFlowGalileoContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowGalileoContainer.swift; sourceTree = "<group>"; };
+		08D42D962C249CC8499E29413D1200DD /* ConsoleLogGalileoContainerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConsoleLogGalileoContainerViewController.swift; sourceTree = "<group>"; };
+		119DA48D438A7C6A713944F60C9E64F6 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		12116DC6A122A947DC4E493A7E34C2CB /* Galileo-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Galileo-iOS.xcconfig"; sourceTree = "<group>"; };
 		142D8885416BB16DB4C8BAD733153DCB /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		19350F886705040ED2FD566DFAAC1DD3 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		19B498A7B0C0B66E1B7DD1D535E00D4B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		19C9727453475F419DD91E2E1543C96C /* Galileo-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Galileo-iOS-prefix.pch"; sourceTree = "<group>"; };
-		20B29CEB0E8DAE50D0A61F21F702F136 /* GalileoConfigurationProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GalileoConfigurationProvider.swift; sourceTree = "<group>"; };
-		21B37125F6E8B9D60FC52BD0304B2A0D /* MainViewControllerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewControllerFactory.swift; sourceTree = "<group>"; };
-		22996D9C90B3CCCF36AB3E5C1FB0F9C5 /* RequestCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestCell.swift; sourceTree = "<group>"; };
-		22E88DCC4B2136507E7B2EC30332DC6F /* TextTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
-		23585CAA2AB701F597687E5352F60F79 /* WHString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHString.swift; sourceTree = "<group>"; };
+		1B6E8B4B105A7F64E4C06DD17C87CBD4 /* WormholyMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WormholyMethodSwizzling.h; sourceTree = "<group>"; };
+		1BD2DBE13E12A38EC7FAA0B2F22D3D63 /* PreferencesGalileoTableViewDataSourceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoTableViewDataSourceDelegate.swift; sourceTree = "<group>"; };
+		1C79D3BD8474C8AAAA9580FC8BE14AC5 /* GalileoConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GalileoConfiguration.swift; sourceTree = "<group>"; };
+		1D5DE2C21EE14948F56DC61FB6C9D0FD /* PreferenceDateTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceDateTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		219F7F49B9B50C232F0AE0AB0C53F3F6 /* GalileoMainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GalileoMainViewController.swift; sourceTree = "<group>"; };
+		228F5B570DAA67ED603DEBB3206B7661 /* PreferenceTextTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceTextTableViewCell.xib; sourceTree = "<group>"; };
+		24C18322EE6B2D27DDF481E059AC3263 /* ActionableTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActionableTableViewCell.swift; sourceTree = "<group>"; };
+		2549AA66655EE8558D6E1B32256070C8 /* Colors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		25B5494CF96D33C2F90A442E4D3BF525 /* Pods-Galileo-iOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Galileo-iOS_Example-umbrella.h"; sourceTree = "<group>"; };
-		268C32925F4DACE01D702EDC152F58E4 /* CustomHTTPProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomHTTPProtocol.swift; sourceTree = "<group>"; };
-		2A5B7C267DA116A741E054DACB360375 /* PreferenceBoolTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceBoolTableViewCell.swift; sourceTree = "<group>"; };
+		2659406AE4B64E61ACB1087D6DF23A49 /* Galileo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Galileo.swift; path = "Galileo-iOS/Classes/Galileo.swift"; sourceTree = "<group>"; };
 		2C13C7046C218FB029979F98227D2B29 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		2C146A95D781AB5ADB1CDBE44F8505A4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2D915004D5924D81726BF0414F401B07 /* PreferencesGalileoSourcesTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoSourcesTableViewController.swift; sourceTree = "<group>"; };
 		2E0EB191357949DC650D22F40F211FAF /* Pods-Galileo-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Galileo-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		30E8DA5049A0F5B830B1D6C0A08F7A0B /* RequestModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
-		328C9E566647522E828389383638D6AE /* ViewFlowGalileoFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowGalileoFactory.swift; sourceTree = "<group>"; };
-		33EFA71BE5ECA0FC3A65EE631D6C0715 /* PreferencesGalileoInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoInteractor.swift; sourceTree = "<group>"; };
+		2EF89ED2FCA6B213A8A04D5F319FC93D /* RequestTitleSectionView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = RequestTitleSectionView.xib; sourceTree = "<group>"; };
+		308498AFA8AA1B109BE3F3B09CB21632 /* ScreenView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreenView.swift; sourceTree = "<group>"; };
+		329CC70FB93725F3573D238C34EA0F08 /* RequestTitleSectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestTitleSectionView.swift; sourceTree = "<group>"; };
 		35FDE881D03E0CE9C9D153DBD4018AFB /* Galileo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Galileo.bundle; path = "Galileo-iOS-Galileo.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		37A96AA8FA9DE384B028BE2BB02FCBDB /* ConsoleLogGalileoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConsoleLogGalileoViewController.swift; sourceTree = "<group>"; };
-		39DFB68D9759999A88D5732B86C69D87 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		3B1DD40D20F26BE63A69CBCA8478BB7F /* Galileo-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Galileo-iOS.modulemap"; sourceTree = "<group>"; };
-		3E999136257F47BABCDAA2B362260FDC /* ViewFlowDetailTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowDetailTableViewCell.swift; sourceTree = "<group>"; };
-		3EC16BA504C9F7110B421ADED6111302 /* WormholyMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WormholyMethodSwizzling.m; sourceTree = "<group>"; };
-		3FC7FFA8626CB9C4A0E53CB4CB7A3F62 /* Flow.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Flow.storyboard; sourceTree = "<group>"; };
+		361D8B814582EB6C5E7D1D0144B15D1C /* PreferenceDateTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceDateTableViewCell.xib; sourceTree = "<group>"; };
+		37654994C6DA65CF7512D3B51F8996CB /* TextTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
+		39C173D76A8FD2B35488D77480249073 /* PreferenceIntegerTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceIntegerTableViewCell.swift; sourceTree = "<group>"; };
+		3CA93E36DAFF56CE28C578B8EBEAAAA8 /* PreferenceDateTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceDateTableViewCell.swift; sourceTree = "<group>"; };
+		3F1C61CDED45B0D7C06F57C13DACE26D /* PreferenceIntegerViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceIntegerViewModel.swift; sourceTree = "<group>"; };
+		3F9203AD4C8B0D54F95F93858A5A744F /* Wormholy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Wormholy.swift; sourceTree = "<group>"; };
 		40FFC70EE5B01D5FC59873C07895CC78 /* Pods-Galileo-iOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Galileo-iOS_Example-dummy.m"; sourceTree = "<group>"; };
+		41DC0F4674CBAB5C13AF9124FC05C026 /* NSURLSessionConfiguration+Wormholy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionConfiguration+Wormholy.m"; sourceTree = "<group>"; };
 		41F349EA74967A9FF4A8C64AE0B4D24E /* Pods-Galileo-iOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Galileo-iOS_Example.modulemap"; sourceTree = "<group>"; };
-		44DC5E99AE424DC658C541D41956A54D /* ViewFlowTableViewCellViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowTableViewCellViewModel.swift; sourceTree = "<group>"; };
-		44EE4D975C6555CD5E9F828B23E3C7D0 /* WHView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHView.swift; sourceTree = "<group>"; };
-		458632E3E030D54882293BBFA2E3C4AF /* PreferenceTextTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceTextTableViewCell.swift; sourceTree = "<group>"; };
+		460F7FFA15D75A4240686639357E3D66 /* ViewFlowDetailTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ViewFlowDetailTableViewCell.xib; sourceTree = "<group>"; };
 		4773EE5CF7AEA3410B4415BD0E4FF03B /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		4F95BC8DBE326C3968C7B880F847A53A /* PreferenceIntegerTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceIntegerTableViewCell.swift; sourceTree = "<group>"; };
-		4FCE51ADBB5B55B0E3C52FAFC8D521FA /* PreferenceIntegerTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceIntegerTableViewCell.xib; sourceTree = "<group>"; };
+		49EE123E629E5CF909288298F02CADC9 /* ActionableTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ActionableTableViewCell.xib; sourceTree = "<group>"; };
+		4AE5611B7252AB6B760EE09C64311A23 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		4ED356BF167096781BC87B37375FA393 /* RequestCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestCell.swift; sourceTree = "<group>"; };
 		5003326CBF5036901116BC62FA244292 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		51C1958B92D14B06B4CA0471B9BD8B3E /* WormholyGalileoPluginViewControllerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WormholyGalileoPluginViewControllerFactory.swift; sourceTree = "<group>"; };
-		530956F623D17745D2E21A7F07B04CA3 /* GalileoMainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GalileoMainViewController.swift; sourceTree = "<group>"; };
-		548996162D7B4F20079E9A67F822093D /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		56221D33F703A9418DEC2006EC6DD664 /* PreferenceBoolViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceBoolViewModel.swift; sourceTree = "<group>"; };
-		575F016A4982898775BABAEA5CE5AB94 /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
-		597386D9B20BFF42A0F4277827D58C25 /* PreferencesGalileoSourcesTableViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferencesGalileoSourcesTableViewController.xib; sourceTree = "<group>"; };
+		50A19C981F2B3549CAC90D6F565E8D0C /* RequestCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = RequestCell.xib; sourceTree = "<group>"; };
+		5181878834A2D726D74FDC407134F7B2 /* Galileo-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Galileo-iOS.modulemap"; sourceTree = "<group>"; };
+		5183414C0C06ACBDB965971ACC77272D /* WormholyGalileoPluginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WormholyGalileoPluginViewController.swift; sourceTree = "<group>"; };
+		53F5474E311D9A61A225D114A4567617 /* ViewFlowDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowDetailViewController.swift; sourceTree = "<group>"; };
+		549A30DFEE669B0BC3B83D6973311120 /* TextTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		55C7A08B3D15A242FB462A0B8CF9D46E /* PreferenceBoolTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceBoolTableViewCell.swift; sourceTree = "<group>"; };
+		5A81930B583232AA7864DA501716FADC /* PreferenceBoolTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceBoolTableViewCell.xib; sourceTree = "<group>"; };
 		5ABC15285CA22C4813BE752C62E1E5C1 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		5BC2C80A88E275C92C214DEA2F61AD99 /* PreferencesGalileoContainerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoContainerViewController.swift; sourceTree = "<group>"; };
-		5E79AEBE38CD4630FBDFD8FE8016C29A /* PreferenceDateTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceDateTableViewCell.xib; sourceTree = "<group>"; };
-		6147E560DCF7976E6A59A0E2BD909F82 /* PreferencesGalileoPresenterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoPresenterInterface.swift; sourceTree = "<group>"; };
 		61911985412FD06C33E1EEC953ECFA3D /* Pods-Galileo-iOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Galileo-iOS_Example-resources.sh"; sourceTree = "<group>"; };
-		625DDC427F7C0A18F769FBEA7759E37B /* ViewFlowGalileoContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowGalileoContainer.swift; sourceTree = "<group>"; };
-		65297EF42D5CAAA2DFB501CB2F38CE7D /* WHCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHCollectionView.swift; sourceTree = "<group>"; };
-		681911D2D71405EBB24276849531A383 /* PreferencesGalileoPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoPresenter.swift; sourceTree = "<group>"; };
-		6CB237E87E9DEC3B7B79D3DEC61E5B86 /* PreferencesGalileoTableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoTableViewDataSource.swift; sourceTree = "<group>"; };
-		6EF66B6F4DF2C1C8CD0F55B88B89A1AA /* PreferencesGalileoViewDetailFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoViewDetailFactory.swift; sourceTree = "<group>"; };
-		6F4B756024C5396415F099EC0A6AA006 /* NSURLSessionConfiguration+Wormholy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionConfiguration+Wormholy.m"; sourceTree = "<group>"; };
-		6FC9D84B8CB7CCD174DAA94AEB81DACB /* TextTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
-		7165DE5DE4C039E41DADBB77E0835F0A /* ViewFlowTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowTableViewCell.swift; sourceTree = "<group>"; };
+		61F77819481673FF2F9D31AB29DFCF01 /* WHCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHCollectionView.swift; sourceTree = "<group>"; };
+		62505940E14C0D01039FCBD6CEA7E04A /* Galileo-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "Galileo-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		636A1F2C31484D37ACC92BD1B3E1FF0D /* PreferencesGalileoViewDetailFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoViewDetailFactory.swift; sourceTree = "<group>"; };
+		6F8620771A11D2FA6929AF52B9CDF4A6 /* PreferencesGalileoPresenterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoPresenterInterface.swift; sourceTree = "<group>"; };
 		7385D1B5962A2069DBF02032E3465B7F /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		75CE3CF4E7DD22B3B9505A2EEB4E3C52 /* WHLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHLabel.swift; sourceTree = "<group>"; };
-		76DC3EA268ED7CB9DA0A66F06CD6A06C /* PreferenceTextViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceTextViewModel.swift; sourceTree = "<group>"; };
+		7472D55A6F54B22BCC71643639DEDEC2 /* Galileo-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Galileo-iOS-dummy.m"; sourceTree = "<group>"; };
+		7792FC64F9219F8CA690D38E6A2427D4 /* PreferencesGalileoIO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoIO.swift; sourceTree = "<group>"; };
 		77B1BE4DE8B2E0614B026994B89210AF /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		78DC5538C1DE924EC287B59D58B7B93D /* ViewFlowTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ViewFlowTableViewCell.xib; sourceTree = "<group>"; };
-		7AA26988EA609B653030A7AC28FA0FC0 /* WHNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHNavigationController.swift; sourceTree = "<group>"; };
+		7B110992003F808B632F72146986AB52 /* WHNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHNavigationController.swift; sourceTree = "<group>"; };
 		7BBC3217D358D3A86B44CAD0606C83A6 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		7BCBF3D3CCC44F33E5CE8CBD989FFDCC /* PreferencesGalileoFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoFactory.swift; sourceTree = "<group>"; };
+		7F7F276FD30CBEC70B0B11B5028466DA /* CustomActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomActivity.swift; sourceTree = "<group>"; };
+		81F107A71BCB91A29EFD07FA92A3BD02 /* PreferenceDateViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceDateViewModel.swift; sourceTree = "<group>"; };
 		826EBB06CE0EECFAA16C4757E4B7E39E /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		8835B5B89ADCF8349A1CF203D5519297 /* ViewFlowDetailViewControllerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowDetailViewControllerFactory.swift; sourceTree = "<group>"; };
-		89AAED5FF524A1E19EE077CAB029B03E /* Wormholy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Wormholy.swift; sourceTree = "<group>"; };
-		8B423565F2ECD2C841A18B8248216FD7 /* ActionableTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActionableTableViewCell.swift; sourceTree = "<group>"; };
-		8B649532E3F120CCC58B7C486EF117EF /* PreferenceViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceViewType.swift; sourceTree = "<group>"; };
-		8C10587914D1D8806D6507C6DBCA56E4 /* PreferenceDateTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceDateTableViewCellDelegate.swift; sourceTree = "<group>"; };
-		8C9CA7A5482EA3F6E50D144F90320784 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		83EB79DB883C8DDFF9F2255A0D554494 /* PreferencesGalileoInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoInteractor.swift; sourceTree = "<group>"; };
+		85FBF81372EE5C7DAEDBA91E84EA8CAB /* WHTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHTableView.swift; sourceTree = "<group>"; };
 		8D4179A00BDA1D7AA848119394565D4F /* Pods-Galileo-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Galileo-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8DD8FFC67179F458DA2D771089FDECB9 /* WHTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHTableView.swift; sourceTree = "<group>"; };
-		8E03A0E4142F2CE477470E7C2FCE8935 /* RequestTitleSectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestTitleSectionView.swift; sourceTree = "<group>"; };
-		8FE2A726D94DE0C7CC7AC13D1BD024B9 /* Colors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		91ABA4B6DC32C97E5C2D43B94F0F0D71 /* PreferencesGalileoViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferencesGalileoViewController.xib; sourceTree = "<group>"; };
 		92F674140502DC4A630BD0CA44A6C095 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		961DF3EF5CD069B1957DA5A344B14558 /* Galileo-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Galileo-iOS-umbrella.h"; sourceTree = "<group>"; };
-		9A96BF77DE48BB6B2504F0A7FA13C094 /* PreferencesGalileoViewInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoViewInterface.swift; sourceTree = "<group>"; };
-		9C020AE302A901F011BF73272D61A0CD /* PreferencesGalileoSourcesTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoSourcesTableViewController.swift; sourceTree = "<group>"; };
-		9E9C2287899D44B8C2A179195666771F /* BodyDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BodyDetailViewController.swift; sourceTree = "<group>"; };
+		92FE87E94579AC7E3D521ADA092A317A /* PreferenceIntegerTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceIntegerTableViewCell.xib; sourceTree = "<group>"; };
+		94432D971F53DD6E7B168A9AED71418D /* PreferenceTextViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceTextViewModel.swift; sourceTree = "<group>"; };
+		95BFD1F70881DDB4B5E4E5DC31378CB1 /* GalileoPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GalileoPlugin.swift; sourceTree = "<group>"; };
+		9669390A7EAC72C6DBB9C78CC29F2592 /* ViewFlowDetailTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowDetailTableViewCell.swift; sourceTree = "<group>"; };
+		9A5203264754094CC69055194AF54379 /* WormholyGalileoPluginViewControllerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WormholyGalileoPluginViewControllerFactory.swift; sourceTree = "<group>"; };
+		9C9B3451BA5228ABA05A59C20EE38298 /* PreferencesGalileoTableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoTableViewDataSource.swift; sourceTree = "<group>"; };
+		9CCB53FD2003B3662847B1BFBA32147E /* WHString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHString.swift; sourceTree = "<group>"; };
 		9F35C601C9C74538B9A5E1477E06C865 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		A10F38FDB217A000EA34B7D7D7F555DC /* ActionableTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ActionableTableViewCell.xib; sourceTree = "<group>"; };
-		A3E15D025269AD757666985A886E1FF2 /* RequestModelBeautifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestModelBeautifier.swift; sourceTree = "<group>"; };
+		A39F6EA058A0D1F00C1373BD43839BB6 /* MainViewControllerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewControllerFactory.swift; sourceTree = "<group>"; };
+		A3C1BDB0CD8B7CA62FE959DECDA67456 /* PreferencesGalileoContainerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoContainerViewController.swift; sourceTree = "<group>"; };
+		A41412F03FE25EC2843E65089392724B /* Flow.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Flow.storyboard; sourceTree = "<group>"; };
 		A833FD742E3B85608247C4DA7E9F8AAB /* Pods-Galileo-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Galileo-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A83EEA286E67F377AB65665499A06A51 /* CustomHTTPProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomHTTPProtocol.swift; sourceTree = "<group>"; };
 		A99AD779088C17EA9C690E53F6F08FD3 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		AB6FA6509D2204D6FF7572F7A2AB7C77 /* CustomActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomActivity.swift; sourceTree = "<group>"; };
-		ADF2FF53EB2C899C2875AD0C664D0E6C /* ConsoleLogGalileoFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConsoleLogGalileoFactory.swift; sourceTree = "<group>"; };
+		AA680654592D7E899F79A098ED354604 /* WHTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHTextView.swift; sourceTree = "<group>"; };
+		AD1B8B3419783A5D34FC0FCB6EB2AE1C /* ViewFlowDetailViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ViewFlowDetailViewController.xib; sourceTree = "<group>"; };
+		ADE7FA230B24CAD727CA544997D75DF1 /* GalileoMainViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = GalileoMainViewController.xib; sourceTree = "<group>"; };
+		AEFC6273E4D265ECEE5D86CA94F5DEE0 /* WHDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHDate.swift; sourceTree = "<group>"; };
 		AF237313B24824F5508DD4D6FE48E101 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		B2E79D3F92ECC0DE0B58BC57F7D7C1BE /* PreferenceDateTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceDateTableViewCell.swift; sourceTree = "<group>"; };
+		B13F157C9452A4C80CFF9322E51A51D9 /* ViewFlowGalileoFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowGalileoFactory.swift; sourceTree = "<group>"; };
+		B2A0D9AEB2B42C75690D1AEFFC270106 /* PreferenceViewTypeMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceViewTypeMapper.swift; sourceTree = "<group>"; };
+		B2F729ECFA04BCA4C3981F804DA4D5B2 /* PreferencesGalileoPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoPresenter.swift; sourceTree = "<group>"; };
 		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B38CA61B9FC3DAABDE4EBAA1D270A98E /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		B4D33D438D54650559DE17CD2062C3FC /* Galileo-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Galileo-iOS-dummy.m"; sourceTree = "<group>"; };
-		B6914A6F54F1EEF23848B361D1CAD7D8 /* PreferenceTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		B4EEFFD91F0D9AE4AEF5E51372F56FF6 /* WHView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHView.swift; sourceTree = "<group>"; };
+		B5880C68C651AE40D70DFE32E04AC65C /* WHBaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHBaseViewController.swift; sourceTree = "<group>"; };
+		B89A6E60DE487FD3194D8B9AA7F817BD /* PreferencesGalileoViewInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoViewInterface.swift; sourceTree = "<group>"; };
 		B9C953AA6F529084971526775DEBB773 /* Pods-Galileo-iOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Galileo-iOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BA5B0270266C95300706D1619E12EF18 /* PreferencesGalileoIO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoIO.swift; sourceTree = "<group>"; };
-		BA5C66FF491C7AD3C840C207443A9D2A /* PreferencesGalileoTableViewDataSourceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoTableViewDataSourceDelegate.swift; sourceTree = "<group>"; };
-		BB3932D401529BF847C6A85CD1F22F1E /* PreferenceIntegerViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceIntegerViewModel.swift; sourceTree = "<group>"; };
-		BB7F8BFC86B5ABDBAEE431A57F3099C8 /* ConsoleLogGalileoContainerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConsoleLogGalileoContainerViewController.swift; sourceTree = "<group>"; };
-		BDCB9ED183D9D904F7CA2E77808B8905 /* Galileo-iOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Galileo-iOS.h"; sourceTree = "<group>"; };
-		C0C874A695FF8F28247A58B57FCC7F7E /* ConsoleLogGalileoViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ConsoleLogGalileoViewController.xib; sourceTree = "<group>"; };
-		C37E466AEB4B64F329B163F4D4F7EFFE /* PreferenceDateViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceDateViewModel.swift; sourceTree = "<group>"; };
-		C43518D7648A6D8663340D79ECA5D93B /* ViewFlowDetailViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ViewFlowDetailViewController.xib; sourceTree = "<group>"; };
-		C438122D9FEEFC1ED13F13DDB028EB5C /* Galileo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Galileo.swift; path = "Galileo-iOS/Classes/Galileo.swift"; sourceTree = "<group>"; };
-		C9945D64DD54F83773E5754F6D4786BC /* RequestCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = RequestCell.xib; sourceTree = "<group>"; };
-		CCE7043ADB78C117AA5476D2FDE0FE78 /* FileHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
-		CD9E9DA1D345A1E30564940ECE02E0C0 /* WormholyGalileoPluginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WormholyGalileoPluginViewController.swift; sourceTree = "<group>"; };
-		D30A7615896F3F7271A875FA4061F2EE /* WHBaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHBaseViewController.swift; sourceTree = "<group>"; };
-		D4625D436DC24C5A506AFE6B22F2D39F /* PreferenceTextTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceTextTableViewCell.xib; sourceTree = "<group>"; };
+		BA5DE813B16FE28D3F38A1F26599692F /* PreferencesGalileoFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoFactory.swift; sourceTree = "<group>"; };
+		BD09DBC7677324FDE10E34DB2FFDC5E1 /* WormholyMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WormholyMethodSwizzling.m; sourceTree = "<group>"; };
+		C009CFA7FEF32F325DCFA650CC61A314 /* BodyDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BodyDetailViewController.swift; sourceTree = "<group>"; };
+		C011EFC2329E221634C2E4ADF273B94C /* ConsoleLogGalileoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConsoleLogGalileoViewController.swift; sourceTree = "<group>"; };
+		C33EC3E0D6C60EF3B3C2D02709905DF2 /* ViewFlowTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowTableViewCell.swift; sourceTree = "<group>"; };
+		C355CABDF57CCB37AF5190BA4855831E /* PreferenceTextTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceTextTableViewCell.swift; sourceTree = "<group>"; };
+		C8853B977AD27F6E5CD4288B4E75B978 /* NSURLSessionConfiguration+Wormholy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionConfiguration+Wormholy.h"; sourceTree = "<group>"; };
+		C94EDEFC83096629173F17662CAE2980 /* ViewFlowDetailViewControllerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowDetailViewControllerFactory.swift; sourceTree = "<group>"; };
+		CA16FF80A4E8BBA4B1CE6360D6614E4B /* WHLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHLabel.swift; sourceTree = "<group>"; };
+		CD172CE3B1DD1F8D62ECED90E9A88219 /* Galileo-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Galileo-iOS-prefix.pch"; sourceTree = "<group>"; };
+		CFA622A92BA4FF96EBC0156F76C0B03B /* PreferenceTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		D384DFBC719908148803233B43D6DA4B /* ConsoleLogGalileoFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConsoleLogGalileoFactory.swift; sourceTree = "<group>"; };
+		D4486E4696157A469260A772D0E2CE0C /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		D4E8010FC4D5BD5D32EE5999794ABF89 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		D4F4A3E3461A5C1034491504090E0BCA /* ViewFlowDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowDetailViewController.swift; sourceTree = "<group>"; };
-		D76A75158E2780D33CBDCFF5E0F37612 /* RequestTitleSectionView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = RequestTitleSectionView.xib; sourceTree = "<group>"; };
-		D7A0A086A4D56DB426DECB52A03464D3 /* GalileoMainViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = GalileoMainViewController.xib; sourceTree = "<group>"; };
-		D7FCF40C66E8BD51FD25DE74461F19B4 /* GalileoConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GalileoConfiguration.swift; sourceTree = "<group>"; };
-		D92F80CA7A99A7DCB3F977871333753E /* PreferencesGalileoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoViewController.swift; sourceTree = "<group>"; };
-		D995CA7F40DA8E052D3E39A6D760CE0C /* Galileo-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "Galileo-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DA2BE6E394F07305165B740B509F99B7 /* NSURLSessionConfiguration+Wormholy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionConfiguration+Wormholy.h"; sourceTree = "<group>"; };
+		D77031DF895099A14E88F0820C554326 /* ViewFlowGalileoTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowGalileoTableViewController.swift; sourceTree = "<group>"; };
+		D77DCF9B9D478C93B7EE56CDF0F2145F /* PreferenceViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceViewType.swift; sourceTree = "<group>"; };
+		D7B617D8F6438B64147FC8F628AADD08 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DAEB8358587D4B094AC5001A6875B858 /* GalileoConfigurationProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GalileoConfigurationProvider.swift; sourceTree = "<group>"; };
 		DC5787A6A73B24AD1FDB7AEF24C671DD /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		DC9F00BD8F198B6BCA7A0526AC1CCF71 /* RequestsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
 		DCF925060B567CB483B99324E39D404A /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		E719AC9F62593AAAC0C3059F96519F65 /* ViewFlowDetailTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ViewFlowDetailTableViewCell.xib; sourceTree = "<group>"; };
-		E8DFF373E83B7B3349E30F72593B1DEA /* ScreenView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreenView.swift; sourceTree = "<group>"; };
-		E94F27D0B7137FB2FC0F71624F649BC8 /* PreferenceViewTypeMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceViewTypeMapper.swift; sourceTree = "<group>"; };
-		EA87CD54ED12A2A0D0A5B27B7920B662 /* PreferenceBoolTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceBoolTableViewCell.xib; sourceTree = "<group>"; };
-		EC28E3488463335550C81A8A9F88245A /* Galileo-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Galileo-iOS.xcconfig"; sourceTree = "<group>"; };
-		ED576B8F574F393D8C87A25BADFCDFB4 /* WHDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHDate.swift; sourceTree = "<group>"; };
+		DD342DC8A13DE73C1D9B8A687AE6BC51 /* PreferenceBoolViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceBoolViewModel.swift; sourceTree = "<group>"; };
+		DDBE37D2B81AB04CBC2DEABF2E61229F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E125882B2C55AC079E016F40813583DF /* PreferencesGalileoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoViewController.swift; sourceTree = "<group>"; };
+		E2AC45E2FBA158F3E0D2DB7E7546B38A /* PreferencesGalileoSourcesTableViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferencesGalileoSourcesTableViewController.xib; sourceTree = "<group>"; };
+		E67DD3B47B14DC237629BEDC488AF104 /* RequestsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		EB2D7039356CFA771EF260CAC1A1B072 /* ViewFlowTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ViewFlowTableViewCell.xib; sourceTree = "<group>"; };
+		ECBD730C838435F42E8FFE2BF398CF82 /* Galileo-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Galileo-iOS-umbrella.h"; sourceTree = "<group>"; };
 		EE75F25171B81BA216D6F6A45C9D40E8 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		F3E468ECA0E778E7D7308939B800269E /* ViewFlowGalileoTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowGalileoTableViewController.swift; sourceTree = "<group>"; };
-		F9785724B07F80CD9D42B8F764B3A7D6 /* PreferencesGalileoViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferencesGalileoViewController.xib; sourceTree = "<group>"; };
+		EF3C1E0F42FEF0E760FA79AF3642143A /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		F062DA4505E932478793052492F96DEE /* ViewFlowTableViewCellViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		F1D35329B1772FE3DAB659DAC7FC323D /* RequestModelBeautifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestModelBeautifier.swift; sourceTree = "<group>"; };
+		F4E4045EAEF7D149B3BE61A948864751 /* RequestModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		F81D835EB9C85F76634A47EE7CA3B7A8 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F99584CE30ACA92A156C9A3BB15C357E /* RequestDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestDetailViewController.swift; sourceTree = "<group>"; };
+		F9D7BA92AD6EC95D02AECE47727AE69B /* ConsoleLogGalileoViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ConsoleLogGalileoViewController.xib; sourceTree = "<group>"; };
 		FA1EF1B1A9FCD6331779EEF1BB0469B6 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		FAE9D29C71D073079C78BAC4205B2801 /* libGalileo-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libGalileo-iOS.a"; path = "libGalileo-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB1D8E71ECACC62A67941E1BCC7B3898 /* GalileoPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GalileoPlugin.swift; sourceTree = "<group>"; };
-		FBFBF49A28B7BAEB520E88725D27A798 /* RequestDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestDetailViewController.swift; sourceTree = "<group>"; };
+		FC1110DDA49D69B208878F2EBC88C6FC /* ResourceBundle-Galileo-Galileo-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Galileo-Galileo-iOS-Info.plist"; sourceTree = "<group>"; };
 		FD6B07FB7D9E4420B8F2C1E0BC87EC55 /* libPods-Galileo-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Galileo-iOS_Example.a"; path = "libPods-Galileo-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD96887BA2196696CF4D37A7CF2FCE70 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlamofire.a; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1871A8AB755962E97F7BC4DAB14C218A /* Frameworks */ = {
+		241A13EF52A20F69BE71A3B626FA0FA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,7 +302,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6424232A1014B6E9F221B998878B1282 /* Frameworks */ = {
+		9FBCCD0FAE660E6268BEF496831DFCE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,16 +319,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		047E741E59BED521021894D99BDC3BF7 /* View Flow Plugin */ = {
-			isa = PBXGroup;
-			children = (
-				DFA916A29E0AF6F7B46DD94F698B6167 /* Cell */,
-				188F0296E105C3AF1A0BA3C90B08C981 /* Detail */,
-			);
-			name = "View Flow Plugin";
-			path = "View Flow Plugin";
-			sourceTree = "<group>";
-		};
 		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,91 +326,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1191EB04CE7C5288AB3DB5E946440A13 /* Preferences View */ = {
+		10127B1FF859A4F413545BBD05F4BF2C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				3636F626A9FD1BC845B06864A74CBAA9 /* View */,
+				460F7FFA15D75A4240686639357E3D66 /* ViewFlowDetailTableViewCell.xib */,
 			);
-			name = "Preferences View";
-			path = "Preferences View";
+			name = Cell;
+			path = Cell;
 			sourceTree = "<group>";
 		};
-		13A69106BC341A8917CA11685593EFF9 /* Factory */ = {
+		11C2CD5D8E20F952515D06A10911C8E9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				328C9E566647522E828389383638D6AE /* ViewFlowGalileoFactory.swift */,
+				F81D835EB9C85F76634A47EE7CA3B7A8 /* Assets.xcassets */,
 			);
-			name = Factory;
-			path = Factory;
+			name = Assets;
+			path = "Galileo-iOS/Assets";
 			sourceTree = "<group>";
 		};
-		13FF3975175D2C75C205E58ABD1B2DE1 /* View Type */ = {
+		124F9CF7773396130CC718F560134D95 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8B649532E3F120CCC58B7C486EF117EF /* PreferenceViewType.swift */,
-				E94F27D0B7137FB2FC0F71624F649BC8 /* PreferenceViewTypeMapper.swift */,
+				2D915004D5924D81726BF0414F401B07 /* PreferencesGalileoSourcesTableViewController.swift */,
 			);
-			name = "View Type";
-			path = "View Type";
-			sourceTree = "<group>";
-		};
-		15EC628F7E9497593907D23AC66DF5E9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				669C24B4CC6B0645EC70ADF982088F6F /* Plugins */,
-			);
-			name = Classes;
-			path = "Galileo-iOS/Classes";
-			sourceTree = "<group>";
-		};
-		188F0296E105C3AF1A0BA3C90B08C981 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				C43518D7648A6D8663340D79ECA5D93B /* ViewFlowDetailViewController.xib */,
-				A37A7B91CD08375083CFED2D60787DE8 /* Cell */,
-			);
-			name = Detail;
-			path = Detail;
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		1940E3E6A341A8E723CBF1EB1011FDDD /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E3A95C50C4E6FEAD7B120FEBB433880C /* Galileo-iOS */,
+				A7537AA5EE4F5E039EBD59FB811E7149 /* Galileo-iOS */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		1BF0304209BDDA02194C6AE268355227 /* Sources View */ = {
+		19AFC3A8B5384A93A5983214B6496054 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
-				D1146D2E923D422D53128E3675E5061E /* View */,
+				228FEF64A0507E547378C59E4EE86FFA /* View */,
 			);
-			name = "Sources View";
-			path = "Sources View";
+			name = "Main View";
+			path = "Galileo-iOS/Classes/Main View";
 			sourceTree = "<group>";
 		};
-		1CAA1A378FCD26631006D1D5A45AB6C3 /* Console Log */ = {
+		1D57637EDE0B97873301F610BF02C3BA /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				C0C874A695FF8F28247A58B57FCC7F7E /* ConsoleLogGalileoViewController.xib */,
+				BC67D067D4B5136EDE3FFA25B15D4F19 /* Wormholy */,
 			);
-			name = "Console Log";
-			path = "Console Log";
-			sourceTree = "<group>";
-		};
-		1CFB0F36AC45A5CD1C9A4577EE653B7E /* View Flow Plugin */ = {
-			isa = PBXGroup;
-			children = (
-				E8DFF373E83B7B3349E30F72593B1DEA /* ScreenView.swift */,
-				625DDC427F7C0A18F769FBEA7759E37B /* ViewFlowGalileoContainer.swift */,
-				F3E468ECA0E778E7D7308939B800269E /* ViewFlowGalileoTableViewController.swift */,
-				75706C41870397B75787DBF248667DCC /* Cell */,
-				84930CE3A1105DB564CD0B5F8973E202 /* Detail */,
-				13A69106BC341A8917CA11685593EFF9 /* Factory */,
-			);
-			name = "View Flow Plugin";
-			path = "View Flow Plugin";
+			name = Plugins;
+			path = Plugins;
 			sourceTree = "<group>";
 		};
 		1E610D49AC2E9B3ADA6E030C1BE84543 /* Products */ = {
@@ -436,57 +390,58 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		20106CD77810DF71FF3B4E33E84A08B4 /* Presenter */ = {
+		228FEF64A0507E547378C59E4EE86FFA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				681911D2D71405EBB24276849531A383 /* PreferencesGalileoPresenter.swift */,
-				6147E560DCF7976E6A59A0E2BD909F82 /* PreferencesGalileoPresenterInterface.swift */,
-				65AEBB28BF5E8A84BD0A28FDDF49BF66 /* Data Source */,
-				A50AFB2628256CA07F1550D55EEF8AE4 /* View Model */,
-				13FF3975175D2C75C205E58ABD1B2DE1 /* View Type */,
+				ADE7FA230B24CAD727CA544997D75DF1 /* GalileoMainViewController.xib */,
 			);
-			name = Presenter;
-			path = Presenter;
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
-		2155E1054EF2BA53BEDA3377B3262B7C /* Utils */ = {
+		27A157E8836D9D9AA438EA99D96E9341 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CCE7043ADB78C117AA5476D2FDE0FE78 /* FileHandler.swift */,
-				A3E15D025269AD757666985A886E1FF2 /* RequestModelBeautifier.swift */,
+				A41412F03FE25EC2843E65089392724B /* Flow.storyboard */,
 			);
-			name = Utils;
-			path = Utils;
+			name = UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		28804047BFA977C5B24DEDA365D8C6F8 /* Cell */ = {
+		284894B9326F0C31130BC75C3856C70E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3E999136257F47BABCDAA2B362260FDC /* ViewFlowDetailTableViewCell.swift */,
+				E2AC45E2FBA158F3E0D2DB7E7546B38A /* PreferencesGalileoSourcesTableViewController.xib */,
 			);
-			name = Cell;
-			path = Cell;
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
-		30BB09C4EC0F3126C9DE4FC63781CCA4 /* Resources */ = {
+		2A396A734BB1A2736DCE837EA5C05C28 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				562124BE8589C64B01291CE817D3415B /* Assets */,
-				15EC628F7E9497593907D23AC66DF5E9 /* Classes */,
-				7C519733B847B1D7C4A26EA43560CA1E /* Main View */,
-				AB5CDBE472EB1AECADD50F9603A9AACE /* Plugins */,
+				A17C23200CC62D3E1E1C67FE0BE382D4 /* Cells */,
+				4A2D0411E796E65740E9959720F61545 /* Sections */,
 			);
-			name = Resources;
+			name = UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		3399E142D39A09E581B52CC6E91B84C2 /* Pod */ = {
+		2BA4AB90DF2839BBD3FE0C635F3657E4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D995CA7F40DA8E052D3E39A6D760CE0C /* Galileo-iOS.podspec */,
-				2C146A95D781AB5ADB1CDBE44F8505A4 /* LICENSE */,
-				119AB2EF2D2023DF9F1A32CB6040753A /* README.md */,
+				A83EEA286E67F377AB65665499A06A51 /* CustomHTTPProtocol.swift */,
+				119DA48D438A7C6A713944F60C9E64F6 /* Storage.swift */,
+				3F9203AD4C8B0D54F95F93858A5A744F /* Wormholy.swift */,
+				91CB12EFC11E4F9A3E0456846A954FC2 /* Models */,
+				DEE9BE341014F191A53F9E37C0A23AEC /* Objc */,
+				D2571614E83F8C037121B2DA4E9CAC5D /* Subclasses */,
+				F081C62DFF191939F0991B81B5E8BA70 /* Support Files */,
+				41BFC300C44CB8E051E75F71C030548D /* UI */,
+				5C5E0452C1BB1A527C5BD85835F515D7 /* Utils */,
 			);
-			name = Pod;
+			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		35F128EB69B6F7FB7DA93BBF6C130FAE /* Pods */ = {
@@ -497,190 +452,124 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3636F626A9FD1BC845B06864A74CBAA9 /* View */ = {
+		41BFC300C44CB8E051E75F71C030548D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F9785724B07F80CD9D42B8F764B3A7D6 /* PreferencesGalileoViewController.xib */,
-				610F506164762602E633436411F32427 /* Cell */,
+				C009CFA7FEF32F325DCFA650CC61A314 /* BodyDetailViewController.swift */,
+				F99584CE30ACA92A156C9A3BB15C357E /* RequestDetailViewController.swift */,
+				E67DD3B47B14DC237629BEDC488AF104 /* RequestsViewController.swift */,
+				5C23F169A01ED2132B3F0276ED2DF20A /* Cells */,
+				7878D8E6AFCE47095141CB672CF0297B /* Sections */,
 			);
-			name = View;
-			path = View;
+			name = UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		389900FCD597DA621E2A636FC49ACCF1 /* Wormholy */ = {
+		4732CE2E3BFB6DB8EDABDAC9367D93E0 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				4F12076CB6BDBD90AE6DA6B0AE4C842D /* Sources */,
+				53F5474E311D9A61A225D114A4567617 /* ViewFlowDetailViewController.swift */,
+				C94EDEFC83096629173F17662CAE2980 /* ViewFlowDetailViewControllerFactory.swift */,
+				E0B4DA18C3852912EB8A04E4EAD23957 /* Cell */,
+			);
+			name = Detail;
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		4A2D0411E796E65740E9959720F61545 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				2EF89ED2FCA6B213A8A04D5F319FC93D /* RequestTitleSectionView.xib */,
+			);
+			name = Sections;
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		4D15D8187A2A9AB93760D30FB037C4B9 /* Wormholy */ = {
+			isa = PBXGroup;
+			children = (
+				B481F7A53C30574CEE4B42E3E44D2C3D /* Sources */,
 			);
 			name = Wormholy;
 			path = Wormholy;
 			sourceTree = "<group>";
 		};
-		42CB0D38F39D6C7D4885AE9DDFD43792 /* View */ = {
+		56AD7312E5C9795C60ACC5DF4A775C34 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				5BC2C80A88E275C92C214DEA2F61AD99 /* PreferencesGalileoContainerViewController.swift */,
-				D92F80CA7A99A7DCB3F977871333753E /* PreferencesGalileoViewController.swift */,
-				9A96BF77DE48BB6B2504F0A7FA13C094 /* PreferencesGalileoViewInterface.swift */,
-				BCB23878E6E56D06F25CF316D0ADD274 /* Cell */,
-			);
-			name = View;
-			path = View;
-			sourceTree = "<group>";
-		};
-		455E1CB4A358F4BD549D8FE275228065 /* Wormholy */ = {
-			isa = PBXGroup;
-			children = (
-				9E3C2EBA14E025B8379D68BB0BF46AD4 /* Sources */,
-			);
-			name = Wormholy;
-			path = Wormholy;
-			sourceTree = "<group>";
-		};
-		49F2EFE85ABB0C068BADD4BF0ABD618F /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				D7FCF40C66E8BD51FD25DE74461F19B4 /* GalileoConfiguration.swift */,
-				20B29CEB0E8DAE50D0A61F21F702F136 /* GalileoConfigurationProvider.swift */,
-			);
-			name = Configuration;
-			path = "Galileo-iOS/Classes/Configuration";
-			sourceTree = "<group>";
-		};
-		4EA3CEC0C0949271DB892B85C2B2B95B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3B1DD40D20F26BE63A69CBCA8478BB7F /* Galileo-iOS.modulemap */,
-				EC28E3488463335550C81A8A9F88245A /* Galileo-iOS.xcconfig */,
-				B4D33D438D54650559DE17CD2062C3FC /* Galileo-iOS-dummy.m */,
-				19C9727453475F419DD91E2E1543C96C /* Galileo-iOS-prefix.pch */,
-				961DF3EF5CD069B1957DA5A344B14558 /* Galileo-iOS-umbrella.h */,
-				07203E420D70FF34B45901DD49206DE5 /* ResourceBundle-Galileo-Galileo-iOS-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Galileo-iOS";
-			sourceTree = "<group>";
-		};
-		4EB19E20CE1D4199986CC09D6508384E /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				A10F38FDB217A000EA34B7D7D7F555DC /* ActionableTableViewCell.xib */,
-				C9945D64DD54F83773E5754F6D4786BC /* RequestCell.xib */,
-				22E88DCC4B2136507E7B2EC30332DC6F /* TextTableViewCell.xib */,
-			);
-			name = Cells;
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		4F12076CB6BDBD90AE6DA6B0AE4C842D /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				D67274FE7E465339E6FD2FB047452B6B /* UI */,
-			);
-			name = Sources;
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		5201FB3D179CC66E4B67EBDFF5741AC4 /* Preferences View */ = {
-			isa = PBXGroup;
-			children = (
-				643C48AA081CA71061074B135254F8F6 /* Factory */,
-				8DC72AF88F383BFA10747ACF7E18F59A /* Interactor */,
-				20106CD77810DF71FF3B4E33E84A08B4 /* Presenter */,
-				42CB0D38F39D6C7D4885AE9DDFD43792 /* View */,
-			);
-			name = "Preferences View";
-			path = "Preferences View";
-			sourceTree = "<group>";
-		};
-		5605A405D76CB43D537157486A24036B /* Objc */ = {
-			isa = PBXGroup;
-			children = (
-				DA2BE6E394F07305165B740B509F99B7 /* NSURLSessionConfiguration+Wormholy.h */,
-				6F4B756024C5396415F099EC0A6AA006 /* NSURLSessionConfiguration+Wormholy.m */,
-				10CA9FAFCD3EF47567EE7EF2780293C3 /* WormholyMethodSwizzling.h */,
-				3EC16BA504C9F7110B421ADED6111302 /* WormholyMethodSwizzling.m */,
-			);
-			name = Objc;
-			path = Objc;
-			sourceTree = "<group>";
-		};
-		562124BE8589C64B01291CE817D3415B /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				05FDB25217591A35189F8D0534259169 /* Assets.xcassets */,
-			);
-			name = Assets;
-			path = "Galileo-iOS/Assets";
-			sourceTree = "<group>";
-		};
-		58FE0B0507FFE7FB950880BD3F7097FE /* Preferences Plugin */ = {
-			isa = PBXGroup;
-			children = (
-				5201FB3D179CC66E4B67EBDFF5741AC4 /* Preferences View */,
-				B7F940709D2E68AE14FA1D3B3B97B450 /* Sources View */,
-			);
-			name = "Preferences Plugin";
-			path = "Preferences Plugin";
-			sourceTree = "<group>";
-		};
-		5B8925DD782B5BB35B33D4858AD359F1 /* Preferences Plugin */ = {
-			isa = PBXGroup;
-			children = (
-				1191EB04CE7C5288AB3DB5E946440A13 /* Preferences View */,
-				1BF0304209BDDA02194C6AE268355227 /* Sources View */,
-			);
-			name = "Preferences Plugin";
-			path = "Preferences Plugin";
-			sourceTree = "<group>";
-		};
-		610F506164762602E633436411F32427 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				EA87CD54ED12A2A0D0A5B27B7920B662 /* PreferenceBoolTableViewCell.xib */,
-				5E79AEBE38CD4630FBDFD8FE8016C29A /* PreferenceDateTableViewCell.xib */,
-				4FCE51ADBB5B55B0E3C52FAFC8D521FA /* PreferenceIntegerTableViewCell.xib */,
-				D4625D436DC24C5A506AFE6B22F2D39F /* PreferenceTextTableViewCell.xib */,
-			);
-			name = Cell;
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		631BDEDADB2AE65ED2A17D8A9D9C57F1 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				21B37125F6E8B9D60FC52BD0304B2A0D /* MainViewControllerFactory.swift */,
+				BA5DE813B16FE28D3F38A1F26599692F /* PreferencesGalileoFactory.swift */,
 			);
 			name = Factory;
 			path = Factory;
 			sourceTree = "<group>";
 		};
-		643C48AA081CA71061074B135254F8F6 /* Factory */ = {
+		588906237481D31F5BC1440FD6A0A81E /* Data Source */ = {
 			isa = PBXGroup;
 			children = (
-				6EF66B6F4DF2C1C8CD0F55B88B89A1AA /* PreferencesGalileoViewDetailFactory.swift */,
-			);
-			name = Factory;
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		65AEBB28BF5E8A84BD0A28FDDF49BF66 /* Data Source */ = {
-			isa = PBXGroup;
-			children = (
-				6CB237E87E9DEC3B7B79D3DEC61E5B86 /* PreferencesGalileoTableViewDataSource.swift */,
-				BA5C66FF491C7AD3C840C207443A9D2A /* PreferencesGalileoTableViewDataSourceDelegate.swift */,
+				9C9B3451BA5228ABA05A59C20EE38298 /* PreferencesGalileoTableViewDataSource.swift */,
+				1BD2DBE13E12A38EC7FAA0B2F22D3D63 /* PreferencesGalileoTableViewDataSourceDelegate.swift */,
 			);
 			name = "Data Source";
 			path = "Data Source";
 			sourceTree = "<group>";
 		};
-		669C24B4CC6B0645EC70ADF982088F6F /* Plugins */ = {
+		5C23F169A01ED2132B3F0276ED2DF20A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				389900FCD597DA621E2A636FC49ACCF1 /* Wormholy */,
+				24C18322EE6B2D27DDF481E059AC3263 /* ActionableTableViewCell.swift */,
+				4ED356BF167096781BC87B37375FA393 /* RequestCell.swift */,
+				549A30DFEE669B0BC3B83D6973311120 /* TextTableViewCell.swift */,
 			);
-			name = Plugins;
-			path = Plugins;
+			name = Cells;
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5C5E0452C1BB1A527C5BD85835F515D7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04D2A60C366F86B5C2C026E9D745E4CF /* FileHandler.swift */,
+				F1D35329B1772FE3DAB659DAC7FC323D /* RequestModelBeautifier.swift */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5E17A61CADFFD908A07684719D90F670 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				55C7A08B3D15A242FB462A0B8CF9D46E /* PreferenceBoolTableViewCell.swift */,
+				3CA93E36DAFF56CE28C578B8EBEAAAA8 /* PreferenceDateTableViewCell.swift */,
+				1D5DE2C21EE14948F56DC61FB6C9D0FD /* PreferenceDateTableViewCellDelegate.swift */,
+				39C173D76A8FD2B35488D77480249073 /* PreferenceIntegerTableViewCell.swift */,
+				CFA622A92BA4FF96EBC0156F76C0B03B /* PreferenceTableViewCellDelegate.swift */,
+				C355CABDF57CCB37AF5190BA4855831E /* PreferenceTextTableViewCell.swift */,
+			);
+			name = Cell;
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		610B5B26AFCE450469EFA60B9CFF6062 /* View Type */ = {
+			isa = PBXGroup;
+			children = (
+				D77DCF9B9D478C93B7EE56CDF0F2145F /* PreferenceViewType.swift */,
+				B2A0D9AEB2B42C75690D1AEFFC270106 /* PreferenceViewTypeMapper.swift */,
+			);
+			name = "View Type";
+			path = "View Type";
+			sourceTree = "<group>";
+		};
+		64D615BAF36D59B441D207DA6F708C71 /* View Flow Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				308498AFA8AA1B109BE3F3B09CB21632 /* ScreenView.swift */,
+				05E9FCA5CA315B638E8012355A7C6B00 /* ViewFlowGalileoContainer.swift */,
+				D77031DF895099A14E88F0820C554326 /* ViewFlowGalileoTableViewController.swift */,
+				DF6AFAF4A5E37FB1D21F90FB2FC2A15C /* Cell */,
+				4732CE2E3BFB6DB8EDABDAC9367D93E0 /* Detail */,
+				B5BAD1A2B68DA4CA96FEBF100B95985E /* Factory */,
+			);
+			name = "View Flow Plugin";
+			path = "View Flow Plugin";
 			sourceTree = "<group>";
 		};
 		6728131DFEC54B34467C704B51824101 /* Alamofire */ = {
@@ -709,51 +598,42 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		73CE0F839EA603CF84E4CB55B4AEC3D8 /* View */ = {
+		673E0A13E4E83BDACA0813A0B8348CA4 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				D7A0A086A4D56DB426DECB52A03464D3 /* GalileoMainViewController.xib */,
+				83EB79DB883C8DDFF9F2255A0D554494 /* PreferencesGalileoInteractor.swift */,
+				7792FC64F9219F8CA690D38E6A2427D4 /* PreferencesGalileoIO.swift */,
 			);
-			name = View;
-			path = View;
+			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
-		75706C41870397B75787DBF248667DCC /* Cell */ = {
+		6C4C7C61E64E70A1DA02E39710AE20F3 /* Console Log */ = {
 			isa = PBXGroup;
 			children = (
-				7165DE5DE4C039E41DADBB77E0835F0A /* ViewFlowTableViewCell.swift */,
-				44DC5E99AE424DC658C541D41956A54D /* ViewFlowTableViewCellViewModel.swift */,
+				F9D7BA92AD6EC95D02AECE47727AE69B /* ConsoleLogGalileoViewController.xib */,
 			);
-			name = Cell;
-			path = Cell;
+			name = "Console Log";
+			path = "Console Log";
 			sourceTree = "<group>";
 		};
-		75D5A30E027FD32693F975E82EB3E56D /* Models */ = {
+		7878D8E6AFCE47095141CB672CF0297B /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				30E8DA5049A0F5B830B1D6C0A08F7A0B /* RequestModel.swift */,
-				575F016A4982898775BABAEA5CE5AB94 /* Section.swift */,
-			);
-			name = Models;
-			path = Models;
-			sourceTree = "<group>";
-		};
-		7C519733B847B1D7C4A26EA43560CA1E /* Main View */ = {
-			isa = PBXGroup;
-			children = (
-				73CE0F839EA603CF84E4CB55B4AEC3D8 /* View */,
-			);
-			name = "Main View";
-			path = "Galileo-iOS/Classes/Main View";
-			sourceTree = "<group>";
-		};
-		7D8DEF131F0D64F3C62099C18524C978 /* Sections */ = {
-			isa = PBXGroup;
-			children = (
-				D76A75158E2780D33CBDCFF5E0F37612 /* RequestTitleSectionView.xib */,
+				329CC70FB93725F3573D238C34EA0F08 /* RequestTitleSectionView.swift */,
 			);
 			name = Sections;
 			path = Sections;
+			sourceTree = "<group>";
+		};
+		7CC0B971E5BE56360E2F7828C74E3A04 /* Sources View */ = {
+			isa = PBXGroup;
+			children = (
+				56AD7312E5C9795C60ACC5DF4A775C34 /* Factory */,
+				124F9CF7773396130CC718F560134D95 /* View */,
+			);
+			name = "Sources View";
+			path = "Sources View";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -768,154 +648,237 @@
 			);
 			sourceTree = "<group>";
 		};
-		84930CE3A1105DB564CD0B5F8973E202 /* Detail */ = {
+		8168074A65A991AF06EE9B4BF2D11B42 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				D4F4A3E3461A5C1034491504090E0BCA /* ViewFlowDetailViewController.swift */,
-				8835B5B89ADCF8349A1CF203D5519297 /* ViewFlowDetailViewControllerFactory.swift */,
-				28804047BFA977C5B24DEDA365D8C6F8 /* Cell */,
+				636A1F2C31484D37ACC92BD1B3E1FF0D /* PreferencesGalileoViewDetailFactory.swift */,
 			);
-			name = Detail;
-			path = Detail;
+			name = Factory;
+			path = Factory;
 			sourceTree = "<group>";
 		};
-		8DC72AF88F383BFA10747ACF7E18F59A /* Interactor */ = {
+		82C8864290CD6AB758753E7182075A1C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				33EFA71BE5ECA0FC3A65EE631D6C0715 /* PreferencesGalileoInteractor.swift */,
-				BA5B0270266C95300706D1619E12EF18 /* PreferencesGalileoIO.swift */,
-			);
-			name = Interactor;
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		8F2C15BB929724AF0B9433457045CDA3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8FE2A726D94DE0C7CC7AC13D1BD024B9 /* Colors.swift */,
-				548996162D7B4F20079E9A67F822093D /* Config.swift */,
-			);
-			name = "Support Files";
-			path = "Support Files";
-			sourceTree = "<group>";
-		};
-		9E3C2EBA14E025B8379D68BB0BF46AD4 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				F0CAD3E6D28ED9B5A4B4E176B77F3848 /* UI */,
-			);
-			name = Sources;
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		A1F8FF541D85551B1DB019174E2B627B /* Plugins */ = {
-			isa = PBXGroup;
-			children = (
-				BDCB9ED183D9D904F7CA2E77808B8905 /* Galileo-iOS.h */,
-				FB1D8E71ECACC62A67941E1BCC7B3898 /* GalileoPlugin.swift */,
-				8C9CA7A5482EA3F6E50D144F90320784 /* Globals.swift */,
-				A35B9912BE2FF6E752CE9F97F9E65101 /* Console Log */,
-				58FE0B0507FFE7FB950880BD3F7097FE /* Preferences Plugin */,
-				1CFB0F36AC45A5CD1C9A4577EE653B7E /* View Flow Plugin */,
-				F86B47D127FB69575CC4D43DB08CA761 /* Wormholy */,
-			);
-			name = Plugins;
-			path = "Galileo-iOS/Classes/Plugins";
-			sourceTree = "<group>";
-		};
-		A35B9912BE2FF6E752CE9F97F9E65101 /* Console Log */ = {
-			isa = PBXGroup;
-			children = (
-				BB7F8BFC86B5ABDBAEE431A57F3099C8 /* ConsoleLogGalileoContainerViewController.swift */,
-				ADF2FF53EB2C899C2875AD0C664D0E6C /* ConsoleLogGalileoFactory.swift */,
-				37A96AA8FA9DE384B028BE2BB02FCBDB /* ConsoleLogGalileoViewController.swift */,
-			);
-			name = "Console Log";
-			path = "Console Log";
-			sourceTree = "<group>";
-		};
-		A37A7B91CD08375083CFED2D60787DE8 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				E719AC9F62593AAAC0C3059F96519F65 /* ViewFlowDetailTableViewCell.xib */,
+				5A81930B583232AA7864DA501716FADC /* PreferenceBoolTableViewCell.xib */,
+				361D8B814582EB6C5E7D1D0144B15D1C /* PreferenceDateTableViewCell.xib */,
+				92FE87E94579AC7E3D521ADA092A317A /* PreferenceIntegerTableViewCell.xib */,
+				228F5B570DAA67ED603DEBB3206B7661 /* PreferenceTextTableViewCell.xib */,
 			);
 			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		A50AFB2628256CA07F1550D55EEF8AE4 /* View Model */ = {
+		83F6AB5520E2C78A096B91902289F1A0 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				56221D33F703A9418DEC2006EC6DD664 /* PreferenceBoolViewModel.swift */,
-				C37E466AEB4B64F329B163F4D4F7EFFE /* PreferenceDateViewModel.swift */,
-				BB3932D401529BF847C6A85CD1F22F1E /* PreferenceIntegerViewModel.swift */,
-				76DC3EA268ED7CB9DA0A66F06CD6A06C /* PreferenceTextViewModel.swift */,
+				DD342DC8A13DE73C1D9B8A687AE6BC51 /* PreferenceBoolViewModel.swift */,
+				81F107A71BCB91A29EFD07FA92A3BD02 /* PreferenceDateViewModel.swift */,
+				3F1C61CDED45B0D7C06F57C13DACE26D /* PreferenceIntegerViewModel.swift */,
+				94432D971F53DD6E7B168A9AED71418D /* PreferenceTextViewModel.swift */,
 			);
 			name = "View Model";
 			path = "View Model";
 			sourceTree = "<group>";
 		};
-		AB5CDBE472EB1AECADD50F9603A9AACE /* Plugins */ = {
+		8499EDAD3ABBA73A0A1DF5DE6FA415B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1CAA1A378FCD26631006D1D5A45AB6C3 /* Console Log */,
-				5B8925DD782B5BB35B33D4858AD359F1 /* Preferences Plugin */,
-				047E741E59BED521021894D99BDC3BF7 /* View Flow Plugin */,
-				455E1CB4A358F4BD549D8FE275228065 /* Wormholy */,
-			);
-			name = Plugins;
-			path = "Galileo-iOS/Classes/Plugins";
-			sourceTree = "<group>";
-		};
-		B0DC5CBB93543CF60F9A0D3B4E58E5B5 /* Subclasses */ = {
-			isa = PBXGroup;
-			children = (
-				AB6FA6509D2204D6FF7572F7A2AB7C77 /* CustomActivity.swift */,
-				D30A7615896F3F7271A875FA4061F2EE /* WHBaseViewController.swift */,
-				65297EF42D5CAAA2DFB501CB2F38CE7D /* WHCollectionView.swift */,
-				ED576B8F574F393D8C87A25BADFCDFB4 /* WHDate.swift */,
-				75CE3CF4E7DD22B3B9505A2EEB4E3C52 /* WHLabel.swift */,
-				7AA26988EA609B653030A7AC28FA0FC0 /* WHNavigationController.swift */,
-				23585CAA2AB701F597687E5352F60F79 /* WHString.swift */,
-				8DD8FFC67179F458DA2D771089FDECB9 /* WHTableView.swift */,
-				0B8B4133392C82A5C280C474C82CE4DD /* WHTextView.swift */,
-				44EE4D975C6555CD5E9F828B23E3C7D0 /* WHView.swift */,
-			);
-			name = Subclasses;
-			path = Subclasses;
-			sourceTree = "<group>";
-		};
-		B3E5EAEE8FE5BC3098F2511FDBFE3377 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				530956F623D17745D2E21A7F07B04CA3 /* GalileoMainViewController.swift */,
+				A3C1BDB0CD8B7CA62FE959DECDA67456 /* PreferencesGalileoContainerViewController.swift */,
+				E125882B2C55AC079E016F40813583DF /* PreferencesGalileoViewController.swift */,
+				B89A6E60DE487FD3194D8B9AA7F817BD /* PreferencesGalileoViewInterface.swift */,
+				5E17A61CADFFD908A07684719D90F670 /* Cell */,
 			);
 			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
-		B7F940709D2E68AE14FA1D3B3B97B450 /* Sources View */ = {
+		84CE3C5B3DE26EECAE90BAEB636B4C82 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				FA19E58C33CC55F75DFDF9255236B5B0 /* Factory */,
-				E32D7D4514FBA95CE7832D9B2F7FD9B5 /* View */,
+				27A157E8836D9D9AA438EA99D96E9341 /* UI */,
 			);
-			name = "Sources View";
-			path = "Sources View";
+			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		BCB23878E6E56D06F25CF316D0ADD274 /* Cell */ = {
+		87C550AA804DE8F9760D603063850B33 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2A5B7C267DA116A741E054DACB360375 /* PreferenceBoolTableViewCell.swift */,
-				B2E79D3F92ECC0DE0B58BC57F7D7C1BE /* PreferenceDateTableViewCell.swift */,
-				8C10587914D1D8806D6507C6DBCA56E4 /* PreferenceDateTableViewCellDelegate.swift */,
-				4F95BC8DBE326C3968C7B880F847A53A /* PreferenceIntegerTableViewCell.swift */,
-				B6914A6F54F1EEF23848B361D1CAD7D8 /* PreferenceTableViewCellDelegate.swift */,
-				458632E3E030D54882293BBFA2E3C4AF /* PreferenceTextTableViewCell.swift */,
+				1D57637EDE0B97873301F610BF02C3BA /* Plugins */,
+			);
+			name = Classes;
+			path = "Galileo-iOS/Classes";
+			sourceTree = "<group>";
+		};
+		8A1AD0630B4CC4D015075122AB042675 /* Console Log */ = {
+			isa = PBXGroup;
+			children = (
+				08D42D962C249CC8499E29413D1200DD /* ConsoleLogGalileoContainerViewController.swift */,
+				D384DFBC719908148803233B43D6DA4B /* ConsoleLogGalileoFactory.swift */,
+				C011EFC2329E221634C2E4ADF273B94C /* ConsoleLogGalileoViewController.swift */,
+			);
+			name = "Console Log";
+			path = "Console Log";
+			sourceTree = "<group>";
+		};
+		8C6EB05BDA0F107784E2CB3E6422574A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				219F7F49B9B50C232F0AE0AB0C53F3F6 /* GalileoMainViewController.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		91CB12EFC11E4F9A3E0456846A954FC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4E4045EAEF7D149B3BE61A948864751 /* RequestModel.swift */,
+				EF3C1E0F42FEF0E760FA79AF3642143A /* Section.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99027DD7A0402E8E8B92CEF548A13B17 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				62505940E14C0D01039FCBD6CEA7E04A /* Galileo-iOS.podspec */,
+				D7B617D8F6438B64147FC8F628AADD08 /* LICENSE */,
+				DDBE37D2B81AB04CBC2DEABF2E61229F /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9BDC4A42F26EE384C005E03ACF933541 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D7039356CFA771EF260CAC1A1B072 /* ViewFlowTableViewCell.xib */,
 			);
 			name = Cell;
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		A17C23200CC62D3E1E1C67FE0BE382D4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				49EE123E629E5CF909288298F02CADC9 /* ActionableTableViewCell.xib */,
+				50A19C981F2B3549CAC90D6F565E8D0C /* RequestCell.xib */,
+				37654994C6DA65CF7512D3B51F8996CB /* TextTableViewCell.xib */,
+			);
+			name = Cells;
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A280BCB97650C1A2F684FDE3948B4C84 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				1C79D3BD8474C8AAAA9580FC8BE14AC5 /* GalileoConfiguration.swift */,
+				DAEB8358587D4B094AC5001A6875B858 /* GalileoConfigurationProvider.swift */,
+			);
+			name = Configuration;
+			path = "Galileo-iOS/Classes/Configuration";
+			sourceTree = "<group>";
+		};
+		A7537AA5EE4F5E039EBD59FB811E7149 /* Galileo-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2659406AE4B64E61ACB1087D6DF23A49 /* Galileo.swift */,
+				A280BCB97650C1A2F684FDE3948B4C84 /* Configuration */,
+				C4B5E0F4BD5F0C1A61A6F16C72166E42 /* Main View */,
+				BBE5885EDF2240034AA5408130CB8791 /* Plugins */,
+				99027DD7A0402E8E8B92CEF548A13B17 /* Pod */,
+				E8F45FC65CB6D135CE09AF5DD976D3BB /* Resources */,
+				AD0EC4233151EBDD7E9DFB0252FB93A0 /* Support Files */,
+			);
+			name = "Galileo-iOS";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A788CC396C1AD8EFCE0CC6797F4D200D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91ABA4B6DC32C97E5C2D43B94F0F0D71 /* PreferencesGalileoViewController.xib */,
+				82C8864290CD6AB758753E7182075A1C /* Cell */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACA5CDAF9662A0F3658BDF33F2448545 /* Wormholy */ = {
+			isa = PBXGroup;
+			children = (
+				5183414C0C06ACBDB965971ACC77272D /* WormholyGalileoPluginViewController.swift */,
+				9A5203264754094CC69055194AF54379 /* WormholyGalileoPluginViewControllerFactory.swift */,
+				2BA4AB90DF2839BBD3FE0C635F3657E4 /* Sources */,
+			);
+			name = Wormholy;
+			path = Wormholy;
+			sourceTree = "<group>";
+		};
+		AD0EC4233151EBDD7E9DFB0252FB93A0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5181878834A2D726D74FDC407134F7B2 /* Galileo-iOS.modulemap */,
+				12116DC6A122A947DC4E493A7E34C2CB /* Galileo-iOS.xcconfig */,
+				7472D55A6F54B22BCC71643639DEDEC2 /* Galileo-iOS-dummy.m */,
+				CD172CE3B1DD1F8D62ECED90E9A88219 /* Galileo-iOS-prefix.pch */,
+				ECBD730C838435F42E8FFE2BF398CF82 /* Galileo-iOS-umbrella.h */,
+				FC1110DDA49D69B208878F2EBC88C6FC /* ResourceBundle-Galileo-Galileo-iOS-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Galileo-iOS";
+			sourceTree = "<group>";
+		};
+		B481F7A53C30574CEE4B42E3E44D2C3D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2A396A734BB1A2736DCE837EA5C05C28 /* UI */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B5BAD1A2B68DA4CA96FEBF100B95985E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B13F157C9452A4C80CFF9322E51A51D9 /* ViewFlowGalileoFactory.swift */,
+			);
+			name = Factory;
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B9ABA5E61056C781D514C3B8206996EB /* Preferences View */ = {
+			isa = PBXGroup;
+			children = (
+				A788CC396C1AD8EFCE0CC6797F4D200D /* View */,
+			);
+			name = "Preferences View";
+			path = "Preferences View";
+			sourceTree = "<group>";
+		};
+		BBE5885EDF2240034AA5408130CB8791 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				95BFD1F70881DDB4B5E4E5DC31378CB1 /* GalileoPlugin.swift */,
+				D4486E4696157A469260A772D0E2CE0C /* Globals.swift */,
+				8A1AD0630B4CC4D015075122AB042675 /* Console Log */,
+				FDFA3890CF54DF975556ED0E7ED99A36 /* Preferences Plugin */,
+				64D615BAF36D59B441D207DA6F708C71 /* View Flow Plugin */,
+				ACA5CDAF9662A0F3658BDF33F2448545 /* Wormholy */,
+			);
+			name = Plugins;
+			path = "Galileo-iOS/Classes/Plugins";
+			sourceTree = "<group>";
+		};
+		BC67D067D4B5136EDE3FFA25B15D4F19 /* Wormholy */ = {
+			isa = PBXGroup;
+			children = (
+				84CE3C5B3DE26EECAE90BAEB636B4C82 /* Sources */,
+			);
+			name = Wormholy;
+			path = Wormholy;
 			sourceTree = "<group>";
 		};
 		C176D200AC056BECF8DE92A59E460253 /* Pods-Galileo-iOS_Example */ = {
@@ -934,77 +897,126 @@
 			path = "Target Support Files/Pods-Galileo-iOS_Example";
 			sourceTree = "<group>";
 		};
-		D1146D2E923D422D53128E3675E5061E /* View */ = {
+		C4B5E0F4BD5F0C1A61A6F16C72166E42 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
-				597386D9B20BFF42A0F4277827D58C25 /* PreferencesGalileoSourcesTableViewController.xib */,
+				FEB58E965DE209909E6D1A08A4F6EB1A /* Factory */,
+				8C6EB05BDA0F107784E2CB3E6422574A /* View */,
 			);
-			name = View;
-			path = View;
+			name = "Main View";
+			path = "Galileo-iOS/Classes/Main View";
 			sourceTree = "<group>";
 		};
-		D67274FE7E465339E6FD2FB047452B6B /* UI */ = {
+		C626356CA1CC989B672A60135FAAD9BA /* View Flow Plugin */ = {
 			isa = PBXGroup;
 			children = (
-				3FC7FFA8626CB9C4A0E53CB4CB7A3F62 /* Flow.storyboard */,
+				9BDC4A42F26EE384C005E03ACF933541 /* Cell */,
+				DAC383A68CA5272EA69F074D042578B9 /* Detail */,
 			);
-			name = UI;
-			path = UI;
+			name = "View Flow Plugin";
+			path = "View Flow Plugin";
 			sourceTree = "<group>";
 		};
-		D79D3BC4D991A649AB6F3F75AB5C93B7 /* Sections */ = {
+		CEA378C56BDEFA00BEF795B387FBC41C /* Preferences Plugin */ = {
 			isa = PBXGroup;
 			children = (
-				8E03A0E4142F2CE477470E7C2FCE8935 /* RequestTitleSectionView.swift */,
+				B9ABA5E61056C781D514C3B8206996EB /* Preferences View */,
+				CEE2095F011886C01F5A3ACAB358893B /* Sources View */,
 			);
-			name = Sections;
-			path = Sections;
+			name = "Preferences Plugin";
+			path = "Preferences Plugin";
 			sourceTree = "<group>";
 		};
-		DFA916A29E0AF6F7B46DD94F698B6167 /* Cell */ = {
+		CEE2095F011886C01F5A3ACAB358893B /* Sources View */ = {
 			isa = PBXGroup;
 			children = (
-				78DC5538C1DE924EC287B59D58B7B93D /* ViewFlowTableViewCell.xib */,
+				284894B9326F0C31130BC75C3856C70E /* View */,
+			);
+			name = "Sources View";
+			path = "Sources View";
+			sourceTree = "<group>";
+		};
+		D23FBF2C19FDFCAAA7DAA9C7F19F0E38 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				6C4C7C61E64E70A1DA02E39710AE20F3 /* Console Log */,
+				CEA378C56BDEFA00BEF795B387FBC41C /* Preferences Plugin */,
+				C626356CA1CC989B672A60135FAAD9BA /* View Flow Plugin */,
+				4D15D8187A2A9AB93760D30FB037C4B9 /* Wormholy */,
+			);
+			name = Plugins;
+			path = "Galileo-iOS/Classes/Plugins";
+			sourceTree = "<group>";
+		};
+		D2571614E83F8C037121B2DA4E9CAC5D /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				7F7F276FD30CBEC70B0B11B5028466DA /* CustomActivity.swift */,
+				B5880C68C651AE40D70DFE32E04AC65C /* WHBaseViewController.swift */,
+				61F77819481673FF2F9D31AB29DFCF01 /* WHCollectionView.swift */,
+				AEFC6273E4D265ECEE5D86CA94F5DEE0 /* WHDate.swift */,
+				CA16FF80A4E8BBA4B1CE6360D6614E4B /* WHLabel.swift */,
+				7B110992003F808B632F72146986AB52 /* WHNavigationController.swift */,
+				9CCB53FD2003B3662847B1BFBA32147E /* WHString.swift */,
+				85FBF81372EE5C7DAEDBA91E84EA8CAB /* WHTableView.swift */,
+				AA680654592D7E899F79A098ED354604 /* WHTextView.swift */,
+				B4EEFFD91F0D9AE4AEF5E51372F56FF6 /* WHView.swift */,
+			);
+			name = Subclasses;
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		D7CE20D6F5A42742D252B9596830C81B /* Preferences View */ = {
+			isa = PBXGroup;
+			children = (
+				8168074A65A991AF06EE9B4BF2D11B42 /* Factory */,
+				673E0A13E4E83BDACA0813A0B8348CA4 /* Interactor */,
+				EE9593C13E8B5585EC8677FB0298653B /* Presenter */,
+				8499EDAD3ABBA73A0A1DF5DE6FA415B9 /* View */,
+			);
+			name = "Preferences View";
+			path = "Preferences View";
+			sourceTree = "<group>";
+		};
+		DAC383A68CA5272EA69F074D042578B9 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AD1B8B3419783A5D34FC0FCB6EB2AE1C /* ViewFlowDetailViewController.xib */,
+				10127B1FF859A4F413545BBD05F4BF2C /* Cell */,
+			);
+			name = Detail;
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		DEE9BE341014F191A53F9E37C0A23AEC /* Objc */ = {
+			isa = PBXGroup;
+			children = (
+				C8853B977AD27F6E5CD4288B4E75B978 /* NSURLSessionConfiguration+Wormholy.h */,
+				41DC0F4674CBAB5C13AF9124FC05C026 /* NSURLSessionConfiguration+Wormholy.m */,
+				1B6E8B4B105A7F64E4C06DD17C87CBD4 /* WormholyMethodSwizzling.h */,
+				BD09DBC7677324FDE10E34DB2FFDC5E1 /* WormholyMethodSwizzling.m */,
+			);
+			name = Objc;
+			path = Objc;
+			sourceTree = "<group>";
+		};
+		DF6AFAF4A5E37FB1D21F90FB2FC2A15C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C33EC3E0D6C60EF3B3C2D02709905DF2 /* ViewFlowTableViewCell.swift */,
+				F062DA4505E932478793052492F96DEE /* ViewFlowTableViewCellViewModel.swift */,
 			);
 			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		E32D7D4514FBA95CE7832D9B2F7FD9B5 /* View */ = {
+		E0B4DA18C3852912EB8A04E4EAD23957 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				9C020AE302A901F011BF73272D61A0CD /* PreferencesGalileoSourcesTableViewController.swift */,
+				9669390A7EAC72C6DBB9C78CC29F2592 /* ViewFlowDetailTableViewCell.swift */,
 			);
-			name = View;
-			path = View;
-			sourceTree = "<group>";
-		};
-		E3A95C50C4E6FEAD7B120FEBB433880C /* Galileo-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				C438122D9FEEFC1ED13F13DDB028EB5C /* Galileo.swift */,
-				49F2EFE85ABB0C068BADD4BF0ABD618F /* Configuration */,
-				FA8CFC25FB44A8ED1C4A71F81A460A0C /* Main View */,
-				A1F8FF541D85551B1DB019174E2B627B /* Plugins */,
-				3399E142D39A09E581B52CC6E91B84C2 /* Pod */,
-				30BB09C4EC0F3126C9DE4FC63781CCA4 /* Resources */,
-				4EA3CEC0C0949271DB892B85C2B2B95B /* Support Files */,
-			);
-			name = "Galileo-iOS";
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		E71453337DB701DFAE767E494C6734E9 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				9E9C2287899D44B8C2A179195666771F /* BodyDetailViewController.swift */,
-				FBFBF49A28B7BAEB520E88725D27A798 /* RequestDetailViewController.swift */,
-				DC9F00BD8F198B6BCA7A0526AC1CCF71 /* RequestsViewController.swift */,
-				FCC5BB29322ACA5A4B2612535E4801A2 /* Cells */,
-				D79D3BC4D991A649AB6F3F75AB5C93B7 /* Sections */,
-			);
-			name = UI;
-			path = UI;
+			name = Cell;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		E72209BB9D90B487BC5038C8A8AD74B0 /* Targets Support Files */ = {
@@ -1015,21 +1027,28 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		EDF2494465011FCC29291F039BBB1929 /* Sources */ = {
+		E8F45FC65CB6D135CE09AF5DD976D3BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				268C32925F4DACE01D702EDC152F58E4 /* CustomHTTPProtocol.swift */,
-				39DFB68D9759999A88D5732B86C69D87 /* Storage.swift */,
-				89AAED5FF524A1E19EE077CAB029B03E /* Wormholy.swift */,
-				75D5A30E027FD32693F975E82EB3E56D /* Models */,
-				5605A405D76CB43D537157486A24036B /* Objc */,
-				B0DC5CBB93543CF60F9A0D3B4E58E5B5 /* Subclasses */,
-				8F2C15BB929724AF0B9433457045CDA3 /* Support Files */,
-				E71453337DB701DFAE767E494C6734E9 /* UI */,
-				2155E1054EF2BA53BEDA3377B3262B7C /* Utils */,
+				11C2CD5D8E20F952515D06A10911C8E9 /* Assets */,
+				87C550AA804DE8F9760D603063850B33 /* Classes */,
+				19AFC3A8B5384A93A5983214B6496054 /* Main View */,
+				D23FBF2C19FDFCAAA7DAA9C7F19F0E38 /* Plugins */,
 			);
-			name = Sources;
-			path = Sources;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EE9593C13E8B5585EC8677FB0298653B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B2F729ECFA04BCA4C3981F804DA4D5B2 /* PreferencesGalileoPresenter.swift */,
+				6F8620771A11D2FA6929AF52B9CDF4A6 /* PreferencesGalileoPresenterInterface.swift */,
+				588906237481D31F5BC1440FD6A0A81E /* Data Source */,
+				83F6AB5520E2C78A096B91902289F1A0 /* View Model */,
+				610B5B26AFCE450469EFA60B9CFF6062 /* View Type */,
+			);
+			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		F0214559A94D1EC289F50920F04C77A6 /* Support Files */ = {
@@ -1045,55 +1064,33 @@
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		F0CAD3E6D28ED9B5A4B4E176B77F3848 /* UI */ = {
+		F081C62DFF191939F0991B81B5E8BA70 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4EB19E20CE1D4199986CC09D6508384E /* Cells */,
-				7D8DEF131F0D64F3C62099C18524C978 /* Sections */,
+				2549AA66655EE8558D6E1B32256070C8 /* Colors.swift */,
+				4AE5611B7252AB6B760EE09C64311A23 /* Config.swift */,
 			);
-			name = UI;
-			path = UI;
+			name = "Support Files";
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
-		F86B47D127FB69575CC4D43DB08CA761 /* Wormholy */ = {
+		FDFA3890CF54DF975556ED0E7ED99A36 /* Preferences Plugin */ = {
 			isa = PBXGroup;
 			children = (
-				CD9E9DA1D345A1E30564940ECE02E0C0 /* WormholyGalileoPluginViewController.swift */,
-				51C1958B92D14B06B4CA0471B9BD8B3E /* WormholyGalileoPluginViewControllerFactory.swift */,
-				EDF2494465011FCC29291F039BBB1929 /* Sources */,
+				D7CE20D6F5A42742D252B9596830C81B /* Preferences View */,
+				7CC0B971E5BE56360E2F7828C74E3A04 /* Sources View */,
 			);
-			name = Wormholy;
-			path = Wormholy;
+			name = "Preferences Plugin";
+			path = "Preferences Plugin";
 			sourceTree = "<group>";
 		};
-		FA19E58C33CC55F75DFDF9255236B5B0 /* Factory */ = {
+		FEB58E965DE209909E6D1A08A4F6EB1A /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				7BCBF3D3CCC44F33E5CE8CBD989FFDCC /* PreferencesGalileoFactory.swift */,
+				A39F6EA058A0D1F00C1373BD43839BB6 /* MainViewControllerFactory.swift */,
 			);
 			name = Factory;
 			path = Factory;
-			sourceTree = "<group>";
-		};
-		FA8CFC25FB44A8ED1C4A71F81A460A0C /* Main View */ = {
-			isa = PBXGroup;
-			children = (
-				631BDEDADB2AE65ED2A17D8A9D9C57F1 /* Factory */,
-				B3E5EAEE8FE5BC3098F2511FDBFE3377 /* View */,
-			);
-			name = "Main View";
-			path = "Galileo-iOS/Classes/Main View";
-			sourceTree = "<group>";
-		};
-		FCC5BB29322ACA5A4B2612535E4801A2 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				8B423565F2ECD2C841A18B8248216FD7 /* ActionableTableViewCell.swift */,
-				22996D9C90B3CCCF36AB3E5C1FB0F9C5 /* RequestCell.swift */,
-				6FC9D84B8CB7CCD174DAA94AEB81DACB /* TextTableViewCell.swift */,
-			);
-			name = Cells;
-			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1115,14 +1112,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		58AB32F9D7941B022EE0F041DFE96E27 /* Headers */ = {
+		E955F75F217D7077F0B5FE7C2FBD0E6D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				518A46483FD794E718286BDFBFFA5926 /* Galileo-iOS-umbrella.h in Headers */,
-				C0FF28042BC0B568A3FEFE8EDB34EEE2 /* Galileo-iOS.h in Headers */,
-				AD1C3A1A2013DE97819EE160578F30A8 /* NSURLSessionConfiguration+Wormholy.h in Headers */,
-				CCCCAD6528F99C599DFB5C78F17217EB /* WormholyMethodSwizzling.h in Headers */,
+				5B8F57FF1F08B29B450CC9C75A836018 /* Galileo-iOS-umbrella.h in Headers */,
+				A72D55326DAA2AE7B8B7817A0D87F2D3 /* NSURLSessionConfiguration+Wormholy.h in Headers */,
+				7F0530EF7C8D3B7D4210969393D2A445 /* WormholyMethodSwizzling.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1147,6 +1143,25 @@
 			productReference = FD96887BA2196696CF4D37A7CF2FCE70 /* libAlamofire.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		0F4308456F22D289B55131706A524892 /* Galileo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D588EC529FA32CA3E88C245F5A446DBA /* Build configuration list for PBXNativeTarget "Galileo-iOS" */;
+			buildPhases = (
+				E955F75F217D7077F0B5FE7C2FBD0E6D /* Headers */,
+				A39A7776C0F2F66E564EBD7F20A9FD36 /* Sources */,
+				241A13EF52A20F69BE71A3B626FA0FA8 /* Frameworks */,
+				5B95749AB0C0CB135D6323FF8BAB5073 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A81BDD13E430527DD5F43CCD129434D6 /* PBXTargetDependency */,
+			);
+			name = "Galileo-iOS";
+			productName = "Galileo-iOS";
+			productReference = FAE9D29C71D073079C78BAC4205B2801 /* libGalileo-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		136BABA79DC78C343591FBA6E0796750 /* Pods-Galileo-iOS_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CF21E86581B7D9FF23B84C4A529C4A2 /* Build configuration list for PBXNativeTarget "Pods-Galileo-iOS_Example" */;
@@ -1166,13 +1181,13 @@
 			productReference = FD6B07FB7D9E4420B8F2C1E0BC87EC55 /* libPods-Galileo-iOS_Example.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		63C8F7EF04191C39BB874D65755FD82E /* Galileo-iOS-Galileo */ = {
+		7668AB1DFA1EA23F8D6D05D0F97C8810 /* Galileo-iOS-Galileo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C2176EF16FFDF75DA8FEEACF0079A40 /* Build configuration list for PBXNativeTarget "Galileo-iOS-Galileo" */;
+			buildConfigurationList = 9974E61963721DFEE8894D2B6C6DC1D7 /* Build configuration list for PBXNativeTarget "Galileo-iOS-Galileo" */;
 			buildPhases = (
-				A5E9AECC4B263EF70CA599DE445731E7 /* Sources */,
-				1871A8AB755962E97F7BC4DAB14C218A /* Frameworks */,
-				6B2D12FDDC71C762B0942E714B509463 /* Resources */,
+				062518BD7C0A3DDAD7C18A82624617DA /* Sources */,
+				9FBCCD0FAE660E6268BEF496831DFCE6 /* Frameworks */,
+				EA2107ADBFCD90507B44638C6E571555 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1182,25 +1197,6 @@
 			productName = "Galileo-iOS-Galileo";
 			productReference = 35FDE881D03E0CE9C9D153DBD4018AFB /* Galileo.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		7BFA536262FA44F4DFFDE9C7869DC5F9 /* Galileo-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F79EB42A5FE6002CC7BD0E13D145DC59 /* Build configuration list for PBXNativeTarget "Galileo-iOS" */;
-			buildPhases = (
-				58AB32F9D7941B022EE0F041DFE96E27 /* Headers */,
-				E02D937E88BCCDAC8E48CB0B1A278DF3 /* Sources */,
-				6424232A1014B6E9F221B998878B1282 /* Frameworks */,
-				01D42BDDED34DDC9EF6D4A1BD7314C4B /* Copy generated compatibility header */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				250E6E56C5B900ABC9FDCBEB685C1067 /* PBXTargetDependency */,
-			);
-			name = "Galileo-iOS";
-			productName = "Galileo-iOS";
-			productReference = FAE9D29C71D073079C78BAC4205B2801 /* libGalileo-iOS.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -1224,42 +1220,42 @@
 			projectRoot = "";
 			targets = (
 				08A16B7582F00884501F5E7A9B8E6FB4 /* Alamofire */,
-				7BFA536262FA44F4DFFDE9C7869DC5F9 /* Galileo-iOS */,
-				63C8F7EF04191C39BB874D65755FD82E /* Galileo-iOS-Galileo */,
+				0F4308456F22D289B55131706A524892 /* Galileo-iOS */,
+				7668AB1DFA1EA23F8D6D05D0F97C8810 /* Galileo-iOS-Galileo */,
 				136BABA79DC78C343591FBA6E0796750 /* Pods-Galileo-iOS_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6B2D12FDDC71C762B0942E714B509463 /* Resources */ = {
+		EA2107ADBFCD90507B44638C6E571555 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8914AC8A4C4AD18BE745702E40E289CF /* ActionableTableViewCell.xib in Resources */,
-				07944F96270BE6C504158CA25C57E934 /* Assets.xcassets in Resources */,
-				B57C9E30DD5D9DC81F6811C631D33FC0 /* ConsoleLogGalileoViewController.xib in Resources */,
-				66AE0195FF85F585F83E762347E7DAC0 /* Flow.storyboard in Resources */,
-				73E0B4DB818CFF31BA5507624F301B06 /* GalileoMainViewController.xib in Resources */,
-				FED4913831F8865124DA449722C9D8A3 /* PreferenceBoolTableViewCell.xib in Resources */,
-				081CD003A33F899B539AF08A86A045CD /* PreferenceDateTableViewCell.xib in Resources */,
-				FDB8DCBAC2FA1FEF529AB25E26E13DEB /* PreferenceIntegerTableViewCell.xib in Resources */,
-				EE9EB9F8F2889249A5AD2A5E077C122A /* PreferencesGalileoSourcesTableViewController.xib in Resources */,
-				EC7D893193145613A066ED75672659B0 /* PreferencesGalileoViewController.xib in Resources */,
-				1A70767F2D79C6807342CDF3F924E44D /* PreferenceTextTableViewCell.xib in Resources */,
-				69C1AD80787A5173091AD9AA3D5736C7 /* RequestCell.xib in Resources */,
-				6F3AEBC876B9F28F64D2C61F7A95BC8B /* RequestTitleSectionView.xib in Resources */,
-				A002A483D7849E5DB73BEE1986DA98C4 /* TextTableViewCell.xib in Resources */,
-				1519E085986880B0B560E3C97DAF0F8B /* ViewFlowDetailTableViewCell.xib in Resources */,
-				E5370363FC7DE4B15244873043C4C0B8 /* ViewFlowDetailViewController.xib in Resources */,
-				B9D5A41B475F1A67371D015B4955959E /* ViewFlowTableViewCell.xib in Resources */,
+				8E4AB6C8F762E561171FCC8FAB84C0AA /* ActionableTableViewCell.xib in Resources */,
+				38351B2093B05F08F627902C72940F32 /* Assets.xcassets in Resources */,
+				4215AF8D13AECAB4C0BD9D40303347EC /* ConsoleLogGalileoViewController.xib in Resources */,
+				60A0598FC394F194CFDA392663D95114 /* Flow.storyboard in Resources */,
+				665257A729D7385FD2778AA28A042F84 /* GalileoMainViewController.xib in Resources */,
+				B185D812B2D8903AE13F704C90521207 /* PreferenceBoolTableViewCell.xib in Resources */,
+				25A419EB3DE58ECFD55CA6896D820818 /* PreferenceDateTableViewCell.xib in Resources */,
+				130F16398227F0841CAF311C2FC2BEE6 /* PreferenceIntegerTableViewCell.xib in Resources */,
+				70A93A0992E83055E62771E1737E85FA /* PreferencesGalileoSourcesTableViewController.xib in Resources */,
+				1BD6572525D5319EC68E03FDEF253B9D /* PreferencesGalileoViewController.xib in Resources */,
+				A1C195F1B5E21F754672B646FFCDC2CA /* PreferenceTextTableViewCell.xib in Resources */,
+				AED10CF4A9F1F72E0D2769A6A77124A4 /* RequestCell.xib in Resources */,
+				22CA318E2988CC2C97DF8355FC908359 /* RequestTitleSectionView.xib in Resources */,
+				175BA0FDE67ECB5DF9FC986FE120ED46 /* TextTableViewCell.xib in Resources */,
+				43C3FC3F311641A2802E08BB9AF397D3 /* ViewFlowDetailTableViewCell.xib in Resources */,
+				346AD9AA5FBE5622EB3C7D6D0F13BF10 /* ViewFlowDetailViewController.xib in Resources */,
+				C672F25474FD75675267D99ACEB9AD90 /* ViewFlowTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01D42BDDED34DDC9EF6D4A1BD7314C4B /* Copy generated compatibility header */ = {
+		5B95749AB0C0CB135D6323FF8BAB5073 /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1312,6 +1308,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		062518BD7C0A3DDAD7C18A82624617DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29E51C6B7CEEB991AEE88D37373F668C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1345,107 +1348,100 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5E9AECC4B263EF70CA599DE445731E7 /* Sources */ = {
+		A39A7776C0F2F66E564EBD7F20A9FD36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E02D937E88BCCDAC8E48CB0B1A278DF3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				575D5E3ADD6201886388D04118DD1CF0 /* ActionableTableViewCell.swift in Sources */,
-				3A2FA889AD2CD5CC8D1C2423FF3294BB /* BodyDetailViewController.swift in Sources */,
-				F64A14391938F19AE1D6DDA0F9E19407 /* Colors.swift in Sources */,
-				506484D492DC5B2475DF039A44583EDA /* Config.swift in Sources */,
-				7CE1ACDC2F33DBF1BE3C6F60708E366D /* ConsoleLogGalileoContainerViewController.swift in Sources */,
-				576CD5D2018E5F6F12370D271DB5B329 /* ConsoleLogGalileoFactory.swift in Sources */,
-				DA190AF91EE8D6139CDDD9E10894AC6E /* ConsoleLogGalileoViewController.swift in Sources */,
-				E500C6D1AB8E754109D15CD265861B0A /* CustomActivity.swift in Sources */,
-				59FB5578373BBFDBA5DA0EEC8881C834 /* CustomHTTPProtocol.swift in Sources */,
-				F30119A6892BB4001FAB68179544AA3C /* FileHandler.swift in Sources */,
-				269E2A7079AF3075FADF8DB5260BD7FC /* Galileo-iOS-dummy.m in Sources */,
-				367F17AC127920EE1A78D7009526BFD3 /* Galileo.swift in Sources */,
-				6ACAC1E65797A908B8EE1CBEAE0FD806 /* GalileoConfiguration.swift in Sources */,
-				7289090271F3B475625F805A4DC64C9A /* GalileoConfigurationProvider.swift in Sources */,
-				A2359DAA6BA3A644A2651C35AEE73A65 /* GalileoMainViewController.swift in Sources */,
-				34B10399F60051AF2B2C08F24DB6D22E /* GalileoPlugin.swift in Sources */,
-				9D886987CFC936EE01397818D3BD0769 /* Globals.swift in Sources */,
-				D85F2DF6C612829EA9900BE2DACBEB9F /* MainViewControllerFactory.swift in Sources */,
-				F7B0A33408E8CC3AF1942B3C4216ADF5 /* NSURLSessionConfiguration+Wormholy.m in Sources */,
-				BA5471ADA3BEBAB04069A38797902F89 /* PreferenceBoolTableViewCell.swift in Sources */,
-				B4CE24FA766CE4FD77690B80328EA159 /* PreferenceBoolViewModel.swift in Sources */,
-				56CC3C701DB1E2993D26EABE2E76E243 /* PreferenceDateTableViewCell.swift in Sources */,
-				6F0D3EC2444AA1AB48831CE012063E6D /* PreferenceDateTableViewCellDelegate.swift in Sources */,
-				9EC10BDD61CAE1A3E41017D2D1803E4A /* PreferenceDateViewModel.swift in Sources */,
-				6F64F1A005E81C6609C5385ADEB590FB /* PreferenceIntegerTableViewCell.swift in Sources */,
-				734767C318ED4659DCD8098024C2CCE1 /* PreferenceIntegerViewModel.swift in Sources */,
-				EAFC5E0978A31ED9075DB078167403D2 /* PreferencesGalileoContainerViewController.swift in Sources */,
-				70B32472A3EF09CB37533483119C3FFF /* PreferencesGalileoFactory.swift in Sources */,
-				835D5114CD04A79234290A3271AFD522 /* PreferencesGalileoInteractor.swift in Sources */,
-				95566F326F9A1D3AC4C181B4A8B71315 /* PreferencesGalileoIO.swift in Sources */,
-				3454090B10F4BE29DF593BE634E2E0B9 /* PreferencesGalileoPresenter.swift in Sources */,
-				CD6C8A1838DD8AB2EA3B8D081EF31636 /* PreferencesGalileoPresenterInterface.swift in Sources */,
-				BEB72D2D4965B70EF71C4C6218EA8A44 /* PreferencesGalileoSourcesTableViewController.swift in Sources */,
-				9905DF4D8C7714AE1116CAF3D7BFC8E4 /* PreferencesGalileoTableViewDataSource.swift in Sources */,
-				E16BE18E1C5505072BD555C215A438F8 /* PreferencesGalileoTableViewDataSourceDelegate.swift in Sources */,
-				89AAD2913AB66CFB673D33AB44C80324 /* PreferencesGalileoViewController.swift in Sources */,
-				DDCDC254D4F5E7F8D16608D8F45E39D6 /* PreferencesGalileoViewDetailFactory.swift in Sources */,
-				E2E72D81B7E31235C576BA3321322729 /* PreferencesGalileoViewInterface.swift in Sources */,
-				3DB65BF5930C83D0F7A7F5D5C8282236 /* PreferenceTableViewCellDelegate.swift in Sources */,
-				680C6C4F6BD8E7E3B7C5A838CEAA0D0C /* PreferenceTextTableViewCell.swift in Sources */,
-				63ECEB1D613D5B8E70000BADBF92965A /* PreferenceTextViewModel.swift in Sources */,
-				355C8507EA974E1A79DC48A86E5350D3 /* PreferenceViewType.swift in Sources */,
-				7E147266841FF2D46FC796859BBD7CFC /* PreferenceViewTypeMapper.swift in Sources */,
-				3EC86EA7CEE2EEDDFF2D2B0E2F33BB28 /* RequestCell.swift in Sources */,
-				4CAD0D3309E9ED3A901C4826C045FA57 /* RequestDetailViewController.swift in Sources */,
-				AE3D71F96D64D0B2B4946A5B881ABDF8 /* RequestModel.swift in Sources */,
-				EBC7D014967AA0A8DFDCA27845343EE3 /* RequestModelBeautifier.swift in Sources */,
-				C002F22DACB1B751C02B097B199FA404 /* RequestsViewController.swift in Sources */,
-				6F96B03238ACB16FD04AE783195B42E7 /* RequestTitleSectionView.swift in Sources */,
-				A4A1D32E0FB4CBE1C29C5F98E5FBC08F /* ScreenView.swift in Sources */,
-				8972378A42BEC40710C9C3D6842EB7A7 /* Section.swift in Sources */,
-				01D5FBE4573D8071E408CF69B3D9D5E9 /* Storage.swift in Sources */,
-				6E47DF14F330B1526B11D5BA55AEBB94 /* TextTableViewCell.swift in Sources */,
-				5C6B2E420F551FD14D9BF9D14CA9BAF9 /* ViewFlowDetailTableViewCell.swift in Sources */,
-				4ED1720984AE58DC87BDE6E18F6A7E92 /* ViewFlowDetailViewController.swift in Sources */,
-				6C0B9F760B1A566FD638572B08FCE2E9 /* ViewFlowDetailViewControllerFactory.swift in Sources */,
-				71FAE5BECF3AD9FB7AB40C49D844FF96 /* ViewFlowGalileoContainer.swift in Sources */,
-				AC01593930601156E66D61E65ECEA88F /* ViewFlowGalileoFactory.swift in Sources */,
-				0D64059BB7A18824373D0F4606172FE6 /* ViewFlowGalileoTableViewController.swift in Sources */,
-				4343185F86BDECF42D875E4B441571CA /* ViewFlowTableViewCell.swift in Sources */,
-				F1BC0EDCB835B126E978D660D23679FE /* ViewFlowTableViewCellViewModel.swift in Sources */,
-				3158BAB345D5DF3CB89543A8D4C9A681 /* WHBaseViewController.swift in Sources */,
-				D688CAEFAEDE42AC143906868759118F /* WHCollectionView.swift in Sources */,
-				281058F7F856F396815594309B0C2EAD /* WHDate.swift in Sources */,
-				5038E8EA7D13400B8FC5A3D1F23A125E /* WHLabel.swift in Sources */,
-				4CCEDF1116C2A2F8312D4F45C6E4F48C /* WHNavigationController.swift in Sources */,
-				3A36602BFC4FB558D66834AAA988B331 /* WHString.swift in Sources */,
-				E4E642BC405D596FADB8B29563A0E888 /* WHTableView.swift in Sources */,
-				3511AB61F3841086FF088A87E7793D33 /* WHTextView.swift in Sources */,
-				2D503C7AF358B9BD219A614159FD8604 /* WHView.swift in Sources */,
-				5CA75FD54AE171FCB5B6309C0D2A3AE3 /* Wormholy.swift in Sources */,
-				4EACC0115D43995044629399D9E570CD /* WormholyGalileoPluginViewController.swift in Sources */,
-				FD6C6BC93D490F83C2A73AA3BA189BA4 /* WormholyGalileoPluginViewControllerFactory.swift in Sources */,
-				A73805C44F52241AAE7345C0F3B26041 /* WormholyMethodSwizzling.m in Sources */,
+				CA37F978DCF79D549D117CAC55F72DDE /* ActionableTableViewCell.swift in Sources */,
+				FC2B08D5F557AF884704895707068DAF /* BodyDetailViewController.swift in Sources */,
+				3A0A29BA12565FF29459E9347453B99B /* Colors.swift in Sources */,
+				C5F7C333D9D79C70F3F810B2B0A7212F /* Config.swift in Sources */,
+				F2EF0D6C7B56E3AC15C679DB516B2659 /* ConsoleLogGalileoContainerViewController.swift in Sources */,
+				A6B4BB41992D9FDC70E8B9C3010FADF9 /* ConsoleLogGalileoFactory.swift in Sources */,
+				FFF4AC20D2839088F6058C73A5D31360 /* ConsoleLogGalileoViewController.swift in Sources */,
+				4B77F795490AC9AA42217BA964D926F5 /* CustomActivity.swift in Sources */,
+				18A594A9C36F290A115659C5778CDE45 /* CustomHTTPProtocol.swift in Sources */,
+				A82251950C6A05E9C4AA17BEFFCB1DF1 /* FileHandler.swift in Sources */,
+				A987510418476A7CD700B0F070334188 /* Galileo-iOS-dummy.m in Sources */,
+				0107C63A78C4EA905DC4726589DCC82F /* Galileo.swift in Sources */,
+				F56AE99E2039C158ADB7C70BB74DD233 /* GalileoConfiguration.swift in Sources */,
+				62E4D67A22ECAD0AB12EF50789C5E170 /* GalileoConfigurationProvider.swift in Sources */,
+				3C9CA2912E3CF771F46E2D9048A7C828 /* GalileoMainViewController.swift in Sources */,
+				25F2E199A9C816395336AB415CAE7EFD /* GalileoPlugin.swift in Sources */,
+				4DE3DD741708689F9A6891EFB0EC9F40 /* Globals.swift in Sources */,
+				29F20E5120AED09A701B02DDC78D14CB /* MainViewControllerFactory.swift in Sources */,
+				A70C70170344B1027CCA8A4EC16BCC9C /* NSURLSessionConfiguration+Wormholy.m in Sources */,
+				83D117CBCE5FE3DAEE25279D65D653E6 /* PreferenceBoolTableViewCell.swift in Sources */,
+				95EAE81B1DC82242974B804C3987F5EA /* PreferenceBoolViewModel.swift in Sources */,
+				D035639EA39DFD8F2A8CA9321DCC580D /* PreferenceDateTableViewCell.swift in Sources */,
+				EB6D8BDA3D8551E05910EF81C20CC222 /* PreferenceDateTableViewCellDelegate.swift in Sources */,
+				1E3E1FEF0BDD6C1D1A4AD121870AF71F /* PreferenceDateViewModel.swift in Sources */,
+				AE4CB0C0B5FCCC8D9C50D5BE4A5660E0 /* PreferenceIntegerTableViewCell.swift in Sources */,
+				E8FAC4A448FAC419DEB8A94A577F1D2F /* PreferenceIntegerViewModel.swift in Sources */,
+				9B1A1EDF09EA9000D422B84E5E6A2E2F /* PreferencesGalileoContainerViewController.swift in Sources */,
+				4AA3A965339598719E9CEFA08A18F7D8 /* PreferencesGalileoFactory.swift in Sources */,
+				CAD039EAD0AF871C90237D0DF89A4D08 /* PreferencesGalileoInteractor.swift in Sources */,
+				1C85AB59C34F16EFBC6BBE41309BC88D /* PreferencesGalileoIO.swift in Sources */,
+				DF19D78A66AE2DB316F1E8F0B71A5167 /* PreferencesGalileoPresenter.swift in Sources */,
+				D57AFAE9E641CFBD3BD66FE446F8B9AC /* PreferencesGalileoPresenterInterface.swift in Sources */,
+				8DAD700F93DA1E8DBEF93FED14426267 /* PreferencesGalileoSourcesTableViewController.swift in Sources */,
+				DA71E6FC4A0F2B39F11D47DCA31B7620 /* PreferencesGalileoTableViewDataSource.swift in Sources */,
+				88B7BB9B8D701137C558F57E84904330 /* PreferencesGalileoTableViewDataSourceDelegate.swift in Sources */,
+				B133927B3E2BFFF79224D40B433D07F3 /* PreferencesGalileoViewController.swift in Sources */,
+				6361AD4A93C7913BD3157AA7BF9858AA /* PreferencesGalileoViewDetailFactory.swift in Sources */,
+				9C3570E9E3152B12DBA2DCCC29447C51 /* PreferencesGalileoViewInterface.swift in Sources */,
+				6A329DE99AB39D9D194769A08888A0E7 /* PreferenceTableViewCellDelegate.swift in Sources */,
+				D8AF238EB9D1F700621E2052941C843C /* PreferenceTextTableViewCell.swift in Sources */,
+				85DF59E3AD1C4A1336D20FBCE88C9E98 /* PreferenceTextViewModel.swift in Sources */,
+				B5D79AB281D18A5218A6B29D532358ED /* PreferenceViewType.swift in Sources */,
+				596C23AADF92B1E9B6254507FB1294CA /* PreferenceViewTypeMapper.swift in Sources */,
+				6F97DCD1880FCEF4462F8AF4CDE48989 /* RequestCell.swift in Sources */,
+				B202FAF973193B6B72979331DB460FF7 /* RequestDetailViewController.swift in Sources */,
+				359210F97FAC846F9F62F70309D5C7E5 /* RequestModel.swift in Sources */,
+				AA666D368F3149969C6115DEC7794C0D /* RequestModelBeautifier.swift in Sources */,
+				DBE992ED0C74C3930364D670B151B2EB /* RequestsViewController.swift in Sources */,
+				FD95BB7FCA3E015065F96E16CA961F75 /* RequestTitleSectionView.swift in Sources */,
+				C95B8D441C8CEEC96AB7FAF1C0B96C80 /* ScreenView.swift in Sources */,
+				2C548AF9EDADF622446533EF4B6ABF83 /* Section.swift in Sources */,
+				C0BBB37FDD3A89BDE4F50DDD5E0E0E59 /* Storage.swift in Sources */,
+				A15D947F48617D7B97AD244C68F35F48 /* TextTableViewCell.swift in Sources */,
+				AF095AB506D5EF76F888C2A035A84448 /* ViewFlowDetailTableViewCell.swift in Sources */,
+				B298BB44DA326529FEA3D8A6236025F5 /* ViewFlowDetailViewController.swift in Sources */,
+				16617641B96958C3771F83A51DBB9FE9 /* ViewFlowDetailViewControllerFactory.swift in Sources */,
+				FE10EE185C3F12FD972B5FCD4680229E /* ViewFlowGalileoContainer.swift in Sources */,
+				07859CB182C0F1CBB38E695E0EB7B205 /* ViewFlowGalileoFactory.swift in Sources */,
+				D0F3CFE642A7933DFCD48FC2BD1A9177 /* ViewFlowGalileoTableViewController.swift in Sources */,
+				58A7CCE283F405E3DA754A5F4E06BF39 /* ViewFlowTableViewCell.swift in Sources */,
+				621694EAA99ACDCF6A70189764D33356 /* ViewFlowTableViewCellViewModel.swift in Sources */,
+				7E2DC9E90A637AF023B8FA8E21327D9D /* WHBaseViewController.swift in Sources */,
+				B18EB18F72D1E009F8572269BAC5371F /* WHCollectionView.swift in Sources */,
+				59287181900159FD76A6B2B04B23ADF5 /* WHDate.swift in Sources */,
+				C4CD0718A4C8508EFA2976DDA7A4F0F1 /* WHLabel.swift in Sources */,
+				6C494A86D08996C421095C6498F7FBC8 /* WHNavigationController.swift in Sources */,
+				85C0B306DF767599E63A28075C9CD2A6 /* WHString.swift in Sources */,
+				6A57CF5F93139994AA7305575F8C299C /* WHTableView.swift in Sources */,
+				DAD91325B28BB193880D187D57E2AC9F /* WHTextView.swift in Sources */,
+				766FDE707F5403FCFF20FE53339BD9BC /* WHView.swift in Sources */,
+				29D9383D000721348A66C6679C9763FB /* Wormholy.swift in Sources */,
+				13C4F0EA70DF4DF284F74FF218BB0AF9 /* WormholyGalileoPluginViewController.swift in Sources */,
+				B5DB1ACB605182C405A94683B9ABCD43 /* WormholyGalileoPluginViewControllerFactory.swift in Sources */,
+				5C17AD1C8DF431E639CB4FE809B7696A /* WormholyMethodSwizzling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		250E6E56C5B900ABC9FDCBEB685C1067 /* PBXTargetDependency */ = {
+		A81BDD13E430527DD5F43CCD129434D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Galileo-iOS-Galileo";
-			target = 63C8F7EF04191C39BB874D65755FD82E /* Galileo-iOS-Galileo */;
-			targetProxy = A29FD9F074EDBC8BA6D08807081E4D96 /* PBXContainerItemProxy */;
+			target = 7668AB1DFA1EA23F8D6D05D0F97C8810 /* Galileo-iOS-Galileo */;
+			targetProxy = 16BD6E053180C9AC7BB14BC5B07A0C42 /* PBXContainerItemProxy */;
 		};
 		E85951088DCB46F393CD2BF076CB67D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Galileo-iOS";
-			target = 7BFA536262FA44F4DFFDE9C7869DC5F9 /* Galileo-iOS */;
+			target = 0F4308456F22D289B55131706A524892 /* Galileo-iOS */;
 			targetProxy = 7CDCA57D0EB4599A7A11C6B201A1F53A /* PBXContainerItemProxy */;
 		};
 		ECFED5C0CB64597B49BAEF5C3C64CAAA /* PBXTargetDependency */ = {
@@ -1457,6 +1453,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0612C4D995F00BBF95AD954DFF0FA2D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12116DC6A122A947DC4E493A7E34C2CB /* Galileo-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Galileo-iOS";
+				INFOPLIST_FILE = "Target Support Files/Galileo-iOS/ResourceBundle-Galileo-Galileo-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = Galileo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		11D027BD8219E71225D197BACF78F7C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1544,6 +1556,22 @@
 			};
 			name = Debug;
 		};
+		27B99BC1680C380FE557EA991D6B2F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12116DC6A122A947DC4E493A7E34C2CB /* Galileo-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Galileo-iOS";
+				INFOPLIST_FILE = "Target Support Files/Galileo-iOS/ResourceBundle-Galileo-Galileo-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = Galileo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		2B339B7DD7CEA1E27E51BAABAAFB5087 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 142D8885416BB16DB4C8BAD733153DCB /* Alamofire.xcconfig */;
@@ -1569,9 +1597,9 @@
 			};
 			name = Debug;
 		};
-		4582994C7D4F68D1CBCCDC5D06B7EECD /* Debug */ = {
+		3515DB1870335613C079553E6C63F2DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC28E3488463335550C81A8A9F88245A /* Galileo-iOS.xcconfig */;
+			baseConfigurationReference = 12116DC6A122A947DC4E493A7E34C2CB /* Galileo-iOS.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1618,22 +1646,6 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4FE01DC17984464EEFB5D865F3E58D44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC28E3488463335550C81A8A9F88245A /* Galileo-iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Galileo-iOS";
-				INFOPLIST_FILE = "Target Support Files/Galileo-iOS/ResourceBundle-Galileo-Galileo-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = Galileo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1721,9 +1733,9 @@
 			};
 			name = Release;
 		};
-		CF8C5FBCC05257D7D136D0F0D10B4B21 /* Release */ = {
+		C4E3647E5B6B23059011A9CB40FB17F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC28E3488463335550C81A8A9F88245A /* Galileo-iOS.xcconfig */;
+			baseConfigurationReference = 12116DC6A122A947DC4E493A7E34C2CB /* Galileo-iOS.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1748,22 +1760,6 @@
 			};
 			name = Release;
 		};
-		E16B38F3C4642CFA0CA87AE40F1E23C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC28E3488463335550C81A8A9F88245A /* Galileo-iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Galileo-iOS";
-				INFOPLIST_FILE = "Target Support Files/Galileo-iOS/ResourceBundle-Galileo-Galileo-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = Galileo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1772,15 +1768,6 @@
 			buildConfigurations = (
 				11D027BD8219E71225D197BACF78F7C1 /* Debug */,
 				8FB57296A2B59949708C2B492C4646D5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6C2176EF16FFDF75DA8FEEACF0079A40 /* Build configuration list for PBXNativeTarget "Galileo-iOS-Galileo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E16B38F3C4642CFA0CA87AE40F1E23C5 /* Debug */,
-				4FE01DC17984464EEFB5D865F3E58D44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1794,6 +1781,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9974E61963721DFEE8894D2B6C6DC1D7 /* Build configuration list for PBXNativeTarget "Galileo-iOS-Galileo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B99BC1680C380FE557EA991D6B2F34 /* Debug */,
+				0612C4D995F00BBF95AD954DFF0FA2D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9CF21E86581B7D9FF23B84C4A529C4A2 /* Build configuration list for PBXNativeTarget "Pods-Galileo-iOS_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1803,11 +1799,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F79EB42A5FE6002CC7BD0E13D145DC59 /* Build configuration list for PBXNativeTarget "Galileo-iOS" */ = {
+		D588EC529FA32CA3E88C245F5A446DBA /* Build configuration list for PBXNativeTarget "Galileo-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4582994C7D4F68D1CBCCDC5D06B7EECD /* Debug */,
-				CF8C5FBCC05257D7D136D0F0D10B4B21 /* Release */,
+				3515DB1870335613C079553E6C63F2DE /* Debug */,
+				C4E3647E5B6B23059011A9CB40FB17F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

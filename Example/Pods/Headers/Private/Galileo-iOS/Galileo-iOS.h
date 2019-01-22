@@ -1,1 +1,0 @@
-../../../../../Galileo-iOS/Classes/Plugins/Galileo-iOS.h
