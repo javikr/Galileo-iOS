@@ -19,7 +19,7 @@
     "ios": "10.0"
   },
   "source_files": "Galileo-iOS/Classes/**/*.{swift,h,m}",
-  "public_header_files": "Galileo-iOS/Classes/**/*.h}",
+  "public_header_files": "Galileo-iOS/Classes/**/*.{h}",
   "frameworks": "UIKit",
   "swift_version": "4.2",
   "resources": [
