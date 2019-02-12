@@ -16,6 +16,8 @@ public final class ConsoleLogGalileoFactory
     {
         let view = ConsoleLogGalileoViewController(nibName: String(describing: ConsoleLogGalileoViewController.self), bundle: Galileo.bundle)
         
-        return ConsoleLogGalileoContainerViewController(rootViewController: view)
+        let consoleGalileoContainer =  ConsoleLogGalileoContainerViewController(rootViewController: view)
+        
+        return consoleGalileoContainer
     }
 }

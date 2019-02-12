@@ -19,11 +19,27 @@ class ConsoleLogGalileoViewController: UIViewController
         }
     }
     
-    var consoleLogFilePath: String? {
-        return (navigationController as? ConsoleLogGalileoContainerViewController)?.consoleLogFilePath
+    var consoleLogFilePath: String {
+        let allPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let documentsDirectory = allPaths.first!
+        return (documentsDirectory as NSString).appending("/" + Galileo.consoleLogFilename)
     }
     
+    var savedStdErr: Int32?
+    var savedStdOut: Int32?
+    
     let notificationCenter = NotificationCenter.default
+    
+    private var enabled: Bool {
+        return (navigationController as? ConsoleLogGalileoContainerViewController)?.enabled ?? false
+    }
+    
+    private var switchFilter: UISwitch! {
+        didSet {
+            switchFilter.isOn = enabled
+            switchFilter.addTarget(self, action: #selector(ConsoleLogGalileoViewController.didTapEnableDisableSwitch(sender:)), for: UIControl.Event.valueChanged)
+        }
+    }
     
     deinit {
         notificationCenter.removeObserver(self)
@@ -32,7 +48,7 @@ class ConsoleLogGalileoViewController: UIViewController
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
     {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-
+        
         notificationCenter.addObserver(self, selector: #selector(ConsoleLogGalileoViewController.applicationDidBecomeActive(notification:)), name: UIApplication.didBecomeActiveNotification, object: nil)
     }
     
@@ -41,11 +57,16 @@ class ConsoleLogGalileoViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        
+        switchFilter = UISwitch()
+        
+        manageLog()
+    
         navigationItem.title = "Console Manager"
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(ConsoleLogGalileoViewController.clearLog))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(ConsoleLogGalileoViewController.shareLog))
+        
+        navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: switchFilter), UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(ConsoleLogGalileoViewController.shareLog))]
                 
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.delegate = self
@@ -78,9 +99,7 @@ class ConsoleLogGalileoViewController: UIViewController
     
     @objc private func clearLog()
     {
-        guard let logPath = consoleLogFilePath else { return }
-        
-        try? FileManager.default.removeItem(atPath: logPath)
+        try? FileManager.default.removeItem(atPath: consoleLogFilePath)
         
         loadConsoleFile()
     }
@@ -100,11 +119,45 @@ class ConsoleLogGalileoViewController: UIViewController
         try? write("", toFilename: Galileo.consoleLogFilename)
     }
     
+    @objc func didTapEnableDisableSwitch(sender: UISwitch)
+    {
+        manageLog()
+    }
+    
+    func redirectConsoleLogToDocumentFolder()
+    {
+        freopen(consoleLogFilePath.cString(using: String.Encoding.ascii)!, "a+", stdout)
+        freopen(consoleLogFilePath.cString(using: String.Encoding.ascii)!, "a+", stderr)
+        
+        savedStdErr = dup(STDERR_FILENO)
+        savedStdOut = dup(STDOUT_FILENO)
+    }
+    
+    func disableRedirectConsoleLogToDocumentFolder()
+    {
+        guard let savedStdErr = savedStdErr, let savedStdOut = savedStdOut else { return }
+        
+        fflush(stderr)
+        dup2(savedStdErr, STDERR_FILENO)
+        close(savedStdErr)
+        
+        fflush(stdout)
+        dup2(savedStdOut, STDOUT_FILENO)
+        close(savedStdOut)
+    }
+    
+    private func manageLog()
+    {
+        if switchFilter.isOn {
+            redirectConsoleLogToDocumentFolder()
+        } else {
+            disableRedirectConsoleLogToDocumentFolder()
+        }
+    }
+
     private func loadConsoleFile()
     {
-        guard let logPath = consoleLogFilePath else { return }
-        
-        let fileContents = try? String(contentsOfFile: logPath)
+        let fileContents = try? String(contentsOfFile: consoleLogFilePath)
 
         consoleTextView.attributedText = NSAttributedString(string: fileContents ?? "")
     }

@@ -63,7 +63,6 @@ open class Galileo: UIWindow
         }
     }
     
-    
     private func launchGalileo()
     {
         notificationCenter.post(name: Notification.Name(rawValue: "GalileoStartedNotification"), object: nil)

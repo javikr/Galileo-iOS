@@ -10,6 +10,8 @@ import UIKit
 
 class ConsoleLogGalileoContainerViewController: UINavigationController
 {
+    var enabled: Bool = false
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -29,25 +31,5 @@ extension ConsoleLogGalileoContainerViewController: GalileoPlugin
     
     var pluginIcon: UIImage? {
         return UIImage(named: "200-terminal", in: Galileo.bundle, compatibleWith: nil)
-    }
-    
-    func setupPlugin()
-    {
-        redirectConsoleLogToDocumentFolder()
-    }
-    
-    var consoleLogFilePath: String {
-        let allPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
-        let documentsDirectory = allPaths.first!
-        return (documentsDirectory as NSString).appending("/" + Galileo.consoleLogFilename)
-    }
-    
-    private func redirectConsoleLogToDocumentFolder()
-    {
-        freopen(consoleLogFilePath.cString(using: String.Encoding.ascii)!, "a+", stdout)
-        freopen(consoleLogFilePath.cString(using: String.Encoding.ascii)!, "a+", stderr)
-        
-        // test
-        print(consoleLogFilePath)
     }
 }
