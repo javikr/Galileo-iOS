@@ -14,6 +14,8 @@ class RequestsViewController: WHBaseViewController {
     var filteredRequests: [RequestModel] = []
     var searchController: UISearchController?
     
+    private var showingOnlyErrors = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -69,13 +71,17 @@ class RequestsViewController: WHBaseViewController {
         definesPresentationContext = true
     }
     
-    func filterRequests(text: String?) -> [RequestModel]{
-        guard text != nil && text != "" else {
-            return Storage.shared.requests
-        }
-        
-        return Storage.shared.requests.filter { (request) -> Bool in
-            return request.url.range(of: text!, options: .caseInsensitive) != nil ? true : false
+    func filterRequests(text: String?, onlyErrors: Bool = false) -> [RequestModel]{
+        if let text = text, text != "" {
+            return Storage.shared.requests.filter { (request) -> Bool in
+                let foundText = request.url.range(of: text, options: .caseInsensitive) != nil ? true : false
+                let filterError = onlyErrors ? request.isError : !request.isError
+                return foundText && filterError
+            }
+        } else {
+            return Storage.shared.requests.filter { (request) -> Bool in
+                return onlyErrors ? request.isError : !request.isError
+            }
         }
     }
     
@@ -89,9 +95,34 @@ class RequestsViewController: WHBaseViewController {
         ac.addAction(UIAlertAction(title: "Share", style: .default) { [weak self] (action) in
             self?.shareContent()
         })
+        if showingOnlyErrors {
+            ac.addAction(UIAlertAction(title: "Show all", style: .default) { [weak self] (action) in
+                self?.showAll()
+            })
+        } else {
+            ac.addAction(UIAlertAction(title: "Show only errors", style: .default) { [weak self] (action) in
+                self?.showOnlyErrors()
+            })
+        }
         ac.addAction(UIAlertAction(title: "Close", style: .cancel) { (action) in
         })
         present(ac, animated: true, completion: nil)
+    }
+    
+    private func showOnlyErrors()
+    {
+        showingOnlyErrors = true
+        
+        filteredRequests = filterRequests(text: searchController?.searchBar.text, onlyErrors: true)
+        collectionView.reloadData()
+    }
+    
+    private func showAll()
+    {
+        showingOnlyErrors = false
+
+        filteredRequests = filterRequests(text: searchController?.searchBar.text, onlyErrors: false)
+        collectionView.reloadData()
     }
     
     func clearRequests() {

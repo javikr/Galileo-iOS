@@ -37,4 +37,7 @@ open class RequestModel: Codable {
         responseHeaders = responseHttp.allHeaderFields as? [String: String]
     }
     
+    var isError: Bool {
+        return code != 200
+    }
 }
