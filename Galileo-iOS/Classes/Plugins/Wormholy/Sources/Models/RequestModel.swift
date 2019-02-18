@@ -38,6 +38,6 @@ open class RequestModel: Codable {
     }
     
     var isError: Bool {
-        return code != 200
+        return code < 200 || code > 299
     }
 }
