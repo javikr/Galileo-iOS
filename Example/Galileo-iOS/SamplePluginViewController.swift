@@ -34,6 +34,10 @@ class SamplePluginViewController: UIViewController
         }
     }
     
+    deinit {
+        print("deinit - SamplePluginViewController")
+    }
+    
     override public func viewDidLoad()
     {
         super.viewDidLoad()

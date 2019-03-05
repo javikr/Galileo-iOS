@@ -21,6 +21,7 @@ import UIKit
 open class Galileo: UIWindow
 {
     private var plugins: [GalileoPlugin]
+    private var mainView: UIViewController?
     private let notificationCenter = NotificationCenter.default
 
     public init(frame: CGRect, configuration: GalileoConfiguration = GalileoConfigurationProvider.defaultConfiguration())
@@ -48,6 +49,10 @@ open class Galileo: UIWindow
         super.makeKeyAndVisible()
         
         setupPlugins()
+        
+        if mainView == nil {
+            mainView = MainViewControllerFactory().mainViewController(plugins: plugins)
+        }
     }
     
     required public init?(coder aDecoder: NSCoder) { return nil }
@@ -75,8 +80,7 @@ open class Galileo: UIWindow
     {
         notificationCenter.post(name: Notification.Name(rawValue: "GalileoStartedNotification"), object: nil)
 
-        let mainView = MainViewControllerFactory().mainViewController(plugins: plugins)
-        rootViewController?.present(mainView, animated: true)
+        rootViewController?.present(mainView!, animated: true)
     }
 
     private func setupPlugins()
