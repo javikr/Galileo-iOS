@@ -10,14 +10,19 @@ import UIKit
 
 class RequestCell: UICollectionViewCell {
     
-    @IBOutlet weak var methodLabel: WHLabel!
-    @IBOutlet weak var codeLabel: WHLabel!
-    @IBOutlet weak var urlLabel: WHLabel! {
+    @IBOutlet weak var methodLabel: UILabel!
+    @IBOutlet weak var codeLabel: UILabel! {
+        didSet {
+            codeLabel.layer.borderWidth = 1.0
+            codeLabel.layer.cornerRadius = 6.0
+        }
+    }
+    @IBOutlet weak var urlLabel: UILabel! {
         didSet {
             urlLabel.numberOfLines = 0
         }
     }
-    @IBOutlet weak var durationLabel: WHLabel!
+    @IBOutlet weak var durationLabel: UILabel!
     
     func populate(request: RequestModel?){
         guard request != nil else {
@@ -41,14 +46,14 @@ class RequestCell: UICollectionViewCell {
             default:
                 color = Colors.HTTPCode.Generic
             }
-            codeLabel.borderColor = color
+            codeLabel.layer.borderColor = color.cgColor
             codeLabel.textColor = color
         }
         else{
-            codeLabel.borderColor = Colors.HTTPCode.Generic
+            codeLabel.layer.borderColor = Colors.HTTPCode.Generic.cgColor
             codeLabel.textColor = Colors.HTTPCode.Generic
         }
         urlLabel.text = request?.url
-        durationLabel.text = request?.date.stringWithFormat(dateFormat: "dd/MM/yy hh:mm:ss")
+        durationLabel.text = request?.date.stringWithFormat(dateFormat: "hh:mm:ss")
     }
 }
