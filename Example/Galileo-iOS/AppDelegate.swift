@@ -25,8 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         print("DEBUG!")
         
         let samplePlugin = SamplePluginViewController()
+        let samplePlugin1 = SamplePluginViewController()
+        let samplePlugin2 = SamplePluginViewController()
         
-        let configuration = GalileoConfigurationProvider.configuration(addingPlugins: [samplePlugin])
+        let configuration = GalileoConfigurationProvider.configuration(addingPlugins: [samplePlugin, samplePlugin1, samplePlugin2])
         
         window = Galileo(frame: UIScreen.main.bounds, configuration: configuration)
         #else
