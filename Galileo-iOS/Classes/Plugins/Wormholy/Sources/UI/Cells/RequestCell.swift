@@ -12,7 +12,11 @@ class RequestCell: UICollectionViewCell {
     
     @IBOutlet weak var methodLabel: WHLabel!
     @IBOutlet weak var codeLabel: WHLabel!
-    @IBOutlet weak var urlLabel: WHLabel!
+    @IBOutlet weak var urlLabel: WHLabel! {
+        didSet {
+            urlLabel.numberOfLines = 0
+        }
+    }
     @IBOutlet weak var durationLabel: WHLabel!
     
     func populate(request: RequestModel?){
@@ -45,6 +49,6 @@ class RequestCell: UICollectionViewCell {
             codeLabel.textColor = Colors.HTTPCode.Generic
         }
         urlLabel.text = request?.url
-        durationLabel.text = request?.duration?.formattedMilliseconds() ?? ""
+        durationLabel.text = request?.date.stringWithFormat(dateFormat: "dd/MM/yy hh:mm:ss")
     }
 }

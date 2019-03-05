@@ -188,7 +188,7 @@ extension RequestsViewController: UICollectionViewDelegate, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.size.width, height: 76)
+        return CGSize(width: collectionView.bounds.size.width, height: 100)
     }
 }
 
