@@ -63,11 +63,12 @@ open class Galileo: UIWindow
         }
     }
     
-    public func dismissGalileo()
+    public func dismissGalileo(completion: (() -> Void)? = nil)
     {
-        notificationCenter.post(name: Notification.Name(rawValue: "GalileoStoppedNotification"), object: nil)
-        
-        rootViewController?.presentedViewController?.dismiss(animated: true)
+        rootViewController?.presentedViewController?.dismiss(animated: true, completion: { [weak self] in
+            self?.notificationCenter.post(name: Notification.Name(rawValue: "GalileoStoppedNotification"), object: nil)
+            completion?()
+        })
     }
     
     public func launchGalileo()
