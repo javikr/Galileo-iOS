@@ -54,6 +54,6 @@ class RequestCell: UICollectionViewCell {
             codeLabel.textColor = Colors.HTTPCode.Generic
         }
         urlLabel.text = request?.url
-        durationLabel.text = request?.date.stringWithFormat(dateFormat: "hh:mm:ss")
+        durationLabel.text = request?.date.stringWithFormat(dateFormat: "HH:mm:ss")
     }
 }
