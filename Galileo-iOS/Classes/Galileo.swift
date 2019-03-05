@@ -63,21 +63,21 @@ open class Galileo: UIWindow
         }
     }
     
-    private func launchGalileo()
-    {
-        notificationCenter.post(name: Notification.Name(rawValue: "GalileoStartedNotification"), object: nil)
-
-        let mainView = MainViewControllerFactory().mainViewController(plugins: plugins)
-        rootViewController?.present(mainView, animated: true)
-    }
-    
-    private func dismissGalileo()
+    public func dismissGalileo()
     {
         notificationCenter.post(name: Notification.Name(rawValue: "GalileoStoppedNotification"), object: nil)
         
         rootViewController?.presentedViewController?.dismiss(animated: true)
     }
     
+    public func launchGalileo()
+    {
+        notificationCenter.post(name: Notification.Name(rawValue: "GalileoStartedNotification"), object: nil)
+
+        let mainView = MainViewControllerFactory().mainViewController(plugins: plugins)
+        rootViewController?.present(mainView, animated: true)
+    }
+
     private func setupPlugins()
     {
         for plugin in plugins {

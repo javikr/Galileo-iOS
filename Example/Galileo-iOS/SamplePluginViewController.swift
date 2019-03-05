@@ -42,6 +42,8 @@ class SamplePluginViewController: UIViewController
     @IBAction func didTapButton(_ sender: Any)
     {
         view.endEditing(true)
+        
+        (UIApplication.shared.keyWindow as? Galileo)?.dismissGalileo()
     }
 }
 
