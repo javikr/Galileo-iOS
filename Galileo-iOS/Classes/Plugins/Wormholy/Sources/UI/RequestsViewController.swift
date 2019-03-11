@@ -21,8 +21,7 @@ class RequestsViewController: WHBaseViewController {
         
         addSearchController()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "More", style: .plain, target: self, action: #selector(openActionSheet))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "More", style: .plain, target: self, action: #selector(openActionSheet))
         
         collectionView?.register(UINib(nibName: "RequestCell", bundle: Galileo.bundle), forCellWithReuseIdentifier: "RequestCell")
         
@@ -147,11 +146,6 @@ class RequestsViewController: WHBaseViewController {
         let activityViewController = UIActivityViewController(activityItems: textShare, applicationActivities: [customItem])
         activityViewController.popoverPresentationController?.sourceView = self.view
         self.present(activityViewController, animated: true, completion: nil)
-    }
-    
-    // MARK: - Navigation
-    @objc func done(){
-        self.dismiss(animated: true, completion: nil)
     }
     
     func openRequestDetailVC(request: RequestModel){

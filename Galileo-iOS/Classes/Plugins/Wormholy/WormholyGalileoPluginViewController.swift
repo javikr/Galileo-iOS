@@ -19,19 +19,12 @@ final class WormholyGalileoPluginViewController: UINavigationController
             navigationItem.largeTitleDisplayMode = .automatic
         }
     }
-    
-    override func viewDidAppear(_ animated: Bool)
-    {
-        super.viewDidAppear(animated)
-        
-        children.first?.navigationItem.rightBarButtonItems = nil
-    }
 }
 
 extension WormholyGalileoPluginViewController: GalileoPlugin
 {
     public var pluginName: String {
-        return "Wormholy"
+        return "Requests"
     }
     
     public var pluginIcon: UIImage? {
