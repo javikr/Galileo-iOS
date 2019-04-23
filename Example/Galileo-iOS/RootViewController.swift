@@ -41,5 +41,6 @@ class RootViewController: UIViewController
     private func demoAlamofireCall()
     {
         Alamofire.request("https://www.todorock.com/wp-json/wp/v2/posts")
+        Alamofire.request("https://www.todorock.com/wp-json/wp/v2/fakepath")
     }
 }
