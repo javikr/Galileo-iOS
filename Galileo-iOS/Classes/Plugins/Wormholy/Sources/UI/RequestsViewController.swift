@@ -28,8 +28,10 @@ class RequestsViewController: WHBaseViewController {
         filteredRequests = Storage.shared.requests
         NotificationCenter.default.addObserver(forName: newRequestNotification, object: nil, queue: nil) { [weak self] (notification) in
             DispatchQueue.main.sync { [weak self] in
-                self?.filteredRequests = self?.filterRequests(text: self?.searchController?.searchBar.text) ?? []
-                self?.collectionView.reloadData()
+                guard let welf = self else { return }
+                
+                welf.filteredRequests = welf.filterRequests(text: welf.searchController?.searchBar.text, onlyErrors: welf.showingOnlyErrors)
+                welf.collectionView.reloadData()
             }
         }
         
@@ -70,7 +72,7 @@ class RequestsViewController: WHBaseViewController {
         definesPresentationContext = true
     }
     
-    func filterRequests(text: String?, onlyErrors: Bool = false) -> [RequestModel]{
+    func filterRequests(text: String?, onlyErrors: Bool) -> [RequestModel]{
         if let text = text, text != "" {
             return Storage.shared.requests.filter { (request) -> Bool in
                 let foundText = request.url.range(of: text, options: .caseInsensitive) != nil ? true : false
@@ -95,7 +97,7 @@ class RequestsViewController: WHBaseViewController {
             self?.shareContent()
         })
         if showingOnlyErrors {
-            ac.addAction(UIAlertAction(title: "Show all", style: .default) { [weak self] (action) in
+            ac.addAction(UIAlertAction(title: "Show all requests", style: .default) { [weak self] (action) in
                 self?.showAll()
             })
         } else {
@@ -187,9 +189,12 @@ extension RequestsViewController: UICollectionViewDelegate, UICollectionViewDele
 }
 
 // MARK: - UISearchResultsUpdating Delegate
-extension RequestsViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        filteredRequests = filterRequests(text: searchController.searchBar.text)
+
+extension RequestsViewController: UISearchResultsUpdating
+{
+    func updateSearchResults(for searchController: UISearchController)
+    {
+        filteredRequests = filterRequests(text: searchController.searchBar.text, onlyErrors: showingOnlyErrors)
         collectionView.reloadData()
     }
 }
