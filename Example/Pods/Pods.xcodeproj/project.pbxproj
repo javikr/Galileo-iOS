@@ -67,7 +67,6 @@
 		88B7BB9B8D701137C558F57E84904330 /* PreferencesGalileoTableViewDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD2DBE13E12A38EC7FAA0B2F22D3D63 /* PreferencesGalileoTableViewDataSourceDelegate.swift */; };
 		8BB170EF376EB2F719D596A71E651FDF /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13C7046C218FB029979F98227D2B29 /* NetworkReachabilityManager.swift */; };
 		8DAD700F93DA1E8DBEF93FED14426267 /* PreferencesGalileoSourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D915004D5924D81726BF0414F401B07 /* PreferencesGalileoSourcesTableViewController.swift */; };
-		8E4AB6C8F762E561171FCC8FAB84C0AA /* ActionableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EE123E629E5CF909288298F02CADC9 /* ActionableTableViewCell.xib */; };
 		95EAE81B1DC82242974B804C3987F5EA /* PreferenceBoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD342DC8A13DE73C1D9B8A687AE6BC51 /* PreferenceBoolViewModel.swift */; };
 		9B1A1EDF09EA9000D422B84E5E6A2E2F /* PreferencesGalileoContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C1BDB0CD8B7CA62FE959DECDA67456 /* PreferencesGalileoContainerViewController.swift */; };
 		9C3570E9E3152B12DBA2DCCC29447C51 /* PreferencesGalileoViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89A6E60DE487FD3194D8B9AA7F817BD /* PreferencesGalileoViewInterface.swift */; };
@@ -97,6 +96,7 @@
 		C4CD0718A4C8508EFA2976DDA7A4F0F1 /* WHLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA16FF80A4E8BBA4B1CE6360D6614E4B /* WHLabel.swift */; };
 		C5F7C333D9D79C70F3F810B2B0A7212F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE5611B7252AB6B760EE09C64311A23 /* Config.swift */; };
 		C672F25474FD75675267D99ACEB9AD90 /* ViewFlowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB2D7039356CFA771EF260CAC1A1B072 /* ViewFlowTableViewCell.xib */; };
+		C918F4F622E6E8B000AD94AA /* ActionableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C918F4F522E6E8B000AD94AA /* ActionableTableViewCell.xib */; };
 		C95B8D441C8CEEC96AB7FAF1C0B96C80 /* ScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308498AFA8AA1B109BE3F3B09CB21632 /* ScreenView.swift */; };
 		CA37F978DCF79D549D117CAC55F72DDE /* ActionableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C18322EE6B2D27DDF481E059AC3263 /* ActionableTableViewCell.swift */; };
 		CA6BD52AB35379D1EC283FEC9152674D /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5A89C4A80A7D4FFEFB0246B32D04A /* Timeline.swift */; };
@@ -174,7 +174,7 @@
 		2EF89ED2FCA6B213A8A04D5F319FC93D /* RequestTitleSectionView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = RequestTitleSectionView.xib; sourceTree = "<group>"; };
 		308498AFA8AA1B109BE3F3B09CB21632 /* ScreenView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreenView.swift; sourceTree = "<group>"; };
 		329CC70FB93725F3573D238C34EA0F08 /* RequestTitleSectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestTitleSectionView.swift; sourceTree = "<group>"; };
-		35FDE881D03E0CE9C9D153DBD4018AFB /* Galileo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Galileo.bundle; path = "Galileo-iOS-Galileo.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FDE881D03E0CE9C9D153DBD4018AFB /* Galileo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Galileo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		361D8B814582EB6C5E7D1D0144B15D1C /* PreferenceDateTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferenceDateTableViewCell.xib; sourceTree = "<group>"; };
 		37654994C6DA65CF7512D3B51F8996CB /* TextTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TextTableViewCell.xib; sourceTree = "<group>"; };
 		39C173D76A8FD2B35488D77480249073 /* PreferenceIntegerTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceIntegerTableViewCell.swift; sourceTree = "<group>"; };
@@ -186,7 +186,6 @@
 		41F349EA74967A9FF4A8C64AE0B4D24E /* Pods-Galileo-iOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Galileo-iOS_Example.modulemap"; sourceTree = "<group>"; };
 		460F7FFA15D75A4240686639357E3D66 /* ViewFlowDetailTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ViewFlowDetailTableViewCell.xib; sourceTree = "<group>"; };
 		4773EE5CF7AEA3410B4415BD0E4FF03B /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		49EE123E629E5CF909288298F02CADC9 /* ActionableTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ActionableTableViewCell.xib; sourceTree = "<group>"; };
 		4AE5611B7252AB6B760EE09C64311A23 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4ED356BF167096781BC87B37375FA393 /* RequestCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestCell.swift; sourceTree = "<group>"; };
 		5003326CBF5036901116BC62FA244292 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
@@ -200,7 +199,7 @@
 		5ABC15285CA22C4813BE752C62E1E5C1 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		61911985412FD06C33E1EEC953ECFA3D /* Pods-Galileo-iOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Galileo-iOS_Example-resources.sh"; sourceTree = "<group>"; };
 		61F77819481673FF2F9D31AB29DFCF01 /* WHCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHCollectionView.swift; sourceTree = "<group>"; };
-		62505940E14C0D01039FCBD6CEA7E04A /* Galileo-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "Galileo-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		62505940E14C0D01039FCBD6CEA7E04A /* Galileo-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "Galileo-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		636A1F2C31484D37ACC92BD1B3E1FF0D /* PreferencesGalileoViewDetailFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoViewDetailFactory.swift; sourceTree = "<group>"; };
 		6F8620771A11D2FA6929AF52B9CDF4A6 /* PreferencesGalileoPresenterInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoPresenterInterface.swift; sourceTree = "<group>"; };
 		7385D1B5962A2069DBF02032E3465B7F /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
@@ -239,7 +238,7 @@
 		B13F157C9452A4C80CFF9322E51A51D9 /* ViewFlowGalileoFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowGalileoFactory.swift; sourceTree = "<group>"; };
 		B2A0D9AEB2B42C75690D1AEFFC270106 /* PreferenceViewTypeMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceViewTypeMapper.swift; sourceTree = "<group>"; };
 		B2F729ECFA04BCA4C3981F804DA4D5B2 /* PreferencesGalileoPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoPresenter.swift; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B38CA61B9FC3DAABDE4EBAA1D270A98E /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		B4EEFFD91F0D9AE4AEF5E51372F56FF6 /* WHView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHView.swift; sourceTree = "<group>"; };
 		B5880C68C651AE40D70DFE32E04AC65C /* WHBaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHBaseViewController.swift; sourceTree = "<group>"; };
@@ -252,6 +251,7 @@
 		C33EC3E0D6C60EF3B3C2D02709905DF2 /* ViewFlowTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowTableViewCell.swift; sourceTree = "<group>"; };
 		C355CABDF57CCB37AF5190BA4855831E /* PreferenceTextTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceTextTableViewCell.swift; sourceTree = "<group>"; };
 		C8853B977AD27F6E5CD4288B4E75B978 /* NSURLSessionConfiguration+Wormholy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionConfiguration+Wormholy.h"; sourceTree = "<group>"; };
+		C918F4F522E6E8B000AD94AA /* ActionableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionableTableViewCell.xib; sourceTree = "<group>"; };
 		C94EDEFC83096629173F17662CAE2980 /* ViewFlowDetailViewControllerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowDetailViewControllerFactory.swift; sourceTree = "<group>"; };
 		CA16FF80A4E8BBA4B1CE6360D6614E4B /* WHLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WHLabel.swift; sourceTree = "<group>"; };
 		CD172CE3B1DD1F8D62ECED90E9A88219 /* Galileo-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Galileo-iOS-prefix.pch"; sourceTree = "<group>"; };
@@ -261,12 +261,12 @@
 		D4E8010FC4D5BD5D32EE5999794ABF89 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		D77031DF895099A14E88F0820C554326 /* ViewFlowGalileoTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewFlowGalileoTableViewController.swift; sourceTree = "<group>"; };
 		D77DCF9B9D478C93B7EE56CDF0F2145F /* PreferenceViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceViewType.swift; sourceTree = "<group>"; };
-		D7B617D8F6438B64147FC8F628AADD08 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D7B617D8F6438B64147FC8F628AADD08 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DAEB8358587D4B094AC5001A6875B858 /* GalileoConfigurationProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GalileoConfigurationProvider.swift; sourceTree = "<group>"; };
 		DC5787A6A73B24AD1FDB7AEF24C671DD /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		DCF925060B567CB483B99324E39D404A /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		DD342DC8A13DE73C1D9B8A687AE6BC51 /* PreferenceBoolViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferenceBoolViewModel.swift; sourceTree = "<group>"; };
-		DDBE37D2B81AB04CBC2DEABF2E61229F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DDBE37D2B81AB04CBC2DEABF2E61229F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E125882B2C55AC079E016F40813583DF /* PreferencesGalileoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreferencesGalileoViewController.swift; sourceTree = "<group>"; };
 		E2AC45E2FBA158F3E0D2DB7E7546B38A /* PreferencesGalileoSourcesTableViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreferencesGalileoSourcesTableViewController.xib; sourceTree = "<group>"; };
 		E67DD3B47B14DC237629BEDC488AF104 /* RequestsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
@@ -281,10 +281,10 @@
 		F99584CE30ACA92A156C9A3BB15C357E /* RequestDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestDetailViewController.swift; sourceTree = "<group>"; };
 		F9D7BA92AD6EC95D02AECE47727AE69B /* ConsoleLogGalileoViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ConsoleLogGalileoViewController.xib; sourceTree = "<group>"; };
 		FA1EF1B1A9FCD6331779EEF1BB0469B6 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		FAE9D29C71D073079C78BAC4205B2801 /* libGalileo-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libGalileo-iOS.a"; path = "libGalileo-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE9D29C71D073079C78BAC4205B2801 /* libGalileo-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGalileo-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1110DDA49D69B208878F2EBC88C6FC /* ResourceBundle-Galileo-Galileo-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Galileo-Galileo-iOS-Info.plist"; sourceTree = "<group>"; };
-		FD6B07FB7D9E4420B8F2C1E0BC87EC55 /* libPods-Galileo-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Galileo-iOS_Example.a"; path = "libPods-Galileo-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD96887BA2196696CF4D37A7CF2FCE70 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlamofire.a; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6B07FB7D9E4420B8F2C1E0BC87EC55 /* libPods-Galileo-iOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Galileo-iOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD96887BA2196696CF4D37A7CF2FCE70 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,7 +331,6 @@
 			children = (
 				460F7FFA15D75A4240686639357E3D66 /* ViewFlowDetailTableViewCell.xib */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -349,7 +348,6 @@
 			children = (
 				2D915004D5924D81726BF0414F401B07 /* PreferencesGalileoSourcesTableViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -375,7 +373,6 @@
 			children = (
 				BC67D067D4B5136EDE3FFA25B15D4F19 /* Wormholy */,
 			);
-			name = Plugins;
 			path = Plugins;
 			sourceTree = "<group>";
 		};
@@ -395,7 +392,6 @@
 			children = (
 				ADE7FA230B24CAD727CA544997D75DF1 /* GalileoMainViewController.xib */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -404,7 +400,6 @@
 			children = (
 				A41412F03FE25EC2843E65089392724B /* Flow.storyboard */,
 			);
-			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -413,7 +408,6 @@
 			children = (
 				E2AC45E2FBA158F3E0D2DB7E7546B38A /* PreferencesGalileoSourcesTableViewController.xib */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -423,7 +417,6 @@
 				A17C23200CC62D3E1E1C67FE0BE382D4 /* Cells */,
 				4A2D0411E796E65740E9959720F61545 /* Sections */,
 			);
-			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -440,7 +433,6 @@
 				41BFC300C44CB8E051E75F71C030548D /* UI */,
 				5C5E0452C1BB1A527C5BD85835F515D7 /* Utils */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -461,7 +453,6 @@
 				5C23F169A01ED2132B3F0276ED2DF20A /* Cells */,
 				7878D8E6AFCE47095141CB672CF0297B /* Sections */,
 			);
-			name = UI;
 			path = UI;
 			sourceTree = "<group>";
 		};
@@ -472,7 +463,6 @@
 				C94EDEFC83096629173F17662CAE2980 /* ViewFlowDetailViewControllerFactory.swift */,
 				E0B4DA18C3852912EB8A04E4EAD23957 /* Cell */,
 			);
-			name = Detail;
 			path = Detail;
 			sourceTree = "<group>";
 		};
@@ -481,7 +471,6 @@
 			children = (
 				2EF89ED2FCA6B213A8A04D5F319FC93D /* RequestTitleSectionView.xib */,
 			);
-			name = Sections;
 			path = Sections;
 			sourceTree = "<group>";
 		};
@@ -490,7 +479,6 @@
 			children = (
 				B481F7A53C30574CEE4B42E3E44D2C3D /* Sources */,
 			);
-			name = Wormholy;
 			path = Wormholy;
 			sourceTree = "<group>";
 		};
@@ -499,7 +487,6 @@
 			children = (
 				BA5DE813B16FE28D3F38A1F26599692F /* PreferencesGalileoFactory.swift */,
 			);
-			name = Factory;
 			path = Factory;
 			sourceTree = "<group>";
 		};
@@ -509,7 +496,6 @@
 				9C9B3451BA5228ABA05A59C20EE38298 /* PreferencesGalileoTableViewDataSource.swift */,
 				1BD2DBE13E12A38EC7FAA0B2F22D3D63 /* PreferencesGalileoTableViewDataSourceDelegate.swift */,
 			);
-			name = "Data Source";
 			path = "Data Source";
 			sourceTree = "<group>";
 		};
@@ -520,7 +506,6 @@
 				4ED356BF167096781BC87B37375FA393 /* RequestCell.swift */,
 				549A30DFEE669B0BC3B83D6973311120 /* TextTableViewCell.swift */,
 			);
-			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		};
@@ -530,7 +515,6 @@
 				04D2A60C366F86B5C2C026E9D745E4CF /* FileHandler.swift */,
 				F1D35329B1772FE3DAB659DAC7FC323D /* RequestModelBeautifier.swift */,
 			);
-			name = Utils;
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -544,7 +528,6 @@
 				CFA622A92BA4FF96EBC0156F76C0B03B /* PreferenceTableViewCellDelegate.swift */,
 				C355CABDF57CCB37AF5190BA4855831E /* PreferenceTextTableViewCell.swift */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -554,7 +537,6 @@
 				D77DCF9B9D478C93B7EE56CDF0F2145F /* PreferenceViewType.swift */,
 				B2A0D9AEB2B42C75690D1AEFFC270106 /* PreferenceViewTypeMapper.swift */,
 			);
-			name = "View Type";
 			path = "View Type";
 			sourceTree = "<group>";
 		};
@@ -568,7 +550,6 @@
 				4732CE2E3BFB6DB8EDABDAC9367D93E0 /* Detail */,
 				B5BAD1A2B68DA4CA96FEBF100B95985E /* Factory */,
 			);
-			name = "View Flow Plugin";
 			path = "View Flow Plugin";
 			sourceTree = "<group>";
 		};
@@ -594,7 +575,6 @@
 				A99AD779088C17EA9C690E53F6F08FD3 /* Validation.swift */,
 				F0214559A94D1EC289F50920F04C77A6 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -604,7 +584,6 @@
 				83EB79DB883C8DDFF9F2255A0D554494 /* PreferencesGalileoInteractor.swift */,
 				7792FC64F9219F8CA690D38E6A2427D4 /* PreferencesGalileoIO.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -613,7 +592,6 @@
 			children = (
 				F9D7BA92AD6EC95D02AECE47727AE69B /* ConsoleLogGalileoViewController.xib */,
 			);
-			name = "Console Log";
 			path = "Console Log";
 			sourceTree = "<group>";
 		};
@@ -622,7 +600,6 @@
 			children = (
 				329CC70FB93725F3573D238C34EA0F08 /* RequestTitleSectionView.swift */,
 			);
-			name = Sections;
 			path = Sections;
 			sourceTree = "<group>";
 		};
@@ -632,7 +609,6 @@
 				56AD7312E5C9795C60ACC5DF4A775C34 /* Factory */,
 				124F9CF7773396130CC718F560134D95 /* View */,
 			);
-			name = "Sources View";
 			path = "Sources View";
 			sourceTree = "<group>";
 		};
@@ -653,7 +629,6 @@
 			children = (
 				636A1F2C31484D37ACC92BD1B3E1FF0D /* PreferencesGalileoViewDetailFactory.swift */,
 			);
-			name = Factory;
 			path = Factory;
 			sourceTree = "<group>";
 		};
@@ -665,7 +640,6 @@
 				92FE87E94579AC7E3D521ADA092A317A /* PreferenceIntegerTableViewCell.xib */,
 				228F5B570DAA67ED603DEBB3206B7661 /* PreferenceTextTableViewCell.xib */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -677,7 +651,6 @@
 				3F1C61CDED45B0D7C06F57C13DACE26D /* PreferenceIntegerViewModel.swift */,
 				94432D971F53DD6E7B168A9AED71418D /* PreferenceTextViewModel.swift */,
 			);
-			name = "View Model";
 			path = "View Model";
 			sourceTree = "<group>";
 		};
@@ -689,7 +662,6 @@
 				B89A6E60DE487FD3194D8B9AA7F817BD /* PreferencesGalileoViewInterface.swift */,
 				5E17A61CADFFD908A07684719D90F670 /* Cell */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -698,7 +670,6 @@
 			children = (
 				27A157E8836D9D9AA438EA99D96E9341 /* UI */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -718,7 +689,6 @@
 				D384DFBC719908148803233B43D6DA4B /* ConsoleLogGalileoFactory.swift */,
 				C011EFC2329E221634C2E4ADF273B94C /* ConsoleLogGalileoViewController.swift */,
 			);
-			name = "Console Log";
 			path = "Console Log";
 			sourceTree = "<group>";
 		};
@@ -727,7 +697,6 @@
 			children = (
 				219F7F49B9B50C232F0AE0AB0C53F3F6 /* GalileoMainViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -737,7 +706,6 @@
 				F4E4045EAEF7D149B3BE61A948864751 /* RequestModel.swift */,
 				EF3C1E0F42FEF0E760FA79AF3642143A /* Section.swift */,
 			);
-			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -756,18 +724,16 @@
 			children = (
 				EB2D7039356CFA771EF260CAC1A1B072 /* ViewFlowTableViewCell.xib */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
 		A17C23200CC62D3E1E1C67FE0BE382D4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				49EE123E629E5CF909288298F02CADC9 /* ActionableTableViewCell.xib */,
 				50A19C981F2B3549CAC90D6F565E8D0C /* RequestCell.xib */,
 				37654994C6DA65CF7512D3B51F8996CB /* TextTableViewCell.xib */,
+				C918F4F522E6E8B000AD94AA /* ActionableTableViewCell.xib */,
 			);
-			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		};
@@ -802,7 +768,6 @@
 				91ABA4B6DC32C97E5C2D43B94F0F0D71 /* PreferencesGalileoViewController.xib */,
 				82C8864290CD6AB758753E7182075A1C /* Cell */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -813,7 +778,6 @@
 				9A5203264754094CC69055194AF54379 /* WormholyGalileoPluginViewControllerFactory.swift */,
 				2BA4AB90DF2839BBD3FE0C635F3657E4 /* Sources */,
 			);
-			name = Wormholy;
 			path = Wormholy;
 			sourceTree = "<group>";
 		};
@@ -836,7 +800,6 @@
 			children = (
 				2A396A734BB1A2736DCE837EA5C05C28 /* UI */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -845,7 +808,6 @@
 			children = (
 				B13F157C9452A4C80CFF9322E51A51D9 /* ViewFlowGalileoFactory.swift */,
 			);
-			name = Factory;
 			path = Factory;
 			sourceTree = "<group>";
 		};
@@ -854,7 +816,6 @@
 			children = (
 				A788CC396C1AD8EFCE0CC6797F4D200D /* View */,
 			);
-			name = "Preferences View";
 			path = "Preferences View";
 			sourceTree = "<group>";
 		};
@@ -877,7 +838,6 @@
 			children = (
 				84CE3C5B3DE26EECAE90BAEB636B4C82 /* Sources */,
 			);
-			name = Wormholy;
 			path = Wormholy;
 			sourceTree = "<group>";
 		};
@@ -913,7 +873,6 @@
 				9BDC4A42F26EE384C005E03ACF933541 /* Cell */,
 				DAC383A68CA5272EA69F074D042578B9 /* Detail */,
 			);
-			name = "View Flow Plugin";
 			path = "View Flow Plugin";
 			sourceTree = "<group>";
 		};
@@ -923,7 +882,6 @@
 				B9ABA5E61056C781D514C3B8206996EB /* Preferences View */,
 				CEE2095F011886C01F5A3ACAB358893B /* Sources View */,
 			);
-			name = "Preferences Plugin";
 			path = "Preferences Plugin";
 			sourceTree = "<group>";
 		};
@@ -932,7 +890,6 @@
 			children = (
 				284894B9326F0C31130BC75C3856C70E /* View */,
 			);
-			name = "Sources View";
 			path = "Sources View";
 			sourceTree = "<group>";
 		};
@@ -962,7 +919,6 @@
 				AA680654592D7E899F79A098ED354604 /* WHTextView.swift */,
 				B4EEFFD91F0D9AE4AEF5E51372F56FF6 /* WHView.swift */,
 			);
-			name = Subclasses;
 			path = Subclasses;
 			sourceTree = "<group>";
 		};
@@ -974,7 +930,6 @@
 				EE9593C13E8B5585EC8677FB0298653B /* Presenter */,
 				8499EDAD3ABBA73A0A1DF5DE6FA415B9 /* View */,
 			);
-			name = "Preferences View";
 			path = "Preferences View";
 			sourceTree = "<group>";
 		};
@@ -984,7 +939,6 @@
 				AD1B8B3419783A5D34FC0FCB6EB2AE1C /* ViewFlowDetailViewController.xib */,
 				10127B1FF859A4F413545BBD05F4BF2C /* Cell */,
 			);
-			name = Detail;
 			path = Detail;
 			sourceTree = "<group>";
 		};
@@ -996,7 +950,6 @@
 				1B6E8B4B105A7F64E4C06DD17C87CBD4 /* WormholyMethodSwizzling.h */,
 				BD09DBC7677324FDE10E34DB2FFDC5E1 /* WormholyMethodSwizzling.m */,
 			);
-			name = Objc;
 			path = Objc;
 			sourceTree = "<group>";
 		};
@@ -1006,7 +959,6 @@
 				C33EC3E0D6C60EF3B3C2D02709905DF2 /* ViewFlowTableViewCell.swift */,
 				F062DA4505E932478793052492F96DEE /* ViewFlowTableViewCellViewModel.swift */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -1015,7 +967,6 @@
 			children = (
 				9669390A7EAC72C6DBB9C78CC29F2592 /* ViewFlowDetailTableViewCell.swift */,
 			);
-			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -1047,7 +998,6 @@
 				83F6AB5520E2C78A096B91902289F1A0 /* View Model */,
 				610B5B26AFCE450469EFA60B9CFF6062 /* View Type */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -1070,7 +1020,6 @@
 				2549AA66655EE8558D6E1B32256070C8 /* Colors.swift */,
 				4AE5611B7252AB6B760EE09C64311A23 /* Config.swift */,
 			);
-			name = "Support Files";
 			path = "Support Files";
 			sourceTree = "<group>";
 		};
@@ -1080,7 +1029,6 @@
 				D7CE20D6F5A42742D252B9596830C81B /* Preferences View */,
 				7CC0B971E5BE56360E2F7828C74E3A04 /* Sources View */,
 			);
-			name = "Preferences Plugin";
 			path = "Preferences Plugin";
 			sourceTree = "<group>";
 		};
@@ -1089,7 +1037,6 @@
 			children = (
 				A39F6EA058A0D1F00C1373BD43839BB6 /* MainViewControllerFactory.swift */,
 			);
-			name = Factory;
 			path = Factory;
 			sourceTree = "<group>";
 		};
@@ -1212,6 +1159,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -1232,7 +1180,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E4AB6C8F762E561171FCC8FAB84C0AA /* ActionableTableViewCell.xib in Resources */,
 				38351B2093B05F08F627902C72940F32 /* Assets.xcassets in Resources */,
 				4215AF8D13AECAB4C0BD9D40303347EC /* ConsoleLogGalileoViewController.xib in Resources */,
 				60A0598FC394F194CFDA392663D95114 /* Flow.storyboard in Resources */,
@@ -1243,6 +1190,7 @@
 				70A93A0992E83055E62771E1737E85FA /* PreferencesGalileoSourcesTableViewController.xib in Resources */,
 				1BD6572525D5319EC68E03FDEF253B9D /* PreferencesGalileoViewController.xib in Resources */,
 				A1C195F1B5E21F754672B646FFCDC2CA /* PreferenceTextTableViewCell.xib in Resources */,
+				C918F4F622E6E8B000AD94AA /* ActionableTableViewCell.xib in Resources */,
 				AED10CF4A9F1F72E0D2769A6A77124A4 /* RequestCell.xib in Resources */,
 				22CA318E2988CC2C97DF8355FC908359 /* RequestTitleSectionView.xib in Resources */,
 				175BA0FDE67ECB5DF9FC986FE120ED46 /* TextTableViewCell.xib in Resources */,
@@ -1278,7 +1226,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Galileo_iOS/Galileo-iOS.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Galileo_iOS/Galileo-iOS-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-			showEnvVarsInLog = 1;
 		};
 		BB2B2D8276577B5631EBD2527E99FE58 /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1303,7 +1250,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1702,8 +1648,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
